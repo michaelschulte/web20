@@ -1,0 +1,9 @@
+---
+title: create colored title in R plot
+date: 2009-05-17T12:59:53-07:00
+author: Michael
+categories:
+  - R
+  - Statistics
+---
+David Smith has a very nice code example in which he sets the color of title word in a plot to the actual grouping color. Code can be found [here](http://blog.revolution-computing.com/2009/01/multicolor-text-in-r.html). This seems extremely useful for posters and presentations. I doubt however that journals would pick up on that &#8230;

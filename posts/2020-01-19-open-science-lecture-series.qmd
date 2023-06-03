@@ -1,0 +1,15 @@
+---
+title: Open Science Lecture Series
+author: MSM
+date: '2020-01-19'
+categories:
+  - Open science
+---
+
+This will be fun - Lecture series on Open Science, Replication, Reproducibility, Open Data and many more.
+
+Truly interdisciplinary series with speakers from business, psychology, life science, medicine, library sciences and informatics.
+
+Be there or be ...
+
+![](_images/OpenScience2020.png)

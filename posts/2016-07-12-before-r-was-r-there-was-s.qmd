@@ -1,0 +1,15 @@
+---
+title: Before R there was S
+date: 2016-07-12T02:09:41-07:00
+author: Michael    
+categories:
+  - R
+  - Statistics
+---
+<p class="p1">
+  <span class="s1">Before there was <a href="https://mran.microsoft.com/documents/what-is-r/"><span class="s2">R</span></a>, there was <a href="https://en.wikipedia.org/wiki/S_(programming_language)"><span class="s2">S</span></a>. R was modeled on a language developed at AT&T Bell Labs starting in 1976 by Rick Becker and John Chambers (and, later, Alan Wilks) along with Doug Dunn, Jean McRae, and Judy Schilling.</span>
+</p>
+
+<p class="p1">
+  Here is a talk by Rick Becker telling the <a href="https://sec.ch9.ms/ch9/13f4/867fb951-cab9-42d1-b496-9f49a47f13f4/D1McCAWS1Baker_mid.mp4">story of R</a>. Good Stuff!
+</p>

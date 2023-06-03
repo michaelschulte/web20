@@ -1,0 +1,15 @@
+---
+title: Lattice versus ggplot2
+date: 2009-10-24T20:15:50-07:00
+author: Michael
+categories:
+  - R
+  - Statistics
+---
+I really liked Lattice for generating graphs in R until I saw what ggplot2 can do &#8230;  
+One of the big differences between the two is the theory on which ggplot2 is based upon. There are clear modular building blocks that can be applied in a consistent manner on any graph generated. Both packages are extremely versatile but at the end of the day I think ggplot2 provides a clearer structure and hence more flexibility &#8230;
+
+[Hadley Wickham](http://had.co.nz/) (the author of ggplot2) has a book out on [ggplot2](http://www.amazon.com/gp/product/0387981403?ie=UTF8&tag=hadlwick-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0387981403) at Springer. Some sample chapters can be downloaded from his [webpage](http://had.co.nz/ggplot2/book/).
+
+The [learningR](http://learnr.wordpress.com/2009/06/28/ggplot2-version-of-figures-in-lattice-multivariate-data-visualization-with-r-part-1/) people have a long series of posts where they provide ggplot2 code for nearly all the graphs in the Lattice book &#8230; worth taking a look at!  
+Here is an in depth

@@ -1,0 +1,23 @@
+---
+title: '*apply in all its variations &#8230;'
+date: 2012-10-13T11:05:38-07:00
+author: Michael
+categories:
+  - R
+---
+[Here](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega/7141669#7141669) is an excellent [stackoverflow](http://stackoverflow.com/) post on how *apply in all its variations can be used.  
+One of the followups points at [plyr](http://plyr.had.co.nz/) (from demi-R-god [Hadley Wickham](http://had.co.nz/)) which provides a consistent naming convention for all the *apply variations. I like plyr a lot, because like ggplot, it is easy to grasp and relatively intuitive to find an answer to even tricky problems.
+
+Here is the translation from *apply to plyr &#8230;
+
+    Base function   Input   Output   plyr function 
+    ---------------------------------------
+    aggregate        d       d       ddply + colwise 
+    apply            a       a/l     aaply / alply 
+    by               d       l       dlply 
+    lapply           l       l       llply  
+    mapply           a       a/l     maply / mlply 
+    replicate        r       a/l     raply / rlply 
+    sapply           l       a       laply 
+
+&nbsp;

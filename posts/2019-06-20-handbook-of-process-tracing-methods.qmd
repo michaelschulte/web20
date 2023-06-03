@@ -1,0 +1,66 @@
+---
+title: Handbook of Process Tracing Methods
+author: MSM
+date: '2019-06-20'
+categories:
+  - Process tracing
+  - Decision Making
+  - Eye tracking
+  - Flashlight
+  - Mousetracking
+---
+WOOP WOOP - here it is - the second edition of our beloved "Handbook of Process Tracing Methods" 
+
+If you can't wait - buy it [here](https://www.crcpress.com/A-Handbook-of-Process-Tracing-Methods-2nd-Edition/Schulte-Mecklenbeck-Kuehberger-Johnson/p/book/9781138064218)
+
+It is bigger and better than the first edition, comes with the classics (Figner on skin conductance, Willemsen on Mouselab and many more) and many new awesome chapters - here is a list:
+
+1 Eye Fixations as a Process Trace - J. Edward Russo
+
+2 Pervasive Eye-Tracking for Real-World Consumer Behavior Analysis - Andreas Bulling and Michel Wedel
+
+3 Investigating Pupil Dilation in Decision Research - Joseph Tao-yi Wang and Wei James Chen
+
+4 A Primer on Eye-Tracking Methodology for Behavioral Science - Jacob L. Orquin and Kenneth Holmqvist
+
+5 Increasing Reproducibility of Eye-Tracking Studies: The EyeGuidelines - Susann Fiedler, Michael Schulte-Mecklenbeck, Frank Renkewitz, and Jacob L. Orquin
+
+6 (Re)Visiting the Decision Factory: Observing Cognition with MouselabWEB - Martijn C. Willemsen and Eric J. Johnson
+
+7 Comparing Process Tracing Paradigms: Tracking Attention via Mouse and Eye Movements - Ana M. Franco-Watkins, Hayden K. Hickey, and Joseph G. Johnson
+
+8 Mouse-Tracking: A Practical Guide to Implementation and Analysis - Pascal J. Kieslich, Felix Henninger, Dirk U. Wulff, Jonas M. B. Haslbeck, and Michael Schulte-Mecklenbeck
+
+9 Mouse-Tracking: Detecting Types in Movement Trajectories - Dirk U. Wulff, Jonas M. B. Haslbeck, Pascal J. Kieslich, Felix Henninger, and Michael Schulte-Mecklenbeck
+
+10 Mouse-Tracking to Understand Real-Time Dynamics of Social Cognition - Benjamin S. Stillerman and Jonathan B. Freeman
+
+11 Measuring Electrodermal Activity and Its Applications in Judgment and Decision-Making Research - Bernd Figner, Ryan O. Murphy, and Paul Siegel
+
+12 Response Times as Identification Tools for Cognitive Processes Underlying Decisions - Mario Fifić, Joseph W. Houpt, and Jörg Rieskamp
+
+13 A Practical Guide for Automated Facial Emotion Classification - Sabrina Stöckli, Michael Schulte-Mecklenbeck, Stefan Borer, and Andrea C. Samson
+
+14 EEG and ERPs as Neural Process Tracing Methodologies in Decision-Making Research - Mary E. Frame
+
+15 Decision Neuroscience: fMRI Insights into Choice Processes - Vinod Venkatraman and Crystal Reeck
+
+16 Probing the Decisional Brain with Noninvasive Brain Stimulation - Nadège Bault, Elena Rusconi, and Giorgio Coricelli
+
+17 Verbal Reports and Decision Process Analysis - Rob Ranyard and Ola Svenson
+
+18 Thinking Aloud during Superior Performance on Tasks Involving Decision Making - K.Anders Ericsson and Jerad H. Moxley
+
+19 Tracking Free Information Access: The Method of Active Information Search - Oswald Huber, Anton Kühberger, and Michael Schulte-Mecklenbeck
+
+20 Uncovering the Anatomy of Search Without Technology - Dirk U. Wulff and Ralph Hertwig
+
+21 Process Tracing, Sampling, and Drift Rate Construction - Neil Stewart and Timothy L. Mullett
+
+22 Using Multiple Methods to Elicit Choices and to Identify Strategies - Ulrich Hoffrage and Nils Reisen
+
+23 Testing Cognitive Models by a Joint Analysis of Multiple Dependent Measures Including Process Data - Andreas Glöckner and Marc Jekel
+
+24 Using Process Tracing Data to Define and Test Process Models - Joseph G. Johnson and Mary E. Frame
+
+![](_images/HoPTM.png)

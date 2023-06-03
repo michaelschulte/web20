@@ -1,0 +1,11 @@
+---
+title: Pictures
+author: MSM
+date: '2019-06-20'
+categories:
+  - R
+---
+
+So, here we go - new blogdown site ... thanks to Dan (https://twitter.com/dsquintana) to kicked me over the edge actually doing this ... 
+
+Things are fine, the site is up - pictures are still linked back to my old wordpress site ... will figure this out eventually ... but this is live now - for your reading pleasure :)

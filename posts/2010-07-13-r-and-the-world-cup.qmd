@@ -1,0 +1,29 @@
+---
+title: R and the World Cup
+date: 2010-07-13T00:48:38-07:00
+author: Michael
+categories:
+  - R
+  - Statistics
+---
+Across the street at the [Revolution blog](http://blog.revolutionanalytics.com/2010/07/charting-the-world-cup.html) a nice example of using R with data from the cloud (see another post on this topic [here](http://www.schulte-mecklenbeck.com/?p=105)) shows us the distribution of fouls during the just finished World Cup in a nice barchart. Even more interesting than the fact that Holland rules this category is the way the data are collected from a Google spreadsheet page. 
+
+With the following simple code line:  
+`teams <- read.csv("http://spreadsheets.google.com/pub?key=tOM2qREmPUbv76waumrEEYg&#038;single=true&#038;gid=0&#038;range=A1%3AAG15&#038;output=csv")
+`  
+We can read a specific part from a spreadsheet hosted on Google into our local R environment. Some deatils: "&gid=" (sheet number) and "%range=" (cell ranges: A1%3A ) and "&output=csv" to download in CSV format.
+
+With some more lines, using the awsome [ggplot2](http://had.co.nz/ggplot2/)  
+`<br />
+library(qqplot2)<br />
+FOULS=t(DF2)[,c('Fouls')]<br />
+qplot(names(FOULS), as.numeric(FOULS), geom="bar", stat='identity', fill=Fouls) + xlab('Country') + ylab('Fouls') + coord_flip() + scale_fill_continuous(low="black", high="red") + labs(fill='Fouls')`
+
+We can produce the following chart:  
+[<img src="2010/07/World_Cup_2010_Fouls-300x300.png" alt="" title="World_Cup_2010_Fouls" width="300" height="300" class="alignleft size-medium wp-image-121" srcset="2010/07/World_Cup_2010_Fouls-300x300.png 300w, 2010/07/World_Cup_2010_Fouls-150x150.png 150w, 2010/07/World_Cup_2010_Fouls.png 400w" sizes="(max-width: 300px) 100vw, 300px" />](2010/07/World_Cup_2010_Fouls.png)
+
+Two things to note:  
+`c('Fouls')` is a handy way to address columns in a R data frame by name  
+`scale_fill_continuous(low="black", high="red")` takes care of the color coding of the bars in reference to the number of fouls 
+
+Easy and straight forward - ah - great job Spain 🙂 !!

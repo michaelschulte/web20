@@ -1,0 +1,308 @@
+---
+title: "Replication: In search of homo economicus"
+author: "MSM"
+date: "2022-10-02"
+categories: [Replication, Choice, Emotion, Failedreplication]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 10, 
+                      fig.height = 6,
+                      fig.align = 'center',
+                      cache = TRUE
+                      )
+library(tidyverse)
+library(kableExtra)
+library(gtools)
+library(effsize)
+library(viridis)
+library(here)
+```
+
+```{r}
+# load raw data
+raw <- read_csv(here('0_data/BAHS2021_raw_public.csv'))
+# read in experimental plan
+combinations <- read_csv(here('0_data/BAHS2021_combinations.csv')) %>%
+  select(-V1, -V2)
+```
+
+## Abstract
+
+Understanding the role of emotion in forming preferences is critical in helping firms choose effective marketing strategies and consumers make appropriate consumption decisions. In five experiments, participants made a set of binary product choices under conditions designed to induce different degrees of emotional decision processing. The results consistently indicate that greater reliance on emotional reactions during decision making is associated with greater preference consistency and less cognitive noise. Additionally, the results of a meta-analytical study based on data from all five experiments further show that products that elicit a stronger emotional response are more likely to yield consistent preferences.
+
+# Team Bachelor Autumn 2021
+- Michael Amherd 
+- Patrick Bargetze
+- Paco Buxtorf
+- Anja Grossrieder
+- Jana Portmann 
+- Cedric Thommen 
+
+[OSF](https://osf.io/82fx9/)
+[Pre-Reg (German)](https://osf.io/h2c5a)
+
+## Original work
+
+Lee, L., Amir, O., & Ariely, D. (2009). In search of homo economicus: Cognitive noise and the role of emotion in preference consistency. *Journal of consumer research, 36*(2), 173-187. [DOI](https://doi.org/10.1086/597160)
+
+```{r, demography}
+demographics <- 
+  raw %>%
+  select(Gender, Age)
+
+percent_female <- 
+  raw %>%
+  select(Gender) %>%
+  group_by(Gender) %>%
+  tally() %>%
+  mutate(perc = n/nrow(raw)*100) 
+```
+
+## Demographics
+
+We sampled `r nrow(raw)` participants (`r percent_female$perc[1]`% female, `r round(percent_female$perc[3],0)`% did not specify gender), with an average age *M* = `r round(mean(demographics$Age),1)`, *SD* = `r round(sd(demographics$Age),1)` years. Participants were recruited via [Amazon Mechanical Turk (AMT)](https://www.mturk.com) and paid a flat fee of USD 7.25/hour for completing the task.
+
+```{r, calc_stuff}
+# Coding of conditions 
+# Lee1a_* = Exp 1 - names
+# Lee2_* = Exp 1 - pictures
+# Lee3_* = Exp 2 - color
+# Lee4_* = Exp 2 - B&W
+# Lee_KNOWLEDGE = Knowledge questions
+
+# Lee Choices ----
+Lee_Choice <- raw %>%
+  select(ID, starts_with('L1'), starts_with('Lee')) %>%
+  pivot_longer(-ID,
+               values_to = 'choice') %>%
+  separate(name, into = c('Experiment', 'QuestionId')) %>%
+  na.omit() %>%
+  mutate(QuestionId = as.numeric(QuestionId)) %>%
+  left_join(combinations) %>%
+  sjlabelled::remove_all_labels() %>%
+  as_tibble() %>%
+  mutate(exp = case_when(Experiment %in% c('L1a', 'Lee2') ~ 'Experiment 1',
+                         Experiment %in% c('Lee3', 'Lee4') ~ 'Experiment 2',
+                         TRUE ~ 'NA'),
+         condition = case_when(Experiment == 'L1a' ~ 'names',
+                               Experiment == 'Lee2' ~ 'pictures',
+                               Experiment == 'Lee3' ~ 'color',
+                               Experiment == 'Lee4' ~ 'B&W',
+                               TRUE ~ 'NA'))
+
+# Lee Knowledge
+Lee_Know <- raw %>%
+  select(ID, starts_with('L_'))  %>%
+  pivot_longer(c(-ID)) %>%
+  separate(name, into = c('Experiment', 'Type', 'QuestionID')) %>%
+  sjlabelled::remove_all_labels() %>%
+  as_tibble()
+
+# Lee Product
+Lee_Product_Rating <- raw %>%
+  select(ID, starts_with('Rating_'))  %>%
+  pivot_longer(c(-ID)) %>%
+  separate(name, into = c('Experiment', 'Type', 'QuestionID')) %>%
+  sjlabelled::remove_all_labels() %>%
+  as_tibble()
+
+# build item list
+Lee_Items <- 
+tibble(coded_choice = 1:10, choice = c(
+"Smartphone holder",                                               
+"Solar power bank",                                              
+"Organiser with wireless charging station",                      
+"Smart reusable notebook",                                         
+"Lock with finger sensor",                                         
+"Sleep mask with Bluetooth earphones",                             
+"Pocket Projector",                                 
+"Mobile Photo Printer",                       
+"Personalized Airpods case with key fob",                          
+"Wireless Bluetooth Water Resistant Multi Purpose Speaker"))
+
+```
+
+## Method
+
+We replicated Experiment 1a PICTURES VERSUS NAMES and Experiment 2 COLOR VERSUS BLACK- AND-WHITE PICTURES. Participants were randomly assigned to one of the two experiments, giving us 75 participants per experiment and \~37 per condition.
+
+Participants first inspected information about `r nrow(Lee_Items)` consumer items (see example below) including the name of the product, a picture and a short description. Participants were asked to study the products as long as they wanted.
+
+Out of the `r nrow(Lee_Items)` products we generated a list of 45 pairwise choice with all possible combinations of products, where
+
+$combinations = {P*(P-1) \over 2}$
+
+hence, `r 10*(10-1)/2` combinations.
+
+Each participant then went through these 45 choices indicating her preference between the shown product. As indicated above, we replicated two experiments (1a and 2) with the following variations. In 1a the choice list consisted out of product pictures only (picture) or product names only (names); in 2 pictures were either in color (color) or black and white (b&w). Both manipulations represent different degrees of emotional and cognitive approaches to decision making.
+
+## Analysis
+
+As the dependent measure we calculated (in)consistency in choice patterns.
+
+## Experiment 1a picture v names
+
+Lee and colleagues report significant fewer transitivity violations in the picture condition (*M* = 2.7, *SD* = 4.7) than in the names condition (*M* = 4.6, *SD* = 6.3, *t*(532) = 4.08, *p* \< .001). Using the formula for Cohen's d we want to calculate:
+
+$d = {M_{2} - M_{1} \over SD_{pooled}}$
+
+where
+
+$SD_{pooled} = {\sqrt{SD_{1}^2 + SD_{2}^2} \over 2}$
+
+```{r, echo = TRUE}
+sd_pooled <- sqrt((4.7^2 + 6.3^2)/2)
+d <- (4.6 - 2.7) / sd_pooled
+```
+
+So, we get a Cohen's d = `r round(d,2)`, which constitutes a small effect according to Cohen, 1992. Lets see how our own replication does for Experiment 1a.
+
+Our 150 participants each made 45 choices, so we are expecting a tibble with 150\*45 = `r 150*45` rows. Lets see:
+
+```{r trans calculation, echo = TRUE}
+# generate data frame for choices
+Lee_Choice_Coded <- 
+Lee_Choice %>%
+  left_join(Lee_Items) %>%
+  mutate(combi1 = str_extract(combi1, pattern = "(\\d)+"),
+         combi2 = str_extract(combi2, pattern = "(\\d)+"),
+         combination = paste0(combi1, combi2))
+
+# subset relevant variables data frame 
+Lee_Choice_Select <- 
+   Lee_Choice_Coded %>%
+   select(Experiment, condition, ID, combination, coded_choice)
+Lee_Choice_Select
+```
+
+For both experiments (1a and 2) we have for each condition (`condition`) and participant (`ID`) the relevant item comparison (`combination`) and 45 responses (`coded_choice`, a numeric value for each possible answer, as described in `Lee_Items`). Note that we updated the items to something more relevant these days. 
+
+```{r choicepropfig}
+Lee_Choice_Coded_fig <- 
+Lee_Choice_Coded %>%
+  count(choice, condition) %>%
+  mutate(percent = n/sum(n)*100) %>%
+  ggplot(aes(reorder(choice, percent), percent, group = condition)) +
+           geom_line(aes(group = choice), colour = 'grey') +
+           geom_point(aes(colour = condition), stat = 'identity', size = 2.5, alpha = 0.9) +
+           coord_flip() + 
+           theme_bw() +
+           scale_colour_viridis(discrete = TRUE) +
+  labs(title = 'Choice patterns per condition',
+       x = 'Products',
+       y = 'Percent')
+
+```
+
+![](images/choicepropfig-1.png)
+<!-- drop shadow but problem with width
+<img src="images/choicepropfig-1.png" alt="Results" style = 'box-shadow: 5px 2px 2px black;'>
+-->
+
+### Check for transitivity
+
+Lee et al. write on p. 176 "For simplicity in reporting the results, we focus on violations in the form of three-way preference cycles (e.g., $p_{x} ≥ p_{y}, p_{y} ≥ p_{z}$ and $p_{z} ≥ p_{x}$)"
+
+So, we will do the same :) - first we setup a tibble with all possible triplets and then identify (in)transitivity for choices on each product pair and then pair-triplets.
+
+[gtools](https://cran.r-project.org/web/packages/gtools/index.html) provides functions to "Enumerate the Combinations or Permutations of the Elements of a Vector" - cool - exactly what we need ... The function takes two arguments n = the size of the source vector, in our case 10 products, and r = size of the target vector, our triplets. This gives us a 720x3 matrix (only the first 5 rows displayed here).
+
+```{r combinations, echo = TRUE}
+# generate combinations
+comb <- permutations(n = 10, r = 3)
+head(comb, 5)
+```
+
+We transfer the matrix into a tibble and paste together all combinations of products - so there are three pairs that identify the three combinations of products. The new variable defines all transitive choices for all possible permutations of choice pairs.
+
+```{r space, echo = TRUE}
+# generate space with all possible choice combinations
+space <- 
+as_tibble(comb) %>%
+  mutate(pair1 = paste0(V1,V2),
+         pair2 = paste0(V2,V3),
+         pair3 = paste0(V1,V3),
+         transitive = paste0(V1,V2,V1)) %>%
+  select(-starts_with('V'))
+space
+```
+
+Now for some joining. We want to join the actual choices of each participant back into the matrix we generated above, with all the permutations of my 10 items. This is a little step by step operation, cause we want to join based on three different variables (pairs 1, 2 and 3). The first join is straight forward, for every row in `pair 1` match the choice (and all other information about participants, experiment etc) from `Lee_Choice_Coded`, then rename the `coded_choice` variable and go on and match on `pair2` now - note that we add ID and condition (although ID should be enough?), rename again and then match based on `pair3`.
+
+```{r}
+test_space <-
+space %>%
+  left_join(Lee_Choice_Select, by = c('pair1' = 'combination')) %>%
+  rename(coded_choice1 = coded_choice) %>%
+  left_join(Lee_Choice_Select, by = c('pair2' = 'combination',
+                                      'ID' = 'ID',
+                                      'Experiment' = 'Experiment',
+                                      'condition' = 'condition')) %>%
+  rename(coded_choice2 = coded_choice) %>%
+  left_join(Lee_Choice_Select, by = c('pair3' = 'combination',
+                                      'ID' = 'ID',
+                                      'Experiment' = 'Experiment',
+                                      'condition' = 'condition')) %>%
+  rename(coded_choice3 = coded_choice)
+test_space
+```
+
+So, that looks about right - what is left to do is to paste together the actual choices and then test these choice triples `coded_choice_triple` against the `transitive` variable we generated above - which gives us a logical vector called `test`.
+
+```{r}
+test_space <-
+test_space %>%
+  mutate(choice_triple = paste0(coded_choice1, coded_choice2, coded_choice3)) %>%
+  mutate(test = transitive == choice_triple) %>%
+  select(-starts_with('pair'), -starts_with('coded_choice'))
+test_space
+```
+
+```{r}
+Lee_Intransitiv <- 
+test_space %>%
+  group_by(ID, Experiment, condition) %>%
+  summarise(transitive_test = sum(test),
+            intransitive = 45-transitive_test,
+            percent_intransitive = intransitive/45*100)
+
+Lee_Intransitiv %>%
+  group_by(Experiment, condition) %>%
+  summarise(av_intrans = mean(percent_intransitive),
+            sd_intrans = sd(percent_intransitive))
+
+# compare means
+Lee_Test1 <- 
+Lee_Intransitiv %>%
+  filter(Experiment == 'L1a' | Experiment == 'Lee2')
+
+Lee_Test2 <- 
+    Lee_Intransitiv %>%
+    filter(Experiment == 'Lee3' | Experiment == 'Lee4')
+```
+
+## Test Experiment 1
+We run two t-tests. For Experiment 1: names v. pictures.
+```{r}
+t.test(intransitive ~ condition, data = Lee_Test1)
+cohen.d(intransitive ~ condition, data = Lee_Test1)
+```
+## Test Experiment 2
+A second one for Experiment 2: color v. B&W
+```{r}
+t.test(intransitive ~ condition, data = Lee_Test2)
+cohen.d(intransitive ~ condition, data = Lee_Test2)
+```
+
+In the two ways we look at the two experiments - t-test significance and Cohen's d - well, there is not a lot going on in our replication - we get non-significant results for both Tests and negligible effect sizes.
+

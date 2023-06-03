@@ -1,0 +1,19 @@
+---
+title: R Style Guide
+date: 2012-09-21T22:59:18-07:00
+author: Michael
+categories:
+  - Google
+  - R
+  - Statistics
+---
+This is mainly a note to self:
+
+There are several style guides for R out there. I particularly like the one from [Google](https://google.github.io/styleguide/Rguide.xml "Google R Style Guide") and the somewhat lighter [version of Hadley](http://stat405.had.co.nz/r-style.html) (ggplot god).
+
+All of that style guide thinking started after a question on <stackoverflow.com> about R workflow &#8230; How do we organize large R projects. Hadley (again) is favoring an Load-Clean-Func-Do approach which looks somewhat like that:
+
+  * load.R # load data
+  * clean.R # clean up crap
+  * func.R # add functions
+  * do.R # do the work

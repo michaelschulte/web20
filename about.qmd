@@ -1,0 +1,31 @@
+---
+title: "About"
+image: '_content/_image/avatar.jpg'
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/SchulteMi
+    - icon: mastodon
+      text: Mastodon
+      href: https://scicomm.xyz/web/@schultem
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/michael-schulte-mecklenbeck-3a2271193/
+    - icon: github
+      text: Github
+      href: https://github.com/michaelschulte
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.co.uk/citations?user=qdLOuGwAAAAJ
+---
+## What I am interested in
+I study how people make decisions. More specifically, I am interested in what (cognitive) processes happen, when we make decisions and how we can measure all of that. Within these lines of research I developed my own tools to study decision processes ([WebDiP](https://github.com/michaelschulte/webdip), [Flashlight](https://github.com/michaelschulte/flashlight), [The pyeTribe](https://github.com/michaelschulte/ThePyeTribe)) and want to understand decisions in the lab, under controlled circumstances as well as in the wild.
+
+Furthermore I am interested in open [science|data|methods], replication studies and new (and old) teaching methods.
+
+## Current position
+University of Bern, Switzerland 
+
+Max-Planck-Institute for Human Development in Berlin. 
+

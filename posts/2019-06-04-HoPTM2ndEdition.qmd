@@ -1,0 +1,9 @@
+---
+title: BernR Meetup
+date: 2019-06-04T06:05:56-07:00
+author: Michael
+categories:
+  - Process Tracing
+  - Handbook
+---
+Today (Dec 10th 2018) we will meet for the first BernR Meetup (<https://www.meetup.com/Bern-R/>) &#8211; hope to learn new things and get to know cool R people. More to follow soon ..

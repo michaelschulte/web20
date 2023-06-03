@@ -1,0 +1,64 @@
+---
+title: The exams package
+date: 2016-06-11T02:09:52-07:00
+author: Michael
+categories:
+  - R
+  - Teaching
+---
+I gave the R package [exams](https://cran.r-project.org/web/packages/exams/index.html) a shot for my decision making lecture. Here is what it does:
+
+&#8220;Automatic generation of exams based on exercises in Sweave (R/LaTeX) or R/Markdown format, including multiple-choice questions and arithmetic problems. Exams can be produced in various formats, including PDF, HTML, Moodle XML, QTI 1.2 (for OLAT/OpenOLAT), QTI 2.1, ARSnova, and TCExam. In addition to fully customizable PDF exams, a standardized PDF format is provided that can be printed, scanned, and automatically evaluated.&#8221;
+
+After some fiddling and help from one of the authors (the incredible nice [Achim Zeileis](https://www.uibk.ac.at/statistics/personal/zeileis/index.html.en), Uni Innsbruck)  I got the following setup going:
+
+  * pool of ~ 100 questions in .Rmd format (all multiple choice, 3-6 answer options) grouped into lectures
+  * sampling out of the pool (e.g., 5 questions out of each lecture)
+  * random order of questions in each version of the exam (while keeping the lecture order, which I think is useful to give student more structure to work from)
+  * random order of the answers for each question
+  * exam with the correct answers
+
+<img class="alignleft size-medium wp-image-444" src="/uploads//2016/06/Screen-Shot-2016-06-11-at-11.00.22-203x300.png" alt="Screen Shot 2016-06-11 at 11.00.22" width="203" height="300" srcset="2016/06/Screen-Shot-2016-06-11-at-11.00.22-203x300.png 203w, 2016/06/Screen-Shot-2016-06-11-at-11.00.22-338x500.png 338w, 2016/06/Screen-Shot-2016-06-11-at-11.00.22.png 386w" sizes="(max-width: 203px) 100vw, 203px" /> 
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+There are three parts:
+
+  1. questions[] defining the answers to a question
+  2. solutions[] defining the correct answers
+  3. in LaTeX the actual question
+
+All of this information goes into an .Rmd file.
+
+Once this is done one has to define the questions to be included (the pool) and set the details for the selection process:
+
+<pre>sol &lt;- exams2pdf(myexam, 
+n = 2, 
+nsamp = 5, 
+dir = odir, 
+ template = c("my_exam", "solution"), 
+ encoding = 'UTF-8',
+ header = list(Date = "10.06.2016")
+)</pre>
+
+This code would give me 2 exams with a sample of 5 questions out of each block of questions.
+
+Pretty awesome (after some setup work).
+
+Thanks Achim et al. !!
+
+&nbsp;

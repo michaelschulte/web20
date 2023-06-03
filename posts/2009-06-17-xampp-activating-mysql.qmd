@@ -1,0 +1,23 @@
+---
+title: XAMPP activating mysql
+date: 2009-06-17T12:50:56-07:00
+author: Michael
+categories:
+  - Tech
+  - XAMPP
+---
+Here is the problem: I want to have a server (Apache, MySQL) on my local machine (for the current purpose it was a Windows machine) to do some developing, testing or a demo. Getting [XAMPP](http://www.apachefriends.org/en/xampp.html) at [Sourceforge](http://sourceforge.net) is straight forward, installing it works like a charm.
+
+BUT
+
+A problem coming back from time to time is the following: the MySQL daemon does not start.  
+Hmmmm
+
+Here are some steps that helped me:
+
+1) make sure to deactivate any services related to MySQL and Apache  
+2) shutdown XAMPP  
+3) to be sure I restart the machine  
+4) do not start XAMPP with the .bat file but use the MySQL and Apache batch scripts &#8211; these open a command window which you should not close as long as you use XAMPP
+
+Through these steps everything worked fine &#8230;

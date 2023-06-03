@@ -1,0 +1,28 @@
+---
+title: 'Everything is fucked &#8230;'
+date: 2016-08-12T00:05:23-07:00
+author: Michael
+categories:
+  - Ego depletion
+  - Replication
+  - Science
+  - Teaching
+---
+This syllabus of an (obviously) awesome class has a ton of good reads:
+
+[Everything is fucked: The&nbsp;syllabus](https://hardsci.wordpress.com/2016/08/11/everything-is-fucked-the-syllabus/)
+
+by Sanjay Srivastava
+
+I would have two additions:
+
+  1. [A multi lab replication project on ego-depletion](http://webcom.upmf-grenoble.fr/LIP/DMuller/resources/documents/HCAetal-IP-PPS.pdf) (Hagger & Chatzisarantis, 2016)
+  2. And the [response](doi: 10.1177/1745691616652878) from Roy Baumeister and Kathleen D. Vohs
+
+It&#8217;s a really good statement of how f&#8230; up things are (in addition to all the other good examples above) &#8230;
+
+<p class="p1">
+  “A new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die, and a new generation grows up that is familiar with it.” &#8211; Max Planck
+</p>
+
+&nbsp;

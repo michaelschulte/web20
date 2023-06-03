@@ -1,0 +1,38 @@
+---
+title: LaTeX tips
+date: 2009-06-25T11:13:33-07:00
+author: Michael
+categories:
+  - LaTeX
+  - Tech
+---
+Two things are often bothering when one starts to work with LaTeX: in text referencing of literature and Umlaute (for our German speaking friends) ****
+
+**Referencing:** Here is a list of 5 types of in text referencing. To get them to work in a LaTeX file you need to define a referencing style in your document (in the example I use APA &#8211; American Psychological Association), you can of course use any style you want!
+
+In the header:
+
+usepackage{apacite}  
+bibliographystyle{apacite}
+
+In the actual text part the command on the left results in the reference on the right:
+
+cite{Bortz1993} &#8211; (Bortz, 1993)  
+citeA{Bortz1993} &#8211; Bortz (1993)  
+citeNP{Campbell1959} &#8211; Campbell, 1959  
+citeauthor{Spiel2001} &#8211; Spiel citeyearNP{Bortz1993} &#8211; 1993
+
+At the end of the document enter a reference to your .bib file, in the example below my file is called biblio.bib: bibliography{biblio}
+
+**Umlaute**: In German there are several Umlaute that are not included in the standard english setup of a LaTeX installation. There are two ways to get them right: 1) given a standard LaTeX document use (again command on the left, result on the right): &#8220;a &#8211; ä &#8220;u &#8211; ü &#8220;o &#8211; ö) given that you actually want to write in German do the following:
+
+usepackage[german]{babel}  
+usepackage[ansinew]{inputenc}
+
+Two useful links:
+
+<span>1) Wikipedia book on LaTeX</span><span><a href="http://en.wikibooks.org/wiki/LaTeX"> http://en.wikibooks.org/wiki/LaTeX</a></span>
+
+<span>2) A <a href="http://www.uni-salzburg.at/portal/page?_pageid=138,456842&_dad=portal&_schema=PORTAL">page</a> at the University of Salzburg&#8217;s Psychology department (German!)</span>
+
+<span><a href="http://www.users.sbg.ac.at/~gdkleiter/">Gernot Kleiter</a> was the person who introduced me to LaTeX, decision making, good experimenting &#8230; actually, there should be a whole post about him &#8230;<br /> </span>

@@ -1,0 +1,24 @@
+---
+title: 'Why anybody should learn/use R &#8230;'
+date: 2011-08-02T06:36:14-07:00
+author: Michael
+categories:
+  - Methods
+  - R
+  - Statistics
+---
+I had a discussion the other day on the re-appearing topic why one should learn R &#8230;  
+I took the list below from the [R-Bloggers](http://www.r-bloggers.com/10-reasons-why-a-grad-student-should-use-r/) which argues why grad students should learn R:
+
+  * R is free, and lets grad students escape the burdens of commercial license costs.
+  * R has really good online documentation; and the community is unparalleled.  
+  * The command-line interface is perfect for learning by doing. 
+  * R is on the cutting edge, and expanding rapidly.
+  * The R programming language is intuitive.  
+  * R creates stunning visuals. 
+  * R and LaTeX work together — seamlessly. 
+  * R is used by practitioners in a plethora of academic disciplines. 
+  * R makes you think.  
+  * There’s always more than one way to accomplish something.
+
+This is a great list &#8211; I would add that from the perspective of an university it makes sense to save a lot of money in not having to buy licenses. And reproducability is great with R because the code is always written in a text-file and not bound by software versions (as in other three or four letter (feel free to combine from: [A, P, S]) packages).

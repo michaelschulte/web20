@@ -1,0 +1,10 @@
+---
+title: double, triple or even sextuple blind?
+date: 2009-06-14T03:21:01-07:00
+author: Michael
+categories:
+  - Review process
+  - Science
+---
+There is an interesting discussion on how the scientific review process should be handled going on at [orgtheory.net](http://orgtheory.net) blog. The point is that the obvious shortcomings in the current review system (the authors know who the editor is (and vice versa), the reviewer knows (or can easily infer) who the author is &#8230;) can be handle through triple blind reviews: authors, reviewers AND editors are included (anonymous upload to a webpage (id through a code), quatruple blind reviews: no one know who the editor of the journal is, quintimple blind: after publication of a paper the authors name is kept secret for some years or, and that&#8217;s the actual kicker: sextuple blind: there is no journal name any more &#8211; just the paper and the users decide whether it is worth citing or not &#8230;  
+In a more detailed way you can find this approach explained [here](http://orgtheory.wordpress.com/2007/01/23/a-modest-proposal-triple-blind-review/)

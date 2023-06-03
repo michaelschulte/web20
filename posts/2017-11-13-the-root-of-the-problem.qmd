@@ -1,0 +1,46 @@
+---
+title: The root of the problem
+date: 2017-11-13T05:44:06-07:00
+author: Michael
+categories:
+  - Replication
+---
+One of the root causes of where we are (as a science) in psychology and many other disciplines in terms of reproducibility of key (and other) results could not be better summed up than by the man himself Daryl Bem (2002):
+
+“If a datum suggests a new hypothesis, try to find additional evidence for it elsewhere in the data. If you see dim traces of interesting patterns, try to reorganize the data to bring them into bolder relief. If there are participants you don’t like, or trials, observers, or interviewers who gave you anomalous results, drop them (temporarily). Go on a fishing expedition for something — anything — interesting. ”
+
+&#8216;Go on a fishing expidition&#8217; &#8211; why should there come anything good from such advise? Bem goes on &#8230;
+
+&#8220;No, this is not immoral (SIC!). The rules of scientific and statistical inference that we overlearn in graduate school apply to the “Context of Justification.” They tell us what we can conclude in the articles we write for public consumption, and they give our readers criteria for deciding whether or not to believe us. But in the “Context of Discovery,” there are no formal rules, only heuristics or strategies.&#8221;
+
+I disagree with this statement, because the idea of finding something through torturing the data (until they confess) is a hug source of false positive results. We find an effect and falsely conclude that something is there when in fact there is nothing. I found the above quote when reading [this paper](https://psyarxiv.com/4tg9c/) by Zwaan, Etz, Lucas & Donnellan (2017) &#8211; a target article for [BBS](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences) which presents six common arguments against replication and a set of really good responses for such discussions.
+
+Here are the six &#8216;concerns&#8217; the authors discuss:
+
+<div class="page" title="Page 14">
+  <div class="section">
+    <div class="layoutArea">
+      <div class="column">
+        <p>
+          Concern I: Context Is Too Variable<br /> Concern II: The Theoretical Value of Direct Replications is Limited<br /> Concern III: Direct Replications Are Not Feasible in Certain Domains<br /> Concern IV: Replications are a Distraction<br /> Concern V: Replications Affect Reputations<br /> Concern VI: There is no Standard Method to Evaluate Replication Results
+        </p>
+        
+        <p>
+          Both are really good reads &#8211; for very different reasons.
+        </p>
+        
+        <p>
+          &nbsp;
+        </p>
+        
+        <p>
+          &#8212;
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+Bern, D. (2002). Writing the empirical journal article. In Darley, J. M., Zanna, M. P., & Roediger III, H. L. (Eds) (2002). _The Compleat Academic: A Career Guide_. Washington, DC: American Psychological Association.
+
+Zwaan, R. A., Etz, A., Lucas, R. E., & Donnellan, B. (2017, November 1). Making Replication Mainstream. Retrieved from [psyarxiv.com/4tg9c](https://psyarxiv.com/4tg9c)

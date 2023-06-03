@@ -1,0 +1,25 @@
+---
+title: Blind Haste (aka im Blindflug)
+date: 2018-01-09T05:47:29-07:00
+author: Michael
+categories:
+  - Perception
+  - Traffic psychology
+---
+Chance encounters sometimes lead to interesting and new projects. This is one of those cases &#8230; I got to know [Emanuel de Bellis](https://www.alexandria.unisg.ch/persons/4948) during my time at Nestle and we never stopped collaborating ever since (he actually lead my 2017 &#8216;skype to&#8217; statistics with my wife as a close second &#8230;)
+
+We got our hands on a rich dataset of speed measures the police in Zürich (Switzerland) does unbeknownst to the drivers during they year for planning purposes. The radar is put into a small black box hardly anybody realises driving by:
+
+<img class="aligncenter wp-image-604" src="/uploads//2018/01/IMG_2465.jpg" alt="" width="74" height="252" /> 
+
+(it&#8217;s the black box above the bin &#8211; not the bin!)
+
+So &#8211; we got these data from over a million cars and got to work with them trying to find an answer to a question in perception research: Do people perceive their environment differently when light conditions deteriorate? and (even more important) Do drivers change their driving speed accordingly.
+
+Well &#8211; they don&#8217;t &#8230; and here is correlational proof 🙂
+
+Stay tuned for a causal demonstration &#8211; oh yes!
+
+### [Blind haste: As light decreases, speeding increases](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188951) {#artTitle}
+
+Worldwide, more than one million people die on the roads each year. A third of these fatal accidents are attributed to speeding, with properties of the individual driver and the environment regarded as key contributing factors. We examine real-world speeding behavior and its interaction with illuminance, an environmental property defined as the luminous flux incident on a surface. Drawing on an analysis of 1.2 million vehicle movements, we show that reduced illuminance levels are associated with increased speeding. This relationship persists when we control for factors known to influence speeding (e.g., fluctuations in traffic volume) and consider proxies of illuminance (e.g., sight distance). Our findings add to a long-standing debate about how the quality of visual conditions affects drivers’ speed perception and driving speed. Policy makers can intervene by educating drivers about the inverse illuminance‒speeding relationship and by testing how improved vehicle headlights and smart road lighting can attenuate speeding.

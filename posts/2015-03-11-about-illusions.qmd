@@ -1,0 +1,20 @@
+---
+title: about illusions
+date: 2015-03-11T00:58:52-07:00
+author: Michael
+categories:
+  - Decision Making
+---
+[Andrew Gelman talked](http://andrewgelman.com/2015/03/10/the-illusion-of-the-illusion-of-control/) about a really [old paper](http://www.schulte-mecklenbeck.com/pubs/Kuehberger1995.pdf) I did together with [Anton Kühberger](http://www.uni-salzburg.at/index.php?id=29678) ages ago. It was actually the first paper / &#8216;real&#8217; scientific project I was involved in.
+
+It generated quite the buzz over its 20 year lifespan and was cited a whopping 13 times (stats look good without y-axis) &#8230;
+
+[<img class="alignleft size-medium wp-image-395" src="/uploads//2015/03/Screen-Shot-2015-03-11-at-08.55.15-300x93.png" alt="Stats" width="300" height="93" srcset="2015/03/Screen-Shot-2015-03-11-at-08.55.15-300x93.png 300w, 2015/03/Screen-Shot-2015-03-11-at-08.55.15.png 378w" sizes="(max-width: 300px) 100vw, 300px" />](/uploads//2015/03/Screen-Shot-2015-03-11-at-08.55.15.png)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+Going back to it, I was happy to see that we already talked about replication (and were very reluctant to push the button harder &#8211; as we would have not been able to get through the reviews, I guess) &#8230; Things have changed.

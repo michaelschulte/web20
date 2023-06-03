@@ -1,0 +1,17 @@
+---
+title: Inference and R
+date: 2009-06-05T13:28:22-07:00
+author: Michael
+categories:
+  - R
+  - Statistics
+---
+Dan Goldstein posted a short [overview of Inference](http://www.decisionsciencenews.com/?p=759) which allows working with R code in Microsoft Office and Excel.
+
+I want to point at [Sweave](http://www.statistik.lmu.de/~leisch/Sweave/) which does an excellent job in connecting R to LaTeX. Here is a short [demo](http://www.stat.umn.edu/~charlie/Sweave/) of Sweave which also connects the approach of Sweave to the &#8216;[literate programming](http://www-cs-faculty.stanford.edu/~knuth/lp.html)&#8216; idea of [Donald Knuth](http://www-cs-faculty.stanford.edu/~knuth/) (Father of &#8216;The Art of Computer Programming&#8217; and TeX). 
+
+The basic idea is to combine programming (an analysis in the case of R) with documentation into one process. This seems to be useful when one goes back to an older analysis and tries to find out what was done some months ago.
+
+Additionally you find a longer interview with Paul van Eikeren on the same topic [here](http://www.decisionstats.com/2009/06/04/interview-inference-for-r/).
+
+Enjoy!

@@ -1,0 +1,13 @@
+---
+title: R goes cloud
+date: 2010-04-16T23:24:03-07:00
+author: Michael
+categories:
+  - Methods
+  - R
+  - Statistics
+  - Tech
+---
+[Jeroen Ooms](http://www.stat.ucla.edu/~jeroen/cv.html) did for R what Google did for editing documents online. He created several software packages that help running R with a nice frontend over the Internet.  
+I first learned about Jeroen&#8217;s website through his [implementation of ggplot2](http://www.stat.ucla.edu/~jeroen/ggplot2/) &#8211; this page is useful to generate graphs with the powerful ggplot2 package without R knowledge, however it is even more helpful to learn ggplot2 code with the View-code panel function which displays the underlying R code. If you are into random effect models another package connected to [lme4](http://www.stat.ucla.edu/~jeroen/lme4.html) will guide you step by step through model building.  
+I think this is a great step forward for R and cloud computing!

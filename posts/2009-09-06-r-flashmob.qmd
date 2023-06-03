@@ -1,0 +1,80 @@
+---
+title: R flashmob
+date: 2009-09-06T23:07:06-07:00
+author: Michael
+categories:
+  - R
+  - Statistics
+---
+From: The R Flashmob Project  
+Subject: R Flashmob #2
+
+You are invited to take part in R Flashmob, the project that makes the  
+world a better place by posting helpful questions and answers about the  
+R statistical language to the programmer’s Q & A site stackoverflow.com
+
+Please forward this to other people you know who might like to join.
+
+FAQ
+
+Q. Why would I want to join an inexplicable R mob?
+
+A. Tons of other people are doing it.
+
+Q. Why else?
+
+A. Stackoverflow was built specifically for handling programming questions.  
+It’s a better mousetrap. It offers search (and is well indexed by search engines),  
+tagging, voting, the ability to choose the “best” answer to a question, and the ability to  
+edit questions and answers as technology progresses. It has a karma system to  
+reward people who are happy to help and discourage MLJs (mailing list jerks).
+
+Q. Do the organizers of this MOB have any commercial interest in stackoverflow?
+
+A. None at all. We’re just convinced it is the best way to help and promote R. All  
+the content submitted to stackoverflow is protected by a Creative Commons  
+CC-Wiki License, meaning anyone is free to copy, distribute, transmit, and  
+remix the information on stackoverflow. All the content on stackoverflow is  
+regularly made available for download by the public.
+
+INSTRUCTIONS – R MOB #2  
+Location: stackoverflow.com  
+Start Date: Tuesday, September 8th, 2009  
+Start Time:  
+10:04 AM – US Pacific  
+11:04 AM – US Mountain  
+12:04 PM – US Central  
+1:04 PM – US Eastern  
+6:04 PM – UK  
+7:04 PM – Continental W. Europe  
+5:04 AM (Weds) – New Zealand (birthplace of R)  
+Duration: 50 minutes
+
+(1) At some point during the day on September 8th, synchronize your watch to  
+http://timeanddate.com/worldclock/personal.html?cities=137,75,64,179,136,37,22
+
+(2) The mob should form at precisely 4 minutes past the hour and not beforehand.
+
+(3) At 4 minutes past the hour, you should arrive at stackoverflow.com, log in,  
+and post 3 R questions. Be sure to tag the questions “R”. See the posting  
+guidelines at http://stackoverflow.com/faq to understand what makes a good  
+question.
+
+(4) Follow R Flashmob updates at http://twitter.com/rstatsmob
+
+(5) Post twitter messages tagged #rstats and #rstatsmob during the mob,  
+providing links to your questions.
+
+(6) During the R MOB, you can chat with other participants on the #R channel  
+on IRC (freenode). To do this, install the Chatzilla extension on Firefox.  
+Click “freenode” on the main screen. Then type /join #R in the field at the  
+bottom of the screen. Then chat.
+
+(7) If you finish posting your three questions within the 50 minutes, stick  
+around to answer questions and give “up votes” to good questions and answers.
+
+(8) IMPORTANT: After posting, sign the R Flashmob guestbook at  
+http://bit.ly/6F8B2
+
+(9) Return to what you would otherwise have been doing. Await  
+instructions for R MOB #3.

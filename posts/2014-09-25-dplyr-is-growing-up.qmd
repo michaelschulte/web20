@@ -1,0 +1,28 @@
+---
+title: 'dplyr is growing up &#8230;'
+date: 2014-09-25T01:37:27-07:00
+author: Michael
+categories:
+  - R
+---
+&nbsp;
+
+[<img class="alignleft size-medium wp-image-361" src="/uploads//2014/09/tvs-old-new-300x170.jpg" alt="tvs-old+new" width="300" height="170" srcset="2014/09/tvs-old-new-300x170.jpg 300w, 2014/09/tvs-old-new.jpg 400w" sizes="(max-width: 300px) 100vw, 300px" />](/uploads//2014/09/tvs-old-new.jpg)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+dplyr is the new plyr &#8211; and it is awesome!
+
+fast, consistent and easy to read &#8230; check out a set of instructional pages, presentation and videos [here](http://www.r-bloggers.com/hands-on-dplyr-tutorial-for-faster-data-manipulation-in-r/)
+
+Thanks [Hadley Wickham](http://had.co.nz/)

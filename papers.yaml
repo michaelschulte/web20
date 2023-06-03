@@ -1,0 +1,423 @@
+EyeTracking:
+  title: 'Eye tracking: empirical foundations for a minimal reporting guideline'
+  authors:
+  - Holmqvist, K.
+  - Örbom, S. L.
+  - Hooge, I. T.
+  - Niehorster, D. C.
+  - Alexander, R. G.
+  - Andersson, R.
+  - me
+  - Hessels, R. S
+  year: 2022
+  venue: Behavior Research Methods.
+  paper: /pdf/Holmqvist2022.pdf
+
+SameData:
+  title:  'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis'
+  authors:
+    - Schweinsberg, Martin
+    - Feldman, Michael
+    - Staub, Nicola
+    - van den Akker, Olmo R
+    - van Aert, Robbie CM
+    - Van Assen, Marcel ALM
+    - Liu, Yang
+    - Althoff, Tim
+    - Heer, Jeffrey
+    - Kale, Alex
+    - me
+    - others.
+  venue: Organizational Behavior and Human Decision Processes.
+  paper: https://www.sciencedirect.com/science/article/pii/S0749597821000200?via%3Dihub
+  year: 2021
+
+Dynamic:
+  authors:
+    - Claudio Georgii
+    - me
+    - Anna Richard
+    - Zoé Van Dyck
+    - Jens Blechert
+  year: 2020
+  title: "The dynamics of self-control: within-participant modeling of binary food choices and underlying decision processes as a function of restrained eating"
+  venue: Psychological Research.
+  paper: /pdf/Georgii2019.pdf
+
+Attention:
+  authors:
+    - Tomas Lejarraga
+    - me
+    - Thorsten Pachur
+    - Ralph Hertwig
+  year: 2019
+  title: 'The attention–aversion gap: how allocation of attention relates to loss aversion'
+  venue: Evolution and Human Behavior.
+  paper: /pdf/Lejarraga2019.pdf
+
+Mouse:
+  authors:
+    -  PJ Kieslich
+    - F Henninger
+    - DU Wulff
+    - JMB Haslbeck
+    - me
+  year: 2019
+  title: 'Mouse-tracking: A practical guide to implementation and analysis'
+  venue: A Handbook of Process Tracing Methods.
+  paper: https://doi.org/10.31234/osf.io/zuvqa
+
+
+Foundations:
+  authors:
+    - Jonathan Tennant
+    - Jennifer Beamer
+    - Jeroen Bosman
+    - Björn Brembs
+    - Neo Christopher Chung
+    - Gail Clement
+    - Tom Crick
+    - Jonathan Dugan
+    - Alastair Dunning
+    - David Eccles
+    - me
+    - others
+  year: 2019
+  title: Foundations for Open Scholarship Strategy Development
+  venue: OSF.
+  paper: https://osf.io/preprints/metaarxiv/b4v8p/
+
+
+Inference:
+  authors:
+    - Martin Schoemann
+    - me
+    - Frank Renkewitz
+    - Stefan Scherbaum
+  year:  2019
+  title: 'Forward inference in risky choice: Mapping gaze and decision processes'
+  venue: Journal of Behavioral Decision Making.
+  paper: /pdf/Schoemann2019.pdf
+  github: https://osf.io/q3ybt/
+
+BBS:
+  authors:
+  - Anton Kuehberger
+  - me
+  year: 2018
+  title: Selecting target papers for replication
+  venue: Behavioral and Brain Sciences.
+  paper: https://doi.org/10.1017/S0140525X18000742
+
+
+RRP:
+  authors:
+  - Michael O’Donnell
+  - Leif D Nelson
+  - Evi Ackermann
+  - Balazs Aczel
+  - Athfah Akhtar
+  - me
+  - others
+  year: 2018
+  title: 'Registered replication report: Dijksterhuis and van Knippenberg (1998)'
+  venue: Perspectives on Psychological Science.
+  paper: /pdf/ODonnell2018.pdf
+
+Facial:
+  authors:
+  - Sabrina Stöckli
+  - me
+  - Stefan Borer
+  - Andrea C Samson
+  year: 2018
+  title: 'Facial expression analysis with AFFDEX and FACET: A validation study'
+  venue: Behavior research methods.
+  paper: /pdf/Stockli2018.pdf
+
+Blind:
+  authors:
+  - Emanuel de Bellis
+  - me
+  - Wernher Brucks
+  - Andreas Herrmann
+  - Ralph Hertwig
+  year: 2018
+  title: 'Blind haste: As light decreases, speeding increases'
+  venue: PLoS one.
+  paper: /pdf/deBellis2018.pdf
+
+
+RRPMulti:
+  authors:
+    - Braeden Hall
+    - Jordan Wagge
+    - Christopher R Chartier
+    - Gerit Pfuhl
+    - Stefan Stieger
+    - Evie Vergauwe
+    - Erica D Musser
+    - Leslie Cramblet Alvarez
+    - me
+    - others
+  year: 2018
+  title: 'Registered Replication Report: A Large Multilab Cross-Cultural Conceptual Replication of Turri, Buckwalter, & Blouw (2015)'
+  venue: OSF.
+  paper: https://psyarxiv.com/zeux9/
+
+
+8steps:
+  authors:
+    - Sophia Crüwell
+    - Johnny van Doorn
+    - Sophia Crüwell
+    - Johnny van Doorn
+    - Alexander Etz
+    - Matthew C Makel
+    - Hannah Moshontz
+    - Jesse Niebaum
+    - Amy Orben
+    - Sam Parsons
+    - me
+  year: 2018
+  title:  '8 Easy Steps to Open Science: An Annotated Reading List (To Give to your busy Supervisor/Office Mate)'
+  venue: Open Science.
+  paper: https://psyarxiv.com/cfzyx
+
+Invisible:
+  authors:
+  - me
+  - Nanon L Spaanjaars
+  - Cilia LM Witteman
+  year: 2017
+  title: 'The (in) visibility of psychodiagnosticians expertise'
+  venue: Journal of behavioral decision making.
+  paper: /pdf/Schulte-Mecklenbeck2015.pdf
+
+PT:
+  authors:
+    - Thorsten Pachur
+    - me
+    - Ryan O Murphy
+    - Ralph Hertwig
+  year: 2017
+  title: 'Prospect Theory Reflects Selective Allocation of Attention'
+  venue: 'Journal of Experimental Psychology: General.'
+  paper: /pdf/Pachur2018.pdf
+
+
+PTMethods:
+  authors:
+    - me
+    - J.G. Johnson
+    - U. Böckenholt
+    - D. Goldstein
+    - J. Russo
+    - N. Sullivan
+    - M. Willemsen
+  year: 2017
+  title: 'Process tracing methods in decision making: on growing up in the 70ties'
+  venue:  Current Directions in Psychological Science.
+  paper: /pdf/Schulte-Mecklenbeck2017Process.pdf
+
+Inducing:
+  authors:
+  - me
+  - Anton Kühberger
+  - Benjamin Gagl
+  - Florian Hutzler
+  year: 2017
+  title: 'Inducing Thought Processes: Bringing Process Measures and Cognitive Processes Closer Together'
+  venue: Journal of Behavioral Decision Making.
+  paper: /pdf/Schulte-Mecklenbeck2017.pdf
+
+PyeTribe:
+  authors:
+  - Tomas Lejarraga
+  - me
+  - Daniel Smedema
+  year: 2016
+  title: 'The pyeTribe: Simultaneous eyetracking for economic games'
+  venue: Behavior Research Methods.
+  paper: /pdf/Lejarraga2016.pdf
+
+Deliberative:
+  authors:
+  - Aleksandrina Skvortsova
+  - me
+  - Sophie Jellema
+  - Alan Sanfey
+  - Cilia Witteman
+  year: 2016
+  title: 'Deliberative versus intuitive diagnostic decision'
+  venue: Psychology.
+  paper: /pdf/Skvortsova2016.pdf
+
+Out:
+  authors:
+  - me
+  - Anton Kühberger
+  year: 2014
+  title: 'Out of sight--out of mind? Information acquisition patterns in risky choice framing'
+  venue: Polish Psychological Bulletin.
+  paper: /pdf/Schulte-Mecklenbeck2014.pdf
+
+Lack:
+  authors:
+  - me
+  - Matthias Sohn
+  - Emanuel de Bellis
+  - Nathalie Martin
+  - Ralph Hertwig
+  year: 2013
+  title: 'A Lack of Appetite for Information and Computation: Simple Heuristics in Food Choice'
+  venue: 'Appetite.'
+  paper: /pdf/Schulte-Mecklenbeck2013.pdf
+
+Flash:
+  authors:
+  - me
+  - Ryan O Murphy
+  year: 2012
+  title: 'Flashlight as a process tracing method'
+  venue: Encyclopedia of cyber behavior.
+  paper: /pdf/Schulte-Mecklenbeck2012.pdf
+
+ProcessJDM:
+  authors:
+  - me
+  - Anton Kühberger
+  - Rob Ranyard
+  year: 2011
+  title: 'The role of process data in the development and testing of process models of judgment and decision making'
+  venue: 'Judgment & Decision Making.'
+  paper: /pdf/Schulte-Mecklenbeck2011Process.pdf
+
+Flash2:
+  authors:
+  - me
+  - Ryan O Murphy
+  - Florian Hutzler
+  year: 2011
+  title: 'Flashlight--Recording information acquisition online'
+  venue: Computers in human behavior.
+  paper: /pdf/Schulte-Mecklenbeck2011.pdf
+
+AIS:
+  authors:
+  - Oswald Huber
+  - Odilo W Huber
+  - me
+  year: 2011
+  title: 'Determining the information participants need: methods of active information search'
+  venue: A handbook of process tracing methods for decision research.
+  paper: /pdf/Huber2011.pdf
+
+PTHandbook:
+  authors:
+  - me
+  - Anton Kühberger
+  - Rob Ranyard
+  year: 2011
+  title: 'A handbook of process tracing methods for decision research: A critical review and user’s guide'
+
+
+Intro:
+  authors:
+  - A Kuhberger
+  - me
+  - Rob Ranyard
+  year: 2010
+  title:  'Windows for understanding the mind: Introduction to a handbook of process tracing methods for decision research'
+  venue: 'A handbook of process tracing methods for decision research: A critical review and user’s guide.'
+
+Skin:
+  authors:
+  - Bernd Figner
+  - Ryan O Murphy
+  - me
+  - Anton Kuehberger
+  - Rob Ranyard
+  year: 2010
+  title:
+  venue: 'A handbook of process tracing methods for decision research: A critical review and user’s guide.'
+  paper:
+
+Quick:
+  authors:
+  - Elisabeth Norman
+  - me
+  year: 2009
+  title: 'Take a quick click at that! Mouselab and eye-tracking as tools to measure intuition'
+  venue: 'Foundations for tracing intuition.'
+  paper: /pdf/Norman2009.pdf
+
+
+PH:
+  authors:
+  - Eric J Johnson
+  - me
+  - Martijn C Willemsen
+  year: 2008
+  title: 'Process models deserve process data: Comment on Brandstätter, Gigerenzer, and Hertwig (2006)'
+  venue: Psychological Review.
+  paper: /pdf/JohnsonSchulte-MecklenbeckWillemsen2008.pdf
+
+
+Webdip:
+  authors:
+  - me
+  - Moritz Neun
+  year: 2005
+  title: 'WebDiP: A tool for information search experiments on the World-Wide Web'
+  venue: Behavior Research Methods.
+  paper: /pdf/Schulte-Mecklenbeck2005.pdf
+
+
+APS:
+  authors:
+  - me
+  year: 2005
+  title: 'Brave New World... Wide Web: Blending Old Teaching'
+  venue: APS Observer.
+  paper: https://www.psychologicalscience.org/observer/brave-new-world-wide-web
+
+InfoSearch:
+  authors:
+  - me
+  - Oswald Huber
+  year: 2003
+  title: 'Information search in the laboratory and on the Web: With or without an experimenter'
+  venue: 'Behavior Research Methods, Instruments, & Computers.'
+  paper: /pdf/Schulte-Mecklenbeck2003.pdf
+
+hypo:
+  authors:
+  - Anton Kühberger
+  - me
+  - Josef Perner
+  year: 2002
+  title: 'Framing decisions: Hypothetical and real'
+  venue: Organizational Behavior and Human Decision Processes.
+  paper: /pdf/Kuehberger2002.pdf
+
+framing:
+  authors:
+  - Anton Kühberger
+  - me
+  - Josef Perner
+  year: 1999
+  title: 'The effects of framing, reflection, probability, and payoff on risk preference in choice tasks'
+  venue:  Organizational behavior and human decision processes.
+  paper: /pdf/Kuhberger1999.pdf
+
+Mind:
+  authors:
+  - Anton Kühberger
+  - Josef Perner
+  - me
+  - Robert Leingruber
+  year: 1995
+  title: 'Choice or no choice: is the langer effect evidence against simulation'
+  venue: "Mind & language."
+  paper: /pdf/Kuehberger1995.pdf

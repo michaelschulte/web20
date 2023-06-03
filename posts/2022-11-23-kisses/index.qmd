@@ -1,0 +1,278 @@
+---
+title: "Replication: Kisses"
+author: "MSM"
+date: "2023-01-16"
+draft: FALSE
+toc: TRUE
+categories: [Replication, Emotion, Choice]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 8, 
+                      fig.height = 8,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(kableExtra)
+library(sjPlot)
+library(effsize)
+library(tidyr)
+library(broom)
+library(lme4)
+library(here)
+library(monochromeR)
+group <- 'BAHS2022'
+demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv')))
+emo_skala_rohdaten <- read_csv(here(paste0('0_data/', group, '_emo_skala_rohdaten_pub.csv')))
+response_non_numeric <- read_csv(here(paste0('0_data/', group, '_responses_non_numeric_pub.csv')))
+response_numeric <- read_csv(here(paste0('0_data/', group, '_responses_numeric_pub.csv')))
+options(digits=2)
+
+source(here('my_theme.R'))
+```
+
+# Original work
+
+Rottenstreich, Y., & Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk. *Psychological science, 12*(3), 185-190. [DOI](https://doi.org/10.1111/1467-9280.00334)
+
+# Team Bachelor Autumn 2022
+- Dominik Basler
+- Luca Burkart
+- Sabrina Clement
+- Tanja Erni
+- Dunia Lemqadem
+- Venusza Sivaramalingam
+
+[OSF](https://osf.io/y5b43/)
+[Pre-Reg (German)](https://osf.io/m842k)
+
+
+## Abstract
+Prospect theory's S-shaped weighting function is often said to reflect the psychophysics of chance. We propose an affective rather than psychophysical deconstruction of the weighting function resting on two assumptions. First, preferences depend on the affective reactions associated with potential outcomes of a risky choice. Second, even with monetary values controlled, some outcomes are relatively affect-rich and others relatively affect-poor. Although the psychophysical and affective approaches are complementary, the affective approach has one novel implication: Weighting functions will be more S-shaped for lotteries involving affect-rich than affect-poor outcomes. That is, people will be more sensitive to departures from impossibility and certainty but less sensitive to intermediate probability variations for affect-rich outcomes. We corroborated this prediction by observing probability-outcome interactions: An affect-poor prize was preferred over an affect-rich prize under certainty, but the direction of preference reversed under low probability. We suggest that the assumption of probability-outcome independence, adopted by both expected-utility and prospect theory, may hold across outcomes of different monetary values, but not different affective values.
+
+# Replication
+
+Does affect change the way we evaluate choice options? To answer this question we run a direct replication and extension of Rottenstreich & Hsee (2001).
+
+# Demographics
+
+We sample `r nrow(demographie)` Swiss participants (`r round(nrow(demographie[demographie$Gender == 'Weiblich',])/nrow(demographie)*100, 2)`% female, 1 non-binary and 2 missing) with an average age of *M* = `r mean(demographie$Alter)` years (*SD* = `r sd(demographie$Alter)`). 
+
+# Experiment 1
+
+In experiment 1 Rottenstreich et al. explored the difference between participants making choices in an *affect-poor* or *affect-rich* condition between *certain* and *uncertain* (risky) choices. One alternative had "the opportunity to meet and kiss your favorite movie star" or USD 50.- in cash for certain as the options. The other had "the opportunity to meet and kiss your favorite movie star" or a 1% chance of winning USD 50.- in cash. The interaction between these affect and money options was the central test for their argument.
+
+```{r}
+# Exp 1
+Exp1_counts <- 
+response_non_numeric %>% 
+  filter(Frage %in% c('F1', 'F2')) %>%
+  mutate(response_numeric = case_when(response == 'Geld' ~ 1,
+                                      TRUE ~ 0)) %>%
+         rename(condition = Sicherheit) %>%
+  group_by(condition) %>%
+  count(response_numeric) %>%
+  group_by(response_numeric) %>%
+  mutate(perc_choice = n/sum(n)) %>%
+  mutate(response = case_when(response_numeric == 0 ~ 'kiss',
+                              response_numeric == 1 ~ 'cash'),
+         condition = case_when(condition == 'S' ~ '100%',
+                               condition == 'U' ~ '1%')) %>%
+  select(-response_numeric)
+
+```
+
+Looking back at Rottenstreich et al.'s (2001) (see @fig-Rottenstreich)    results we see that the authors find quite a strong interaction effect with differences between the 1% and 100% option of more than 30 percentage points in the choices ... 
+
+![Results Rottenstreich et al. Exp 1](Rottenstreich_Exp1.png){#fig-Rottenstreich}
+
+Inspecting our results we see the interaction effect but, in comparison, weaker with differences of roughly 20 percentage points.
+```{r}
+#| label: fig-Exp1
+#| fig-cap: "Interaction between responses in emotional (kiss) vs. money option (cash)."
+Exp1_counts %>%
+  ggplot(aes(condition, perc_choice, group = response, colour = as.factor(response))) +
+  geom_point(stat = 'identity', size = 3) +
+  geom_line(linewidth = 2) +
+  scale_color_viridis_d() +
+  ylim(0,1) +
+  labs(x = 'Condition',
+       y = 'Percent Choice',
+       color = 'Responses') +
+  theme_my_web()
+```
+
+This is also shown in a Chi^2 test to compare choice proportions. But hey - different times, different country - there is something there to work with ... lets move to Experiment 2 an see whether making the context of choices more concrete (from kisses to travel) and switching from choice to willingness to pay (WTP - for our economist friends) will change something in the results and replication.
+
+```{r}
+Exp1_calc <-   
+  response_non_numeric %>% 
+    filter(Frage %in% c('F1', 'F2')) 
+
+chisq.test(Exp1_calc$response, Exp1_calc$Sicherheit, correct = FALSE)
+```
+
+# Experiment 2
+
+In the second experiment again an uncertain condition was pitched against a high probability (99%) condition. From the paper: 'One group of participants was presented with a USD 500 coupon that could be redeemed toward expenses associated with a summertime European vacation. Another group of participants was presented with a USD 500 coupon that could be used toward tuition payments at their university.' Note that we changed the task replacing the trip to Europe with a trip to the USA. The results looked as follows (see @fig-Rottenstreich2):
+
+![Results Rottenstreich et al. Exp 2](Tab2.png){#fig-Rottenstreich2}
+
+
+```{r}
+Exp2_WTP <-
+  response_numeric %>% 
+  filter(Frage %in% c('F6', 'F7', 'F8', 'F9')) %>%
+  mutate(emotional = case_when(Frage == 'F6' ~ 'USA',
+                               Frage == 'F7' ~ 'Tuition',
+                               Frage == 'F8' ~ 'USA',
+                               Frage == 'F9' ~ 'Tuition'),
+         condition = case_when(Sicherheit == 'S' ~ 'certain',
+                               Sicherheit == 'U' ~ 'uncertain'),
+         condition = factor(condition, levels = c('uncertain', 'certain')))
+
+```
+
+But first some housekeeping: the `plot` function from Base R is super useful to quickly get an overview of the values of a variable - so for our WTP responses (which were unrestricted in the questionnaire, we just checked that a number larger or equal to zero was entered) we quickly see that there is one response that stands out. Most outlier definitions (and there are plenty) would flag this response (> 9000) so for our analysis we will take out this one response:  
+
+```{r fig.height=3}
+#| label: fig-withoutlier
+#| fig-cap: "WTP before data cleaning."
+plot(Exp2_WTP$value)
+```
+
+This results in a much nicer distribution as can be seen in @fig-withoutlier: 
+
+```{r}
+#| label: fig-withoutoutlier
+#| fig-cap: "WTP after removing outlier > 9000."
+Exp2_WTP <-
+Exp2_WTP %>%
+  filter(!value > 9000)
+plot(Exp2_WTP$value)
+```
+
+
+Inspecting the results in @fig-results2 we see that the interaction effect is basically gone revealing a very similar pattern to the original. A main effect for *condition* with a roughly 100 units increase in willingness to pay was found for tuition as well as the USA trip (see fig-results2).
+
+```{r}
+#| label: fig-results2
+#| fig-cap: "WTP results from experiment 2 for conditions uncertain v. certain"
+Exp2_WTP %>%
+  group_by(condition, emotional) %>%
+  summarise(m_value = list(mean_cl_boot(value))) %>%
+  unnest(m_value) %>%
+  ggplot(aes(condition, y, group = emotional, colour = as.factor(emotional))) +
+  geom_point(position=position_dodge(width=0.1), size = 3) +
+  geom_errorbar(aes(ymin = ymin, ymax = ymax), width = .1, position=position_dodge(width=0.1)) +
+  geom_line(position=position_dodge(width=0.1), linewidth = 2) +
+  scale_color_viridis_d() +
+  theme_my_web() +
+  labs(y = 'WTP',
+       color = "Response")
+```
+
+ The graphical results are also confirmed in an ANOVA 
+ with a significant effect for *condition*.
+ 
+ 
+```{r}
+m_WTP <- aov(value ~ condition * emotional, data = Exp2_WTP)  
+summary(m_WTP)
+```
+
+That is also found in a multi-level model, predicting WTP with condition X emotion adding a random effect for participants, see @tbl-multi2. No effect for condition or the interaction between the two predictors was found. 
+
+```{r}
+#| label: tbl-multi2
+#| tbl-cap: "Multi Level regression results predicting WTP with condition X emotion"
+lmer_WTP <- lmer(value ~ condition * emotional + (1|ID), data = Exp2_WTP)
+tab_model(lmer_WTP, 
+          show.df = TRUE, 
+          show.stat = TRUE)
+```
+
+# Experiment 3
+
+In the last experiment the domain was switched from positive (receiving money) to negative (potential punishment). The setup read as follows: 'Participants were asked to imagine that they were required to participate in a psychological experiment. Some participants were told that the hypothetical experiment entailed some chance of a “short, painful, but not dangerous electric shock. Other participants were told that the hypothetical experiment entailed some chance of a $20 cash penalty'. The probability of the shock/penalty was varied between 1% and 99% (comparable to Experiment 2). The original results were as follows (see @fig-Rottenstreich3):
+
+![Results Rottenstreich et al. Exp 3](Tab3.png){#fig-Rottenstreich3}
+
+```{r}
+Exp3_WTP <-
+  response_numeric %>% 
+  filter(Frage %in% c('F15', 'F16', 'F17', 'F18')) %>%
+  mutate(Punish = case_when(Frage == 'F15' ~ 'Shock',
+                               Frage == 'F16' ~ 'Money',
+                               Frage == 'F17' ~ 'Shock',
+                               Frage == 'F18' ~ 'Money'),
+         condition = case_when(Sicherheit == 'S' ~ 'certain',
+                               Sicherheit == 'U' ~ 'uncertain'),
+         condition = factor(condition, levels = c('uncertain', 'certain')))
+
+```
+
+Again, before looking at our own results - the outlier is back (it was actually always the same person). We, again, removed the outlier (see @fig-withoutlier3).
+
+```{r fig.height=3}
+#| label: fig-withoutlier3
+#| fig-cap: "WTP before data cleaning."
+plot(Exp3_WTP$value)
+
+Exp3_WTP <-
+Exp3_WTP %>%
+  filter(!value > 2000)
+```
+
+For shock, inspecting @fig-results3, our results look comparable to the original, but for money there is a much smaller WTP in our data and for the certain condition basically ignorance of the monetary punishment.
+
+```{r}
+#| label: fig-results3
+#| fig-cap: "WTP results from experiment 3 for conditions certain X negative response"
+Exp3_WTP %>%
+  group_by(condition, Punish) %>%
+  summarise(m_value = list(mean_cl_boot(value))) %>%
+  unnest(m_value) %>%
+  ggplot(aes(condition, y, group = Punish, colour = as.factor(Punish))) +
+  geom_point(position=position_dodge(width=0.1), size = 3) +
+  geom_errorbar(aes(ymin = ymin, ymax = ymax), width = .1, position=position_dodge(width=0.1)) +
+  geom_line(position=position_dodge(width=0.1), linewidth = 2) +
+  scale_color_viridis_d() +
+  theme_my_web() +
+  labs(x = 'condition',
+       y = 'WTP',
+       color = 'Response')
+```
+
+This visual results can also be seen in a clear effect of the type of punishment (money v. shock) in an ANOVA.
+
+```{r}
+m_WTP <- aov(value ~ Sicherheit * Punish, data = Exp3_WTP)  
+
+summary(m_WTP)
+```
+
+As well as the multi-level model, predicting WPA with condition X punishment, with a random effect for participants (see @tbl-multi3).
+
+```{r}
+#| label: tbl-multi3
+#| tbl-cap: "Multi Level regression results predicting WTP with condition X punishment"
+
+lmer_WTP <- lmer(value ~ Sicherheit * Punish + (1|ID), data = Exp3_WTP)
+
+tab_model(lmer_WTP, 
+          show.df = TRUE, 
+          show.stat = TRUE)
+```
+
+
+

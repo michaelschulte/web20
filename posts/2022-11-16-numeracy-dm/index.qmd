@@ -1,0 +1,166 @@
+---
+title: "Replication: Numeracy and decision making"
+author: "MSM"
+date: "2022-12-16"
+draft: false
+categories: [Replication, Framing, Numeracy, Failedreplication]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 8, 
+                      fig.height = 8,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(kableExtra)
+library(sjPlot)
+library(effsize)
+library(tidyr)
+library(broom)
+library(lme4)
+library(here)
+group <- 'BAFS2022'
+demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv')))
+framing <- read_csv(here(paste0('0_data/', group, '_framing_pub.csv')))
+numeracy <- read_csv(here(paste0('0_data/', group, '_numeracy_pub.csv')))
+options(digits=2)
+```
+
+## Abstract
+A series of four studies explored how the ability to comprehend and transform probability numbers relates to performance on judgment and decision tasks. On the surface, the tasks in the four studies appear to be widely different; at a conceptual level, however, they all involve processing numbers and the potential to show an influence of affect. Findings were consistent with highly numerate individuals being more likely to retrieve and use appropriate numerical principles, thus making themselves less susceptible to framing effects, compared with less numerate individuals. In addition, the highly numerate tended to draw different (generally stronger or more precise) affective meaning from numbers and numerical comparisons, and their affective responses were more precise. Although generally helpful, this tendency may sometimes lead to worse decisions. The less numerate were influenced more by competing, irrelevant affective considerations. Analyses showed that the effect of numeracy was not due to general intelligence. Numerical ability appears to matter to judgments and decisions in important ways.
+
+# Team Bachelor Spring 2022
+- Julia Beglinger
+- Aline Buehler
+- Anna Crescenza
+- Jessica von Fransecky
+- David Gauss
+- Joelle Haas
+- Marc Liechti
+- Monica Loi
+- Robin Thuerig
+- Jana Tschopp
+
+[OSF](https://osf.io/2v9fd/)
+[Pre-Reg (German)](https://osf.io/65wkp)
+
+# Original work
+
+Peters, E., Västfjäll, D., Slovic, P., Mertz, C. K., Mazzocco, K., & Dickert, S. (2006). Numeracy and decision making. *Psychological Science, 17*(5), 407-413. [DOI](https://doi.org/10.1111/j.1467-9280.2006.01720.x)
+
+# Replication
+
+**Numeracy is the ability to solve numeric problems** - it has been shown to interact with many decision making tasks, mostly following the formula: *the more numeracy the less bias* you find in people.
+
+# Demographics
+
+How are high and low numerates distributed? We use the German Berlin Numeracy Scale (BNT, Cockely et al., 2012) to measure numeracy with 4 questions. Splitting this score with <=2 for *low* and >2 for *high* numerates gives us the following distribution:
+```{r}
+knitr::kable(table(numeracy$numeracy),
+             col.names = c('', 'Frequency'),
+             align = 'l') %>%
+kable_styling(full_width = F, position = 'l')
+```
+
+It does, of course, make sense to look at the general distribution of correct answers in the sample, too. The modus of 1 correct answer is somewhat surprising, given that our sample could be considered as well educated.
+
+```{r num_age, fig.cap = "Fig. 1: Correct answers count for numeracy"}
+numeracy <- 
+numeracy %>%
+  ggplot(aes(score, fill = numeracy)) +
+  geom_bar() +
+  theme_bw(base_size = 14) +
+  labs(y = 'Count',
+       x = 'Score') +
+  scale_fill_brewer(palette = "Dark2")
+
+ggsave('images/numeracy.png')
+```
+
+![](images/numeracy.png)
+
+## Framing 
+
+So, lets get started with some framing tasks ... we use the same paradigm as Peters et al. (2006) in that we let a participants judge a Psych student's test score either in a *positive* or *negative* frame. An example for a positive frame was **Emily got 74% of her test correct** the connected negative version was: **Emily got 26% of her test incorrect**. We then varied the percentage correct [81, 78, 74, 71, 68] and incorrect and the names of students [Emily, Fabian, Anna, Luca, Laura] in a between subjects design, where participants were either subjected to the positive or negative framing condition.
+
+Averaging these ratings we find a somewhat small but, as we will see, significant difference between *positive* and *negative* framing. 
+```{r, out.width="100%", fig.cap="Fig. 2: Framing separated by task."}
+knitr::include_graphics('images/framing.png')  
+```
+
+Lets do a simple ANOVA and compare these means for Numeracy [high|low] x Framing [pos|neg].
+
+```{r framing_anova}
+anova_model <- aov(rating ~ frame, data = framing)
+summary(anova_model)
+pos <- (framing %>% filter(frame == 'pos') %>% pull(rating))
+neg <- (framing %>% filter(frame == 'neg') %>% pull(rating))
+framing_cd <- cohen.d(pos, neg)
+```
+
+Alright, framing effect <span>&#10003;</span> with a mean rating of *M* = `r framing %>% filter(frame == 'neg') %>% summarise(mlow = mean(rating)) %>% pull(mlow) %>% round(., 2)` (SD = `r framing %>% filter(frame == 'neg') %>% summarise(sdlow = sd(rating)) %>% pull(sdlow) %>% round(., 2)`) for 'negative' and *M* = `r framing %>% filter(frame == 'pos') %>% summarise(mlow = mean(rating)) %>% pull(mlow) %>% round(., 2)` (SD = `r framing %>% filter(frame == 'pos') %>% summarise(sdlow = sd(rating)) %>% pull(sdlow) %>% round(., 2)`) for 'positive' - not a total disaster ... which can be confirmed by calculation of Cohen's *d* = `r framing_cd["estimate"]`. 
+
+### Some checking 
+
+Before we get going into the details, I will do some checking whether the tasks worked. In what follows I split the data for *positive* and *negative* frame from Fig. 2 into the 5 task variations we used. Remember that these have decreasing distance between the *positive* and *negative* framing condition - the positive percentages correct are: [81, 78, 74, 71, 68]. The first number in the column headings represent the negative frame, the second the positive, hence the first column is the 19% negative v. 81% positive condition and so on. Participants react to these differences with decreasing general ratings when the negative result increases. Pretty good!   
+
+```{r, out.width="100%", fig.cap="Fig. 3: Sanity checks."}
+knitr::include_graphics('images/framing_tasks.png')  
+```
+
+The Framing effect is small in the 19-81 condition and increases with increasing negative and connected decreasing positive percentage. I am using the `map()` function to run an Anova for each *task_id* - which will give us 5 Anovas with 2 lines each in the results tibble - here is the code that does that - a simple t-test would do the same, but could not figure out how to map that ...
+
+```{r framing_task_anova, echo = TRUE}
+framing %>% 
+  nest(data = -task_id) %>% 
+  mutate(model = map(data, ~ anova(lm(rating ~ frame, .)))) %>% 
+select(task_id, model) %>% 
+unnest(model)
+```
+
+Pretty neat - and confirming what we suspected above - significant framing effect for each task and difference between results for the rated student. 
+
+## The Interaction
+
+Of course, what we ultimately after is the interaction between *framing* and *numeracy* - remember, people high in numeric ability are less susceptible to framing - in theory ...
+
+Lets first plot the interaction graph between *framing x numeracy*: 
+
+```{r, out.width="100%", fig.cap="Fig. 4: Framing vs. Numeracy."}
+knitr::include_graphics('images/framing_numeracy.png')  
+```
+Hmmmm - we clearly see a difference between positive and negative frame, knew that already, but the difference between the numeracy groups seems small ... 
+
+I will run something a bit more complex - a multi level model where I use *frame* and *numeracy* (score) as predictors. I also add a random intercept for *participants* (ID) and nest *task_id* into that. 
+
+
+```{r echo = TRUE}
+framing_model <- lmer(rating ~ frame * score + (1|task_id) + (1|ID), data = framing)
+summary(framing_model)  
+```
+
+Immediately we run into the problem that the output, in principle, has all the necessary information but it would be great to have this as a bit nicer overview - here the `sjPlot` package is super useful - it has a function called `tab_model()` that takes the output of `lmer()` as an input and provides well formatted html-ouput: 
+
+```{r echo = TRUE}
+tab_model(framing_model,
+          show.df = TRUE, 
+          show.stat = TRUE)
+```
+
+While, as expected, *framing* results in a significant effect neither *score* (which referes to numeracy in its continuous form) nor the interaction between *framing* x *score* results in a significant effect, hence somewhat failed?!
+
+# References
+
+Cokely, E. T., Galesic, M., Schulz, E., Ghazal, S., & Garcia-Retamero, R. (2012). Measuring risk literacy: The Berlin Numeracy Test. *Judgment and Decision Making, 7*(1), 25–47. [DOI](https://doi.org/10.1037/t45862-000)
+
+Peters, E., Västfjäll, D., Slovic, P., Mertz, C. K., Mazzocco, K., & Dickert, S. (2006). Numeracy and decision making. *Psychological Science, 17*(5), 407-413. [DOI](https://doi.org/10.1111/j.1467-9280.2006.01720.x)
+

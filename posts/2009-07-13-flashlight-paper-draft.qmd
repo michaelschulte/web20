@@ -1,0 +1,13 @@
+---
+title: Flashlight paper draft
+date: 2009-07-13T02:20:25-07:00
+author: Michael
+categories:
+  - Papers
+---
+We submitted our Flashlight paper today. Find a draft at the address below:  
+Schulte-Mecklenbeck, Michael , Murphy, Ryan O. and Hutzler, Florian,Flashlight &#8211; an Online Eye-Tracking Tool(July 13, 2009). Available at SSRN: [http://ssrn.com/abstract=1433225  
+](http://ssrn.com/abstract=1433225)  
+The software will be uploaded to the project page [http://vlab.ethz.ch/vLab\_Decision\_Theory\_and\_Behavioral\_Game\_Theory/Flashlight.html](http://vlab.ethz.ch/vLab_Decision_Theory_and_Behavioral_Game_Theory/Flashlight.html).
+
+Have fun playing with it!

@@ -1,0 +1,14 @@
+---
+title: "Things to come in Quarto"
+author: "MSM"
+date: "2022-10-01"
+categories: [Quarto]
+---
+
+So Quarto it is ... after the 3rd time trying to update Wowchemy and Hugo and things breaking - time for something new ... [Quarto](https://quarto.org) "Quarto® is an open-source scientific and technical publishing system built on Pandoc" ... 
+
+And things have been really smooth ... some basic setup of the quarto page, converting the .Rmd files I had to .qmd files (which have very similar syntax) and then! `quarto publish netlify` which simply pushes everything into a new Netlify repo - it can't get much easier than that!
+
+![](../_images/quarto.png)
+
+

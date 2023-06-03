@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: b1b95fb3-9857-43b2-9dc9-9112499961fe
+      url: 'https://www.schulte-mecklenbeck.com'

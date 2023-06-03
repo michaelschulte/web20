@@ -1,0 +1,189 @@
+---
+title: "Replication: Default effect"
+author: "MSM"
+date: "2023-05-20"
+draft: false
+categories: [Replication, Default, Framing]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 8, 
+                      fig.height = 8,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(kableExtra)
+library(sjPlot)
+library(effsize)
+library(tidyr)
+library(broom)
+library(lme4)
+library(here)
+library(DT)
+group <- 'BAFS2023'
+demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv'))) %>%
+               mutate(agegroup = case_when(agegroup == '65 oder älter' ~ '65 or older',
+                                TRUE ~ (agegroup)))
+
+exp1 <- read_csv(here(paste0('0_data/', group, '_exp1_pub.csv')))
+exp2 <- read_csv(here(paste0('0_data/', group, '_exp2_pub.csv')))
+options(digits=2)
+```
+
+# Original work
+
+Johnson, E. J., Bellman, S., & Lohse, G. L. (2002). [Defaults, framing and privacy: Why opting in-opting out](https://link.springer.com/article/10.1023/A:1015044207315). *Marketing letters, 13*, 5-15.
+
+# Team Bachelor Spring 2023
+
+- Marina Burger
+- Mike Gafner
+- Fiona Laski
+- Naveen Karunanithy
+- Lazar Knezevic
+- Salome Kurt
+- Diego Roth
+- Sai-Rathika Sriranjan
+- Yves Schmidt
+- Anja Studer
+- Jenny Vay
+
+[OSF](https://osf.io/tujsy/)
+[Pre-Reg (German)](https://osf.io/g6v7k)
+
+
+## Abstract
+Differences in opt-in and opt-out responses are an important element of the current public debate concerning on-line privacy and more generally for permission marketing. We explored the issue empirically. Using two on-line experiments we show that the default has a major role in determining revealed preferences for further contact with a Web site. We then explore the origins of these differences showing that both framing and defaults have separate and additive effects in affecting the construction of preferences.
+
+
+# Replication
+
+We ran a direct replication of Experiment 1 and 2 of Johnson et al. (2002). The questions on receiving an additional survey at the end were included in an unrelated questionnaire on autonomous driving (~ 10 minutes). The 10 questions (experiment 1: 4; experiment 2: 6) were pooled and randomly shown to the participants at the end of the driving questionnaire.  
+
+# Demographics
+
+The original paper had 277 participants in experiment 1 and 234 participants in experiment 2. We aimed at a similar sample had a great start with 408 participants. Unfortunately more than 65% dropped out on the first page of the questionnaire. Our working hypothesis is, that most of our participants did the experiment on their mobile - our questionnaire was checked for that but apparently we missed that the handling was not ideal ... hence the large dropout.
+
+Overall we ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Age was recorded in age brackets: 
+
+```{r age_group, tab.cap = "Tab. 1: Age brackets for participant sample"}
+knitr::kable(table(demographie$agegroup),
+             col.names = c('agegroup', 'frequency'))
+```
+
+## Experiment 1
+
+Johnson et al. (2002) used four questions to evaluate the presence of a *default* (no default in question 1 and 2 (listed both as 1 in the original) and two questions (!3 and Q4) with a pre-set default selection) and crossed these with *framing* (positive (Q1, Q3) and negative (Q2, Q4)). Putting the results in a rank order (see @fig-exp1) we are getting the highest participation rate in Q2 (no default, negative) followed by Q3 (default, positive), Q4 (default, negative) and the lowest in Q1 (no default, positive)) - so we are looking for the sequence **2341**.
+
+![Items Johnson et al. Exp 1](images/Tab1.png){#fig-exp1}
+
+Our results show the pattern **3214** as can be seen in @fig-results-exp1. Noteworthy seems that Q4 (default, negative) was de-selected in most cases which is surprising and different to the original.   
+
+```{r}
+#| label: fig-results-exp1
+#| fig-cap: "Results Replication Experiment 1" 
+sum_exp1 <-
+exp1 %>%
+  mutate(Default_condition = case_when(Default_condition == 'D' ~ 'Default',
+                                       TRUE ~ 'No Default'),
+         Framing = case_when(Framing == 'FN' ~ 'negative', 
+                             TRUE ~ 'positive')) %>%
+  group_by(Task_ID, Default_condition, Framing) %>%
+  summarise(percent_choice = mean(choice),
+            n = n()) 
+
+sum_exp1 %>%
+ggplot(aes(Default_condition, percent_choice, fill = Framing)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  ylim(0,1) +
+  theme_bw(base_size = 16) +
+  scale_fill_viridis_d() + 
+  labs(x = 'Default',
+       y = 'Percent choice')
+```
+
+Running the logistic regression predicting *choice* with *framing X default* (see @tbl-result1) shows a framing effect as well as an effect for the default condition (of course in the opposite direction). The interaction term is also significant.
+
+```{r}
+#| label: tbl-result1
+#| tbl-cap: Logistic regression for Experiment 1
+
+model_exp1 <- glm(choice ~ Framing * Default_condition, 
+                  family = 'binomial',
+                  data = exp1)
+
+tab_model(model_exp1)
+```
+
+## Experiment 2
+
+In experiment 2 Johnson et al. (2002) modify the questions (see @fig-exp2-items) in adding a Yes/No option (instead the simple tick box in Experiment 1) and an `empty` version where no boxes are ticked. Inspecting the results the rank order is now **651243**. 
+
+:::{#fig-exp2-items}
+![Items Johnson et al. Exp 2](images/Tab2.png)
+:::
+There is a clear framing effect and a step wise default effect (see @fig-exp2).
+
+![Results Johnson et al. Exp 2](images/Fig1.png){#fig-exp2}
+
+
+There several differences inspecting our results. Our rank ordered results give us the pattern: **612534**. Remarkable are also the much lower participation rates (below 50%) for `Not participate` and `No Default` in both framing conditions. Only `Participate` in the positive frame is above 75% (see @fig-results-exp2).
+
+```{r}
+#| label: fig-results-exp2
+#| fig-cap: "Results Replication Experiment 2" 
+sum_exp2 <- 
+exp2 %>% 
+    mutate(Default_condition = case_when(Default_condition == 'DP' ~ 'Participate',
+                                         Default_condition == 'ND' ~ 'No Default',
+                                         Default_condition == 'DNP' ~ 'Not Participate'),
+         Framing = case_when(Framing == 'FN' ~ 'negative', 
+                             TRUE ~ 'positive'))  %>%
+  group_by(ID, Task_ID) %>%
+  pivot_wider(names_from = Answer_Option, values_from = choice) %>%
+  mutate(flag = case_when(Y == N ~ 1,
+                          TRUE ~ 0)) %>%
+  filter(flag == 0) %>%
+  group_by(Task_ID, Default_condition, Framing) %>%
+  summarise(percent_Y = mean(Y),
+            n = n())
+
+sum_exp2 %>%
+  mutate(Default_condition = factor(Default_condition),
+          Default_condition = factor(Default_condition, 
+                            levels = c("Not Participate", "No Default", "Participate"))) %>%
+  ggplot(aes(Default_condition, percent_Y, group = Framing, color = Framing)) +
+  geom_line(stat = 'identity', size = 2) +
+  geom_point(stat = 'identity', size = 3) +
+  ylim(0,1) +
+  theme_bw(base_size = 16) +
+  scale_color_viridis_d() + 
+  labs(x = 'Default',
+       y = 'Prozent choice')
+```
+
+Running the logistic regression predicting *choice* with *framing X default X answer option* (see @tbl-result2) shows a significant framing effect as well as an effect for the the presence of an answer option (Y/N). The two-way interaction terms for framing and default is significant. There is also a three-way-interaction of framing, default and answer option mainly driven by the difference between participate and no-default.
+
+
+```{r}
+#| label: tbl-result2
+#| tbl-cap: Logistic regression for Experiment 2
+model_exp2 <- glm(choice ~ Framing * Default_condition * Answer_Option,
+                  family = 'binomial',
+                  data = exp2)
+
+tab_model(model_exp2)
+```
+
+# Caveats
+
+The obvious problem with this data set (and the replication) is the small <it>n</it> we collected - due to the huge dropout rate and the many conditions (<it>n</it> = 10) we end up with quite small cell sizes (around 20) for most questions but for some Q3 in Experiment 1 and 2 with super small *n* of 9 and 7, respectively. So, my guess would be, that a larger *n* would yield more consistent results with the original work - we might have to run this again some time soon! 

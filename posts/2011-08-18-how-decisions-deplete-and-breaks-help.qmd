@@ -1,0 +1,11 @@
+---
+title: how decisions deplete and breaks help
+date: 2011-08-18T22:31:18-07:00
+author: Michael
+categories:
+  - Decision Making
+  - Ego depletion
+---
+The New York Times published a [nice overview](http://nyti.ms/qpAHLe) of the work on decision making and [ego depletion](http://en.wikipedia.org/wiki/Ego_depletion) (often ego depletion is used as a synonym with resource depletion, which is somewhat confusing because of the use of the later in economy to described the situation when raw materials are exhausted in a region).
+
+A new paper from [Jonathan Levav](http://gsbapps.stanford.edu/facultyprofiles/biomain.asp?id=87752309) (now at Standford &#8211; congrats!) is prominently featured in the above article. [Levav et al](http://www.pnas.org/content/108/17/6889.full.pdf) analysed rulings in court cases and link them to the time when these rulings were made during the day. They showed that after breaks (lunches) the probability of getting probation dramatically increased, a results that blends nicely into the ego depletion idea which states that self-control is a limited resource that is depleted by decision (rulings) and can be restored by, e.g., rest.

@@ -1,0 +1,17 @@
+---
+title: Moving an idea into business
+date: 2015-02-07T15:15:17-07:00
+author: Michael
+categories:
+  - Decision Making
+  - Flashlight
+  - Open Source
+  - Papers
+---
+Recently [Ryan Murphy](http://vlab.ethz.ch/ROM/DBGT/Homepage.html) and myself realised that a startup here in Berlin features ideas of our 2011 [Flashlight paper](http://www.schulte-mecklenbeck.com/pubs/Schulte2011.pdf).
+
+Well, the guys at [attensee.com](http://www.attensee.com) did a great job taking the idea we had much further we ever thought one would be able to take it &#8230;
+
+Here is a feature I totally love &#8211; a live heat map of what you are looking at &#8230; awesome!
+
+[<img class="alignleft size-medium wp-image-381" src="/uploads//2015/02/Screen-Shot-2015-02-07-at-23.11.47-300x200.png" alt="Screen Shot 2015-02-07 at 23.11.47" width="300" height="200" srcset="2015/02/Screen-Shot-2015-02-07-at-23.11.47-300x200.png 300w, 2015/02/Screen-Shot-2015-02-07-at-23.11.47-749x500.png 749w, 2015/02/Screen-Shot-2015-02-07-at-23.11.47-500x334.png 500w, 2015/02/Screen-Shot-2015-02-07-at-23.11.47.png 1008w" sizes="(max-width: 300px) 100vw, 300px" />](www.attensee.com)

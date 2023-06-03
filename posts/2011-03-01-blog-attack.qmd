@@ -1,0 +1,8 @@
+---
+title: Blog-attack
+date: 2011-03-01T01:58:43-07:00
+author: Michael
+categories:
+  - Decision Making
+---
+[Here](http://www.stat.columbia.edu/~cook/movabletype/archives/2011/02/behavioral_econ.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+StatisticalModelingCausalInferenceAndSocialScience+%28Statistical+Modeling%2C+Causal+Inference%2C+and+Social+Science%29&utm_content=Google+Reader) is what [Andrew Gelman](http://www.stat.columbia.edu/~gelman/) writes about an [interview](http://www.spousonomics.com/1821/2011/02/economists-in-love-colin-camerer/) [Colin Camerer](http://www.hss.caltech.edu/~camerer/camerer.html) gave on [Spousomonics](http://www.spousonomics.com/) &#8230; Looking forward to Camerer&#8217;s reply &#8230;

@@ -1,0 +1,20 @@
+---
+title: 'When something old &#8230;'
+date: 2014-05-07T01:12:06-07:00
+author: Michael
+categories:
+  - Decision Making
+---
+<p class="p1">
+  Schulte-Mecklenbeck, M., & Kühberger, A. (2014). <a href="/uploads//2014/05/Schulte-Mecklenbeck2014.pdf">Out of sight – out of mind? Information acquisition patterns in risky choice framing</a>. <i>Polish Psychological Bulletin</i>, <i>45</i>, 21–28.
+</p>
+
+<p class="p1">
+  I teamed up with <a href="http://www.uni-salzburg.at/index.php?id=29678">Anton Kühberger</a> to write about one of our old, favorite topics: framing and process tracing &#8230;
+</p>
+
+<p class="p1">
+  Here is the abstract:<br /> We investigate whether risky choice framing, i.e., the preference of a sure over an equivalent risky option when choosing among gains, and the reverse when choosing among losses, depends on redundancy and density of information available in a task. Redundancy, the saliency of missing information, and density, the description of options in one or multiple chunks, was manipulated in a matrix setup presented in MouselabWeb. On the choice level we found a framing effect only in setups with non-redundant information. On the process level outcomes attracted more acquisitions than probabilities, irrespective of redundancy. A dissociation between acquisition behavior and choice calls for a critical discussion of the limits of process-tracing measures for understanding and predicting choices in decision making tasks.
+</p>
+
+<p class="p1">

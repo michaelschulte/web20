@@ -1,0 +1,15 @@
+---
+title: 'Everything you believe in is wrong &#8211; or is it simply terrorism?'
+date: 2016-09-20T00:15:15-07:00
+author: Michael
+categories:
+  - Replication
+  - Science
+---
+The [replication crisis](https://en.wikipedia.org/wiki/Replication_crisis) has many interesting effects on how people (and scientists) think about Psychology (and, of course, other fields) &#8230; Here is a nice summary of [effects that are hard to replicate](https://digest.bps.org.uk/2016/09/16/ten-famous-psychology-findings-that-its-been-difficult-to-replicate/). Among them &#8216;classics&#8217; like the power pose or the big brother eyes. 
+
+A lot is happening because of these new insights in terms of research (e.g., replication studies) and communication (e.g., [Fritz Strack](https://de.wikipedia.org/wiki/Fritz_Strack) on [Facebook](https://www.facebook.com/groups/psychmap/)). 
+
+And then this: [Susan Fiske](https://en.wikipedia.org/wiki/Susan_Fiske) in an [upcoming piece](https://www.facebook.com/photo.php?fbid=311301635895040&set=pcb.309090142801248&type=3&theater) in the APS Observer &#8230; I am really struggling with this rhetoric &#8211; [Daniel Lakens to the rescue](http://daniellakens.blogspot.ch/2016/09/why-scientific-criticism-sometimes.html) 🙂
+
+Ah &#8211; and of course [Gelman](http://andrewgelman.com/2016/09/20/methodological-terrorism/).

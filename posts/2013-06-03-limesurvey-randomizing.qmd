@@ -1,0 +1,16 @@
+---
+title: Limesurvey randomizing
+date: 2013-06-03T12:55:47-07:00
+author: Michael
+categories:
+  - Limesurvey
+  - Open Source
+---
+It is kind of an odd problem.  
+For the following pretty straight forward question: How do I randomise questions within a group in [Limesurvey](http://www.limesurvey.org/)? It seems to be really hard to find an answer.
+
+With the help of Jonas I figured out that there is a randomisation option hidden in the &#8216;Advanced Settings&#8217; section of a question. What you have to do is provide the same number (this is important) for each question in a group that you want to randomise. Limesurvey will then take care of the rest. It did not seem to work if I named the variable with a string, eg, &#8216;group1&#8217; but only numeric counters work fine.
+
+Thanks Jonas! (I would not have finished at all) &#8230;
+
+[<img class="alignleft size-medium wp-image-269" src="2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1-300x101.png" alt="Screen Shot 2013-06-03 at 9.37.52 PM" width="300" height="101" srcset="2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1-300x101.png 300w, 2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1-500x169.png 500w, 2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1.png 624w" sizes="(max-width: 300px) 100vw, 300px" />](2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1.png)

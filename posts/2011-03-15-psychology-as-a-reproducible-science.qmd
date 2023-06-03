@@ -1,0 +1,31 @@
+---
+title: Psychology as a reproducible Science
+date: 2011-03-15T13:30:49-07:00
+author: Michael
+categories:
+  - LaTeX
+  - Methods
+  - R
+---
+**Is Psychology ready for reproducible research?**
+
+Today the typical research process in psychology looks generally like this: we collect data; analyze them in many ways; write a draft article based on some of the results; submit the draft to a journal; maybe produce a revision following the suggestions of the reviewers and editors; and hopefully live long enough to actually see it published. All of these steps are closed to the public except for the last one &#8211; the publication of the (often substantially) revised version of the paper. Journal editors and reviewers evaluate the written work submitted to them, they trust that the analyses described in the submission are done in a principled and correct way. Editors and reviewers are the only external part of this process who will have an active influence on what analyses are done. After the publication of an article the public has the opportunity to write comments or ask the authors for the actual datasets for re-analysis. Often however, getting access to data from published papers is hard, if not often impossible (Savage & Vickers, 2009; Wicherts, Borsboom, Kats, & Molenaar, 2006).  Unfortunately only the gist of the analyses are described in the paper and neither exact verification nor innovative additional analyses are possible.
+
+What could be a solution for this problem? An example from computer science provides a concept called “literate programming” which was advocated by one of the field’s grandmasters, Donald Knuth, in 1984. Knuth suggested that documentation (comments in the code) should be just as important as the actual code itself. This idea was reflected nearly 20 years later when Schwab et al. (2000) formulated a concept that “replication by other scientists” is a central aim and guardian for intellectual quality; they coined the term “reproducible research” for such a process.
+
+Let’s move the research process to a more open, reproducible structure, in which scientific peers have the ability to evaluate not only the final publication but also the data and the analyses.  
+Ideally, research papers would have code for analyses which are commented in detail and are submitted in tandem with drafts as well as the original datasets. Anybody, not only a restricted group of select reviewers and editors, could reproduce all the steps of the analysis and follow the logic of arguments on not only the conceptual level but at an analytic level as well. This openness facilities easy reanalysis of data also. Meta-analysis could be done more frequently and with greater resolution as the actual data are available. Moreover, this configuration would allow us collectively to estimate effects in the population and not restrict our attention to independent small samples (see Henrich, Heine, & Norenzayan, 2010 for a discussion of this topic).
+
+What do we need to achieve this? From a policy perspective, journals would have to add the requirement for data and code submission together with the draft of each empirical paper. Some journals already provide the option to do that (e.g., Behavior Research Methods) in the supplemental material section on a voluntary base, some require the submission of all necessary material to replicate the reported results (e.g., Econometrica), however most do not offer such a possibility (it is of course possible to provide such materials through private or university web sites, but this is a haphazard and decentralized arrangement).
+
+Tools are a second important part of facilitating this openness. Three open source (free of cost) components could provide the bases for reproducible research:
+
+  * R (R Development Core Team, 2010) is widely recognized (cite) as the “language of statistics” and builds on writing code instead of a “click and forget” type of analysis that other software packages encourage. R is open source, comes with a large number of extensions for advanced statistical analysis and can be run on any computer platform, including as a Web based application (http://www.R-project.org).
+  * LaTeX was invented to provide a tool for anybody to produce high quality publications independent of the computer system used (i.e. one could expect the same results everywhere, http://www.latex-project.org/).
+  * Sweave (Leisch, 2002) connects R and LaTeX providing the opportunity to write a research paper and do the data analysis in parallel, in a well documented and reproducible way (http://www.stat.uni-muenchen.de/~leisch/Sweave/).
+
+The power of these different tools comes from the combination of their being open source, their widespread adoption (across a wide range of fields in sciences), and the fully transparent means by which data analysis is conducted and reported.  It levels the playing field and means that anybody with an Internet connection and a computer can take part in evolving scientific progress.
+
+John Godfrey Saxe famously said that: “Laws, like sausages, cease to inspire respect in proportion as we know how they are made.” We should strive that this is not true for psychology as a science.
+
+&nbsp;

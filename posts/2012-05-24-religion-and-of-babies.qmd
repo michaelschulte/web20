@@ -1,0 +1,11 @@
+---
+title: 'Religion and # of babies &#8230;'
+date: 2012-05-24T00:05:00-07:00
+author: Michael
+categories:
+  - Gapminder
+  - Google
+  - Open Source
+---
+Religion seems to have little influence on the # of babies per woman &#8211; who might have thought &#8230;  
+[Here](http://www.ted.com/talks/hans_rosling_religions_and_babies.html?utm_source=newsletter_weekly_2012-05-22&utm_campaign=newsletter_weekly&utm_medium=email) is another excellent talk of Hans Rösling on the topic.

@@ -1,0 +1,12 @@
+---
+title: 'LaTeX <- pdfTeX, LuaTeX, XeTeX'
+date: 2017-04-30T23:16:22-07:00
+author: Michael
+categories:
+  - LaTeX
+  - Lifehacks
+  - Science
+---
+I have been using LaTeX (with pdfTeX) for 20+ years now &#8211; to be honest I never bothered to understand the differences between the different TeX engines &#8211; [here](https://www.overleaf.com/blog/500-whats-in-a-name-a-guide-to-the-many-flavours-of-tex#.WQbPt1KB3UI) is an excellent article by [Graham Douglas](https://twitter.com/publishergeek) explaining the ins and outs of the TeX engine(s).
+
+&#8230; the article also features [Overleaf](https://www.overleaf.com) a shared TeX environment &#8230; sweet!

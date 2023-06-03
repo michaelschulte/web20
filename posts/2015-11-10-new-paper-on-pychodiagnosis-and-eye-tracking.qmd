@@ -1,0 +1,14 @@
+---
+title: New Paper on pychodiagnosis and eye-tracking
+date: 2015-11-10T03:39:33-07:00
+author: Michael
+categories:
+  - Decision Making
+  - Eye tracking
+  - Methods
+---
+Cilia Witteman and Nanon Spaanjaars (my dutch connection) worked together on a piece on whether psychodiagnosticians improve over time (they don&#8217;t) in their ability to classify symptoms to DSM categories. This turned out to be a pretty cool paper combining eye-tracking data with a practical, and hopefully, relevant question.
+
+Schulte-Mecklenbeck, M., Spaanjaars, N.L., & Witteman, C.L.M. (in press). [The (in)visibility of psychodiagnosticians&#8217; expertise](http://dx.doi.org/10.1002/bdm.1925). _Journal of Behavioral Decision Making_. 
+
+This study investigates decision making in mental health care. Specifically, it compares the diagnostic decision outcomes (i.e., the quality of diagnoses) and the diagnostic decision process (i.e., pre-decisional information acquisition patterns) of novice and experienced clinical psychologists. Participants’ eye movements were recorded while they completed diagnostic tasks, classifying mental disorders. In line with previous research, our findings indicate that diagnosticians’ performance is not related to their clinical experience. Eye-tracking data pro- vide corroborative evidence for this result from the process perspective: experience does not predict changes in cue inspection patterns. For future research into expertise in this domain, it is advisable to track individual differences between clinicians rather than study differences on the group level.

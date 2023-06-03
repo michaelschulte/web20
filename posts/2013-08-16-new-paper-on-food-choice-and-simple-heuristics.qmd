@@ -1,0 +1,18 @@
+---
+title: New paper on food choice and simple heuristics
+date: 2013-08-16T06:57:52-07:00
+author: Michael
+categories:
+  - Decision Making
+  - Food Choice
+---
+We got a new paper out on how people (consumers) use simple rules to make food choices. This is work in collaboration with the Nestlé Research Center in Lausanne.  
+Here is the reference:
+
+<p class="p1">
+  Schulte-Mecklenbeck, M., Sohn, M., Bellis, E., Martin, N., & Hertwig, R. (2013). <a href="http://www.schulte-mecklenbeck.com/pubs/Schulte2013.pdf">A Lack of Appetite for Information and Computation: Simple Heuristics in Food Choice</a>. <i>Appetite</i>, <i>71</i>, 242–251.
+</p>
+
+Abstract
+
+The predominant, but largely untested, assumption in research on food choice is that people obey the classic commandments of rational behavior: they carefully look up every piece of relevant information, weight each piece according to subjective importance, and then combine them into a judgment or choice. In real world situations, however, the available time, motivation, and computational resources may simply not suffice to keep these commandments. Indeed, there is a large body of research suggesting that human choice is often better accommodated by heuristics—simple rules that enable decision making on the basis of a few, but important, pieces of information. We investigated the prevalence of such heuristics in a computerized experiment that engaged participants in a series of choices between two lunch dishes. Employing MouselabWeb, a process-tracing technique, we found that simple heuristics described an overwhelmingly large proportion of choices, whereas strategies traditionally deemed rational were barely apparent in our data. Replicating previous findings, we also observed that visual stimulus segments received a much larger proportion of attention than any nutritional values did. Our results suggest that, consistent with human behavior in other domains, people make their food choices on the basis of simple and informationally frugal heuristics.
