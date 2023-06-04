@@ -42,7 +42,7 @@ source(here('my_theme.R'))
 
 # Original work
 
-Rottenstreich, Y., & Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk. *Psychological science, 12*(3), 185-190. [DOI](https://doi.org/10.1111/1467-9280.00334)
+Rottenstreich, Y., & Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk.
 
 # Team Bachelor Autumn 2022
 - Dominik Basler
@@ -274,5 +274,7 @@ tab_model(lmer_WTP,
           show.stat = TRUE)
 ```
 
+# References
 
+Rottenstreich, Y., & Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk. *Psychological science, 12*(3), 185-190. [DOI](https://doi.org/10.1111/1467-9280.00334)
 

@@ -41,7 +41,7 @@ options(digits=2)
 
 # Original work
 
-Johnson, E. J., Bellman, S., & Lohse, G. L. (2002). [Defaults, framing and privacy: Why opting in-opting out](https://link.springer.com/article/10.1023/A:1015044207315). *Marketing letters, 13*, 5-15.
+Johnson, E. J., Bellman, S., & Lohse, G. L. (2002). Defaults, framing and privacy: Why opting in-opting out.
 
 # Team Bachelor Spring 2023
 
@@ -187,3 +187,7 @@ tab_model(model_exp2)
 # Caveats
 
 The obvious problem with this data set (and the replication) is the small <it>n</it> we collected - due to the huge dropout rate and the many conditions (<it>n</it> = 10) we end up with quite small cell sizes (around 20) for most questions but for some Q3 in Experiment 1 and 2 with super small *n* of 9 and 7, respectively. So, my guess would be, that a larger *n* would yield more consistent results with the original work - we might have to run this again some time soon! 
+
+# References
+
+Johnson, E. J., Bellman, S., & Lohse, G. L. (2002). [Defaults, framing and privacy: Why opting in-opting out](https://link.springer.com/article/10.1023/A:1015044207315). *Marketing letters, 13*, 5-15.
