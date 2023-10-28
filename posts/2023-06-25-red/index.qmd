@@ -2,7 +2,7 @@
 title: "Replication: Red"
 author: "MSM"
 date: "2023-06-25"
-draft: false
+draft: true
 categories: [Replication, Perception, Consumer Behavior]
 sidebar:
   contents: auto
