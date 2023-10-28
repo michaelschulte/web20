@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Michael Schulte-Mecklenbeck"
+  favicon: images/favicon.png
   navbar:
     right:
       - text: 'Blog'

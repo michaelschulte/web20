@@ -1,0 +1,309 @@
+---
+title: "Replication: Red"
+author: "MSM"
+date: "2023-06-25"
+draft: false
+categories: [Replication, Perception, Consumer Behavior]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 8, 
+                      fig.height = 8,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(kableExtra)
+library(sjPlot)
+library(effsize)
+library(tidyr)
+library(broom)
+library(lme4)
+library(here)
+library(DT)
+group <- 'MAFS2021'
+demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv')))
+cube <- read_csv(here(paste0('0_data/',group,'_cube_pub.csv')))
+laptop <- read_csv(here(paste0('0_data/',group,'_laptop_pub.csv')))
+suitcase <- read_csv(here(paste0('0_data/',group,'_suitcase_pub.csv')))
+couch <- read_csv(here(paste0('0_data/',group,'_couch_pub.csv')))
+color <- read_csv(here(paste0('0_data/',group,'_color_pub.csv')))
+
+options(digits = 1)
+```
+
+# Original work
+
+Hagtvedt, H., & Brasel, S. A. (2017). Color saturation increases perceived product size. *Journal of Consumer Research, 44*(2), 396-413.
+
+# Team MA Spring 2021
+
+- Anaïs Merz
+- Nemanja Sobajic
+
+[OSF](https://osf.io/4cjqv/)
+[Pre-Reg (German)](https://osf.io/r2x4w)
+
+## Abstract
+This research demonstrates a visual phenomenon with broad implications for consumers: the perceived size of products depends on the saturation of their color. Results from six experiments, employing objects and products with various shapes and hues, show that increasing color saturation increases size perceptions. This influence is explained by the tendency for saturated color to capture attention, which, in turn, is explained by the arousal that saturated color stimulates. This research also demonstrates several downstream outcomes of the effect of saturation on size perceptions: evaluations are more favorable—and willingness to pay is higher—for products with high (low) saturation when usage goals call for large (small) size. Additionally, participants choose more of a product to fill a container with higher saturation. Further, the saturation of an object’s color affects the perceived size of its surroundings, such that when a product with high (vs. low) saturation is used as a benchmark, the environment is perceived to be comparatively smaller (vs. larger). Implications for aesthetics, design, sensory marketing, and related topics are discussed. Lastly, to aid future color research, appendix A outlines general challenges and recommendations in connection with the conceptualization, manipulation, and measurement of color.
+
+# Replication
+
+We ran a direct replication of experiment 1 to experiment 4 of Hadtvedt & Brasel (2017). While the authors ran different samples for each of their experiments, we decided to use one larger subject pool and run all experiments (ie tasks) within-subject (in randomized order). Clearly there are benefits for each of these approaches, one could argue that repeating similar tasks would have transfer influences, on the other hand having a much larger sample (the smallest sample size in the original work was 56, in our study we collected `r length(demographie$ID)` participants) gives us a better power to detect even small effects. 
+
+A second, even more relevant deviation from the original work is the lab-online difference. The authors collected their data in the lab with standardized calibration on the same monitors. We ran our sample online, meaning that we do not have control on setup and color calibration. We will get back to this point in the caveats below.
+
+# Demographics
+
+The original paper had the following particiapnts in each experiment: Exp1: 56 participants, Exp2: 58, Exp3: 80, Exp4: 160. 
+
+Overall we collected data from 328 participants. Two pre-registered attention checks were built into the questionnaire which had to be passed both for inclusion. This step reduced the sample to: 270 participants. Finally we asked participants whether they are color-blind - this step removed two participants. 
+
+We ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Female participants were on average M = `r demographie %>% filter(gender == 'female') %>% summarise(m = mean(age)) %>% pull(m)` years, SD = `r demographie %>% filter(gender == 'female') %>% summarise(m = sd(age)) %>% pull(m)` years, the male participants were  M = `r demographie %>% filter(gender == 'male') %>% summarise(m = mean(age)) %>% pull(m)` years, SD = `r demographie %>% filter(gender == 'male') %>% summarise(m = sd(age)) %>% pull(m)` years.
+
+
+## Experiment 1 - The Cube (their Study 1)
+
+Experiment 1 tests a simple idea - color saturation changes size perception of objects. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.' 
+
+![Cubes 100%-25% saturation](images/cubes_overview.png){#fig-exp1}
+
+While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low saturation) we decided to use *4-levels* of saturation: 25%, 50% 75%, 100% (as can be seen in Figures @fig-exp1). Additionally we added an additional answering option - in the original work the options were left or right to identify the larger cube - we added 'the same' as an option to perceive the cubes having the same size. We also used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] saturation on the other left side 100% saturation.  
+
+## Either left or right
+
+```{r}
+#| label: fig-results-A2
+#| fig-cap: "Results Replication Experiment 1" 
+cube_A2 <-
+cube %>%
+  filter(A == 'A2') %>%
+  group_by(Sat, response) %>%
+  tally() %>%
+  group_by(Sat) %>%
+  mutate(sum = sum(n),
+         perc = n/sum, 
+         Sat = as.factor(Sat),
+         response = as.factor(response), 
+         cond = paste(Sat, response))
+
+cube_A2 %>%
+  ggplot(aes(Sat, perc, group = cond, fill = cond)) +
+  geom_bar(stat = 'identity', position = 'dodge2') +
+  scale_fill_manual(values = c('#88b386', '#0ab302', 
+                               '#59aa54', '#0ab302', 
+                               '#32b42e', '#0ab302')) +
+  ylim(0,1) +
+  labs(x = 'Saturation %',
+       y = 'Percent choice') +
+  theme_bw(base_size = 20) +
+
+  theme(legend.position = 'none')
+```
+
+@fig-results-A2 plots the results for each of the three conditions - 25 v 100, 50 v 100 (the original condition) and 75 v 100. It becomes clear that we nicely replicate the finding of the authors with consistent *larger judgments* for the *higher saturation* condition (ie 100). Following the analysis in the original work, we ran chi2 tests for each of the three conditions, revealing significant differences for the 
+
+25 condition: 
+
+```{r}
+# Sat25% - A2
+cube_A2_25 <-
+cube %>%
+  filter(A == 'A2' & Sat == '25')
+chisq.test(table(cube_A2_25$response, cube_A2_25$Sat))
+```
+
+50 condition: 
+
+```{r}
+# Sat50% - A2
+cube_A2_50 <-
+cube %>%
+  filter(A == 'A2' & Sat == '50')
+chisq.test(table(cube_A2_50$response, cube_A2_50$Sat))
+```
+75 condition: 
+
+```{r}
+# Sat75% - A2
+cube_A2_75 <-
+cube %>%
+  filter(A == 'A2' & Sat == '75')
+chisq.test(table(cube_A2_75$response, cube_A2_75$Sat))
+```
+
+Pretty cool!
+
+Anais and Nemanja came up with a question - but what if people want to say - 'hey these two cubes look the same size?'. Extension to the above experiment 1 - let us add a third answering option where participants can either say 'left' or 'right' or 'same' (for both have the same size.)
+
+## Left or right or simply the same.
+
+```{r}
+#| label: fig-results-A3
+#| fig-cap: "Results Replication Experiment 1 - Three answering options" 
+cube_A3 <-
+cube %>%
+  filter(A == 'A3') %>%
+  group_by(Sat, response) %>%
+  tally() %>%
+  group_by(Sat) %>%
+  mutate(sum = sum(n),
+         perc = n/sum, 
+         Sat = as.factor(Sat),
+         response = as.factor(response), 
+         cond = paste(Sat, response))
+
+cube_A3 %>%
+  ggplot(aes(Sat, perc, group = cond, fill = cond)) +
+  geom_bar(stat = 'identity', position = 'dodge2') +
+  scale_fill_manual(values = c('#88b386', '#0ab302','#a9a9a9', 
+                               '#59aa54', '#0ab302','#a9a9a9',  
+                               '#32b42e', '#0ab302','#a9a9a9')) +
+  ylim(0,1) +
+  labs(x = 'Saturation %',
+       y = 'Percent choice') +
+  theme_bw(base_size = 20) +
+  theme(legend.position = 'none')
+```
+
+@fig-results-A3 shows the results of this little adventure. Hmm - clearly there is a strong preference for participants choosing the 'same' size option (in grey). This effect seems to depend on the saturation (the distance between the left and right cube) - the smaller the difference, the harder it is to keep the cubes apart. Inspecting the cell sizes in the different conditions we see that for 25 and 50 the percentage of left-right answers is quite small. 
+
+```{r}
+#| label: tab-results-A3
+#| tab-cap: "Number of answers per condition Experiment 1 - Three answering options" 
+cube_A3 %>%
+  select(-cond)
+```
+
+So, running tests on this does not really make sense, but we can at least check the 75 condition: 
+
+75 condition: 
+
+```{r}
+# Sat75% - A3
+cube_A3_75 <-
+cube %>%
+  filter(A == 'A3' & Sat == '75')
+chisq.test(table(cube_A3_75$response, cube_A3_75$Sat))
+```
+
+As one would expect from the table above - we find no significant preference for left or right - just by adding a 'same' option in our experiment. 
+
+## Experiment 2 - Laptops (their Study 3)
+
+In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color saturation has an attention grabing effect, has an effect on arousal as well as size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see @fig-exp2). 
+
+![Laptops 100% & 50% saturation](images/laptops_overview.png){#fig-exp2}
+
+```{r}
+#| label: fig-results-L
+#| fig-cap: "Results Replication Study 3 - Size" 
+laptop %>%
+  select(ID, Color, Sat, guess_size) %>%
+  mutate(Sat = as_factor(Sat),
+         Color = case_when(Color == 'LB' ~ 'blue',
+                           Color == 'LG' ~ 'green',
+                           Color == 'LR' ~ 'red',)) %>%
+  filter(!is.na(guess_size)) %>%
+  ggplot(aes(Sat, guess_size, group = Color, color = Color)) +
+  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
+  stat_summary(geom = 'line', fun.y = 'mean', position = position_dodge(width = .3), linewidth = 1.5) +
+  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
+  scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
+  labs(x = 'Saturation %',
+       y = 'Size estimation') +
+  theme_bw(base_size = 20) +
+  ylim(10,20)
+```
+
+```{r}
+laptop_clean <-
+laptop %>%
+    filter(!is.na(guess_size)) 
+model <- aov(guess_size ~ Color * Sat, data = laptop_clean)
+summary(model)
+```
+
+```{r}
+#| label: fig-results-A
+#| fig-cap: "Results Replication Study 3 - Arrousal" 
+laptop %>%
+  select(ID, Color, Sat, arrousal) %>%
+  mutate(Sat = as_factor(Sat),
+         Color = case_when(Color == 'LB' ~ 'blue',
+                           Color == 'LG' ~ 'green',
+                           Color == 'LR' ~ 'red',)) %>%
+  filter(!is.na(arrousal)) %>%
+  ggplot(aes(Sat, arrousal, group = Color, color = Color)) +
+  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
+  stat_summary(geom = 'line', fun.y = 'mean', position = position_dodge(width = .3), linewidth = 1.5) +
+  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
+  scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
+  labs(x = 'Saturation %',
+       y = 'Arrousal') +
+  theme_bw(base_size = 20) +
+  ylim(0,10)
+```
+
+```{r}
+laptop_clean <-
+laptop %>%
+    filter(!is.na(arrousal)) 
+model <- aov(arrousal ~ Color * Sat, data = laptop_clean)
+summary(model)
+```
+
+```{r}
+#| label: fig-results-M
+#| fig-cap: "Results Replication Study 3 - Mood" 
+laptop %>%
+  select(ID, Color, Sat, mood) %>%
+  mutate(Sat = as_factor(Sat),
+         Color = case_when(Color == 'LB' ~ 'blue',
+                           Color == 'LG' ~ 'green',
+                           Color == 'LR' ~ 'red',)) %>%
+  filter(!is.na(mood)) %>%
+  ggplot(aes(Sat, mood, group = Color, color = Color)) +
+  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
+  stat_summary(geom = 'line', fun.y = 'mean', position = position_dodge(width = .3), linewidth = 1.5) +
+  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
+  scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
+  labs(x = 'Saturation %',
+       y = 'Mood') +
+  theme_bw(base_size = 20) +
+  ylim(0,10)
+```
+
+```{r}
+laptop_clean <-
+laptop %>%
+    filter(!is.na(mood)) 
+model <- aov(mood ~ Color * Sat, data = laptop_clean)
+summary(model)
+```
+
+
+
+## Experiment 3 - Suitcases
+
+![Suitcases 100%-25% saturation](images/suitcases_overview.png){#fig-exp3}
+
+## Experiment 4 - Couches
+
+![Couches 100% & 50% saturation](images/couches_overview.png){#fig-exp4}
+
+# Caveats
+
+
+
+# References
+
+Hagtvedt, H., & Brasel, S. A. (2017). [Color saturation increases perceived product size](https://doi.org/10.1093/jcr/ucx039). *Journal of Consumer Research, 44*(2), 396-413. 
