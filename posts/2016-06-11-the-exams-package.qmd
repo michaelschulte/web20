@@ -18,23 +18,6 @@ After some fiddling and help from one of the authors (the incredible nice [Achim
   * random order of the answers for each question
   * exam with the correct answers
 
-<img class="alignleft size-medium wp-image-444" src="/uploads//2016/06/Screen-Shot-2016-06-11-at-11.00.22-203x300.png" alt="Screen Shot 2016-06-11 at 11.00.22" width="203" height="300" srcset="2016/06/Screen-Shot-2016-06-11-at-11.00.22-203x300.png 203w, 2016/06/Screen-Shot-2016-06-11-at-11.00.22-338x500.png 338w, 2016/06/Screen-Shot-2016-06-11-at-11.00.22.png 386w" sizes="(max-width: 203px) 100vw, 203px" /> 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 There are three parts:
 

@@ -10,7 +10,7 @@ Chance encounters sometimes lead to interesting and new projects. This is one of
 
 We got our hands on a rich dataset of speed measures the police in Zürich (Switzerland) does unbeknownst to the drivers during they year for planning purposes. The radar is put into a small black box hardly anybody realises driving by:
 
-<img class="aligncenter wp-image-604" src="/uploads//2018/01/IMG_2465.jpg" alt="" width="74" height="252" /> 
+<img class="aligncenter wp-image-604" src="_images/blind_light.png" width = 600/> 
 
 (it&#8217;s the black box above the bin &#8211; not the bin!)
 
