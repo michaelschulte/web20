@@ -266,6 +266,55 @@
     "text": "The New York Times published a nice overview of the work on decision making and ego depletion (often ego depletion is used as a synonym with resource depletion, which is somewhat confusing because of the use of the later in economy to described the situation when raw materials are exhausted in a region).\nA new paper from Jonathan Levav (now at Standford – congrats!) is prominently featured in the above article. Levav et al analysed rulings in court cases and link them to the time when these rulings were made during the day. They showed that after breaks (lunches) the probability of getting probation dramatically increased, a results that blends nicely into the ego depletion idea which states that self-control is a limited resource that is depleted by decision (rulings) and can be restored by, e.g., rest."
   },
   {
+    "objectID": "posts/2023-10-28-kinder/index.html",
+    "href": "posts/2023-10-28-kinder/index.html",
+    "title": "Kinderuni",
+    "section": "",
+    "text": "Sometimes teaching turns out to be very different from the usual lecture on a Wednesday. I was asked (well I signed up) to teach in the Kinderuni (children’s university) at my home institution, the University of Bern. This was part of program where children between the ages of 8-12 are invited to participate in a lecture (Friday) and then in a seminar (Saturday). In what follows I will mainly talk about the lecture."
+  },
+  {
+    "objectID": "posts/2023-10-28-kinder/index.html#anchoring",
+    "href": "posts/2023-10-28-kinder/index.html#anchoring",
+    "title": "Kinderuni",
+    "section": "Anchoring",
+    "text": "Anchoring\nI talked about decision making and experiments as a methodological approach. My aim was to have many examples and run experiments with them in class. 75 children showed up on Friday for the lecture. Having a mobile makes running in-class experiments really easy - but I could not rely on that - hence back to paper and pencil. We started off with an anchoring task, the classic: multiply the following numbers 1*2*3*4*5*6*7*8*9 for one group and the reverse for the second seemed a little to hard for 8-years old so I used addition instead 1+2+3+4+5+6+7+8+9. This worked reasonably well (a brave helper typed in the numbers, while I worked through another example with them) and we could demonstrate quite a substantial anchoring effect (400 v 1400) which was explained back to me, by one of the kids in great detail - pretty cool."
+  },
+  {
+    "objectID": "posts/2023-10-28-kinder/index.html#wisdom-of-the-crowds",
+    "href": "posts/2023-10-28-kinder/index.html#wisdom-of-the-crowds",
+    "title": "Kinderuni",
+    "section": "Wisdom of the crowds",
+    "text": "Wisdom of the crowds\nAs mentioned above, while a lot of typing was going on I let them estimate three quantities: I had 1) a big glass vase with ping pong balls. 2) a picture of many Legos and 3) I let them estimate my weight.\n\n\n\nFigure 2: Estimations\n\n\nThere were 44 balls, 88 Legos and my own weight (on the morning of the lecture) 76 kg. The average of the whole group was off by 1 ball (pretty good!), 4 Legos and 5 kg (I just look too slim I guess) - we talked a bit about individual choices and the averages - again tricky for the little ones, pretty ok for the older."
+  },
+  {
+    "objectID": "posts/2023-10-28-kinder/index.html#risk",
+    "href": "posts/2023-10-28-kinder/index.html#risk",
+    "title": "Kinderuni",
+    "section": "Risk",
+    "text": "Risk\nWe moved on to decision making without risk (food choice) and with risk. Here I tried to show them base rate neglect with several picks of a certain gummybear color (green or red) from different distributions.\n We started out with an easy task - do you prefer A or B if you want to draw a red gummybear?\n After some further easy tasks - something more tricky - after bringing these in order, it became clear that the two distributions were the same - so same probabilities for A and B.\n\n\n\nFigure 3: Equal probabiliites\n\n\nFinally the real tricky one:\n\n\n\nFigure 4: Tricky\n\n\nJust going with the number of red ones (if you want a red) is misleading … we do a bit of maths and decide that A is advantageous. Clearly the 8-year olds had troubles with this - but the older ones totally got my point and explained that A simply has the larger probability of a red gummybear - hence this one is preferable - again - pretty cool.\n\n\n\nFigure 5: Risk"
+  },
+  {
+    "objectID": "posts/2023-10-28-kinder/index.html#game-theory",
+    "href": "posts/2023-10-28-kinder/index.html#game-theory",
+    "title": "Kinderuni",
+    "section": "Game theory",
+    "text": "Game theory\nFinally - and definitly most chaotic of all - we played two rounds of game theory. First a dictator game, imagining one of the other kids as their partner. Then I paired them up and let them play an Ultimatum game in pairs with (Sugus)[https://en.wikipedia.org/wiki/Sugus] sweets.\n\n\n\nFigure 6: Dictator game\n\n\n\n\n\nFigure 7: Ultimatum game\n\n\nBoth rounds were pretty wild but we ended up in a nice discussion on fairness - a fair offer (3:3 when 6 Sugus were distributed) was clearly identified and other cases mentioned. Some interactions ended in interesting distributions like 6:0 cause one of the two kids did not like Sugus - so well coordinated :)."
+  },
+  {
+    "objectID": "posts/2023-10-28-kinder/index.html#take-aways",
+    "href": "posts/2023-10-28-kinder/index.html#take-aways",
+    "title": "Kinderuni",
+    "section": "Take Aways",
+    "text": "Take Aways\n\nI was way off how long things take - favorite example: I told them to form pairs of two for the ultimatum game … it took us about 10 minutes to achive this, planned about 2 :)\nresponses in paper and pencil are tricky to live analyse - I normally run FormR as a frontend and a R script in the background that analyse/visualize data automatically - easy, once setup. Here we did two things - entering values from the response papers into Google Sheets and sticking dots onto a flipchart to generate a distribution graph - both works but both takes a lot of time (even with 3 people in the room)\nKids (at least in this class) are super responsive and engaged - I am used to getting not a lot of feedback/questions from my students - with the kids 7-10 hands are up for every questions - great, but again a time issue if you want to address the questions properly"
+  },
+  {
+    "objectID": "posts/2023-10-28-kinder/index.html#slides",
+    "href": "posts/2023-10-28-kinder/index.html#slides",
+    "title": "Kinderuni",
+    "section": "Slides",
+    "text": "Slides\nHere is a pdf export of the Keynote slides I did."
+  },
+  {
     "objectID": "posts/2011-03-15-psychology-as-a-reproducible-science.html",
     "href": "posts/2011-03-15-psychology-as-a-reproducible-science.html",
     "title": "Psychology as a reproducible Science",
@@ -579,54 +628,5 @@
     "title": "About",
     "section": "Current position",
     "text": "Current position\nUniversity of Bern, Switzerland\nMax-Planck-Institute for Human Development in Berlin."
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html",
-    "href": "posts/2023-10-28-kinder/index.html",
-    "title": "Kinderuni",
-    "section": "",
-    "text": "Sometimes teaching turns out to be very different from the usual lecture on a Wednesday. I was asked (well I signed up) to teach in the Kinderuni (children’s university) at my home institution, the University of Bern. This was part of program where children between the ages of 8-12 are invited to participate in a lecture (Friday) and then in a seminar (Saturday). In what follows I will mainly talk about the lecture."
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html#anchoring",
-    "href": "posts/2023-10-28-kinder/index.html#anchoring",
-    "title": "Kinderuni",
-    "section": "Anchoring",
-    "text": "Anchoring\nI talked about decision making and experiments as a methodological approach. My aim was to have many examples and run experiments with them in class. 75 children showed up on Friday for the lecture. Having a mobile makes running in-class experiments really easy - but I could not rely on that - hence back to paper and pencil. We started off with an anchoring task, the classic: multiply the following numbers 1*2*3*4*5*6*7*8*9 for one group and the reverse for the second seemed a little to hard for 8-years old so I used addition instead 1+2+3+4+5+6+7+8+9. This worked reasonably well (a brave helper typed in the numbers, while I worked through another example with them) and we could demonstrate quite a substantial anchoring effect (400 v 1400) which was explained back to me, by one of the kids in great detail - pretty cool."
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html#wisdom-of-the-crowds",
-    "href": "posts/2023-10-28-kinder/index.html#wisdom-of-the-crowds",
-    "title": "Kinderuni",
-    "section": "Wisdom of the crowds",
-    "text": "Wisdom of the crowds\nAs mentioned above, while a lot of typing was going on I let them estimate three quantities: I had 1) a big glass vase with ping pong balls. 2) a picture of many Legos and 3) I let them estimate my weight.\n\n\n\nFigure 2: Estimations\n\n\nThere were 44 balls, 88 Legos and my own weight (on the morning of the lecture) 76 kg. The average of the whole group was off by 1 ball (pretty good!), 4 Legos and 5 kg (I just look too slim I guess) - we talked a bit about individual choices and the averages - again tricky for the little ones, pretty ok for the older."
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html#risk",
-    "href": "posts/2023-10-28-kinder/index.html#risk",
-    "title": "Kinderuni",
-    "section": "Risk",
-    "text": "Risk\nWe moved on to decision making without risk (food choice) and with risk. Here I tried to show them base rate neglect with several picks of a certain gummybear color (green or red) from different distributions.\n We started out with an easy task - do you prefer A or B if you want to draw a red gummybear?\n After some further easy tasks - something more tricky - after bringing these in order, it became clear that the two distributions were the same - so same probabilities for A and B.\n\n\n\nFigure 3: Equal probabiliites\n\n\nFinally the real tricky one:\n\n\n\nFigure 4: Tricky\n\n\nJust going with the number of red ones (if you want a red) is misleading … we do a bit of maths and decide that A is advantageous. Clearly the 8-year olds had troubles with this - but the older ones totally got my point and explained that A simply has the larger probability of a red gummybear - hence this one is preferable - again - pretty cool.\n\n\n\nFigure 5: Risk"
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html#game-theory",
-    "href": "posts/2023-10-28-kinder/index.html#game-theory",
-    "title": "Kinderuni",
-    "section": "Game theory",
-    "text": "Game theory\nFinally - and definitly most chaotic of all - we played two rounds of game theory. First a dictator game, imagining one of the other kids as their partner. Then I paired them up and let them play an Ultimatum game in pairs with (Sugus)[https://en.wikipedia.org/wiki/Sugus] sweets.\n\n\n\nFigure 6: Dictator game\n\n\n\n\n\nFigure 7: Ultimatum game\n\n\nBoth rounds were pretty wild but we ended up in a nice discussion on fairness - a fair offer (3:3 when 6 Sugus were distributed) was clearly identified and other cases mentioned. Some interactions ended in interesting distributions like 6:0 cause one of the two kids did not like Sugus - so well coordinated :)."
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html#take-aways",
-    "href": "posts/2023-10-28-kinder/index.html#take-aways",
-    "title": "Kinderuni",
-    "section": "Take Aways",
-    "text": "Take Aways\n\nI was way off how long things take - favorite example: I told them to form pairs of two for the ultimatum game … it took us about 10 minutes to achive this, planned about 2 :)\nresponses in paper and pencil are tricky to live analyse - I normally run FormR as a frontend and a R script in the background that analyse/visualize data automatically - easy, once setup. Here we did two things - entering values from the response papers into Google Sheets and sticking dots onto a flipchart to generate a distribution graph - both works but both takes a lot of time (even with 3 people in the room)\nKids (at least in this class) are super responsive and engaged - I am used to getting not a lot of feedback/questions from my students - with the kids 7-10 hands are up for every questions - great, but again a time issue if you want to address the questions properly"
-  },
-  {
-    "objectID": "posts/2023-10-28-kinder/index.html#slides",
-    "href": "posts/2023-10-28-kinder/index.html#slides",
-    "title": "Kinderuni",
-    "section": "Slides",
-    "text": "Slides\nHere is a pdf export of the Keynote slides I did."
   }
 ]
