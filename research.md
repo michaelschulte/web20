@@ -8,15 +8,6 @@ keep-md: true
 
 
 
-### 2022{#not-published-2022}
-
-```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'>Holmqvist, K., Örbom, S. L., Hooge, I. T., Niehorster, D. C., Alexander, R. G., Andersson, R., Michael Schulte-Mecklenbeck, and Hessels, R. S. (2022) "Eye tracking: empirical foundations for a minimal reporting guideline." <em>Behavior Research Methods.</em><br><a class="btn btn-outline-dark btn-sm", href="/pdf/Holmqvist2022.pdf" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
-        Paper
-    </a></li></ul>
-```
-
 ### 2021{#not-published-2021}
 
 ```{=html}

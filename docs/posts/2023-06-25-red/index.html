@@ -183,22 +183,29 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="demographics" class="level1">
 <h1>Demographics</h1>
-<p>The original paper had the following particiapnts in each experiment: Exp1: 56 participants, Exp2: 58, Exp3: 80, Exp4: 160.</p>
-<p>Overall we collected data from 328 participants. Two pre-registered attention checks were built into the questionnaire which had to be passed both for inclusion. This step reduced the sample to: 270 participants. Finally we asked participants whether they are color-blind - this step removed two participants.</p>
-<p>We ended up with 261 participants (56.4% female). Female participants were on average M = 44.8 years, SD = 11.3 years, the male participants were M = 41 years, SD = 8.5 years.</p>
+<p>The original paper had the following number of participants in each experiment:</p>
+<ul>
+<li><strong>Exp1</strong> 56</li>
+<li><strong>Exp2</strong> 58</li>
+<li><strong>Exp3</strong> 80</li>
+<li><strong>Exp4</strong> 160</li>
+</ul>
+<p>Overall we collected data from <strong>328 participants</strong>. Two pre-registered attention checks were built into the questionnaire which had to be <strong>passed both</strong> for inclusion. This step reduced the sample to: <strong>270 participants</strong>. Finally we asked participants whether they are color-blind - this step removed two participants.</p>
+<p>After aplying these exclusion criteriawe ended up with 261 participants (56.4% female). Female participants were on average <em>M =</em> 44.8 years, <em>SD =</em> 11.3 years, male participants were <em>M =</em> 41 years, <em>SD =</em> 8.5 years.</p>
 <section id="experiment-1---the-cube-their-study-1" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-1---the-cube-their-study-1">Experiment 1 - The Cube (their Study 1)</h2>
-<p>Experiment 1 tests a simple idea - color saturation changes size perception of objects. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.’</p>
+<p>Experiment 1 tests a simple idea - <strong>color saturation changes size perception of objects</strong>. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.’</p>
 <div id="fig-exp1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/cubes_overview.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure&nbsp;1: Cubes 100%-25% saturation</figcaption>
 </figure>
 </div>
-<p>While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low saturation) we decided to use <em>4-levels</em> of saturation: 25%, 50% 75%, 100% (as can be seen in Figures <a href="#fig-exp1">Figure&nbsp;1</a>). Additionally we added an additional answering option - in the original work the options were left or right to identify the larger cube - we added ‘the same’ as an option to perceive the cubes having the same size. We also used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] saturation on the other left side 100% saturation.</p>
+<p>While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low <code>saturation</code>) we decided to use <strong>4-levels</strong> of <code>saturation</code>: 25%, 50% 75%, 100% (as can be seen in Figures <a href="#fig-exp1">Figure&nbsp;1</a>). We also added an additional answering option ‘the same’ (in the original work the options were ‘left’ or ‘right’ to identify the larger cube). Hence we ensured that participants had the option to state that they perceive the cubes as having the same size.</p>
+<p>We used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] <code>saturation</code> on the other left side 100% <code>saturation</code>.</p>
 </section>
-<section id="either-left-or-right" class="level2">
-<h2 class="anchored" data-anchor-id="either-left-or-right">Either left or right</h2>
+<section id="either-left-or-right-direct-replication" class="level2">
+<h2 class="anchored" data-anchor-id="either-left-or-right-direct-replication">Either left or right (direct replication)</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-results-A2" class="quarto-figure quarto-figure-center anchored">
@@ -210,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p><a href="#fig-results-A2">Figure&nbsp;2</a> plots the results for each of the three conditions - 25 v 100, 50 v 100 (the original condition) and 75 v 100. It becomes clear that we nicely replicate the finding of the authors with consistent <em>larger judgments</em> for the <em>higher saturation</em> condition (ie 100). Following the analysis in the original work, we ran chi2 tests for each of the three conditions, revealing significant differences for the</p>
-<p>25 condition:</p>
+<p><strong>25 condition</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -220,7 +227,7 @@ data:  table(cube_A2_25$response, cube_A2_25$Sat)
 X-squared = 6, df = 1, p-value = 0.02</code></pre>
 </div>
 </div>
-<p>50 condition:</p>
+<p><strong>50 condition</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -230,7 +237,7 @@ data:  table(cube_A2_50$response, cube_A2_50$Sat)
 X-squared = 11, df = 1, p-value = 0.001</code></pre>
 </div>
 </div>
-<p>75 condition:</p>
+<p><strong>75 condition</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -241,10 +248,10 @@ X-squared = 10, df = 1, p-value = 0.001</code></pre>
 </div>
 </div>
 <p>Pretty cool!</p>
-<p>Anais and Nemanja came up with a question - but what if people want to say - ‘hey these two cubes look the same size?’. Extension to the above experiment 1 - let us add a third answering option where participants can either say ‘left’ or ‘right’ or ‘same’ (for both have the same size.)</p>
 </section>
 <section id="left-or-right-or-simply-the-same." class="level2">
 <h2 class="anchored" data-anchor-id="left-or-right-or-simply-the-same.">Left or right or simply the same.</h2>
+<p>Anais and Nemanja came up with a question - but what if people want to say - ‘hey these two cubes look the same size?’. Extension to the above experiment 1 - let us add a third answering option where participants can either say ‘left’ or ‘right’ or ‘same’ (for both having the same perceived size.)</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-results-A3" class="quarto-figure quarto-figure-center anchored">
@@ -255,7 +262,7 @@ X-squared = 10, df = 1, p-value = 0.001</code></pre>
 </div>
 </div>
 </div>
-<p><a href="#fig-results-A3">Figure&nbsp;3</a> shows the results of this little adventure. Hmm - clearly there is a strong preference for participants choosing the ‘same’ size option (in grey). This effect seems to depend on the saturation (the distance between the left and right cube) - the smaller the difference, the harder it is to keep the cubes apart. Inspecting the cell sizes in the different conditions we see that for 25 and 50 the percentage of left-right answers is quite small.</p>
+<p><a href="#fig-results-A3">Figure&nbsp;3</a> shows the results of this little adventure. Hmm - clearly there is a strong preference for participants choosing the ‘same’ size option (in grey). This effect seems to depend on the <code>saturation</code> (the distance between the left and right cube) - the smaller the difference, the harder it is to keep the cubes apart. Inspecting the cell sizes in the different conditions we see that for 25 and 50 the percentage of left-right answers is quite small.</p>
 <div class="cell" data-layout-align="center" data-tab-cap="Number of answers per condition Experiment 1 - Three answering options">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 9 × 5
@@ -274,7 +281,7 @@ X-squared = 10, df = 1, p-value = 0.001</code></pre>
 </div>
 </div>
 <p>So, running tests on this does not really make sense, but we can at least check the 75 condition:</p>
-<p>75 condition:</p>
+<p><strong>75 condition</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -288,23 +295,40 @@ X-squared = 4, df = 2, p-value = 0.1</code></pre>
 </section>
 <section id="experiment-2---laptops-their-study-3" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-2---laptops-their-study-3">Experiment 2 - Laptops (their Study 3)</h2>
-<p>In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color saturation has an attention grabing effect, has an effect on arousal as well as size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see <a href="#fig-exp2">Figure&nbsp;4</a>).</p>
+<p>In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color <code>saturation</code> has an attention grabing effect, an effect on arousal and an effect on size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see <a href="#fig-exp2">Figure&nbsp;4</a>) and a new object to judge: <strong>laptops</strong>.</p>
 <div id="fig-exp2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/laptops_overview.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure&nbsp;4: Laptops 100% &amp; 50% saturation</figcaption>
 </figure>
 </div>
+<p>In the original study laptops were shown in a projection on the wall, we, again, use our online sample. Here is what we are looking for - results from study 3 in <a href="#fig-study3-results">Figure&nbsp;5</a>.</p>
+<div id="fig-study3-results" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/study3_results.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: ANOVA results study 3</figcaption>
+</figure>
+</div>
+<p>Let’s first plot what we find for the three colors:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-results-L" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="staticfig-results-L-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: Results Replication Study 3 - Size</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;6: Results Replication Study 3 - Size</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>Let us first look only at the red stimuli - they were also used in the original. <span class="citation" data-cites="tab-results-R">@tab-results-R</span> plots the ANOVA results. We find a non-significant main effect for <code>saturation</code> with <em>M<sub>high</sub></em> = 14.6, <em>SD<sub>high</sub></em> = 1.5 vs.&nbsp;<em>M<sub>low</sub></em> = 14.6, <em>SD<sub>low</sub></em> = 1.7, <em>F</em>(1, model$df.residual) = 0.29, <em>p</em> = .59, <em>eta<sup>2</sup></em> = 0.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)
+Sat          1    0.9   0.857    0.29   0.59
+Residuals   82  245.2   2.990               </code></pre>
+</div>
+</div>
+<p>In addition we also look at the whole model with 3 color levels and 2 <code>saturation</code> levels.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
@@ -314,12 +338,14 @@ Color:Sat     2      6    3.21    1.21   0.30
 Residuals   262    694    2.65               </code></pre>
 </div>
 </div>
+<p>Again, not a lot going on for <code>saturation</code> (<em>F</em> = 0.46) or the three different <code>colors</code> we used (<em>F</em> = 1.15), also the interaction does not show an effect.</p>
+<p>The authors also found effects of <code>saturation</code> on <code>arousal</code> and <code>mood</code>. We plot the averages for these dependent measures in <a href="#fig-results-A">Figure&nbsp;7</a> and <a href="#fig-results-M">Figure&nbsp;8</a>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-results-A" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="staticfig-results-A-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption class="figure-caption">Figure&nbsp;6: Results Replication Study 3 - Arrousal</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;7: Results Replication Study 3 - Arrousal</figcaption>
 </figure>
 </div>
 </div>
@@ -338,7 +364,7 @@ Residuals   262    878    3.35               </code></pre>
 <div id="fig-results-M" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="staticfig-results-M-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption class="figure-caption">Figure&nbsp;7: Results Replication Study 3 - Mood</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8: Results Replication Study 3 - Mood</figcaption>
 </figure>
 </div>
 </div>
@@ -358,8 +384,26 @@ Residuals   262    986    3.76               </code></pre>
 <div id="fig-exp3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/suitcases_overview.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;8: Suitcases 100%-25% saturation</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;9: Suitcases 100%-25% saturation</figcaption>
 </figure>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="staticunnamed-chunk-16-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
+Sat           3   1784     595    1.02   0.38
+target        1   1036    1036    1.78   0.18
+Sat:target    3    219      73    0.13   0.95
+Residuals   256 149122     583               </code></pre>
+</div>
 </div>
 </section>
 <section id="experiment-4---couches" class="level2">
@@ -367,7 +411,7 @@ Residuals   262    986    3.76               </code></pre>
 <div id="fig-exp4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/couches_overview.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;9: Couches 100% &amp; 50% saturation</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;10: Couches 100% &amp; 50% saturation</figcaption>
 </figure>
 </div>
 </section>

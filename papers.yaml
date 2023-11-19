@@ -1,18 +1,3 @@
-EyeTracking:
-  title: 'Eye tracking: empirical foundations for a minimal reporting guideline'
-  authors:
-  - Holmqvist, K.
-  - Örbom, S. L.
-  - Hooge, I. T.
-  - Niehorster, D. C.
-  - Alexander, R. G.
-  - Andersson, R.
-  - me
-  - Hessels, R. S
-  year: 2022
-  venue: Behavior Research Methods.
-  paper: /pdf/Holmqvist2022.pdf
-
 SameData:
   title:  'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis'
   authors:

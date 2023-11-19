@@ -29,6 +29,7 @@ library(broom)
 library(lme4)
 library(here)
 library(DT)
+library(lsr)
 group <- 'MAFS2021'
 demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv')))
 cube <- read_csv(here(paste0('0_data/',group,'_cube_pub.csv')))
@@ -63,22 +64,29 @@ A second, even more relevant deviation from the original work is the lab-online 
 
 # Demographics
 
-The original paper had the following particiapnts in each experiment: Exp1: 56 participants, Exp2: 58, Exp3: 80, Exp4: 160. 
+The original paper had the following number of participants in each experiment: 
 
-Overall we collected data from 328 participants. Two pre-registered attention checks were built into the questionnaire which had to be passed both for inclusion. This step reduced the sample to: 270 participants. Finally we asked participants whether they are color-blind - this step removed two participants. 
+- **Exp1** 56 
+- **Exp2** 58
+- **Exp3** 80
+- **Exp4** 160 
 
-We ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Female participants were on average M = `r demographie %>% filter(gender == 'female') %>% summarise(m = mean(age)) %>% pull(m)` years, SD = `r demographie %>% filter(gender == 'female') %>% summarise(m = sd(age)) %>% pull(m)` years, the male participants were  M = `r demographie %>% filter(gender == 'male') %>% summarise(m = mean(age)) %>% pull(m)` years, SD = `r demographie %>% filter(gender == 'male') %>% summarise(m = sd(age)) %>% pull(m)` years.
+Overall we collected data from **328 participants**. Two pre-registered attention checks were built into the questionnaire which had to be **passed both** for inclusion. This step reduced the sample to: **270 participants**. Finally we asked participants whether they are color-blind - this step removed two participants. 
+
+After aplying these exclusion criteriawe ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Female participants were on average *M =* `r demographie %>% filter(gender == 'female') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'female') %>% summarise(m = sd(age)) %>% pull(m)` years, male participants were  *M =* `r demographie %>% filter(gender == 'male') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'male') %>% summarise(m = sd(age)) %>% pull(m)` years.
 
 
 ## Experiment 1 - The Cube (their Study 1)
 
-Experiment 1 tests a simple idea - color saturation changes size perception of objects. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.' 
+Experiment 1 tests a simple idea - **color saturation changes size perception of objects**. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.' 
 
 ![Cubes 100%-25% saturation](images/cubes_overview.png){#fig-exp1}
 
-While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low saturation) we decided to use *4-levels* of saturation: 25%, 50% 75%, 100% (as can be seen in Figures @fig-exp1). Additionally we added an additional answering option - in the original work the options were left or right to identify the larger cube - we added 'the same' as an option to perceive the cubes having the same size. We also used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] saturation on the other left side 100% saturation.  
+While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low `saturation`) we decided to use **4-levels** of `saturation`: 25%, 50% 75%, 100% (as can be seen in Figures @fig-exp1). We also added an additional answering option 'the same' (in the original work the options were 'left' or 'right' to identify the larger cube). Hence we ensured that participants had the option to state that they perceive the cubes as having the same size. 
 
-## Either left or right
+We used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] `saturation` on the other left side 100% `saturation`.  
+
+## Either left or right (direct replication)
 
 ```{r}
 #| label: fig-results-A2
@@ -105,13 +113,12 @@ cube_A2 %>%
   labs(x = 'Saturation %',
        y = 'Percent choice') +
   theme_bw(base_size = 20) +
-
   theme(legend.position = 'none')
 ```
 
 @fig-results-A2 plots the results for each of the three conditions - 25 v 100, 50 v 100 (the original condition) and 75 v 100. It becomes clear that we nicely replicate the finding of the authors with consistent *larger judgments* for the *higher saturation* condition (ie 100). Following the analysis in the original work, we ran chi2 tests for each of the three conditions, revealing significant differences for the 
 
-25 condition: 
+**25 condition** 
 
 ```{r}
 # Sat25% - A2
@@ -121,7 +128,7 @@ cube %>%
 chisq.test(table(cube_A2_25$response, cube_A2_25$Sat))
 ```
 
-50 condition: 
+**50 condition** 
 
 ```{r}
 # Sat50% - A2
@@ -130,7 +137,8 @@ cube %>%
   filter(A == 'A2' & Sat == '50')
 chisq.test(table(cube_A2_50$response, cube_A2_50$Sat))
 ```
-75 condition: 
+
+**75 condition**
 
 ```{r}
 # Sat75% - A2
@@ -142,9 +150,9 @@ chisq.test(table(cube_A2_75$response, cube_A2_75$Sat))
 
 Pretty cool!
 
-Anais and Nemanja came up with a question - but what if people want to say - 'hey these two cubes look the same size?'. Extension to the above experiment 1 - let us add a third answering option where participants can either say 'left' or 'right' or 'same' (for both have the same size.)
-
 ## Left or right or simply the same.
+
+Anais and Nemanja came up with a question - but what if people want to say - 'hey these two cubes look the same size?'. Extension to the above experiment 1 - let us add a third answering option where participants can either say 'left' or 'right' or 'same' (for both having the same perceived size.)
 
 ```{r}
 #| label: fig-results-A3
@@ -174,7 +182,7 @@ cube_A3 %>%
   theme(legend.position = 'none')
 ```
 
-@fig-results-A3 shows the results of this little adventure. Hmm - clearly there is a strong preference for participants choosing the 'same' size option (in grey). This effect seems to depend on the saturation (the distance between the left and right cube) - the smaller the difference, the harder it is to keep the cubes apart. Inspecting the cell sizes in the different conditions we see that for 25 and 50 the percentage of left-right answers is quite small. 
+@fig-results-A3 shows the results of this little adventure. Hmm - clearly there is a strong preference for participants choosing the 'same' size option (in grey). This effect seems to depend on the `saturation` (the distance between the left and right cube) - the smaller the difference, the harder it is to keep the cubes apart. Inspecting the cell sizes in the different conditions we see that for 25 and 50 the percentage of left-right answers is quite small. 
 
 ```{r}
 #| label: tab-results-A3
@@ -185,7 +193,7 @@ cube_A3 %>%
 
 So, running tests on this does not really make sense, but we can at least check the 75 condition: 
 
-75 condition: 
+**75 condition** 
 
 ```{r}
 # Sat75% - A3
@@ -199,9 +207,15 @@ As one would expect from the table above - we find no significant preference for
 
 ## Experiment 2 - Laptops (their Study 3)
 
-In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color saturation has an attention grabing effect, has an effect on arousal as well as size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see @fig-exp2). 
+In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color `saturation` has an attention grabing effect, an effect on arousal and an effect on size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see @fig-exp2) and a new object to judge: **laptops**. 
 
 ![Laptops 100% & 50% saturation](images/laptops_overview.png){#fig-exp2}
+
+In the original study laptops were shown in a projection on the wall, we, again, use our online sample. Here is what we are looking for - results from study 3 in @fig-study3-results.
+
+![ANOVA results study 3](images/study3_results.png){#fig-study3-results}
+
+Let's first plot what we find for the three colors: 
 
 ```{r}
 #| label: fig-results-L
@@ -213,24 +227,48 @@ laptop %>%
                            Color == 'LG' ~ 'green',
                            Color == 'LR' ~ 'red',)) %>%
   filter(!is.na(guess_size)) %>%
-  ggplot(aes(Sat, guess_size, group = Color, color = Color)) +
+  ggplot(aes(Sat, guess_size, color = Color)) +
   stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
-  stat_summary(geom = 'line', fun.y = 'mean', position = position_dodge(width = .3), linewidth = 1.5) +
   stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
   scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
   labs(x = 'Saturation %',
        y = 'Size estimation') +
-  theme_bw(base_size = 20) +
-  ylim(10,20)
+  theme_bw(base_size = 20) 
 ```
 
 ```{r}
+laptop_red <-
+laptop %>%
+    filter(!is.na(guess_size)) %>%
+    filter(Color == 'LR')
+model <- aov(guess_size ~ Sat, data = laptop_red)
+sum_model <- summary(model)
+es <- etaSquared(model)[1]
+```
+
+Let us first look only at the red stimuli - they were also used in the original. @tab-results-R plots the ANOVA results. We find a non-significant main effect for `saturation` with *M~high~* = `r laptop %>% filter(Sat == 100) %>% summarise(mean(guess_size, na.rm = TRUE))`, *SD~high~* = `r laptop %>% filter(Sat == 100) %>% summarise(sd(guess_size, na.rm = TRUE))` vs. *M~low~* = `r laptop %>% filter(Sat == 50) %>% summarise(mean(guess_size, na.rm = TRUE))`, *SD~low~* = `r laptop %>% filter(Sat == 50) %>% summarise(sd(guess_size, na.rm = TRUE))`, *F*(1, model$df.residual) = 0.29, *p* = .59, *eta^2^* = `r round((es),3)`.  
+
+```{r}
+#| label: fig-results-R
+#| fig-cap: "Results Replication Study 3 - only RED" 
+summary(model)
+```
+
+In addition we also look at the whole model with 3 color levels and 2 `saturation` levels.
+
+```{r}
+#| label: fig-results-color
+#| fig-cap: "Results Replication Study 3 - all colors" 
 laptop_clean <-
 laptop %>%
     filter(!is.na(guess_size)) 
 model <- aov(guess_size ~ Color * Sat, data = laptop_clean)
 summary(model)
 ```
+
+Again, not a lot going on for `saturation` (*F* = 0.46) or the three different `colors` we used (*F* = 1.15), also the interaction does not show an effect.  
+
+The authors also found effects of `saturation` on `arousal` and `mood`. We plot the averages for these dependent measures in @fig-results-A and @fig-results-M.  
 
 ```{r}
 #| label: fig-results-A
@@ -244,16 +282,16 @@ laptop %>%
   filter(!is.na(arrousal)) %>%
   ggplot(aes(Sat, arrousal, group = Color, color = Color)) +
   stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
-  stat_summary(geom = 'line', fun.y = 'mean', position = position_dodge(width = .3), linewidth = 1.5) +
   stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
   scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
   labs(x = 'Saturation %',
        y = 'Arrousal') +
-  theme_bw(base_size = 20) +
-  ylim(0,10)
+  theme_bw(base_size = 20) 
 ```
 
 ```{r}
+#| label: fig-results-arrousal
+#| fig-cap: "Results Arrousal" 
 laptop_clean <-
 laptop %>%
     filter(!is.na(arrousal)) 
@@ -273,16 +311,16 @@ laptop %>%
   filter(!is.na(mood)) %>%
   ggplot(aes(Sat, mood, group = Color, color = Color)) +
   stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
-  stat_summary(geom = 'line', fun.y = 'mean', position = position_dodge(width = .3), linewidth = 1.5) +
   stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
   scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
   labs(x = 'Saturation %',
        y = 'Mood') +
-  theme_bw(base_size = 20) +
-  ylim(0,10)
+  theme_bw(base_size = 20)
 ```
 
 ```{r}
+#| label: fig-results-laptop
+#| fig-cap: "Results Laptop" 
 laptop_clean <-
 laptop %>%
     filter(!is.na(mood)) 
@@ -290,11 +328,37 @@ model <- aov(mood ~ Color * Sat, data = laptop_clean)
 summary(model)
 ```
 
-
-
 ## Experiment 3 - Suitcases
 
 ![Suitcases 100%-25% saturation](images/suitcases_overview.png){#fig-exp3}
+
+```{r}
+suitcase_clean <-
+suitcase %>%
+    select(ID, Color, Sat, prize) %>%
+  mutate(Sat = as_factor(Sat),
+         target = case_when(Color == 'GS' ~ 'small',
+                            Color == 'GB' ~ 'big')) %>%
+  filter(!is.na(prize)) 
+
+suitcase_clean %>%
+  ggplot(aes(Sat, prize, group = target, color = target)) +
+  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
+  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
+  scale_color_manual(values = c('#c44a00','#45c43e')) +
+  labs(x = 'Saturation %',
+       y = 'Prize',
+       color = 'Target') +
+  theme_bw(base_size = 20)
+```
+
+```{r}
+#| label: fig-results-suitcase
+#| fig-cap: "Results Suitcase" 
+model <- aov(prize ~ Sat * target, data = suitcase_clean)
+summary(model)
+```
+
 
 ## Experiment 4 - Couches
 
