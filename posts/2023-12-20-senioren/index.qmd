@@ -1,0 +1,43 @@
+---
+title: "Seniorenuni"
+author: "MSM"
+date: "2024-12-20"
+draft: false
+categories: [Teaching, Open Science, Replication]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+And for the last big external teaching in 2023 I turn to the Seniorenuni (senior university) at the [University of Bern](www.unibe.ch). This is a program where seniors can sign up for a lecture series that runs approx. two lectures each week(!) for the entire term ( [Seniorenuni](https://www.seniorenuni.unibe.ch/programm/)). I suggested a lecture on Open Science and Replication a while ago (maybe back in 2019 for the first time) but was turned down in the selection process. This kind of motivated me to send an application every year and finally in 2023 I was accepted (I am not saying they did not like the subject - but I am pretty sure they did not like the subject).
+
+![Seniorenuni](images/senioren.png){#fig-exp1}
+
+To start things light I wanted to introduce the crowd to the concept of the scientific method and some Popper who already talke about replication in 1959!
+
+![Popper](images/popper.png){#fig-popper}
+
+For my argument below (see Figure @fig-ioannidis) I needed the crowd (roughly 170 people at that time) to understand what power and significance means ... I used the the image of a lamp (which slowly got brighter) to explain the idea that a measurement tool gets better in detecting something (a signal) in a dark room the brighter it shines ... for significance I used Lakens idea significance indicating how surprising a result is (see here for an excellent [Videp](https://www.youtube.com/watch?v=RVxHlsIw_Do)).
+
+![Power](images/power.png){#fig-power}
+
+So, with power and significance taken care of we moved of the Ioannidis' argument about the number of true results in science (he talked about this in his 2005 paper: [Why Most Published Research Findings Are False](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124) and in his 2014 paper [How to Make More Published Research True](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001747) ... see also Figure @fig-ioannidis
+
+![Ioannidis](images/ioannidis.png){#fig-ioannidis}
+
+I am aware that there has been criticism of this paper (and example, see eg here: [Why Most Published Research Findings Are False: Problems in the Analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1182327/)) but I think the argument is still valid and I think it is a good way to work through examples that take a look at the 'the real world' (low power, p-hacking, cherry picking ... pick your drug) ... AND of course fraud - always start with Armstrong and his Tour de France wins ... move on to [Stapel](https://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html) and of course the [Gino](https://www.theorgplumber.com/posts/statement/) case (see @fig-gino). 
+
+
+![Gino](images/gino.png){#fig-gino}
+
+This is when I normally tell the audience that we are nearly at the low point - but then of course there are the big replication projects in [Psych](https://www.science.org/doi/10.1126/science.aac4716) and [Economics](https://www.science.org/doi/10.1126/science.aaf0918) and, well, many other areas (see @fig-replications).
+
+![Replication](images/replication.png){#fig-replications}
+
+So - light at the end of the tunnel - science (I think) is getting better - we have pre-registration, registered replication reports, open science badges, and many other things that (hopefully) help to make science better (see @fig-sol).
+
+![Solutions](images/solutions.png){#fig-sol}
+
+Start with Popper end with Feynman - what could go wrong?
+
+![Feynman](images/feynman.png){#fig-feynman}
