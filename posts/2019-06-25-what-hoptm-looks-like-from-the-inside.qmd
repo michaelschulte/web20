@@ -3,7 +3,7 @@ title: What HoPTM looks like from the inside
 author: MSM
 date: '2019-06-25'
 categories:
-  - Process Tracing
+  - Process tracing
   - R
 ---
 
