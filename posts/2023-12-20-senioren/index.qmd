@@ -1,9 +1,9 @@
 ---
 title: "Seniorenuni"
 author: "MSM"
-date: "2024-12-20"
+date: "2023-12-20"
 draft: false
-categories: [Teaching, Open Science, Replication]
+categories: [Teaching, Open science, Replication]
 sidebar:
   contents: auto
 editor_options: 

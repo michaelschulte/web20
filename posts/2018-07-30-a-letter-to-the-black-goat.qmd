@@ -2,9 +2,7 @@
 title: A letter to the black goat
 date: 2018-07-30T21:16:40-07:00
 author: Michael
-categories:
-  - Open science
-  - Replication
+categories: [Open science, Replication]
 ---
 I wrote this letter to [the black goat](http://www.theblackgoatpodcast.com/) podcast &#8230; will update here if I hear back from them &#8230;
 
