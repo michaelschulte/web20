@@ -3,7 +3,7 @@ title: "Kinderuni"
 author: "MSM"
 date: "2023-10-28"
 draft: false
-categories: [Teaching, Decision Making, Anchoring, Wisdom of crowds]
+categories: [Teaching, Decision Making]
 sidebar:
   contents: auto
 editor_options: 
