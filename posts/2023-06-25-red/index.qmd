@@ -1,8 +1,8 @@
 ---
 title: "Replication: Red"
 author: "MSM"
-date: "2023-06-25"
-draft: true
+date: "2024-01-07"
+draft: false
 categories: [Replication, Perception, Consumer Behavior]
 sidebar:
   contents: auto
@@ -58,9 +58,9 @@ This research demonstrates a visual phenomenon with broad implications for consu
 
 # Replication
 
-We ran a direct replication of experiment 1 to experiment 4 of Hadtvedt & Brasel (2017). While the authors ran different samples for each of their experiments, we decided to use one larger subject pool and run all experiments (ie tasks) within-subject (in randomized order). Clearly there are benefits for each of these approaches, one could argue that repeating similar tasks would have transfer influences, on the other hand having a much larger sample (the smallest sample size in the original work was 56, in our study we collected `r length(demographie$ID)` participants) gives us a better power to detect even small effects. 
+We ran a direct replication of experiment 1 to experiment 4 of HadHagtvedt & Brasel (2017). While the authors ran different samples for each of their experiments, we decided to use one larger subject pool and run all experiments (ie tasks) **within-subject** (in randomized order). Clearly there are benefits for each of these approaches, one could argue that repeating similar tasks would have transfer influences, on the other hand having a much larger sample (the smallest sample size in the original work was 56, in our study we collected `r length(demographie$ID)` participants) gives us a better power to detect even small effects. 
 
-A second, even more relevant deviation from the original work is the lab-online difference. The authors collected their data in the lab with standardized calibration on the same monitors. We ran our sample online, meaning that we do not have control on setup and color calibration. We will get back to this point in the caveats below.
+A second, more relevant deviation from the original work is the **lab-online difference**. The authors collected their data in the lab with standardized calibration on the same monitors. We ran our sample online, meaning that we do not have control on setup and color calibration. We will get back to this point in the caveats below.
 
 # Demographics
 
@@ -76,13 +76,13 @@ Overall we collected data from **328 participants**. Two pre-registered attentio
 After aplying these exclusion criteriawe ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Female participants were on average *M =* `r demographie %>% filter(gender == 'female') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'female') %>% summarise(m = sd(age)) %>% pull(m)` years, male participants were  *M =* `r demographie %>% filter(gender == 'male') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'male') %>% summarise(m = sd(age)) %>% pull(m)` years.
 
 
-## Experiment 1 - The Cube (their Study 1)
+## Experiment 1 - The Cube (Original Study 1)
 
 Experiment 1 tests a simple idea - **color saturation changes size perception of objects**. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.' 
 
 ![Cubes 100%-25% saturation](images/cubes_overview.png){#fig-exp1}
 
-While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low `saturation`) we decided to use **4-levels** of `saturation`: 25%, 50% 75%, 100% (as can be seen in Figures @fig-exp1). We also added an additional answering option 'the same' (in the original work the options were 'left' or 'right' to identify the larger cube). Hence we ensured that participants had the option to state that they perceive the cubes as having the same size. 
+While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low `saturation`) we decided to use **4-levels** of `saturation`: 25%, 50% 75%, 100% (as can be seen in @fig-exp1). We also added an additional answering option 'the same' (in the original work the options were 'left' or 'right' to identify the larger cube). Hence we ensured that participants had the option to state that they perceive the cubes as having the same size. 
 
 We used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] `saturation` on the other left side 100% `saturation`.  
 
@@ -186,7 +186,7 @@ cube_A3 %>%
 
 ```{r}
 #| label: tab-results-A3
-#| tab-cap: "Number of answers per condition Experiment 1 - Three answering options" 
+#| tbl-cap: "Number of answers per condition Experiment 1 - Three answering options"
 cube_A3 %>%
   select(-cond)
 ```
@@ -205,13 +205,13 @@ chisq.test(table(cube_A3_75$response, cube_A3_75$Sat))
 
 As one would expect from the table above - we find no significant preference for left or right - just by adding a 'same' option in our experiment. 
 
-## Experiment 2 - Laptops (their Study 3)
+## Experiment 2 - Laptops (Original Study 3)
 
-In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color `saturation` has an attention grabing effect, an effect on arousal and an effect on size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see @fig-exp2) and a new object to judge: **laptops**. 
+In the original paper study 2 was run with an eye-tracker recording, in addition to eye-movements also pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to the original study 3 asking whether color `saturation` has an attention grabing effect, an effect on arousal and an effect on size perception. Hagtvedt and Brasel (2017) only ran one color (red). As different colors have different attention grabing effects, we extended the material to three colors (see @fig-exp2). 
 
 ![Laptops 100% & 50% saturation](images/laptops_overview.png){#fig-exp2}
 
-In the original study laptops were shown in a projection on the wall, we, again, use our online sample. Here is what we are looking for - results from study 3 in @fig-study3-results.
+In the original study laptops were shown in a projection on the wall, we, again, use our online sample. Here is what we are looking for - results from study 3 (p. 400) in @fig-study3-results.
 
 ![ANOVA results study 3](images/study3_results.png){#fig-study3-results}
 
@@ -244,13 +244,19 @@ laptop %>%
 model <- aov(guess_size ~ Sat, data = laptop_red)
 sum_model <- summary(model)
 es <- etaSquared(model)[1]
+
+stats_laptop <- 
+laptop %>%
+    filter(!is.na(guess_size)) %>%
+    filter(Color == 'LR') %>% 
+    group_by(Sat) %>%
+    summarize(m = mean(guess_size),
+              s = sd(guess_size))
 ```
 
-Let us first look only at the red stimuli - they were also used in the original. @tab-results-R plots the ANOVA results. We find a non-significant main effect for `saturation` with *M~high~* = `r laptop %>% filter(Sat == 100) %>% summarise(mean(guess_size, na.rm = TRUE))`, *SD~high~* = `r laptop %>% filter(Sat == 100) %>% summarise(sd(guess_size, na.rm = TRUE))` vs. *M~low~* = `r laptop %>% filter(Sat == 50) %>% summarise(mean(guess_size, na.rm = TRUE))`, *SD~low~* = `r laptop %>% filter(Sat == 50) %>% summarise(sd(guess_size, na.rm = TRUE))`, *F*(1, model$df.residual) = 0.29, *p* = .59, *eta^2^* = `r round((es),3)`.  
+Let us first look only at the red stimuli - they were also used in the original. We find a non-significant main effect for `saturation` with *M~high~* = `r laptop %>% filter(Sat == 100 & Color == 'LR') %>% summarise(mean(guess_size, na.rm = TRUE))`, *SD~high~* = `r laptop %>% filter(Sat == 100 & Color == 'LR') %>% summarise(sd(guess_size, na.rm = TRUE))` vs. *M~low~* = `r laptop %>% filter(Sat == 50 & Color == 'LR') %>% summarise(mean(guess_size, na.rm = TRUE))`, *SD~low~* = `r laptop %>% filter(Sat == 50 & Color == 'LR') %>% summarise(sd(guess_size, na.rm = TRUE))`, *F*(1, `r paste(model$df.residual)`) = 0.29, *p* = .59, *eta^2^* = `r es`.  
 
 ```{r}
-#| label: fig-results-R
-#| fig-cap: "Results Replication Study 3 - only RED" 
 summary(model)
 ```
 
@@ -289,9 +295,9 @@ laptop %>%
   theme_bw(base_size = 20) 
 ```
 
+Checking with a simple ANOVA for an effect on arousal - no significant effect is found.
+
 ```{r}
-#| label: fig-results-arrousal
-#| fig-cap: "Results Arrousal" 
 laptop_clean <-
 laptop %>%
     filter(!is.na(arrousal)) 
@@ -318,9 +324,9 @@ laptop %>%
   theme_bw(base_size = 20)
 ```
 
+Again checking with a simple ANOVA we see no significant effect is found.
+
 ```{r}
-#| label: fig-results-laptop
-#| fig-cap: "Results Laptop" 
 laptop_clean <-
 laptop %>%
     filter(!is.na(mood)) 
@@ -328,9 +334,54 @@ model <- aov(mood ~ Color * Sat, data = laptop_clean)
 summary(model)
 ```
 
-## Experiment 3 - Suitcases
+So overall we do not find any effects of `saturation` on estimated `size`, `arrousal` or `mood`.
+
+## Experiment 3 - Suitcases (Original Study 4)
+
+Intention could have an influence on the `size` effect the authors found - so in their next experiment an 'image of an orange carry-on suitcase projected on a large screen, which served as the basis for completing paper questionnaires. The carry-on was either high or low in color saturation'. In addition the goal of a potential purchase process was manipulated: **Goal manipulation**: 'Imagine that you want to purchase a carry-on suitcase that is large enough to fit plenty of your belongings' vs. 'small enough to fit easily into an overhead storage compartment'.
+
+What Hagtvedt and Brasel were looking for is the following interaction: 'We expected participants with the goal of a large (vs. small) carry-on to prefer the one with high (vs. low) color saturation, given the hypothesized influence of color saturation on perceived size.'
+
+So - lets see if we can replicate this effect. 
+
+We use the 4 levels of `saturation` (instead of two in the original work) as can be seen in @fig-exp3. 
 
 ![Suitcases 100%-25% saturation](images/suitcases_overview.png){#fig-exp3}
+
+Plotting @fig-results-suitcase we see that there are hardly any differences between the two targets `large` or `small` and, judging visually, no main effect of `saturation`. 
+
+
+```{r}
+#| label: fig-results-suitcase
+#| fig-cap: "Results Suitcase" 
+suitcase_clean <-
+suitcase %>%
+    select(ID, Color, Sat, evaluation) %>%
+  mutate(Sat = as_factor(Sat),
+         target = case_when(Color == 'GS' ~ 'small',
+                            Color == 'GB' ~ 'large')) %>%
+  filter(!is.na(evaluation)) 
+
+suitcase_clean %>%
+  ggplot(aes(Sat, evaluation, group = target, color = target)) +
+  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
+  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
+  scale_color_manual(values = c('#c44a00','#45c43e')) +
+  labs(x = 'Saturation %',
+       y = 'Evaluation',
+       color = 'Target') +
+  theme_bw(base_size = 20) +
+  ylim(1,5)
+```
+
+We qualify this with a simple ANOVA - no significant effect of `saturation ` or `target` (ie goal) found, in addition the interaction is not significant either.
+
+```{r}
+model <- aov(evaluation ~ Sat * target, data = suitcase_clean)
+summary(model)
+```
+
+The same is true if we use willingness to pay (`prize`) as a dependent variable. 
 
 ```{r}
 suitcase_clean <-
@@ -338,35 +389,63 @@ suitcase %>%
     select(ID, Color, Sat, prize) %>%
   mutate(Sat = as_factor(Sat),
          target = case_when(Color == 'GS' ~ 'small',
-                            Color == 'GB' ~ 'big')) %>%
+                            Color == 'GB' ~ 'large')) %>%
   filter(!is.na(prize)) 
 
-suitcase_clean %>%
-  ggplot(aes(Sat, prize, group = target, color = target)) +
-  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
-  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
-  scale_color_manual(values = c('#c44a00','#45c43e')) +
-  labs(x = 'Saturation %',
-       y = 'Prize',
-       color = 'Target') +
-  theme_bw(base_size = 20)
-```
-
-```{r}
-#| label: fig-results-suitcase
-#| fig-cap: "Results Suitcase" 
 model <- aov(prize ~ Sat * target, data = suitcase_clean)
 summary(model)
 ```
 
+So, again we do not find any effects of `saturation` on the quality `evaluation` or estimated `prize`.
 
-## Experiment 4 - Couches
+## Experiment 4 - Couches (Original Study 6)
+
+For our final replication we look at an effect of `saturation` on judgements of the environment of an object. The authors write: 'We expected that a room’s ceiling height would appear comparatively lower when the color of a benchmark in the room —an ottoman— is high (vs. low) in saturation.'
+
+We replaced the ottoman with a couch, used the same `saturation` levels but added two additional colors (see @fig-exp4). 
 
 ![Couches 100% & 50% saturation](images/couches_overview.png){#fig-exp4}
 
+
+Plotting @fig-results-couch we see that there are hardly any differences between the two `saturation` levels and also (as expected) no effect of `color`.
+
+```{r}
+#| label: fig-results-couch
+#| fig-cap: "Results Couch" 
+couch_clean <-
+couch %>%
+  mutate(Sat = as_factor(Sat),
+         Color = case_when(Color == 'CV' ~ 'violet',
+                           Color == 'CR' ~ 'red',
+                           Color == 'CG' ~ 'green')) %>%
+  filter(!is.na(guess_height)) 
+
+couch_clean %>%
+  ggplot(aes(Sat, guess_height, group = Color, color = Color)) +
+  stat_summary(geom = 'point', fun.y = 'mean', position = position_dodge(width = .3), size = 4) +
+  stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
+  scale_color_manual(values = c('#b4030f','#15b80d','#8b0dcc')) +
+  labs(x = 'Saturation %',
+       y = 'Guessed Height',
+       color = 'Color') +
+  theme_bw(base_size = 20) +
+  ylim(0,80)
+```
+
+Runnning the ANOVA on the data we find no significant effect of `saturation` or `color` and no interaction.
+
+```{r}
+model <- aov(guess_height ~ Sat * Color, data = couch_clean)
+summary(model)
+```
+
 # Caveats
 
+As mentioned above we did not replicate the original studies exactly. We used slighty different objects and additional saturation levels. More importantly we used the same participants again in a **within-subjects** design in an **online** experiment instead of a lab study. Nevertheless in our study 1 we see the same effect of `saturation` on `size` as the authors did in their study 1 - so in principle the effect can be replicated but only for the cubes (without adding an option to judge the cubes as having the same size - then this effect also goes away). 
 
+**BUT**: in study 2 we do not find any effects of `saturation` on `size`, `arousal` or `mood`; in study 3 we do not find any effects of `saturation` on `evaluation` or `prize`; in study 4 we do not find any effects of `saturation` on `guessed height`.
+
+I was quite suspicious about the described effects in the original work and my confindence in the effect of `saturation` on `size` did not really increase after this exercise.
 
 # References
 

@@ -14,7 +14,7 @@ website:
         file: '_content/CV_Index.pdf'
       - text: 'Publications'
         file: 'research.qmd'
-  page-footer: 2023 Michael Schulte-Mecklenbeck
+  page-footer: 2024 Michael Schulte-Mecklenbeck
 
 format:
   html:

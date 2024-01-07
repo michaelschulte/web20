@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="MSM">
-<meta name="dcterms.date" content="2023-06-25">
+<meta name="dcterms.date" content="2024-01-07">
 
 <title>Michael Schulte-Mecklenbeck - Replication: Red</title>
 <style>
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 25, 2023</p>
+        <p class="date">January 7, 2024</p>
       </div>
     </div>
     
@@ -178,8 +178,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="replication" class="level1">
 <h1>Replication</h1>
-<p>We ran a direct replication of experiment 1 to experiment 4 of Hadtvedt &amp; Brasel (2017). While the authors ran different samples for each of their experiments, we decided to use one larger subject pool and run all experiments (ie tasks) within-subject (in randomized order). Clearly there are benefits for each of these approaches, one could argue that repeating similar tasks would have transfer influences, on the other hand having a much larger sample (the smallest sample size in the original work was 56, in our study we collected 261 participants) gives us a better power to detect even small effects.</p>
-<p>A second, even more relevant deviation from the original work is the lab-online difference. The authors collected their data in the lab with standardized calibration on the same monitors. We ran our sample online, meaning that we do not have control on setup and color calibration. We will get back to this point in the caveats below.</p>
+<p>We ran a direct replication of experiment 1 to experiment 4 of HadHagtvedt &amp; Brasel (2017). While the authors ran different samples for each of their experiments, we decided to use one larger subject pool and run all experiments (ie tasks) <strong>within-subject</strong> (in randomized order). Clearly there are benefits for each of these approaches, one could argue that repeating similar tasks would have transfer influences, on the other hand having a much larger sample (the smallest sample size in the original work was 56, in our study we collected 261 participants) gives us a better power to detect even small effects.</p>
+<p>A second, more relevant deviation from the original work is the <strong>lab-online difference</strong>. The authors collected their data in the lab with standardized calibration on the same monitors. We ran our sample online, meaning that we do not have control on setup and color calibration. We will get back to this point in the caveats below.</p>
 </section>
 <section id="demographics" class="level1">
 <h1>Demographics</h1>
@@ -192,8 +192,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Overall we collected data from <strong>328 participants</strong>. Two pre-registered attention checks were built into the questionnaire which had to be <strong>passed both</strong> for inclusion. This step reduced the sample to: <strong>270 participants</strong>. Finally we asked participants whether they are color-blind - this step removed two participants.</p>
 <p>After aplying these exclusion criteriawe ended up with 261 participants (56.4% female). Female participants were on average <em>M =</em> 44.8 years, <em>SD =</em> 11.3 years, male participants were <em>M =</em> 41 years, <em>SD =</em> 8.5 years.</p>
-<section id="experiment-1---the-cube-their-study-1" class="level2">
-<h2 class="anchored" data-anchor-id="experiment-1---the-cube-their-study-1">Experiment 1 - The Cube (their Study 1)</h2>
+<section id="experiment-1---the-cube-original-study-1" class="level2">
+<h2 class="anchored" data-anchor-id="experiment-1---the-cube-original-study-1">Experiment 1 - The Cube (Original Study 1)</h2>
 <p>Experiment 1 tests a simple idea - <strong>color saturation changes size perception of objects</strong>. In the original it says: `Participants are exposed to cubes with high- versus low-saturation color and identify which one they perceive to be larger.’</p>
 <div id="fig-exp1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Figure&nbsp;1: Cubes 100%-25% saturation</figcaption>
 </figure>
 </div>
-<p>While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low <code>saturation</code>) we decided to use <strong>4-levels</strong> of <code>saturation</code>: 25%, 50% 75%, 100% (as can be seen in Figures <a href="#fig-exp1">Figure&nbsp;1</a>). We also added an additional answering option ‘the same’ (in the original work the options were ‘left’ or ‘right’ to identify the larger cube). Hence we ensured that participants had the option to state that they perceive the cubes as having the same size.</p>
+<p>While setting up the experiment we added two additions in the experimental setup: 1) instead of having just two levels (high-low <code>saturation</code>) we decided to use <strong>4-levels</strong> of <code>saturation</code>: 25%, 50% 75%, 100% (as can be seen in <a href="#fig-exp1">Figure&nbsp;1</a>). We also added an additional answering option ‘the same’ (in the original work the options were ‘left’ or ‘right’ to identify the larger cube). Hence we ensured that participants had the option to state that they perceive the cubes as having the same size.</p>
 <p>We used binary choices on the one side (counterbalanced) cubes with either [25%, 50%, or 75%] <code>saturation</code> on the other left side 100% <code>saturation</code>.</p>
 </section>
 <section id="either-left-or-right-direct-replication" class="level2">
@@ -263,7 +263,7 @@ X-squared = 10, df = 1, p-value = 0.001</code></pre>
 </div>
 </div>
 <p><a href="#fig-results-A3">Figure&nbsp;3</a> shows the results of this little adventure. Hmm - clearly there is a strong preference for participants choosing the ‘same’ size option (in grey). This effect seems to depend on the <code>saturation</code> (the distance between the left and right cube) - the smaller the difference, the harder it is to keep the cubes apart. Inspecting the cell sizes in the different conditions we see that for 25 and 50 the percentage of left-right answers is quite small.</p>
-<div class="cell" data-layout-align="center" data-tab-cap="Number of answers per condition Experiment 1 - Three answering options">
+<div class="cell" data-layout-align="center" data-tbl-cap="Number of answers per condition Experiment 1 - Three answering options">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 9 × 5
 # Groups:   Sat [3]
@@ -293,16 +293,16 @@ X-squared = 4, df = 2, p-value = 0.1</code></pre>
 </div>
 <p>As one would expect from the table above - we find no significant preference for left or right - just by adding a ‘same’ option in our experiment.</p>
 </section>
-<section id="experiment-2---laptops-their-study-3" class="level2">
-<h2 class="anchored" data-anchor-id="experiment-2---laptops-their-study-3">Experiment 2 - Laptops (their Study 3)</h2>
-<p>In the original paper study 2 was run with an eye-tracker recording, among eye-movements, pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to their study 3 asking whether color <code>saturation</code> has an attention grabing effect, an effect on arousal and an effect on size perception. The original authors only ran one color - as different colors have different attention grabing effects, we extended the material to three colors (see <a href="#fig-exp2">Figure&nbsp;4</a>) and a new object to judge: <strong>laptops</strong>.</p>
+<section id="experiment-2---laptops-original-study-3" class="level2">
+<h2 class="anchored" data-anchor-id="experiment-2---laptops-original-study-3">Experiment 2 - Laptops (Original Study 3)</h2>
+<p>In the original paper study 2 was run with an eye-tracker recording, in addition to eye-movements also pupil dilation. We did not have an eye-tracker at hand for this study - so we moved on to the original study 3 asking whether color <code>saturation</code> has an attention grabing effect, an effect on arousal and an effect on size perception. Hagtvedt and Brasel (2017) only ran one color (red). As different colors have different attention grabing effects, we extended the material to three colors (see <a href="#fig-exp2">Figure&nbsp;4</a>).</p>
 <div id="fig-exp2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/laptops_overview.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure&nbsp;4: Laptops 100% &amp; 50% saturation</figcaption>
 </figure>
 </div>
-<p>In the original study laptops were shown in a projection on the wall, we, again, use our online sample. Here is what we are looking for - results from study 3 in <a href="#fig-study3-results">Figure&nbsp;5</a>.</p>
+<p>In the original study laptops were shown in a projection on the wall, we, again, use our online sample. Here is what we are looking for - results from study 3 (p.&nbsp;400) in <a href="#fig-study3-results">Figure&nbsp;5</a>.</p>
 <div id="fig-study3-results" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/study3_results.png" class="img-fluid figure-img"></p>
@@ -320,7 +320,7 @@ X-squared = 4, df = 2, p-value = 0.1</code></pre>
 </div>
 </div>
 </div>
-<p>Let us first look only at the red stimuli - they were also used in the original. <span class="citation" data-cites="tab-results-R">@tab-results-R</span> plots the ANOVA results. We find a non-significant main effect for <code>saturation</code> with <em>M<sub>high</sub></em> = 14.6, <em>SD<sub>high</sub></em> = 1.5 vs.&nbsp;<em>M<sub>low</sub></em> = 14.6, <em>SD<sub>low</sub></em> = 1.7, <em>F</em>(1, model$df.residual) = 0.29, <em>p</em> = .59, <em>eta<sup>2</sup></em> = 0.</p>
+<p>Let us first look only at the red stimuli - they were also used in the original. We find a non-significant main effect for <code>saturation</code> with <em>M<sub>high</sub></em> = 14.5, <em>SD<sub>high</sub></em> = 1.6 vs.&nbsp;<em>M<sub>low</sub></em> = 14.3, <em>SD<sub>low</sub></em> = 1.8, <em>F</em>(1, 82) = 0.29, <em>p</em> = .59, <em>eta<sup>2</sup></em> = 0.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)
@@ -350,6 +350,7 @@ Residuals   262    694    2.65               </code></pre>
 </div>
 </div>
 </div>
+<p>Checking with a simple ANOVA for an effect on arousal - no significant effect is found.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
@@ -369,6 +370,7 @@ Residuals   262    878    3.35               </code></pre>
 </div>
 </div>
 </div>
+<p>Again checking with a simple ANOVA we see no significant effect is found.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
@@ -378,24 +380,42 @@ Color:Sat     2      1    0.35    0.09   0.91
 Residuals   262    986    3.76               </code></pre>
 </div>
 </div>
+<p>So overall we do not find any effects of <code>saturation</code> on estimated <code>size</code>, <code>arrousal</code> or <code>mood</code>.</p>
 </section>
-<section id="experiment-3---suitcases" class="level2">
-<h2 class="anchored" data-anchor-id="experiment-3---suitcases">Experiment 3 - Suitcases</h2>
+<section id="experiment-3---suitcases-original-study-4" class="level2">
+<h2 class="anchored" data-anchor-id="experiment-3---suitcases-original-study-4">Experiment 3 - Suitcases (Original Study 4)</h2>
+<p>Intention could have an influence on the <code>size</code> effect the authors found - so in their next experiment an ‘image of an orange carry-on suitcase projected on a large screen, which served as the basis for completing paper questionnaires. The carry-on was either high or low in color saturation’. In addition the goal of a potential purchase process was manipulated: <strong>Goal manipulation</strong>: ‘Imagine that you want to purchase a carry-on suitcase that is large enough to fit plenty of your belongings’ vs.&nbsp;‘small enough to fit easily into an overhead storage compartment’.</p>
+<p>What Hagtvedt and Brasel were looking for is the following interaction: ‘We expected participants with the goal of a large (vs.&nbsp;small) carry-on to prefer the one with high (vs.&nbsp;low) color saturation, given the hypothesized influence of color saturation on perceived size.’</p>
+<p>So - lets see if we can replicate this effect.</p>
+<p>We use the 4 levels of <code>saturation</code> (instead of two in the original work) as can be seen in <a href="#fig-exp3">Figure&nbsp;9</a>.</p>
 <div id="fig-exp3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/suitcases_overview.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure&nbsp;9: Suitcases 100%-25% saturation</figcaption>
 </figure>
 </div>
+<p>Plotting <a href="#fig-results-suitcase">Figure&nbsp;10</a> we see that there are hardly any differences between the two targets <code>large</code> or <code>small</code> and, judging visually, no main effect of <code>saturation</code>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-results-suitcase" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="staticunnamed-chunk-16-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="staticfig-results-suitcase-1.png" class="img-fluid figure-img" width="768"></p>
+<figcaption class="figure-caption">Figure&nbsp;10: Results Suitcase</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<p>We qualify this with a simple ANOVA - no significant effect of <code>saturation</code> or <code>target</code> (ie goal) found, in addition the interaction is not significant either.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
+Sat           3      5    1.79    0.73   0.54
+target        1      1    1.26    0.51   0.47
+Sat:target    3      6    1.95    0.79   0.50
+Residuals   256    628    2.46               </code></pre>
+</div>
+</div>
+<p>The same is true if we use willingness to pay (<code>prize</code>) as a dependent variable.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
@@ -405,19 +425,46 @@ Sat:target    3    219      73    0.13   0.95
 Residuals   256 149122     583               </code></pre>
 </div>
 </div>
+<p>So, again we do not find any effects of <code>saturation</code> on the quality <code>evaluation</code> or estimated <code>prize</code>.</p>
 </section>
-<section id="experiment-4---couches" class="level2">
-<h2 class="anchored" data-anchor-id="experiment-4---couches">Experiment 4 - Couches</h2>
+<section id="experiment-4---couches-original-study-6" class="level2">
+<h2 class="anchored" data-anchor-id="experiment-4---couches-original-study-6">Experiment 4 - Couches (Original Study 6)</h2>
+<p>For our final replication we look at an effect of <code>saturation</code> on judgements of the environment of an object. The authors write: ‘We expected that a room’s ceiling height would appear comparatively lower when the color of a benchmark in the room —an ottoman— is high (vs.&nbsp;low) in saturation.’</p>
+<p>We replaced the ottoman with a couch, used the same <code>saturation</code> levels but added two additional colors (see <a href="#fig-exp4">Figure&nbsp;11</a>).</p>
 <div id="fig-exp4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/couches_overview.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;10: Couches 100% &amp; 50% saturation</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;11: Couches 100% &amp; 50% saturation</figcaption>
 </figure>
+</div>
+<p>Plotting <a href="#fig-results-couch">Figure&nbsp;12</a> we see that there are hardly any differences between the two <code>saturation</code> levels and also (as expected) no effect of <code>color</code>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-couch" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="staticfig-results-couch-1.png" class="img-fluid figure-img" width="768"></p>
+<figcaption class="figure-caption">Figure&nbsp;12: Results Couch</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Runnning the ANOVA on the data we find no significant effect of <code>saturation</code> or <code>color</code> and no interaction.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)
+Sat           1    265     265    0.24   0.62
+Color         2    142      71    0.07   0.94
+Sat:Color     2    337     168    0.15   0.86
+Residuals   256 278201    1087               </code></pre>
+</div>
 </div>
 </section>
 </section>
 <section id="caveats" class="level1">
 <h1>Caveats</h1>
+<p>As mentioned above we did not replicate the original studies exactly. We used slighty different objects and additional saturation levels. More importantly we used the same participants again in a <strong>within-subjects</strong> design in an <strong>online</strong> experiment instead of a lab study. Nevertheless in our study 1 we see the same effect of <code>saturation</code> on <code>size</code> as the authors did in their study 1 - so in principle the effect can be replicated but only for the cubes (without adding an option to judge the cubes as having the same size - then this effect also goes away).</p>
+<p><strong>BUT</strong>: in study 2 we do not find any effects of <code>saturation</code> on <code>size</code>, <code>arousal</code> or <code>mood</code>; in study 3 we do not find any effects of <code>saturation</code> on <code>evaluation</code> or <code>prize</code>; in study 4 we do not find any effects of <code>saturation</code> on <code>guessed height</code>.</p>
+<p>I was quite suspicious about the described effects in the original work and my confindence in the effect of <code>saturation</code> on <code>size</code> did not really increase after this exercise.</p>
 </section>
 <section id="references" class="level1">
 <h1>References</h1>
@@ -666,7 +713,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">2023 Michael Schulte-Mecklenbeck</div>
+    <div class="nav-footer-center">2024 Michael Schulte-Mecklenbeck</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
