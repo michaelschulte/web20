@@ -3,7 +3,7 @@ title: "Replication: Default effect"
 author: "MSM"
 date: "2023-05-20"
 draft: false
-categories: [Replication, Default, Framing]
+categories: [Replication, Default Effekt, Framing]
 sidebar:
   contents: auto
 editor_options: 
@@ -71,7 +71,7 @@ We ran a direct replication of Experiment 1 and 2 of Johnson et al. (2002). The 
 
 # Demographics
 
-The original paper had 277 participants in experiment 1 and 234 participants in experiment 2. We aimed at a similar sample had a great start with 408 participants. Unfortunately more than 65% dropped out on the first page of the questionnaire. Our working hypothesis is, that most of our participants did the experiment on their mobile - our questionnaire was checked for that but apparently we missed that the handling was not ideal ... hence the large dropout.
+The original paper had 277 participants in experiment 1 and 234 participants in experiment 2. We aimed at a similar sample had a great start with 408 participants. Unfortunately more than 35% dropped out on the first page of the questionnaire. Our working hypothesis is, that most of our participants did the experiment on their mobile - our questionnaire was checked for that but apparently we missed that the handling was not ideal ... hence the large dropout.
 
 Overall we ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Age was recorded in age brackets: 
 

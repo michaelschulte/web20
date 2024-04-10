@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,16 +112,43 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Michael Schulte-Mecklenbeck</span>
     </a>
@@ -126,25 +160,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./_content/CV_Index.pdf" rel="" target="">
- <span class="menu-text">CV</span></a>
+    <a class="nav-link" href="./_content/CV_Index.pdf"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -154,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(66)</span></div><div class="category" data-category="Choice">Choice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Consumer Behavior">Consumer Behavior <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Decision Making">Decision Making <span class="quarto-category-count">(17)</span></div><div class="category" data-category="Default">Default <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ego depletion">Ego depletion <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Emotion">Emotion <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Eye tracking">Eye tracking <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Failedreplication">Failedreplication <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Flashlight">Flashlight <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Food Choice">Food Choice <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Framing">Framing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gapminder">Gapminder <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Google">Google <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Heuristics">Heuristics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LaTeX">LaTeX <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Lifehacks">Lifehacks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Limesurvey">Limesurvey <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Meetup">Meetup <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Methods">Methods <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Mousetracking">Mousetracking <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Numeracy">Numeracy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Open Source">Open Source <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Open science">Open science <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Papers">Papers <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Perception">Perception <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Process tracing">Process tracing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(21)</span></div><div class="category" data-category="RRR">RRR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Replication">Replication <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Review process">Review process <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Science">Science <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Teaching">Teaching <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Tech">Tech <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Traffic psychology">Traffic psychology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="XAMPP">XAMPP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ggplot">ggplot <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(67)</span></div><div class="category" data-category="Choice">Choice <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Consumer Behavior">Consumer Behavior <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Decision Making">Decision Making <span class="quarto-category-count">(17)</span></div><div class="category" data-category="Default Effekt">Default Effekt <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Ego depletion">Ego depletion <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Emotion">Emotion <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Eye tracking">Eye tracking <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Failedreplication">Failedreplication <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Flashlight">Flashlight <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Food Choice">Food Choice <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Framing">Framing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gapminder">Gapminder <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Google">Google <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Heuristics">Heuristics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LaTeX">LaTeX <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Lifehacks">Lifehacks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Limesurvey">Limesurvey <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Meetup">Meetup <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Methods">Methods <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Mousetracking">Mousetracking <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Numeracy">Numeracy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Open Source">Open Source <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Open science">Open science <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Papers">Papers <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Perception">Perception <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Podcast">Podcast <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Process tracing">Process tracing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(21)</span></div><div class="category" data-category="RRR">RRR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Replication">Replication <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Review process">Review process <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Science">Science <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Teaching">Teaching <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Tech">Tech <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Traffic psychology">Traffic psychology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="XAMPP">XAMPP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ggplot">ggplot <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -164,21 +198,61 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Replication,Perception,Consumer Behavior,Failedreplication" data-listing-date-sort="1704582000000" data-listing-file-modified-sort="1704621505758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19">
+<div class="quarto-post image-right" data-index="0" data-categories="Default Effekt,Teaching,Podcast" data-listing-date-sort="1712700000000" data-listing-file-modified-sort="1712741459193" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-25-red/index.html"> <p class="card-img-top"><img src="posts/2023-06-25-red/images/cubes_overview.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2024-04-10-scipod/index.html" class="no-external"></a></p><a href="./posts/2024-04-10-scipod/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/hex-scipod.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2024-04-10-scipod/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-25-red/index.html">
 <h3 class="no-anchor listing-title">
-Replication: Red
+<a href="./posts/2024-04-10-scipod/index.html" class="no-external">Scipod</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2024-04-10-scipod/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Default Effekt'); return false;">
+Default Effekt
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+Teaching
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Podcast'); return false;">
+Podcast
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04-10-scipod/index.html" class="no-external"><strong>‘Etwas zum Anfassen erzeugen’</strong> - das war eines der Ziele in meiner Lehrveranstaltung ‘Wie entscheiden wir uns?’ im Frühjahrssemester 2024 an der Universität Bern. Der Auftrag…<strong></strong><strong></strong></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-10-scipod/index.html" class="no-external">
+<div class="listing-date">
+Apr 10, 2024
+</div>
+<div class="listing-author">
+MSM
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Replication,Perception,Consumer Behavior,Failedreplication" data-listing-date-sort="1704582000000" data-listing-file-modified-sort="1704622742972" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3635">
+<div class="thumbnail">
+<p><a href="./posts/2023-06-25-red/index.html" class="no-external"></a></p><a href="./posts/2023-06-25-red/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2023-06-25-red/images/cubes_overview.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-06-25-red/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2023-06-25-red/index.html" class="no-external">Replication: Red</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2023-06-25-red/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
@@ -193,14 +267,12 @@ Consumer Behavior
 Failedreplication
 </div>
 </div>
-<a href="./posts/2023-06-25-red/index.html">
 <div class="listing-description">
-Hagtvedt, H., &amp; Brasel, S. A. (2017). Color saturation increases perceived product size. <em>Journal of Consumer Research, 44</em>(2), 396-413.
+<a href="./posts/2023-06-25-red/index.html" class="no-external">Hagtvedt, H., &amp; Brasel, S. A. (2017). Color saturation increases perceived product size. <em>Journal of Consumer Research, 44</em>(2), 396-413.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-25-red/index.html">
+<a href="./posts/2023-06-25-red/index.html" class="no-external">
 <div class="listing-date">
 Jan 7, 2024
 </div>
@@ -210,19 +282,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Teaching,Open science,Replication" data-listing-date-sort="1703026800000" data-listing-file-modified-sort="1704620868496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="2" data-categories="Teaching,Open science,Replication" data-listing-date-sort="1703026800000" data-listing-file-modified-sort="1704620868496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="452">
 <div class="thumbnail">
-<p><a href="./posts/2023-12-20-senioren/index.html"> <p class="card-img-top"><img src="posts/2023-12-20-senioren/images/senioren.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2023-12-20-senioren/index.html" class="no-external"></a></p><a href="./posts/2023-12-20-senioren/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2023-12-20-senioren/images/senioren.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-12-20-senioren/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-12-20-senioren/index.html">
 <h3 class="no-anchor listing-title">
-Seniorenuni
+<a href="./posts/2023-12-20-senioren/index.html" class="no-external">Seniorenuni</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-12-20-senioren/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
 Teaching
@@ -234,14 +306,12 @@ Open science
 Replication
 </div>
 </div>
-<a href="./posts/2023-12-20-senioren/index.html">
 <div class="listing-description">
-And for the last big external teaching in 2023 I turn to the Seniorenuni (senior university) at the University of Bern. This is a program where seniors can sign up for a lecture series that…
+<a href="./posts/2023-12-20-senioren/index.html" class="no-external">And for the last big external teaching in 2023 I turn to the Seniorenuni (senior university) at the University of Bern. This is a program where seniors can sign up for a…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-12-20-senioren/index.html">
+<a href="./posts/2023-12-20-senioren/index.html" class="no-external">
 <div class="listing-date">
 Dec 20, 2023
 </div>
@@ -251,19 +321,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Teaching,Decision Making" data-listing-date-sort="1698444000000" data-listing-file-modified-sort="1704621424189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="3" data-categories="Teaching,Decision Making" data-listing-date-sort="1698444000000" data-listing-file-modified-sort="1704621424189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
 <div class="thumbnail">
-<p><a href="./posts/2023-10-28-kinder/index.html"> <p class="card-img-top"><img src="posts/2023-10-28-kinder/images/kinder.jpg"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2023-10-28-kinder/index.html" class="no-external"></a></p><a href="./posts/2023-10-28-kinder/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2023-10-28-kinder/images/kinder.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-10-28-kinder/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-10-28-kinder/index.html">
 <h3 class="no-anchor listing-title">
-Kinderuni
+<a href="./posts/2023-10-28-kinder/index.html" class="no-external">Kinderuni</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-10-28-kinder/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
 Teaching
@@ -272,14 +342,12 @@ Teaching
 Decision Making
 </div>
 </div>
-<a href="./posts/2023-10-28-kinder/index.html">
 <div class="listing-description">
-Sometimes teaching…
+<a href="./posts/2023-10-28-kinder/index.html" class="no-external">Sometimes teaching turns out to be very different from the usual lecture on a Wednesday. I was asked (well I signed up) to teach in the Kinderuni (children’s university) at…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-10-28-kinder/index.html">
+<a href="./posts/2023-10-28-kinder/index.html" class="no-external">
 <div class="listing-date">
 Oct 28, 2023
 </div>
@@ -289,38 +357,36 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Replication,Default,Framing" data-listing-date-sort="1684533600000" data-listing-file-modified-sort="1685888639261" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="quarto-post image-right" data-index="4" data-categories="Replication,Default Effekt,Framing" data-listing-date-sort="1684533600000" data-listing-file-modified-sort="1712586165744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1669">
 <div class="thumbnail">
-<p><a href="./posts/2023-05-20-default/index.html"> <p class="card-img-top"><img src="posts/2023-05-20-default/images/Tab1.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2023-05-20-default/index.html" class="no-external"></a></p><a href="./posts/2023-05-20-default/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2023-05-20-default/images/Tab1.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2023-05-20-default/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-05-20-default/index.html">
 <h3 class="no-anchor listing-title">
-Replication: Default effect
+<a href="./posts/2023-05-20-default/index.html" class="no-external">Replication: Default effect</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-05-20-default/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Default'); return false;">
-Default
+<div class="listing-category" onclick="window.quartoListingCategory('Default Effekt'); return false;">
+Default Effekt
 </div>
 <div class="listing-category" onclick="window.quartoListingCategory('Framing'); return false;">
 Framing
 </div>
 </div>
-<a href="./posts/2023-05-20-default/index.html">
 <div class="listing-description">
-Johnson, E. J., Bellman, S., &amp; Lohse, G. L. (2002). Defaults, framing and privacy: Why opting in-opting out.
+<a href="./posts/2023-05-20-default/index.html" class="no-external">Johnson, E. J., Bellman, S., &amp; Lohse, G. L. (2002). Defaults, framing and privacy: Why opting in-opting out.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-05-20-default/index.html">
+<a href="./posts/2023-05-20-default/index.html" class="no-external">
 <div class="listing-date">
 May 20, 2023
 </div>
@@ -330,19 +396,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Replication,Emotion,Choice" data-listing-date-sort="1673823600000" data-listing-file-modified-sort="1685888608269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
+<div class="quarto-post image-right" data-index="5" data-categories="Replication,Emotion,Choice" data-listing-date-sort="1673823600000" data-listing-file-modified-sort="1704622631213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2190">
 <div class="thumbnail">
-<p><a href="./posts/2022-11-23-kisses/index.html"> <p class="card-img-top"><img src="posts/2022-11-23-kisses/Rottenstreich_Exp1.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2022-11-23-kisses/index.html" class="no-external"></a></p><a href="./posts/2022-11-23-kisses/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2022-11-23-kisses/Rottenstreich_Exp1.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2022-11-23-kisses/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-11-23-kisses/index.html">
 <h3 class="no-anchor listing-title">
-Replication: Kisses
+<a href="./posts/2022-11-23-kisses/index.html" class="no-external">Replication: Kisses</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-11-23-kisses/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
@@ -354,14 +420,12 @@ Emotion
 Choice
 </div>
 </div>
-<a href="./posts/2022-11-23-kisses/index.html">
 <div class="listing-description">
-Rottenstreich, Y., &amp; Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk.
+<a href="./posts/2022-11-23-kisses/index.html" class="no-external">Rottenstreich, Y., &amp; Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-11-23-kisses/index.html">
+<a href="./posts/2022-11-23-kisses/index.html" class="no-external">
 <div class="listing-date">
 Jan 16, 2023
 </div>
@@ -371,19 +435,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Replication,Framing,Numeracy,Failedreplication" data-listing-date-sort="1671145200000" data-listing-file-modified-sort="1685888766924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<div class="quarto-post image-right" data-index="6" data-categories="Replication,Framing,Numeracy,Failedreplication" data-listing-date-sort="1671145200000" data-listing-file-modified-sort="1685888766924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1433">
 <div class="thumbnail">
-<p><a href="./posts/2022-11-16-numeracy-dm/index.html"> <p class="card-img-top"><img src="posts/2022-11-16-numeracy-dm/images/numeracy.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external"></a></p><a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2022-11-16-numeracy-dm/images/numeracy.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-11-16-numeracy-dm/index.html">
 <h3 class="no-anchor listing-title">
-Replication: Numeracy and decision making
+<a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external">Replication: Numeracy and decision making</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
@@ -398,14 +462,12 @@ Numeracy
 Failedreplication
 </div>
 </div>
-<a href="./posts/2022-11-16-numeracy-dm/index.html">
 <div class="listing-description">
-A series of four studies explored how the ability to comprehend and transform probability numbers relates to performance on judgment and decision tasks. On the surface, the…
+<a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external">A series of four studies explored how the ability to comprehend and transform probability numbers relates to performance on judgment and decision tasks. On the surface, the…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-11-16-numeracy-dm/index.html">
+<a href="./posts/2022-11-16-numeracy-dm/index.html" class="no-external">
 <div class="listing-date">
 Dec 16, 2022
 </div>
@@ -415,19 +477,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Replication,Choice,Emotion,Failedreplication" data-listing-date-sort="1664661600000" data-listing-file-modified-sort="1685888591167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14">
+<div class="quarto-post image-right" data-index="7" data-categories="Replication,Choice,Emotion,Failedreplication" data-listing-date-sort="1664661600000" data-listing-file-modified-sort="1685888591167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2608">
 <div class="thumbnail">
-<p><a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html"> <p class="card-img-top"><img src="posts/2022-09-24-replication-in-search-of-homo-oeconomicus/images/choicepropfig-1.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external"></a></p><a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/2022-09-24-replication-in-search-of-homo-oeconomicus/images/choicepropfig-1.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html">
 <h3 class="no-anchor listing-title">
-Replication: In search of homo economicus
+<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external">Replication: In search of homo economicus</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
@@ -442,14 +504,12 @@ Emotion
 Failedreplication
 </div>
 </div>
-<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html">
 <div class="listing-description">
-Understanding the role of emotion in forming preferences is critical in helping firms choose effective marketing strategies and consumers make appropriate consumption…
+<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external">Understanding the role of emotion in forming preferences is critical in helping firms choose effective marketing strategies and consumers make appropriate consumption…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html">
+<a href="./posts/2022-09-24-replication-in-search-of-homo-oeconomicus/index.html" class="no-external">
 <div class="listing-date">
 Oct 2, 2022
 </div>
@@ -459,32 +519,30 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Quarto" data-listing-date-sort="1664575200000" data-listing-file-modified-sort="1685867988846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="8" data-categories="Quarto" data-listing-date-sort="1664575200000" data-listing-file-modified-sort="1685867988846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
 <div class="thumbnail">
-<p><a href="./posts/welcome/index.html"> <p class="card-img-top"><img src="posts/_images/quarto.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/quarto.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/welcome/index.html">
 <h3 class="no-anchor listing-title">
-Things to come in Quarto
+<a href="./posts/welcome/index.html" class="no-external">Things to come in Quarto</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/welcome/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
 Quarto
 </div>
 </div>
-<a href="./posts/welcome/index.html">
 <div class="listing-description">
-So Quarto it is … after the 3rd time trying to update Wowchemy and Hugo and things breaking - time for something new … Quarto “Quarto® is an open-source…
+<a href="./posts/welcome/index.html" class="no-external">So Quarto it is … after the 3rd time trying to update Wowchemy and Hugo and things breaking - time for something new … Quarto “Quarto® is an open-source scientific and…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/welcome/index.html">
+<a href="./posts/welcome/index.html" class="no-external">
 <div class="listing-date">
 Oct 1, 2022
 </div>
@@ -494,32 +552,30 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Open science" data-listing-date-sort="1579388400000" data-listing-file-modified-sort="1685867988758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="9" data-categories="Open science" data-listing-date-sort="1579388400000" data-listing-file-modified-sort="1685867988758" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
 <div class="thumbnail">
-<p><a href="./posts/2020-01-19-open-science-lecture-series.html"> <p class="card-img-top"><img src="posts/_images/OpenScience2020.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external"></a></p><a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/OpenScience2020.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2020-01-19-open-science-lecture-series.html">
 <h3 class="no-anchor listing-title">
-Open Science Lecture Series
+<a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external">Open Science Lecture Series</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Open science'); return false;">
 Open science
 </div>
 </div>
-<a href="./posts/2020-01-19-open-science-lecture-series.html">
 <div class="listing-description">
-This will be fun - Lecture series on Open Science, Replication, Reproducibility, Open Data and many more.
+<a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external">This will be fun - Lecture series on Open Science, Replication, Reproducibility, Open Data and many more.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2020-01-19-open-science-lecture-series.html">
+<a href="./posts/2020-01-19-open-science-lecture-series.html" class="no-external">
 <div class="listing-date">
 Jan 19, 2020
 </div>
@@ -529,19 +585,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Process tracing,R" data-listing-date-sort="1561413600000" data-listing-file-modified-sort="1704621001341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="10" data-categories="Process tracing,R" data-listing-date-sort="1561413600000" data-listing-file-modified-sort="1704621001341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
 <div class="thumbnail">
-<p><a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html"> <p class="card-img-top"><img src="posts/_images/words_frequency.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external"></a></p><a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/words_frequency.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html">
 <h3 class="no-anchor listing-title">
-What HoPTM looks like from the inside
+<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external">What HoPTM looks like from the inside</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Process tracing'); return false;">
 Process tracing
@@ -550,14 +606,12 @@ Process tracing
 R
 </div>
 </div>
-<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html">
 <div class="listing-description">
-As mentioned some days ago our Handbook of Process Tracing Methods is out in the wild …
+<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external">As mentioned some days ago our Handbook of Process Tracing Methods is out in the wild …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html">
+<a href="./posts/2019-06-25-what-hoptm-looks-like-from-the-inside.html" class="no-external">
 <div class="listing-date">
 Jun 25, 2019
 </div>
@@ -567,19 +621,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Process tracing,Decision Making,Eye tracking,Flashlight,Mousetracking" data-listing-date-sort="1560981600000" data-listing-file-modified-sort="1685867988757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="11" data-categories="Process tracing,Decision Making,Eye tracking,Flashlight,Mousetracking" data-listing-date-sort="1560981600000" data-listing-file-modified-sort="1685867988757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="459">
 <div class="thumbnail">
-<p><a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external"></a></p><a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/HoPTM.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html">
 <h3 class="no-anchor listing-title">
-Handbook of Process Tracing Methods
+<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external">Handbook of Process Tracing Methods</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Process tracing'); return false;">
 Process tracing
@@ -597,14 +651,12 @@ Flashlight
 Mousetracking
 </div>
 </div>
-<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html">
 <div class="listing-description">
-
+<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external">WOOP WOOP - here it is - the second edition of our beloved “Handbook of Process Tracing Methods”</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html">
+<a href="./posts/2019-06-20-handbook-of-process-tracing-methods.html" class="no-external">
 <div class="listing-date">
 Jun 20, 2019
 </div>
@@ -614,32 +666,30 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="R" data-listing-date-sort="1560981600000" data-listing-file-modified-sort="1685867988757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="12" data-categories="R" data-listing-date-sort="1560981600000" data-listing-file-modified-sort="1685867988757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
 <div class="thumbnail">
-<p><a href="./posts/2019-06-20-pictures.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2019-06-20-pictures.html" class="no-external"></a></p><a href="./posts/2019-06-20-pictures.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2019-06-20-pictures.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2019-06-20-pictures.html">
 <h3 class="no-anchor listing-title">
-Pictures
+<a href="./posts/2019-06-20-pictures.html" class="no-external">Pictures</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2019-06-20-pictures.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
 </div>
 </div>
-<a href="./posts/2019-06-20-pictures.html">
 <div class="listing-description">
-So, here we go - new blogdown site … thanks to Dan (https://twitter.com/dsquintana) to kicked me over the edge actually doing this …
+<a href="./posts/2019-06-20-pictures.html" class="no-external">So, here we go - new blogdown site … thanks to Dan (https://twitter.com/dsquintana) to kicked me over the edge actually doing this …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2019-06-20-pictures.html">
+<a href="./posts/2019-06-20-pictures.html" class="no-external">
 <div class="listing-date">
 Jun 20, 2019
 </div>
@@ -649,19 +699,19 @@ MSM
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="Meetup,R,Statistics" data-listing-date-sort="1544447156000" data-listing-file-modified-sort="1704621262819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="13" data-categories="Meetup,R,Statistics" data-listing-date-sort="1544447156000" data-listing-file-modified-sort="1704621262819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
 <div class="thumbnail">
-<p><a href="./posts/2018-12-10-bernr-meetup.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2018-12-10-bernr-meetup.html" class="no-external"></a></p><a href="./posts/2018-12-10-bernr-meetup.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2018-12-10-bernr-meetup.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2018-12-10-bernr-meetup.html">
 <h3 class="no-anchor listing-title">
-BernR Meetup
+<a href="./posts/2018-12-10-bernr-meetup.html" class="no-external">BernR Meetup</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2018-12-10-bernr-meetup.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Meetup'); return false;">
 Meetup
@@ -673,14 +723,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2018-12-10-bernr-meetup.html">
 <div class="listing-description">
-Today (Dec 10th 2018) we will meet for the first BernR Meetup (https://www.meetup.com/Bern-R/) – hope to learn new things and get to know cool R people. More to follow soon …
+<a href="./posts/2018-12-10-bernr-meetup.html" class="no-external">Today (Dec 10th 2018) we will meet for the first BernR Meetup (https://www.meetup.com/Bern-R/) – hope to learn new things and get to know cool R people. More to follow soon …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2018-12-10-bernr-meetup.html">
+<a href="./posts/2018-12-10-bernr-meetup.html" class="no-external">
 <div class="listing-date">
 Dec 10, 2018
 </div>
@@ -690,19 +738,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="Open science,Replication" data-listing-date-sort="1533010600000" data-listing-file-modified-sort="1704620745596" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="14" data-categories="Open science,Replication" data-listing-date-sort="1533010600000" data-listing-file-modified-sort="1704620745596" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <div class="thumbnail">
-<p><a href="./posts/2018-07-30-a-letter-to-the-black-goat.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external"></a></p><a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html">
 <h3 class="no-anchor listing-title">
-A letter to the black goat
+<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external">A letter to the black goat</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Open science'); return false;">
 Open science
@@ -711,14 +759,12 @@ Open science
 Replication
 </div>
 </div>
-<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html">
 <div class="listing-description">
-I wrote this letter to the black goat podcast … will update here if I hear back from them …
+<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external">I wrote this letter to the black goat podcast … will update here if I hear back from them …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html">
+<a href="./posts/2018-07-30-a-letter-to-the-black-goat.html" class="no-external">
 <div class="listing-date">
 Jul 31, 2018
 </div>
@@ -728,19 +774,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="Perception,Traffic psychology" data-listing-date-sort="1515502049000" data-listing-file-modified-sort="1698592898937" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="15" data-categories="Perception,Traffic psychology" data-listing-date-sort="1515502049000" data-listing-file-modified-sort="1698592898937" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
 <div class="thumbnail">
-<p><a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html"> <p class="card-img-top"><img src="posts/_images/blind_light.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external"></a></p><a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/blind_light.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html">
 <h3 class="no-anchor listing-title">
-Blind Haste (aka im Blindflug)
+<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external">Blind Haste (aka im Blindflug)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Perception'); return false;">
 Perception
@@ -749,14 +795,12 @@ Perception
 Traffic psychology
 </div>
 </div>
-<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html">
 <div class="listing-description">
-Chance encounters sometimes lead to interesting and new projects. This is one of those cases … I got to know Emanuel de Bellis&nbsp;during my time at Nestle and we never stopped collaborating ever since (he actually lead my 2017…
+<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external">Chance encounters sometimes lead to interesting and new projects. This is one of those cases … I got to know Emanuel de Bellis&nbsp;during my time at Nestle and we never stopped…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html">
+<a href="./posts/2018-01-09-blind-haste-aka-im-blindflug.html" class="no-external">
 <div class="listing-date">
 Jan 9, 2018
 </div>
@@ -766,19 +810,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="Decision Making,Replication,RRR" data-listing-date-sort="1510608220000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="16" data-categories="Decision Making,Replication,RRR" data-listing-date-sort="1510608220000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="518">
 <div class="thumbnail">
-<p><a href="./posts/2017-11-13-professor-priming-or-not.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external"></a></p><a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-11-13-professor-priming-or-not.html">
 <h3 class="no-anchor listing-title">
-Professor priming - or not
+<a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external">Professor priming - or not</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -790,14 +834,17 @@ Replication
 RRR
 </div>
 </div>
-<a href="./posts/2017-11-13-professor-priming-or-not.html">
 <div class="listing-description">
-
+<a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external">
+<div class="section">
+<pre><code>&lt;div class="layoutArea"&gt;
+  &lt;div class="column"&gt;
+    &lt;p&gt;
+      This was my first contribution to a&nbsp;&lt;a…</code></pre></div></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-11-13-professor-priming-or-not.html">
+<a href="./posts/2017-11-13-professor-priming-or-not.html" class="no-external">
 <div class="listing-date">
 Nov 13, 2017
 </div>
@@ -807,32 +854,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="Replication" data-listing-date-sort="1510577046000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="17" data-categories="Replication" data-listing-date-sort="1510577046000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="550">
 <div class="thumbnail">
-<p><a href="./posts/2017-11-13-the-root-of-the-problem.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external"></a></p><a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-11-13-the-root-of-the-problem.html">
 <h3 class="no-anchor listing-title">
-The root of the problem
+<a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external">The root of the problem</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
 </div>
 </div>
-<a href="./posts/2017-11-13-the-root-of-the-problem.html">
 <div class="listing-description">
-One of the root causes of where we are (as a…
+<a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external">One of the root causes of where we are (as a science) in psychology and many other disciplines in terms of reproducibility of key (and other) results could not be better…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-11-13-the-root-of-the-problem.html">
+<a href="./posts/2017-11-13-the-root-of-the-problem.html" class="no-external">
 <div class="listing-date">
 Nov 13, 2017
 </div>
@@ -842,32 +887,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="Decision Making" data-listing-date-sort="1509433834000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="18" data-categories="Decision Making" data-listing-date-sort="1509433834000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <div class="thumbnail">
-<p><a href="./posts/2017-10-31-a-short-history-of-process-tracing.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external"></a></p><a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html">
 <h3 class="no-anchor listing-title">
-A short history of process tracing
+<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external">A short history of process tracing</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
 </div>
 </div>
-<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html">
 <div class="listing-description">
-Finally out (already mentioned earlier this year) – now in it’s full glory @ Current Directions in Psychological Science.
+<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external">Finally out (already mentioned earlier this year) – now in it’s full glory @ Current Directions in Psychological Science.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html">
+<a href="./posts/2017-10-31-a-short-history-of-process-tracing.html" class="no-external">
 <div class="listing-date">
 Oct 31, 2017
 </div>
@@ -877,19 +920,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="LaTeX,Lifehacks,Science" data-listing-date-sort="1493619382000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="19" data-categories="LaTeX,Lifehacks,Science" data-listing-date-sort="1493619382000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
 <div class="thumbnail">
-<p><a href="./posts/2017-04-30-latex.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2017-04-30-latex.html" class="no-external"></a></p><a href="./posts/2017-04-30-latex.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2017-04-30-latex.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-04-30-latex.html">
 <h3 class="no-anchor listing-title">
-LaTeX &lt;- pdfTeX, LuaTeX, XeTeX
+<a href="./posts/2017-04-30-latex.html" class="no-external">LaTeX &lt;- pdfTeX, LuaTeX, XeTeX</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-04-30-latex.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
 LaTeX
@@ -901,14 +944,12 @@ Lifehacks
 Science
 </div>
 </div>
-<a href="./posts/2017-04-30-latex.html">
 <div class="listing-description">
-I have been using LaTeX (with pdfTeX) for 20+ years now – to be honest I never bothered to understand the differences between the different TeX engines – here is an…
+<a href="./posts/2017-04-30-latex.html" class="no-external">I have been using LaTeX (with pdfTeX) for 20+ years now – to be honest I never bothered to understand the differences between the different TeX engines – here is an…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-04-30-latex.html">
+<a href="./posts/2017-04-30-latex.html" class="no-external">
 <div class="listing-date">
 May 1, 2017
 </div>
@@ -918,19 +959,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="Decision Making,Process tracing" data-listing-date-sort="1492008312000" data-listing-file-modified-sort="1698602607697" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="20" data-categories="Decision Making,Process tracing" data-listing-date-sort="1492008312000" data-listing-file-modified-sort="1698602607697" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
 <div class="thumbnail">
-<p><a href="./posts/2017-04-12-growing-up-to-be-old.html"> <p class="card-img-top"><img src="posts/_images/lakelouise.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external"></a></p><a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external">
+<p class="card-img-top"><img src="posts/_images/lakelouise.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-04-12-growing-up-to-be-old.html">
 <h3 class="no-anchor listing-title">
-Growing up to be old
+<a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external">Growing up to be old</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -939,14 +980,12 @@ Decision Making
 Process tracing
 </div>
 </div>
-<a href="./posts/2017-04-12-growing-up-to-be-old.html">
 <div class="listing-description">
-Some papers have somewhat weird starting points – this one had an awesome starting point – Lake Louise (Canada):
+<a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external">Some papers have somewhat weird starting points – this one had an awesome starting point – Lake Louise (Canada):</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-04-12-growing-up-to-be-old.html">
+<a href="./posts/2017-04-12-growing-up-to-be-old.html" class="no-external">
 <div class="listing-date">
 Apr 12, 2017
 </div>
@@ -956,19 +995,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="Decision Making,ggplot,Process tracing,R" data-listing-date-sort="1492007340000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="21" data-categories="Decision Making,ggplot,Process tracing,R" data-listing-date-sort="1492007340000" data-listing-file-modified-sort="1685867988756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
 <div class="thumbnail">
-<p><a href="./posts/2017-04-12-something-about-reverse-inference.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external"></a></p><a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-04-12-something-about-reverse-inference.html">
 <h3 class="no-anchor listing-title">
-Something about reverse inference
+<a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external">Something about reverse inference</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -983,14 +1022,12 @@ Process tracing
 R
 </div>
 </div>
-<a href="./posts/2017-04-12-something-about-reverse-inference.html">
 <div class="listing-description">
-Often, when we run process tracing studies (e.g., eye-tracking, mouse-tracking, thinking-aloud) we talk about cognitive processes (things we can’t observe) in a way that…
+<a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external">Often, when we run process tracing studies (e.g., eye-tracking, mouse-tracking, thinking-aloud) we talk about cognitive processes (things we can’t observe) in a way that…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-04-12-something-about-reverse-inference.html">
+<a href="./posts/2017-04-12-something-about-reverse-inference.html" class="no-external">
 <div class="listing-date">
 Apr 12, 2017
 </div>
@@ -1000,19 +1037,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="Eye tracking,Methods,Open Source,R,Statistics" data-listing-date-sort="1489432852000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="22" data-categories="Eye tracking,Methods,Open Source,R,Statistics" data-listing-date-sort="1489432852000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
 <div class="thumbnail">
-<p><a href="./posts/2017-03-13-eye-tracking-with-n-1.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external"></a></p><a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2017-03-13-eye-tracking-with-n-1.html">
 <h3 class="no-anchor listing-title">
-Eye-Tracking with N &gt; 1
+<a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external">Eye-Tracking with N &gt; 1</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Eye tracking'); return false;">
 Eye tracking
@@ -1030,14 +1067,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2017-03-13-eye-tracking-with-n-1.html">
 <div class="listing-description">
-This is one of the fastest papers I have ever written. It was a great collaboration with Tomás Lejarraga&nbsp;from the Universitat de les Illes Balears. Why was it great? Because it is one of the rare cases (at least in my academic life) where all people involved in a project…
+<a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external">This is one of the fastest papers I have ever written. It was a great collaboration with Tomás Lejarraga&nbsp;from the Universitat de les Illes Balears. Why was it great? Because…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2017-03-13-eye-tracking-with-n-1.html">
+<a href="./posts/2017-03-13-eye-tracking-with-n-1.html" class="no-external">
 <div class="listing-date">
 Mar 13, 2017
 </div>
@@ -1047,19 +1082,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="Replication,Science" data-listing-date-sort="1474355715000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="23" data-categories="Replication,Science" data-listing-date-sort="1474355715000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
 <div class="thumbnail">
-<p><a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external"></a></p><a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html">
 <h3 class="no-anchor listing-title">
-Everything you believe in is wrong – or is it simply terrorism?
+<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external">Everything you believe in is wrong – or is it simply terrorism?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Replication'); return false;">
 Replication
@@ -1068,14 +1103,12 @@ Replication
 Science
 </div>
 </div>
-<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html">
 <div class="listing-description">
-The replication crisis has many interesting effects on how people (and scientists) think about Psychology (and, of course, other fields) … Here is a nice summary of effects that are hard…
+<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external">The replication crisis has many interesting effects on how people (and scientists) think about Psychology (and, of course, other fields) … Here is a nice summary of effects…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html">
+<a href="./posts/2016-09-20-everything-you-believe-in-is-wrong-or-is-it-simply-terrorism.html" class="no-external">
 <div class="listing-date">
 Sep 20, 2016
 </div>
@@ -1085,19 +1118,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="Ego depletion,Replication,Science,Teaching" data-listing-date-sort="1470985523000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="24" data-categories="Ego depletion,Replication,Science,Teaching" data-listing-date-sort="1470985523000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="105">
 <div class="thumbnail">
-<p><a href="./posts/2016-08-12-everything-is-fucked.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external"></a></p><a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2016-08-12-everything-is-fucked.html">
 <h3 class="no-anchor listing-title">
-Everything is fucked …
+<a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external">Everything is fucked …</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Ego depletion'); return false;">
 Ego depletion
@@ -1112,14 +1145,12 @@ Science
 Teaching
 </div>
 </div>
-<a href="./posts/2016-08-12-everything-is-fucked.html">
 <div class="listing-description">
-This syllabus of an&nbsp;(obviously) awesome class has a ton of good reads:
+<a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external">This syllabus of an&nbsp;(obviously) awesome class has a ton of good reads:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2016-08-12-everything-is-fucked.html">
+<a href="./posts/2016-08-12-everything-is-fucked.html" class="no-external">
 <div class="listing-date">
 Aug 12, 2016
 </div>
@@ -1129,19 +1160,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="R,Statistics" data-listing-date-sort="1468314581000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="25" data-categories="R,Statistics" data-listing-date-sort="1468314581000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
 <div class="thumbnail">
-<p><a href="./posts/2016-07-12-before-r-was-r-there-was-s.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external"></a></p><a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html">
 <h3 class="no-anchor listing-title">
-Before R there was S
+<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external">Before R there was S</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -1150,15 +1181,13 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html">
 <div class="listing-description">
-
-<span class="s1">Before there was <span class="s2">R</span>, there was <span class="s2">S</span>. R was modeled on a language developed…</span>
+<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external">
+<span class="s1">Before there was <span class="s2">R</span>, there was <span class="s2">S</span>. R was modeled on a language developed at AT&amp;T Bell Labs starting in 1976&nbsp;by Rick Becker and John Chambers (and, later, Alan Wilks) along…</span></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html">
+<a href="./posts/2016-07-12-before-r-was-r-there-was-s.html" class="no-external">
 <div class="listing-date">
 Jul 12, 2016
 </div>
@@ -1168,19 +1197,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="R,Teaching" data-listing-date-sort="1465636192000" data-listing-file-modified-sort="1698602482279" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="26" data-categories="R,Teaching" data-listing-date-sort="1465636192000" data-listing-file-modified-sort="1698602482279" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
 <div class="thumbnail">
-<p><a href="./posts/2016-06-11-the-exams-package.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2016-06-11-the-exams-package.html" class="no-external"></a></p><a href="./posts/2016-06-11-the-exams-package.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2016-06-11-the-exams-package.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2016-06-11-the-exams-package.html">
 <h3 class="no-anchor listing-title">
-The exams package
+<a href="./posts/2016-06-11-the-exams-package.html" class="no-external">The exams package</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2016-06-11-the-exams-package.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -1189,14 +1218,12 @@ R
 Teaching
 </div>
 </div>
-<a href="./posts/2016-06-11-the-exams-package.html">
 <div class="listing-description">
-I gave the R package exams&nbsp;a shot for my decision making lecture. Here is what it does:
+<a href="./posts/2016-06-11-the-exams-package.html" class="no-external">I gave the R package exams&nbsp;a shot for my decision making lecture. Here is what it does:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2016-06-11-the-exams-package.html">
+<a href="./posts/2016-06-11-the-exams-package.html" class="no-external">
 <div class="listing-date">
 Jun 11, 2016
 </div>
@@ -1206,32 +1233,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="LaTeX" data-listing-date-sort="1453996064000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="27" data-categories="LaTeX" data-listing-date-sort="1453996064000" data-listing-file-modified-sort="1685867988755" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="100">
 <div class="thumbnail">
-<p><a href="./posts/2016-01-28-sublime-autocompletion.html"> <p class="card-img-top"><img data-src="uploads/2016/01/Screen-Shot-2016-01-28-at-16.45.37-300x104.png" alt="Screen Shot 2016-01-28 at 16.45.37"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external"></a></p><a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external">
+<p class="card-img-top"><img data-src="uploads/2016/01/Screen-Shot-2016-01-28-at-16.45.37-300x104.png" alt="Screen Shot 2016-01-28 at 16.45.37"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2016-01-28-sublime-autocompletion.html">
 <h3 class="no-anchor listing-title">
-Sublime autocompletion
+<a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external">Sublime autocompletion</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
 LaTeX
 </div>
 </div>
-<a href="./posts/2016-01-28-sublime-autocompletion.html">
 <div class="listing-description">
-They say about Sublime: “The text editor you will fall in love with”
+<a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external">They say about Sublime: “The text editor you will fall in love with”</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2016-01-28-sublime-autocompletion.html">
+<a href="./posts/2016-01-28-sublime-autocompletion.html" class="no-external">
 <div class="listing-date">
 Jan 28, 2016
 </div>
@@ -1241,32 +1266,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="Lifehacks" data-listing-date-sort="1452425683000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="28" data-categories="Lifehacks" data-listing-date-sort="1452425683000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274">
 <div class="thumbnail">
-<p><a href="./posts/2016-01-10-three-weeks-without-email.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external"></a></p><a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2016-01-10-three-weeks-without-email.html">
 <h3 class="no-anchor listing-title">
-Three weeks without email
+<a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external">Three weeks without email</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Lifehacks'); return false;">
 Lifehacks
 </div>
 </div>
-<a href="./posts/2016-01-10-three-weeks-without-email.html">
 <div class="listing-description">
-I spend a lot of time writing and answering email. Email is, according to&nbsp;timing, the third longest activity on my computer (although I am using three&nbsp;computers and can check this only on one of them – #timing please let us link computers for an overall…
+<a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external">I spend a lot of time writing and answering email. Email is, according to&nbsp;timing, the third longest activity on my computer (although I am using three&nbsp;computers and can…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2016-01-10-three-weeks-without-email.html">
+<a href="./posts/2016-01-10-three-weeks-without-email.html" class="no-external">
 <div class="listing-date">
 Jan 10, 2016
 </div>
@@ -1276,19 +1299,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="Decision Making,Eye tracking,Methods" data-listing-date-sort="1447151973000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="29" data-categories="Decision Making,Eye tracking,Methods" data-listing-date-sort="1447151973000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
 <div class="thumbnail">
-<p><a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external"></a></p><a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html">
 <h3 class="no-anchor listing-title">
-New Paper on pychodiagnosis and eye-tracking
+<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external">New Paper on pychodiagnosis and eye-tracking</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -1300,14 +1323,12 @@ Eye tracking
 Methods
 </div>
 </div>
-<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html">
 <div class="listing-description">
-Cilia Witteman and Nanon Spaanjaars (my dutch connection) worked together on a piece on whether psychodiagnosticians improve over time (they don’t)…
+<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external">Cilia Witteman and Nanon Spaanjaars (my dutch connection) worked together on a piece on whether psychodiagnosticians improve over time (they don’t) in their ability to…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html">
+<a href="./posts/2015-11-10-new-paper-on-pychodiagnosis-and-eye-tracking.html" class="no-external">
 <div class="listing-date">
 Nov 10, 2015
 </div>
@@ -1317,32 +1338,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-categories="Decision Making" data-listing-date-sort="1436775427000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="30" data-categories="Decision Making" data-listing-date-sort="1436775427000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="19">
 <div class="thumbnail">
-<p><a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html"> <p class="card-img-top"><img data-src="uploads/2015/07/Michael-word-cloud-300x190.jpeg" alt="Wordcloud"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external"></a></p><a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external">
+<p class="card-img-top"><img data-src="uploads/2015/07/Michael-word-cloud-300x190.jpeg" alt="Wordcloud"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html">
 <h3 class="no-anchor listing-title">
-the way I am seen, by people who know (and like) me
+<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external">the way I am seen, by people who know (and like) me</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
 </div>
 </div>
-<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html">
 <div class="listing-description">
-
+<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external"></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html">
+<a href="./posts/2015-07-13-the-way-i-am-seen-by-people-who-know-and-like-me.html" class="no-external">
 <div class="listing-date">
 Jul 13, 2015
 </div>
@@ -1352,32 +1371,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-categories="Decision Making" data-listing-date-sort="1426060732000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="31" data-categories="Decision Making" data-listing-date-sort="1426060732000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="107">
 <div class="thumbnail">
-<p><a href="./posts/2015-03-11-about-illusions.html"> <p class="card-img-top"><img data-src="uploads/2015/03/Screen-Shot-2015-03-11-at-08.55.15-300x93.png" alt="Stats"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2015-03-11-about-illusions.html" class="no-external"></a></p><a href="./posts/2015-03-11-about-illusions.html" class="no-external">
+<p class="card-img-top"><img data-src="uploads/2015/03/Screen-Shot-2015-03-11-at-08.55.15-300x93.png" alt="Stats"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2015-03-11-about-illusions.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2015-03-11-about-illusions.html">
 <h3 class="no-anchor listing-title">
-about illusions
+<a href="./posts/2015-03-11-about-illusions.html" class="no-external">about illusions</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2015-03-11-about-illusions.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
 </div>
 </div>
-<a href="./posts/2015-03-11-about-illusions.html">
 <div class="listing-description">
-Andrew Gelman&nbsp;talked about a really old paper I did together with Anton Kühberger ages ago. It was actually the first paper / ‘real’ scientific project I was involved in.
+<a href="./posts/2015-03-11-about-illusions.html" class="no-external">Andrew Gelman&nbsp;talked about a really old paper I did together with Anton Kühberger ages ago. It was actually the first paper / ‘real’ scientific project I was involved in.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2015-03-11-about-illusions.html">
+<a href="./posts/2015-03-11-about-illusions.html" class="no-external">
 <div class="listing-date">
 Mar 11, 2015
 </div>
@@ -1387,32 +1404,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-categories="Food Choice" data-listing-date-sort="1424439325000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="32" data-categories="Food Choice" data-listing-date-sort="1424439325000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
 <div class="thumbnail">
-<p><a href="./posts/2015-02-20-schnitzeljagd.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external"></a></p><a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2015-02-20-schnitzeljagd.html">
 <h3 class="no-anchor listing-title">
-Schnitz(e)ljagd
+<a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external">Schnitz(e)ljagd</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Food Choice'); return false;">
 Food Choice
 </div>
 </div>
-<a href="./posts/2015-02-20-schnitzeljagd.html">
 <div class="listing-description">
-Find the Schnitz(e)l!
+<a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external">Find the Schnitz(e)l!</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2015-02-20-schnitzeljagd.html">
+<a href="./posts/2015-02-20-schnitzeljagd.html" class="no-external">
 <div class="listing-date">
 Feb 20, 2015
 </div>
@@ -1422,19 +1437,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="R,Statistics" data-listing-date-sort="1423730650000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="33" data-categories="R,Statistics" data-listing-date-sort="1423730650000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <div class="thumbnail">
-<p><a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external"></a></p><a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html">
 <h3 class="no-anchor listing-title">
-all that mutate() and summarise() beauty
+<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external">all that mutate() and summarise() beauty</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -1443,14 +1458,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html">
 <div class="listing-description">
-The friendly people from RStudio recently started a webinar series&nbsp;with talks on the following topics (among others):
+<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external">The friendly people from RStudio recently started a webinar series&nbsp;with talks on the following topics (among others):</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html">
+<a href="./posts/2015-02-12-all-that-mutate-and-summarise-beauty.html" class="no-external">
 <div class="listing-date">
 Feb 12, 2015
 </div>
@@ -1460,19 +1473,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-categories="Decision Making,Flashlight,Open Source,Papers" data-listing-date-sort="1423347317000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="34" data-categories="Decision Making,Flashlight,Open Source,Papers" data-listing-date-sort="1423347317000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
 <div class="thumbnail">
-<p><a href="./posts/2015-02-07-moving-an-idea-into-business.html"> <p class="card-img-top"><img data-src="uploads/2015/02/Screen-Shot-2015-02-07-at-23.11.47-300x200.png" alt="Screen Shot 2015-02-07 at 23.11.47"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external"></a></p><a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external">
+<p class="card-img-top"><img data-src="uploads/2015/02/Screen-Shot-2015-02-07-at-23.11.47-300x200.png" alt="Screen Shot 2015-02-07 at 23.11.47"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2015-02-07-moving-an-idea-into-business.html">
 <h3 class="no-anchor listing-title">
-Moving an idea into business
+<a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external">Moving an idea into business</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -1487,14 +1500,12 @@ Open Source
 Papers
 </div>
 </div>
-<a href="./posts/2015-02-07-moving-an-idea-into-business.html">
 <div class="listing-description">
-Recently Ryan Murphy and myself realised that a startup here in Berlin features ideas of our 2011&nbsp;Flashlight paper.
+<a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external">Recently Ryan Murphy and myself realised that a startup here in Berlin features ideas of our 2011&nbsp;Flashlight paper.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2015-02-07-moving-an-idea-into-business.html">
+<a href="./posts/2015-02-07-moving-an-idea-into-business.html" class="no-external">
 <div class="listing-date">
 Feb 7, 2015
 </div>
@@ -1504,32 +1515,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-categories="R" data-listing-date-sort="1411634247000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="35" data-categories="R" data-listing-date-sort="1411634247000" data-listing-file-modified-sort="1685867988754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
 <div class="thumbnail">
-<p><a href="./posts/2014-09-25-dplyr-is-growing-up.html"> <p class="card-img-top"><img data-src="uploads/2014/09/tvs-old-new-300x170.jpg" alt="tvs-old+new"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external"></a></p><a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external">
+<p class="card-img-top"><img data-src="uploads/2014/09/tvs-old-new-300x170.jpg" alt="tvs-old+new"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2014-09-25-dplyr-is-growing-up.html">
 <h3 class="no-anchor listing-title">
-dplyr is growing up …
+<a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external">dplyr is growing up …</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
 </div>
 </div>
-<a href="./posts/2014-09-25-dplyr-is-growing-up.html">
 <div class="listing-description">
-&nbsp;
+<a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external">&nbsp;</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2014-09-25-dplyr-is-growing-up.html">
+<a href="./posts/2014-09-25-dplyr-is-growing-up.html" class="no-external">
 <div class="listing-date">
 Sep 25, 2014
 </div>
@@ -1539,19 +1548,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="35" data-categories="Decision Making,Food Choice" data-listing-date-sort="1408742772000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="36" data-categories="Decision Making,Food Choice" data-listing-date-sort="1408742772000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
 <div class="thumbnail">
-<p><a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external"></a></p><a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html">
 <h3 class="no-anchor listing-title">
-Die Zeit Wissen … schreibt über Essensentscheidungen
+<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external">Die Zeit Wissen … schreibt über Essensentscheidungen</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -1560,14 +1569,12 @@ Decision Making
 Food Choice
 </div>
 </div>
-<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html">
 <div class="listing-description">
-Mal was Längeres zu unseren Lieblingsthemen: Essen und Entscheidungsforschung … Enjoy!
+<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external">Mal was Längeres zu unseren Lieblingsthemen: Essen und Entscheidungsforschung … Enjoy!</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html">
+<a href="./posts/2014-08-22-die-zeit-wissen-schreibt-uber-essensentscheidungen.html" class="no-external">
 <div class="listing-date">
 Aug 22, 2014
 </div>
@@ -1577,33 +1584,31 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="Decision Making" data-listing-date-sort="1399450326000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="37" data-categories="Decision Making" data-listing-date-sort="1399450326000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="179">
 <div class="thumbnail">
-<p><a href="./posts/2014-05-07-when-something-old.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2014-05-07-when-something-old.html" class="no-external"></a></p><a href="./posts/2014-05-07-when-something-old.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2014-05-07-when-something-old.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2014-05-07-when-something-old.html">
 <h3 class="no-anchor listing-title">
-When something old …
+<a href="./posts/2014-05-07-when-something-old.html" class="no-external">When something old …</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2014-05-07-when-something-old.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
 </div>
 </div>
-<a href="./posts/2014-05-07-when-something-old.html">
 <div class="listing-description">
-
-Schulte-Mecklenbeck, M., &amp; Kühberger, A. (2014).&nbsp;Out of sight – out of mind? Information acquisition patterns in risky choice framing. <i>Polish Psychological Bulletin</i>, <i>45</i>…
+<a href="./posts/2014-05-07-when-something-old.html" class="no-external">
+Schulte-Mecklenbeck, M., &amp; Kühberger, A. (2014).&nbsp;Out of sight – out of mind? Information acquisition patterns in risky choice framing. <i>Polish Psychological Bulletin</i>, <i>45</i>…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2014-05-07-when-something-old.html">
+<a href="./posts/2014-05-07-when-something-old.html" class="no-external">
 <div class="listing-date">
 May 7, 2014
 </div>
@@ -1613,19 +1618,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="Decision Making,Food Choice" data-listing-date-sort="1376661472000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="38" data-categories="Decision Making,Food Choice" data-listing-date-sort="1376661472000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
 <div class="thumbnail">
-<p><a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external"></a></p><a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html">
 <h3 class="no-anchor listing-title">
-New paper on food choice and simple heuristics
+<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external">New paper on food choice and simple heuristics</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -1634,15 +1639,13 @@ Decision Making
 Food Choice
 </div>
 </div>
-<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html">
 <div class="listing-description">
-We got a new paper out on how people (consumers) use simple rules to make food choices. This is work in collaboration with the Nestlé Research Center in Lausanne.<br>
-Here is…
+<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external">We got a new paper out on how people (consumers) use simple rules to make food choices. This is work in collaboration with the Nestlé Research Center in Lausanne.<br>
+Here is…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html">
+<a href="./posts/2013-08-16-new-paper-on-food-choice-and-simple-heuristics.html" class="no-external">
 <div class="listing-date">
 Aug 16, 2013
 </div>
@@ -1652,19 +1655,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-categories="Limesurvey,Open Source" data-listing-date-sort="1370289347000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="39" data-categories="Limesurvey,Open Source" data-listing-date-sort="1370289347000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <div class="thumbnail">
-<p><a href="./posts/2013-06-03-limesurvey-randomizing.html"> <p class="card-img-top"><img data-src="posts/2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1-300x101.png" alt="Screen Shot 2013-06-03 at 9.37.52 PM"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external"></a></p><a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2013/06/Screen-Shot-2013-06-03-at-9.37.52-PM1-300x101.png" alt="Screen Shot 2013-06-03 at 9.37.52 PM"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2013-06-03-limesurvey-randomizing.html">
 <h3 class="no-anchor listing-title">
-Limesurvey randomizing
+<a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external">Limesurvey randomizing</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Limesurvey'); return false;">
 Limesurvey
@@ -1673,15 +1676,13 @@ Limesurvey
 Open Source
 </div>
 </div>
-<a href="./posts/2013-06-03-limesurvey-randomizing.html">
 <div class="listing-description">
-It is kind of an odd problem.<br>
-For the following pretty straight forward question: How do I randomise questions within a group in Limesurvey? It…
+<a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external">It is kind of an odd problem.<br>
+For the following pretty straight forward question: How do I randomise questions within a group in Limesurvey? It seems to be really hard to…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2013-06-03-limesurvey-randomizing.html">
+<a href="./posts/2013-06-03-limesurvey-randomizing.html" class="no-external">
 <div class="listing-date">
 Jun 3, 2013
 </div>
@@ -1691,33 +1692,31 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-categories="R" data-listing-date-sort="1350151538000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="40" data-categories="R" data-listing-date-sort="1350151538000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
 <div class="thumbnail">
-<p><a href="./posts/2012-10-13-apply-in-all-its-variations.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external"></a></p><a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2012-10-13-apply-in-all-its-variations.html">
 <h3 class="no-anchor listing-title">
-*apply in all its variations …
+<a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external">*apply in all its variations …</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
 </div>
 </div>
-<a href="./posts/2012-10-13-apply-in-all-its-variations.html">
 <div class="listing-description">
-Here&nbsp;is an excellent stackoverflow post on how <em>apply in all its variations can be used.<br>
-One of the followups points at plyr (from demi-R-god Hadley Wickham) which provides a consistent naming…</em>
+<a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external">Here&nbsp;is an excellent stackoverflow post on how <em>apply in all its variations can be used.<br>
+One of the followups points at plyr (from demi-R-god Hadley Wickham) which provides a…</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2012-10-13-apply-in-all-its-variations.html">
+<a href="./posts/2012-10-13-apply-in-all-its-variations.html" class="no-external">
 <div class="listing-date">
 Oct 13, 2012
 </div>
@@ -1727,19 +1726,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="Google,R,Statistics" data-listing-date-sort="1348293558000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="41" data-categories="Google,R,Statistics" data-listing-date-sort="1348293558000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
 <div class="thumbnail">
-<p><a href="./posts/2012-09-21-r-style-guide.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2012-09-21-r-style-guide.html" class="no-external"></a></p><a href="./posts/2012-09-21-r-style-guide.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2012-09-21-r-style-guide.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2012-09-21-r-style-guide.html">
 <h3 class="no-anchor listing-title">
-R Style Guide
+<a href="./posts/2012-09-21-r-style-guide.html" class="no-external">R Style Guide</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2012-09-21-r-style-guide.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Google'); return false;">
 Google
@@ -1751,14 +1750,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2012-09-21-r-style-guide.html">
 <div class="listing-description">
-This is mainly a note to self:
+<a href="./posts/2012-09-21-r-style-guide.html" class="no-external">This is mainly a note to self:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2012-09-21-r-style-guide.html">
+<a href="./posts/2012-09-21-r-style-guide.html" class="no-external">
 <div class="listing-date">
 Sep 22, 2012
 </div>
@@ -1768,19 +1765,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="41" data-categories="Gapminder,Google,Open Source" data-listing-date-sort="1337843100000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="42" data-categories="Gapminder,Google,Open Source" data-listing-date-sort="1337843100000" data-listing-file-modified-sort="1685867988753" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
 <div class="thumbnail">
-<p><a href="./posts/2012-05-24-religion-and-of-babies.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external"></a></p><a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2012-05-24-religion-and-of-babies.html">
 <h3 class="no-anchor listing-title">
-Religion and # of babies …
+<a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external">Religion and # of babies …</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Gapminder'); return false;">
 Gapminder
@@ -1792,15 +1789,13 @@ Google
 Open Source
 </div>
 </div>
-<a href="./posts/2012-05-24-religion-and-of-babies.html">
 <div class="listing-description">
-Religion seems to have little influence on the # of babies per woman – who might have thought …<br>
-Here is another excellent talk of Hans Rösling on the topic.
+<a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external">Religion seems to have little influence on the # of babies per woman – who might have thought …<br>
+Here is another excellent talk of Hans Rösling on the topic.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2012-05-24-religion-and-of-babies.html">
+<a href="./posts/2012-05-24-religion-and-of-babies.html" class="no-external">
 <div class="listing-date">
 May 24, 2012
 </div>
@@ -1810,32 +1805,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="42" data-categories="Decision Making" data-listing-date-sort="1328261864000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="43" data-categories="Decision Making" data-listing-date-sort="1328261864000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
 <div class="thumbnail">
-<p><a href="./posts/2012-02-03-on-writing-in-social-science.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external"></a></p><a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2012-02-03-on-writing-in-social-science.html">
 <h3 class="no-anchor listing-title">
-On writing in social science
+<a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external">On writing in social science</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
 </div>
 </div>
-<a href="./posts/2012-02-03-on-writing-in-social-science.html">
 <div class="listing-description">
-Malcom Gladwell (author of Blink and Tipping point) meets Dan Ariely (author of Predictively Irrational and Ig Nobel Prize Winner) to chat on what are good strategies in selecting topics to write about and the difficulties of…
+<a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external">Malcom Gladwell (author of Blink and Tipping point) meets Dan Ariely (author of Predictively Irrational and Ig Nobel Prize Winner) to chat on what are good strategies in…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2012-02-03-on-writing-in-social-science.html">
+<a href="./posts/2012-02-03-on-writing-in-social-science.html" class="no-external">
 <div class="listing-date">
 Feb 3, 2012
 </div>
@@ -1845,19 +1838,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="43" data-categories="Decision Making,Ego depletion" data-listing-date-sort="1313731878000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="44" data-categories="Decision Making,Ego depletion" data-listing-date-sort="1313731878000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
 <div class="thumbnail">
-<p><a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external"></a></p><a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html">
 <h3 class="no-anchor listing-title">
-how decisions deplete and breaks help
+<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external">how decisions deplete and breaks help</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -1866,14 +1859,12 @@ Decision Making
 Ego depletion
 </div>
 </div>
-<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html">
 <div class="listing-description">
-The New York Times published a nice overview of the work on decision making and&nbsp;ego depletion&nbsp;(often ego depletion is used as a synonym with resource depletion, which is somewhat confusing because of the use of the later…
+<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external">The New York Times published a nice overview of the work on decision making and&nbsp;ego depletion&nbsp;(often ego depletion is used as a synonym with resource depletion, which is…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html">
+<a href="./posts/2011-08-18-how-decisions-deplete-and-breaks-help.html" class="no-external">
 <div class="listing-date">
 Aug 19, 2011
 </div>
@@ -1883,19 +1874,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="44" data-categories="Methods,R,Statistics" data-listing-date-sort="1312292174000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="45" data-categories="Methods,R,Statistics" data-listing-date-sort="1312292174000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="202">
 <div class="thumbnail">
-<p><a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external"></a></p><a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html">
 <h3 class="no-anchor listing-title">
-Why anybody should learn/use R …
+<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external">Why anybody should learn/use R …</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Methods'); return false;">
 Methods
@@ -1907,15 +1898,13 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html">
 <div class="listing-description">
-I had a discussion the other day on the re-appearing topic why one should learn R …<br>
-I took the list below from the R-Bloggers&nbsp;which argues why grad students should learn R:
+<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external">I had a discussion the other day on the re-appearing topic why one should learn R …<br>
+I took the list below from the R-Bloggers&nbsp;which argues why grad students should learn R:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html">
+<a href="./posts/2011-08-02-why-anybody-should-learnuse-r.html" class="no-external">
 <div class="listing-date">
 Aug 2, 2011
 </div>
@@ -1925,19 +1914,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="45" data-categories="Google,R" data-listing-date-sort="1310728024000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="46" data-categories="Google,R" data-listing-date-sort="1310728024000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail">
-<p><a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external"></a></p><a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html">
 <h3 class="no-anchor listing-title">
-awesome visualization tool for R
+<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external">awesome visualization tool for R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Google'); return false;">
 Google
@@ -1946,14 +1935,12 @@ Google
 R
 </div>
 </div>
-<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html">
 <div class="listing-description">
-http://cran.r-project.org/web/packages/googleVis/ enables chart generation similar to the ones instroduced by Hans Roesling&nbsp;in his TED talk&nbsp;on poverty – extremly cool 🙂
+<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external">http://cran.r-project.org/web/packages/googleVis/ enables chart generation similar to the ones instroduced by Hans Roesling&nbsp;in his TED talk&nbsp;on poverty – extremly cool 🙂</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html">
+<a href="./posts/2011-07-15-awesome-visualization-tool-for-r.html" class="no-external">
 <div class="listing-date">
 Jul 15, 2011
 </div>
@@ -1963,32 +1950,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="46" data-categories="R" data-listing-date-sort="1302848145000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="47" data-categories="R" data-listing-date-sort="1302848145000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <div class="thumbnail">
-<p><a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external"></a></p><a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html">
 <h3 class="no-anchor listing-title">
-resinstalling packages in R after update
+<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external">resinstalling packages in R after update</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
 </div>
 </div>
-<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html">
 <div class="listing-description">
-This is old - by should still work :) - comment on how to do this in 2019 below …
+<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external">This is old - by should still work :) - comment on how to do this in 2019 below …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html">
+<a href="./posts/2011-04-14-resinstalling-packages-in-r-after-update.html" class="no-external">
 <div class="listing-date">
 Apr 15, 2011
 </div>
@@ -1998,32 +1983,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="47" data-categories="Open Source" data-listing-date-sort="1302434733000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="48" data-categories="Open Source" data-listing-date-sort="1302434733000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
 <div class="thumbnail">
-<p><a href="./posts/2011-04-10-sustainable-research.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-04-10-sustainable-research.html" class="no-external"></a></p><a href="./posts/2011-04-10-sustainable-research.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-04-10-sustainable-research.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-04-10-sustainable-research.html">
 <h3 class="no-anchor listing-title">
-Sustainable research
+<a href="./posts/2011-04-10-sustainable-research.html" class="no-external">Sustainable research</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-04-10-sustainable-research.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Open Source'); return false;">
 Open Source
 </div>
 </div>
-<a href="./posts/2011-04-10-sustainable-research.html">
 <div class="listing-description">
-A sister blog with interesting contributions on what open source software researcher can use to work sustainable …
+<a href="./posts/2011-04-10-sustainable-research.html" class="no-external">A sister blog with interesting contributions on what open source software researcher can use to work sustainable …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-04-10-sustainable-research.html">
+<a href="./posts/2011-04-10-sustainable-research.html" class="no-external">
 <div class="listing-date">
 Apr 10, 2011
 </div>
@@ -2033,19 +2016,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="48" data-categories="LaTeX,Methods,R" data-listing-date-sort="1300221049000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="49" data-categories="LaTeX,Methods,R" data-listing-date-sort="1300221049000" data-listing-file-modified-sort="1685867988752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="797">
 <div class="thumbnail">
-<p><a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external"></a></p><a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html">
 <h3 class="no-anchor listing-title">
-Psychology as a reproducible Science
+<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external">Psychology as a reproducible Science</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
 LaTeX
@@ -2057,14 +2040,12 @@ Methods
 R
 </div>
 </div>
-<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html">
 <div class="listing-description">
-<strong>Is Psychology ready for reproducible research?</strong>
+<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external"><strong>Is Psychology ready for reproducible research?</strong></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html">
+<a href="./posts/2011-03-15-psychology-as-a-reproducible-science.html" class="no-external">
 <div class="listing-date">
 Mar 15, 2011
 </div>
@@ -2074,32 +2055,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="49" data-categories="Decision Making" data-listing-date-sort="1298969923000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="50" data-categories="Decision Making" data-listing-date-sort="1298969923000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
 <div class="thumbnail">
-<p><a href="./posts/2011-03-01-blog-attack.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2011-03-01-blog-attack.html" class="no-external"></a></p><a href="./posts/2011-03-01-blog-attack.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2011-03-01-blog-attack.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2011-03-01-blog-attack.html">
 <h3 class="no-anchor listing-title">
-Blog-attack
+<a href="./posts/2011-03-01-blog-attack.html" class="no-external">Blog-attack</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2011-03-01-blog-attack.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
 </div>
 </div>
-<a href="./posts/2011-03-01-blog-attack.html">
 <div class="listing-description">
-Here is what Andrew Gelman writes about an interview Colin Camerer gave on Spousomonics … Looking forward to Camerer’s reply …
+<a href="./posts/2011-03-01-blog-attack.html" class="no-external">Here is what Andrew Gelman writes about an interview Colin Camerer gave on Spousomonics … Looking forward to Camerer’s reply …</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2011-03-01-blog-attack.html">
+<a href="./posts/2011-03-01-blog-attack.html" class="no-external">
 <div class="listing-date">
 Mar 1, 2011
 </div>
@@ -2109,33 +2088,31 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="50" data-categories="Science" data-listing-date-sort="1282137629000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="51" data-categories="Science" data-listing-date-sort="1282137629000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
 <div class="thumbnail">
-<p><a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external"></a></p><a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html">
 <h3 class="no-anchor listing-title">
-Where you end up, having a PhD
+<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external">Where you end up, having a PhD</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Science'); return false;">
 Science
 </div>
 </div>
-<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html">
 <div class="listing-description">
-The illustrated guide from Kindergarten to PhD …<br>
-http://matt.might.net/articles/phd-school-in-pictures/
+<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external">The illustrated guide from Kindergarten to PhD …<br>
+http://matt.might.net/articles/phd-school-in-pictures/</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html">
+<a href="./posts/2010-08-18-where-you-end-up-having-a-phd.html" class="no-external">
 <div class="listing-date">
 Aug 18, 2010
 </div>
@@ -2145,19 +2122,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="51" data-categories="LaTeX,Tech" data-listing-date-sort="1279183794000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="52" data-categories="LaTeX,Tech" data-listing-date-sort="1279183794000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail">
-<p><a href="./posts/2010-07-15-two-good-things-come-together.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external"></a></p><a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2010-07-15-two-good-things-come-together.html">
 <h3 class="no-anchor listing-title">
-two good things come together
+<a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external">two good things come together</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
 LaTeX
@@ -2166,15 +2143,13 @@ LaTeX
 Tech
 </div>
 </div>
-<a href="./posts/2010-07-15-two-good-things-come-together.html">
 <div class="listing-description">
-https://docs.latexlab.org/docs<br>
-LaTeX and Google Docs together in one nice (free)application – this is a brilliant idea, which…
+<a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external">https://docs.latexlab.org/docs<br>
+LaTeX and Google Docs together in one nice (free)application – this is a brilliant idea, which gives you the power of LaTeX combined with the…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2010-07-15-two-good-things-come-together.html">
+<a href="./posts/2010-07-15-two-good-things-come-together.html" class="no-external">
 <div class="listing-date">
 Jul 15, 2010
 </div>
@@ -2184,19 +2159,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="52" data-categories="R,Statistics" data-listing-date-sort="1279007318000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="53" data-categories="R,Statistics" data-listing-date-sort="1279007318000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
 <div class="thumbnail">
-<p><a href="./posts/2010-07-13-r-and-the-world-cup.html"> <p class="card-img-top"><img data-src="posts/2010/07/World_Cup_2010_Fouls-300x300.png" title="World_Cup_2010_Fouls" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external"></a></p><a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2010/07/World_Cup_2010_Fouls-300x300.png" title="World_Cup_2010_Fouls" class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2010-07-13-r-and-the-world-cup.html">
 <h3 class="no-anchor listing-title">
-R and the World Cup
+<a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external">R and the World Cup</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -2205,14 +2180,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2010-07-13-r-and-the-world-cup.html">
 <div class="listing-description">
-Across the street at the Revolution blog a nice example of using R with data from the cloud (see another post on this topic here) shows us the distribution of fouls during the just finished World Cup in a nice barchart. Even more interesting than the fact that Holland rules this category is the way…
+<a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external">Across the street at the Revolution blog a nice example of using R with data from the cloud (see another post on this topic here) shows us the distribution of fouls during…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2010-07-13-r-and-the-world-cup.html">
+<a href="./posts/2010-07-13-r-and-the-world-cup.html" class="no-external">
 <div class="listing-date">
 Jul 13, 2010
 </div>
@@ -2222,19 +2195,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="53" data-categories="Methods,R,Statistics,Tech" data-listing-date-sort="1271485443000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="54" data-categories="Methods,R,Statistics,Tech" data-listing-date-sort="1271485443000" data-listing-file-modified-sort="1685867988751" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
 <div class="thumbnail">
-<p><a href="./posts/2010-04-16-r-goes-cloud.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external"></a></p><a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2010-04-16-r-goes-cloud.html">
 <h3 class="no-anchor listing-title">
-R goes cloud
+<a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external">R goes cloud</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Methods'); return false;">
 Methods
@@ -2249,15 +2222,13 @@ Statistics
 Tech
 </div>
 </div>
-<a href="./posts/2010-04-16-r-goes-cloud.html">
 <div class="listing-description">
-Jeroen Ooms did for R what Google did for editing documents online. He created several software packages that help running R with a nice frontend over the Internet.<br>
-I first learned about Jeroen’s website…<br>
+<a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external">Jeroen Ooms did for R what Google did for editing documents online. He created several software packages that help running R with a nice frontend over the Internet.<br>
+I first…<br></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2010-04-16-r-goes-cloud.html">
+<a href="./posts/2010-04-16-r-goes-cloud.html" class="no-external">
 <div class="listing-date">
 Apr 17, 2010
 </div>
@@ -2267,32 +2238,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="54" data-categories="LaTeX" data-listing-date-sort="1268919724000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="55" data-categories="LaTeX" data-listing-date-sort="1268919724000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
 <div class="thumbnail">
-<p><a href="./posts/2010-03-18-latex-looks-more-scientific.html"> <p class="card-img-top"><img data-src="posts/2010/03/Screen-shot-2010-03-18-at-2.29.06-PM1-300x56.png" title="Screen shot 2010-03-18 at 2.29.06 PM" class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external"></a></p><a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external">
+<p class="card-img-top"><img data-src="posts/2010/03/Screen-shot-2010-03-18-at-2.29.06-PM1-300x56.png" title="Screen shot 2010-03-18 at 2.29.06 PM" class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2010-03-18-latex-looks-more-scientific.html">
 <h3 class="no-anchor listing-title">
-LaTeX looks more scientific
+<a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external">LaTeX looks more scientific</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
 LaTeX
 </div>
 </div>
-<a href="./posts/2010-03-18-latex-looks-more-scientific.html">
 <div class="listing-description">
-There are long discussions on the benefits of LaTeX over Word, but this statement from a (not too serious) paper of Andrew Gelman (a Professor of Statistics and Political…
+<a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external">There are long discussions on the benefits of LaTeX over Word, but this statement from a (not too serious) paper of Andrew Gelman (a Professor of Statistics and Political…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2010-03-18-latex-looks-more-scientific.html">
+<a href="./posts/2010-03-18-latex-looks-more-scientific.html" class="no-external">
 <div class="listing-date">
 Mar 18, 2010
 </div>
@@ -2302,32 +2271,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="55" data-categories="Science" data-listing-date-sort="1261483224000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="56" data-categories="Science" data-listing-date-sort="1261483224000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="thumbnail">
-<p><a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external"></a></p><a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html">
 <h3 class="no-anchor listing-title">
-Accepting to fail (in the name of science)
+<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external">Accepting to fail (in the name of science)</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Science'); return false;">
 Science
 </div>
 </div>
-<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html">
 <div class="listing-description">
-Very interesting article in WIRED on accepting failure and how ignoring it changes the way scientists make progress (or not).
+<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external">Very interesting article in WIRED on accepting failure and how ignoring it changes the way scientists make progress (or not).</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html">
+<a href="./posts/2009-12-22-accepting-to-fail-in-the-name-of-science.html" class="no-external">
 <div class="listing-date">
 Dec 22, 2009
 </div>
@@ -2337,19 +2304,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="56" data-categories="Decision Making,Methods,Science" data-listing-date-sort="1260623474000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="57" data-categories="Decision Making,Methods,Science" data-listing-date-sort="1260623474000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
 <div class="thumbnail">
-<p><a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external"></a></p><a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html">
 <h3 class="no-anchor listing-title">
-How WEIRD subjects can be overcome … a comment on Henrich et al.
+<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external">How WEIRD subjects can be overcome … a comment on Henrich et al.</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Decision Making'); return false;">
 Decision Making
@@ -2361,14 +2328,12 @@ Methods
 Science
 </div>
 </div>
-<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html">
 <div class="listing-description">
-Joe Henrich publish…
+<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external">Joe Henrich published a target article in BBS talking about how economics and psychology base their research on WEIRD (Western, Educated, Industrialized, Rich and…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html">
+<a href="./posts/2009-12-12-how-weird-subjects-can-be-overcome-a-comment-on-henrich-et-al.html" class="no-external">
 <div class="listing-date">
 Dec 12, 2009
 </div>
@@ -2378,19 +2343,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="57" data-categories="R,Statistics" data-listing-date-sort="1256440550000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="58" data-categories="R,Statistics" data-listing-date-sort="1256440550000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="133">
 <div class="thumbnail">
-<p><a href="./posts/2009-10-24-lattice-versus-ggplot2.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external"></a></p><a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-10-24-lattice-versus-ggplot2.html">
 <h3 class="no-anchor listing-title">
-Lattice versus ggplot2
+<a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external">Lattice versus ggplot2</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -2399,15 +2364,13 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2009-10-24-lattice-versus-ggplot2.html">
 <div class="listing-description">
-I really liked Lattice for generating graphs in R until I saw what ggplot2 can do …<br>
-One of the big differences between the two is the theory on which ggplot2 is based upon. There are clear modular building blocks that can be applied in a consistent manner…
+<a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external">I really liked Lattice for generating graphs in R until I saw what ggplot2 can do …<br>
+One of the big differences between the two is the theory on which ggplot2 is based upon.…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-10-24-lattice-versus-ggplot2.html">
+<a href="./posts/2009-10-24-lattice-versus-ggplot2.html" class="no-external">
 <div class="listing-date">
 Oct 25, 2009
 </div>
@@ -2417,19 +2380,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="58" data-categories="R,Statistics" data-listing-date-sort="1252303626000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="59" data-categories="R,Statistics" data-listing-date-sort="1252303626000" data-listing-file-modified-sort="1685867988750" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="483">
 <div class="thumbnail">
-<p><a href="./posts/2009-09-06-r-flashmob.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-09-06-r-flashmob.html" class="no-external"></a></p><a href="./posts/2009-09-06-r-flashmob.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-09-06-r-flashmob.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-09-06-r-flashmob.html">
 <h3 class="no-anchor listing-title">
-R flashmob
+<a href="./posts/2009-09-06-r-flashmob.html" class="no-external">R flashmob</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-09-06-r-flashmob.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -2438,15 +2401,13 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2009-09-06-r-flashmob.html">
 <div class="listing-description">
-From: The R Flashmob Project<br>
-Subject: R Flashmob #2
+<a href="./posts/2009-09-06-r-flashmob.html" class="no-external">From: The R Flashmob Project<br>
+Subject: R Flashmob #2</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-09-06-r-flashmob.html">
+<a href="./posts/2009-09-06-r-flashmob.html" class="no-external">
 <div class="listing-date">
 Sep 7, 2009
 </div>
@@ -2456,33 +2417,31 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="59" data-categories="Papers" data-listing-date-sort="1247476825000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="60" data-categories="Papers" data-listing-date-sort="1247476825000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
 <div class="thumbnail">
-<p><a href="./posts/2009-07-13-flashlight-paper-draft.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external"></a></p><a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-07-13-flashlight-paper-draft.html">
 <h3 class="no-anchor listing-title">
-Flashlight paper draft
+<a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external">Flashlight paper draft</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Papers'); return false;">
 Papers
 </div>
 </div>
-<a href="./posts/2009-07-13-flashlight-paper-draft.html">
 <div class="listing-description">
-We submitted our Flashlight paper today. Find a draft at the address below:<br>
-Schulte-Mecklenbeck, Michael , Murphy…<br><br>
+<a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external">We submitted our Flashlight paper today. Find a draft at the address below:<br>
+Schulte-Mecklenbeck, Michael , Murphy, Ryan O. and Hutzler, Florian,Flashlight – an Online…<br><br></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-07-13-flashlight-paper-draft.html">
+<a href="./posts/2009-07-13-flashlight-paper-draft.html" class="no-external">
 <div class="listing-date">
 Jul 13, 2009
 </div>
@@ -2492,19 +2451,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="60" data-categories="LaTeX,Tech" data-listing-date-sort="1245953613000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="61" data-categories="LaTeX,Tech" data-listing-date-sort="1245953613000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
 <div class="thumbnail">
-<p><a href="./posts/2009-06-25-latex-tips.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-06-25-latex-tips.html" class="no-external"></a></p><a href="./posts/2009-06-25-latex-tips.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-06-25-latex-tips.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-06-25-latex-tips.html">
 <h3 class="no-anchor listing-title">
-LaTeX tips
+<a href="./posts/2009-06-25-latex-tips.html" class="no-external">LaTeX tips</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-06-25-latex-tips.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
 LaTeX
@@ -2513,14 +2472,12 @@ LaTeX
 Tech
 </div>
 </div>
-<a href="./posts/2009-06-25-latex-tips.html">
 <div class="listing-description">
-Two things are often bothering when one starts to work with LaTeX: in text referencing of literature and Umlaute (for our German speaking friends) ****
+<a href="./posts/2009-06-25-latex-tips.html" class="no-external">Two things are often bothering when one starts to work with LaTeX: in text referencing of literature and Umlaute (for our German speaking friends) ****</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-06-25-latex-tips.html">
+<a href="./posts/2009-06-25-latex-tips.html" class="no-external">
 <div class="listing-date">
 Jun 25, 2009
 </div>
@@ -2530,19 +2487,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="61" data-categories="Tech,XAMPP" data-listing-date-sort="1245268256000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="62" data-categories="Tech,XAMPP" data-listing-date-sort="1245268256000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="135">
 <div class="thumbnail">
-<p><a href="./posts/2009-06-17-xampp-activating-mysql.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external"></a></p><a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-06-17-xampp-activating-mysql.html">
 <h3 class="no-anchor listing-title">
-XAMPP activating mysql
+<a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external">XAMPP activating mysql</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Tech'); return false;">
 Tech
@@ -2551,14 +2508,12 @@ Tech
 XAMPP
 </div>
 </div>
-<a href="./posts/2009-06-17-xampp-activating-mysql.html">
 <div class="listing-description">
-Here…
+<a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external">Here is the problem: I want to have a server (Apache, MySQL) on my local machine (for the current purpose it was a Windows machine) to do some developing, testing or a demo.…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-06-17-xampp-activating-mysql.html">
+<a href="./posts/2009-06-17-xampp-activating-mysql.html" class="no-external">
 <div class="listing-date">
 Jun 17, 2009
 </div>
@@ -2568,19 +2523,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="62" data-categories="Review process,Science" data-listing-date-sort="1244974861000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="63" data-categories="Review process,Science" data-listing-date-sort="1244974861000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <div class="thumbnail">
-<p><a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external"></a></p><a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html">
 <h3 class="no-anchor listing-title">
-double, triple or even sextuple blind?
+<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external">double, triple or even sextuple blind?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Review process'); return false;">
 Review process
@@ -2589,14 +2544,12 @@ Review process
 Science
 </div>
 </div>
-<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html">
 <div class="listing-description">
-There is an interesting discussion on how the scientific review process should be handled going on at orgtheory.net blog. The point is that the obvious shortcomings in the current review system (the authors know who the editor is (and vice versa), the reviewer knows (or can easily infer)…<br>
+<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external">There is an interesting discussion on how the scientific review process should be handled going on at orgtheory.net blog. The point is that the obvious shortcomings in the…<br></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html">
+<a href="./posts/2009-06-14-double-triple-or-even-sextuple-blind.html" class="no-external">
 <div class="listing-date">
 Jun 14, 2009
 </div>
@@ -2606,19 +2559,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="63" data-categories="R,Statistics" data-listing-date-sort="1244233702000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="64" data-categories="R,Statistics" data-listing-date-sort="1244233702000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
 <div class="thumbnail">
-<p><a href="./posts/2009-06-05-inference-and-r.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-06-05-inference-and-r.html" class="no-external"></a></p><a href="./posts/2009-06-05-inference-and-r.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-06-05-inference-and-r.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-06-05-inference-and-r.html">
 <h3 class="no-anchor listing-title">
-Inference and R
+<a href="./posts/2009-06-05-inference-and-r.html" class="no-external">Inference and R</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-06-05-inference-and-r.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -2627,14 +2580,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2009-06-05-inference-and-r.html">
 <div class="listing-description">
-Dan Goldstein posted a short overview of Inference which allows working with R code in Microsoft Office and Excel.
+<a href="./posts/2009-06-05-inference-and-r.html" class="no-external">Dan Goldstein posted a short overview of Inference which allows working with R code in Microsoft Office and Excel.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-06-05-inference-and-r.html">
+<a href="./posts/2009-06-05-inference-and-r.html" class="no-external">
 <div class="listing-date">
 Jun 5, 2009
 </div>
@@ -2644,19 +2595,19 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="64" data-categories="R,Statistics" data-listing-date-sort="1242590393000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="65" data-categories="R,Statistics" data-listing-date-sort="1242590393000" data-listing-file-modified-sort="1685867988749" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
 <div class="thumbnail">
-<p><a href="./posts/2009-05-17-create-colored-title-in-r-plot.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external"></a></p><a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html">
 <h3 class="no-anchor listing-title">
-create colored title in R plot
+<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external">create colored title in R plot</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -2665,14 +2616,12 @@ R
 Statistics
 </div>
 </div>
-<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html">
 <div class="listing-description">
-David Smith has a very nice code example in which he sets the color of title word in a plot to the actual grouping color. Code can be found here. This seems extremely useful for posters and presentations. I doubt however that…
+<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external">David Smith has a very nice code example in which he sets the color of title word in a plot to the actual grouping color. Code can be found here. This seems extremely useful…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html">
+<a href="./posts/2009-05-17-create-colored-title-in-r-plot.html" class="no-external">
 <div class="listing-date">
 May 17, 2009
 </div>
@@ -2682,32 +2631,30 @@ Michael
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="65" data-categories="Heuristics" data-listing-date-sort="1205708400000" data-listing-file-modified-sort="1685867988747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="66" data-categories="Heuristics" data-listing-date-sort="1205708400000" data-listing-file-modified-sort="1685867988747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
 <div class="thumbnail">
-<p><a href="./posts/2008-03-17-priority-heuristic-comment.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+<p><a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external"></a></p><a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2008-03-17-priority-heuristic-comment.html">
 <h3 class="no-anchor listing-title">
-Priority Heuristic comment
+<a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external">Priority Heuristic comment</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Heuristics'); return false;">
 Heuristics
 </div>
 </div>
-<a href="./posts/2008-03-17-priority-heuristic-comment.html">
 <div class="listing-description">
-We Johnson, Schulte-Mecklenbeck, &amp; Willemsen, 2008…
+<a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external">We Johnson, Schulte-Mecklenbeck, &amp; Willemsen, 2008 have got a new paper out that comments on the Priority Heuristic as described in Brandstaetter, Gigerenzer and Hertwig…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2008-03-17-priority-heuristic-comment.html">
+<a href="./posts/2008-03-17-priority-heuristic-comment.html" class="no-external">
 <div class="listing-date">
 Mar 17, 2008
 </div>
@@ -2804,10 +2751,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -2817,8 +2781,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -2830,7 +2803,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -2874,6 +2970,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -2899,6 +2996,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -2964,12 +3087,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">2024 Michael Schulte-Mecklenbeck</div>
+    <div class="nav-footer-center">
+<p>2024 Michael Schulte-Mecklenbeck</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

@@ -1,0 +1,239 @@
+---
+title: "Replication: Round numbers"
+author: "MSM"
+date: "2024-01-07"
+draft: true
+categories: [Replication, Number Perception, Consumer Behavior]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 8, 
+                      fig.height = 8,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(kableExtra)
+library(sjPlot)
+library(effsize)
+library(tidyr)
+library(broom)
+library(lme4)
+library(here)
+library(DT)
+library(lsr)
+library(tinytable)
+group <- 'BAHS2023'
+demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv')))
+complete_df <- read_csv(here(paste0('0_data/',group,'_complete_df_pub.csv')))
+targets <- read_csv(here(paste0('0_data/',group,'_targets_pub.csv')))
+
+options(digits = 1)
+options(scipen = 999)
+```
+
+# Original work
+
+Nguyen, H. A., Hofman, J. M., & Goldstein, D. G. (2022). [Round numbers can sharpen cognition](https://dl.acm.org/doi/abs/10.1145/3491102.3501852). In *Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems* (pp. 1-15).
+
+# Team BA autumn 2023
+
+- Loris Adam
+- Mika Berthel
+- Joël Kämpf
+- Joël Schrepfer
+- Laura Staudenmann
+- Cedric Thommen
+- Sara von Allmen 
+
+[OSF](https://osf.io/c9zt5/)
+[Pre-Reg (German)](https://osf.io/47jx2)
+
+## Abstract
+Scientists and journalists strive to report numbers with high precision to keep readers well-informed. Our work investigates whether this practice can backfre due to the cognitive costs of processing multi-digit precise numbers. In a pre-registered randomized experiment, we presented readers with several news stories containing numbers in either precise or round versions. We then measured
+their ability to approximately recall these numbers and make estimates based on what they read. Our results revealed a counterintuitive efect where reading round numbers helped people better approximate the precise values, while seeing precise numbers made them worse. We also conducted two surveys to elicit individual
+preferences for the ideal degree of rounding for numbers spanning seven orders of magnitude in various contexts. From the surveys, we found that people tended to prefer more precision when the rounding options contained only digits (e.g., "2,500,000") than when they contained modifer terms (e.g., "2.5 million"). We conclude with a discussion of how these fndings can be 
+
+# Replication
+
+We ran a direct replication of experiment 1 of Nguyen et al. (2022). We developed a set of six new tasks (see [Appendix](#appendix)) that structurally followed the original: two numbers (either `round` or`precise`) and two additional numbers that were not relevant for the task.
+
+```{r}
+#| label: tab-targets
+
+knitr::kable(
+  targets %>%
+  group_by(set, condition, number_id) %>%
+  summarise(m_target = mean(target),
+            sd_target = sd(target)),
+  longtable = TRUE, 
+  booktabs = TRUE,
+  caption = 'Overview stimulus structure.'
+)
+```
+
+
+So, clearly we produced two, quite different sets of stimuli. Set 1 had a average of `r mean(targets[targets$set == 1 & targets$number_id == 1,]$target,1)` for the first number and `r mean(targets[targets$set == 1 & targets$number_id == 2,]$target,1)`, whereas set 2 had `r mean(targets[targets$set == 2 & targets$number_id == 1,]$target,1)` for the first  and `r mean(targets[targets$set == 2 & targets$number_id == 2,]$target,1)` for the second number. 
+
+# Demographics
+
+The original paper had 1300 participants recruited on Amazon’s Mechanical Turk. We recruited through word of mouth among friends and family of the student group running this study.  
+
+Overall we collected data from **`r length(demographie$ID)` participants**. 
+Female participants (*n* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% summarise(m = sd(Alter))` years; Male participants (*n* = `r demographie %>% filter(Geschlecht == "Männlich") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Männlich") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Männlich") %>% summarise(m = sd(Alter))` years; non-binary participants (`r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% summarise(m = sd(Alter))` years old.
+
+
+## Experiment - Round versus precise
+
+```{r}
+checked_df <-
+complete_df %>%
+  mutate(check_within_range = case_when(value > range_min & value < range_max ~ 1,
+         TRUE ~ 0)) 
+
+prop_table <- 
+checked_df %>%
+  filter(test == 'Question') %>%
+  group_by(condition) %>%
+  count(check_within_range)
+
+prop_table_prec <-
+checked_df %>%
+    filter(test == 'Question') %>%
+  group_by(condition) %>%
+  summarise(perc = mean(check_within_range))
+```
+
+Let's first look at the overall effect of the manipulation (see Figure @fig-overview). Applying the same rule as Nguyen et al. (2022) we code all responses that fall within a 10% of the precise number as a correct response. Looking at the percentage of correct responses between the precise (`r prop_table_prec[1,2]`) and round (`r prop_table_prec[2,2]`) condition we see that the round condition has a ~`r prop_table_prec[2,2] - prop_table_prec[1,2]*100`% higher percentage of correct responses than precise. 
+
+```{r}
+#| label: fig-overview
+#| fig-cap: "Results Replication Experiment 1" 
+
+checked_df %>%
+  filter(test == 'Question') %>%
+  group_by(condition) %>%
+  summarise(m_perc = mean(check_within_range)*100, 
+            l = length(check_within_range),
+            se = sd(check_within_range)/sqrt(length(check_within_range))*100) %>%
+  ggplot(aes(condition, m_perc)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = m_perc-se, ymax = m_perc+se), width = .11) +
+  theme_bw() +
+  labs(title = 'Across all recall tasks',
+       y = 'Percent of approximately correct responses')
+```
+
+```{r}
+res <- prop.test(x = c(prop_table$n[2], prop_table$n[4]), n = c(prop_table$n[1] + prop_table$n[2], prop_table$n[3] + prop_table$n[4]))
+# Printing the results
+res 
+
+checked_df %>%
+  filter(test == 'Question') %>%
+t.test(check_within_range ~ condition, data = .)
+
+```
+
+
+
+
+```{r}
+#| label: fig-split
+#| fig-cap: "Split in set 1 and set 2" 
+checked_df %>%
+  filter(test == 'Question') %>%
+  group_by(condition, set) %>%
+  summarise(m_perc = mean(check_within_range)*100, 
+            l = length(check_within_range),
+            se = sd(check_within_range)/sqrt(length(check_within_range))*100) %>%
+  ggplot(aes(condition, m_perc)) +
+    geom_point() +
+    geom_errorbar(aes(ymin = m_perc-se, ymax = m_perc+se), width = .11) +
+  theme_bw() +
+  labs(title = 'Set Split',
+    y = 'Percent of approximately correct responses') + 
+  facet_grid(. ~ set)
+
+```
+
+```{r}
+#| label: fig-facet
+#| fig-cap: "Facets of all numbers"
+ 
+checked_df %>%
+  filter(test == 'Question') %>%
+  group_by(condition, set, label) %>%
+  summarise(m_perc = mean(check_within_range)*100, 
+            l = length(check_within_range),
+            se = sd(check_within_range)/sqrt(length(check_within_range))*100) %>%
+  ggplot(aes(condition, m_perc)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = m_perc-se, ymax = m_perc+se), width = .11) +
+  theme_bw() +
+  labs(title = 'Across all recall tasks - Set Split',
+       y = 'Percent of approximately correct responses') + 
+  facet_wrap(set ~ label, nrow = 2)
+```
+
+
+# Appendix{#appendix}
+
+## Overview Task values
+
+| Id | Set | Task           | No 1 precise | No 1 rounded | No 2 precise | No 2 rounded | Target Percent precise | Percent rounded |
+|----|-----|----------------|--------------|--------------|--------------|--------------|----------------------|----------------------|
+| 1  | 2   | Arztpraxen        | 25’439       | 25’000        | 19’004       | 19’000        | 74.7 % | 76 %              
+| 2  | 	2  |	Gotthardtunnel	| 16’942	|17’000	  |2’257	|2’300	|13.3 %	|13.5 %|
+| 3	 | 1	 |Arbeitslosigkeit	| 89’881	|90’000	  |2’280	|2’500	|2.5 %	  |2.8 %|
+| 4	 | 1	 |Urteile	          | 103’156 |100’000	|1’945	|2’000	|1.9 %	 | 2.0%|
+| 5	 | 1	 |Geographie 	      | 41’285	|40’000	  |7’105	|7’000	|17.2 %	|17.5 %|
+| 6	 | 2	 |Umsatzlöhne	      | 16’553	|17’000	  |3’750	|4’000	|22.7 %	|23.5 %|
+
+
+## Tasks in German
+
+### 1. Arztpraxen
+
+> Jede vierte Ärztin bzw. Jeder vierte Arzt war Ende 2021 mindestens 60 Jahre alt. Ende 2021 waren in den Arztpraxen und ambulanten Zentren in der Schweiz 25’439 [25’000] Ärztinnen und Ärzte tätig, was 19’004 [19’000] Vollzeitäquivalenten entspricht. Gut 25% der Ärztinnen und Ärzte war mindestens 60 Jahre alt. Dies zeigen die jüngsten Ergebnisse des Bundesamtes für Statistik (BFS).
+
+
+[**Source**](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/medienmitteilungen.assetdetail.28085082.html)
+
+### 2. Gotthardtunnel
+
+> Der Gotthard-Strassentunnel ist mit 16’942 [17’000] Metern Länge der viertlängste Strassentunnel der Welt und der längste Strassentunnel in den Alpen. Die Autostrasse verbindet Göschenen im Kanton Uri mit Airolo im Kanton Tessin. Im Jahr 2012 wurde er durchschnittlich von 17'061 Fahrzeugen pro Tag befahren, wovon 2’257 [2’300] schwere Lkw waren.
+
+[**Source**](https://de.wikipedia.org/wiki/Gotthard-Strassentunnel)
+
+### 3. Umsatzlöhne
+
+> Der Zürcher Gastronom Michel Péclard sorgte diesen Sommer mit einem neuen Lohnmodell für Aufsehen. Einem seiner Kellner bezahlte er 16'553 [17’000] Franken in einem Monat. Péclard setzt beim Servicepersonal seiner Restaurants auf Umsatzbeteiligung. Der Toplohn sei zwar eine Ausnahme gewesen. Doch seine Angestellten hätten im Sommer monatlich zwischen 8'000 und 12'000 Franken verdient – weit über dem garantierten Mindestlohn von 3'750 [4’000] Franken für Ungelernte.
+
+[**Source**](https://www.srf.ch/news/wirtschaft/gastroloehne-in-der-kritik-diskussion-um-umsatzloehne-bei-gastrounternehmen)
+
+### 4. Arbeitslosigkeit
+
+> Gemäss den Erhebungen des Staatssekretariats für Wirtschaft (SECO) waren Ende August diesen Jahres 89’881 [90’000] Arbeitslose bei den Regionalen Arbeitsvermittlungszentren (RAV) eingeschrieben, 2’280 [2’500] mehr als im Vormonat. Die Arbeitslosenquote stieg von 1,9 % im Juli auf 2,0 % im Berichtsmonat.
+
+[**Source**](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/medienmitteilungen.assetdetail.27205388.html)
+
+### 5. Erwachsenenstrafurteile
+
+ > Im letzten Jahr ist die Zahl der Strafregistereinträge gegenüber dem Vorjahr um 3% auf 103’156 [103’000] Verurteilungen gestiegen. Die Verstösse aufgrund des Strassenverkehrsgesetzes erhöhten sich leicht, jene aufgrund des Betäubungsmittelgesetzes gingen um 13% zurück. Insgesamt wurden 1’945 [2’000] Landesverweisungen ausgesprochen. 
+
+[**Source**](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/medienmitteilungen.assetdetail.27265661.html)
+
+### 6. Geographie
+
+> Mit einer Fläche von 41’285 [40’000] Quadratkilometern ist die Schweiz von allen Ländern Europas eines der flächenmäßig kleineren. Der Binnenstaat in Mitteleuropa grenzt an Deutschland, Österreich, Liechtenstein, Frankreich und Italien und hat Anteil an drei großen europäischen Sprachräumen (Deutsch, Italienisch, Französisch). Das Land ist aufgeteilt in 26 teilsouveräne Kantone. Graubünden ist mit einer Fläche von 7’105 [7’000] Quadratkilometern der größte, der Kanton Basel-Stadt mit rund 37 Quadratkilometern der kleinste.
+
+[**Source**](https://de.statista.com/themen/7969/geographie-in-der-schweiz/#topicOverview)

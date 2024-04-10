@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -79,10 +86,10 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Michael Schulte-Mecklenbeck</span>
     </a>
@@ -94,25 +101,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../_content/CV_Index.pdf" rel="" target="">
- <span class="menu-text">CV</span></a>
+    <a class="nav-link" href="../../_content/CV_Index.pdf"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -123,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">Replication: Default effect</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Replication</div>
-                <div class="quarto-category">Default</div>
+                <div class="quarto-category">Default Effekt</div>
                 <div class="quarto-category">Framing</div>
               </div>
                   </div>
@@ -160,6 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <section id="original-work" class="level1">
 <h1>Original work</h1>
 <p>Johnson, E. J., Bellman, S., &amp; Lohse, G. L. (2002). Defaults, framing and privacy: Why opting in-opting out.</p>
@@ -191,15 +199,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="demographics" class="level1">
 <h1>Demographics</h1>
-<p>The original paper had 277 participants in experiment 1 and 234 participants in experiment 2. We aimed at a similar sample had a great start with 408 participants. Unfortunately more than 65% dropped out on the first page of the questionnaire. Our working hypothesis is, that most of our participants did the experiment on their mobile - our questionnaire was checked for that but apparently we missed that the handling was not ideal … hence the large dropout.</p>
+<p>The original paper had 277 participants in experiment 1 and 234 participants in experiment 2. We aimed at a similar sample had a great start with 408 participants. Unfortunately more than 35% dropped out on the first page of the questionnaire. Our working hypothesis is, that most of our participants did the experiment on their mobile - our questionnaire was checked for that but apparently we missed that the handling was not ideal … hence the large dropout.</p>
 <p>Overall we ended up with 170 participants (49.41% female). Age was recorded in age brackets:</p>
 <div class="cell" data-layout-align="center" data-tab.cap="Tab. 1: Age brackets for participant sample">
 <div class="cell-output-display">
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<table class="table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">agegroup</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">frequency</th>
+<th style="text-align: left;">agegroup</th>
+<th style="text-align: right;">frequency</th>
 </tr>
 </thead>
 <tbody>
@@ -229,36 +237,47 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-
-
 </div>
 </div>
 <section id="experiment-1" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-1">Experiment 1</h2>
-<p>Johnson et al.&nbsp;(2002) used four questions to evaluate the presence of a <em>default</em> (no default in question 1 and 2 (listed both as 1 in the original) and two questions (!3 and Q4) with a pre-set default selection) and crossed these with <em>framing</em> (positive (Q1, Q3) and negative (Q2, Q4)). Putting the results in a rank order (see <a href="#fig-exp1">Figure&nbsp;1</a>) we are getting the highest participation rate in Q2 (no default, negative) followed by Q3 (default, positive), Q4 (default, negative) and the lowest in Q1 (no default, positive)) - so we are looking for the sequence <strong>2341</strong>.</p>
-<div id="fig-exp1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/Tab1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Items Johnson et al.&nbsp;Exp 1</figcaption>
+<p>Johnson et al.&nbsp;(2002) used four questions to evaluate the presence of a <em>default</em> (no default in question 1 and 2 (listed both as 1 in the original) and two questions (!3 and Q4) with a pre-set default selection) and crossed these with <em>framing</em> (positive (Q1, Q3) and negative (Q2, Q4)). Putting the results in a rank order (see <a href="#fig-exp1" class="quarto-xref">Figure&nbsp;1</a>) we are getting the highest participation rate in Q2 (no default, negative) followed by Q3 (default, positive), Q4 (default, negative) and the lowest in Q1 (no default, positive)) - so we are looking for the sequence <strong>2341</strong>.</p>
+<div id="fig-exp1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exp1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Tab1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exp1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Items Johnson et al.&nbsp;Exp 1
+</figcaption>
 </figure>
 </div>
-<p>Our results show the pattern <strong>3214</strong> as can be seen in <a href="#fig-results-exp1">Figure&nbsp;2</a>. Noteworthy seems that Q4 (default, negative) was de-selected in most cases which is surprising and different to the original.</p>
+<p>Our results show the pattern <strong>3214</strong> as can be seen in <a href="#fig-results-exp1" class="quarto-xref">Figure&nbsp;2</a>. Noteworthy seems that Q4 (default, negative) was de-selected in most cases which is surprising and different to the original.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-exp1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="staticfig-results-exp1-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Results Replication Experiment 1</figcaption>
+<div id="fig-results-exp1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-exp1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-exp1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-exp1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Results Replication Experiment 1
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>Running the logistic regression predicting <em>choice</em> with <em>framing X default</em> (see <a href="#tbl-result1">Table&nbsp;1</a>) shows a framing effect as well as an effect for the default condition (of course in the opposite direction). The interaction term is also significant.</p>
+<p>Running the logistic regression predicting <em>choice</em> with <em>framing X default</em> (see <a href="#tbl-result1" class="quarto-xref">Table&nbsp;1</a>) shows a framing effect as well as an effect for the default condition (of course in the opposite direction). The interaction term is also significant.</p>
 <div class="cell" data-layout-align="center">
+<div id="tbl-result1" class="cell quarto-float anchored" data-layout-align="center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-result1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Logistic regression for Experiment 1
+</figcaption>
+<div aria-describedby="tbl-result1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-result1" class="anchored">
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
-<caption>Table&nbsp;1: Logistic regression for Experiment 1</caption>
+<div>
+<table class="do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 25%">
@@ -311,50 +330,70 @@ condition [ND]</td>
 </tr>
 </tbody>
 </table>
+
+
 </div>
-
-
+</div>
+</div>
+</figure>
 </div>
 </div>
 </section>
 <section id="experiment-2" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-2">Experiment 2</h2>
-<p>In experiment 2 Johnson et al.&nbsp;(2002) modify the questions (see <a href="#fig-exp2-items">Figure&nbsp;3</a>) in adding a Yes/No option (instead the simple tick box in Experiment 1) and an <code>empty</code> version where no boxes are ticked. Inspecting the results the rank order is now <strong>651243</strong>.</p>
-<div id="fig-exp2-items" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
+<p>In experiment 2 Johnson et al.&nbsp;(2002) modify the questions (see <a href="#fig-exp2-items" class="quarto-xref">Figure&nbsp;3</a>) in adding a Yes/No option (instead the simple tick box in Experiment 1) and an <code>empty</code> version where no boxes are ticked. Inspecting the results the rank order is now <strong>651243</strong>.</p>
+<div id="fig-exp2-items" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exp2-items-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Tab2.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Items Johnson et al.&nbsp;Exp 2</figcaption>
+<figcaption>Items Johnson et al.&nbsp;Exp 2</figcaption>
 </figure>
 </div>
-<figcaption class="figure-caption">Figure&nbsp;3: <strong>?(caption)</strong></figcaption>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-exp2-items-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
 </figure>
 </div>
-<p>There is a clear framing effect and a step wise default effect (see <a href="#fig-exp2">Figure&nbsp;4</a>).</p>
-<div id="fig-exp2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/Fig1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Results Johnson et al.&nbsp;Exp 2</figcaption>
+<p>There is a clear framing effect and a step wise default effect (see <a href="#fig-exp2" class="quarto-xref">Figure&nbsp;4</a>).</p>
+<div id="fig-exp2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-exp2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-exp2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Results Johnson et al.&nbsp;Exp 2
+</figcaption>
 </figure>
 </div>
-<p>There several differences inspecting our results. Our rank ordered results give us the pattern: <strong>612534</strong>. Remarkable are also the much lower participation rates (below 50%) for <code>Not participate</code> and <code>No Default</code> in both framing conditions. Only <code>Participate</code> in the positive frame is above 75% (see <a href="#fig-results-exp2">Figure&nbsp;5</a>).</p>
+<p>There several differences inspecting our results. Our rank ordered results give us the pattern: <strong>612534</strong>. Remarkable are also the much lower participation rates (below 50%) for <code>Not participate</code> and <code>No Default</code> in both framing conditions. Only <code>Participate</code> in the positive frame is above 75% (see <a href="#fig-results-exp2" class="quarto-xref">Figure&nbsp;5</a>).</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-exp2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="staticfig-results-exp2-1.png" class="img-fluid figure-img" width="768"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: Results Replication Experiment 2</figcaption>
+<div id="fig-results-exp2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-exp2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-exp2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-exp2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Results Replication Experiment 2
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>Running the logistic regression predicting <em>choice</em> with <em>framing X default X answer option</em> (see <a href="#tbl-result2">Table&nbsp;2</a>) shows a significant framing effect as well as an effect for the the presence of an answer option (Y/N). The two-way interaction terms for framing and default is significant. There is also a three-way-interaction of framing, default and answer option mainly driven by the difference between participate and no-default.</p>
+<p>Running the logistic regression predicting <em>choice</em> with <em>framing X default X answer option</em> (see <a href="#tbl-result2" class="quarto-xref">Table&nbsp;2</a>) shows a significant framing effect as well as an effect for the the presence of an answer option (Y/N). The two-way interaction terms for framing and default is significant. There is also a three-way-interaction of framing, default and answer option mainly driven by the difference between participate and no-default.</p>
 <div class="cell" data-layout-align="center">
+<div id="tbl-result2" class="cell quarto-float anchored" data-layout-align="center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-result2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Logistic regression for Experiment 2
+</figcaption>
+<div aria-describedby="tbl-result2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-result2" class="anchored">
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
-<caption>Table&nbsp;2: Logistic regression for Experiment 2</caption>
+<div>
+<table class="do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 25%">
 <col style="width: 25%">
@@ -463,9 +502,12 @@ Option [Y]</td>
 </tr>
 </tbody>
 </table>
+
+
 </div>
-
-
+</div>
+</div>
+</figure>
 </div>
 </div>
 </section>
@@ -561,10 +603,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -574,8 +615,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -588,6 +638,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -631,6 +800,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -656,6 +826,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -721,12 +917,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">2023 Michael Schulte-Mecklenbeck</div>
+    <div class="nav-footer-center">
+<p>2024 Michael Schulte-Mecklenbeck</p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 
