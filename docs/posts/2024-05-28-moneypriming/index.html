@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="MSM">
+<meta name="dcterms.date" content="2024-05-27">
+
+<title>Michael Schulte-Mecklenbeck - Replication: Money Priming</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6YMRGKPWZY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6YMRGKPWZY');
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Michael Schulte-Mecklenbeck</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../_content/CV_Index.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Replication: Money Priming</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Replication</div>
+                <div class="quarto-category">Priming</div>
+                <div class="quarto-category">Failed Replication</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>MSM </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 27, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="original-work" class="level1">
+<h1>Original work</h1>
+<ul>
+<li>Caruso et al.&nbsp;(2013). Mere exposure to money increases endorsement of free-market systems and social inequality.</li>
+<li>Tong et al.&nbsp;(2013). Is money really the root of all evil? The impact of priming money on consumer choice.</li>
+</ul>
+</section>
+<section id="team-bachelor-bafs2024" class="level1">
+<h1>Team Bachelor BAFS2024</h1>
+<ul>
+<li>Rahel Amrein</li>
+<li>Luc Blunier</li>
+<li>Angelo Cario</li>
+<li>Francesco Contino</li>
+<li>Manon Czibula</li>
+<li>Sarah Gassler</li>
+<li>Nina Hässig</li>
+<li>Jonas Huser</li>
+<li>Max Hofer</li>
+<li>Camille Meyer</li>
+<li>Yann Ruh</li>
+<li>Evan Sarbach</li>
+<li>Noah Schibli</li>
+<li>Patrick Stuber</li>
+<li>Luca Trachsel</li>
+<li>Louis Veya</li>
+<li>Mike von Arx</li>
+<li>Chantal Wegmueller</li>
+</ul>
+<p><a href="https://osf.io/24xwe/">OSF / Pre-Regs (German)</a></p>
+<section id="abstract-caruso-et-al." class="level2">
+<h2 class="anchored" data-anchor-id="abstract-caruso-et-al.">Abstract Caruso et al.</h2>
+<p>The present research tested whether incidental exposure to money affects people’s endorsement of social systems that legitimize social inequality. We found that subtle reminders of the concept of money, relative to nonmoney concepts, led participants to endorse more strongly the existing social system in the United States in general (Experiment 1 ) and free-market capitalism in particular (Experiment 4), to assert more strongly that victims deserve their fate (Experiment 2), and to believe more strongly that socially advantaged groups should dominate socially disadvantaged groups (Experiment 3). We further found that reminders of money increased preference for a free-market system of organ transplants that benefited the wealthy at the expense of the poor even though this was not the prevailing system (Experiment 5) and that this effect was moderated by participants’ nationality. These results demonstrate how merely thinking about money can influence beliefs about the social order and the extent to which people deserve their station in life.</p>
+</section>
+<section id="abstract-tong-et-al." class="level2">
+<h2 class="anchored" data-anchor-id="abstract-tong-et-al.">Abstract Tong et al.</h2>
+<p>Despite the ubiquitous importance of money, the psychology of money has until recently received relatively little attention. While the literature has found that priming money has notable psychological consequences, little research has been done on the impact of priming money on consumer choice, particularly, their choice between hedonic and utilitarian options. The current research proposes that priming money will increase the likelihood of a prevention regulatory focus, and consequently, consumers will be more likely to choose more prudent alternatives when facing a trade- off between hedonic and utilitarian options. Results of four experiments show that participants in the money priming condition were more likely to choose utilitarian over hedonic options, compared with participants in the control condition. Furthermore, this effect was mediated by consumers’ situational prevention focus on the exposure to money primes, but attenuated when credit cards are primed.</p>
+</section>
+</section>
+<section id="replication" class="level1">
+<h1>Replication</h1>
+<section id="demographics" class="level2">
+<h2 class="anchored" data-anchor-id="demographics">Demographics</h2>
+<p>We collected data from 407 participants. After applying our pre-registered exclusion criteria (answering both control questions correctly) <em>n</em> = 172 participants remained. Additionally we excluded anybody whose survey completion time exceeded three times the SD over the mean.</p>
+<p><span class="math display">\[CompletionTime_{i} &lt; M_{CompletionTime} + 3SD_{CompletionTime}\]</span> This step gave us a final sample of <em>n</em> = 171 participants. Due to my oversight, we did not collect gender or age information.</p>
+</section>
+<section id="what-we-are-looking-for-in-caruso-et-al." class="level2">
+<h2 class="anchored" data-anchor-id="what-we-are-looking-for-in-caruso-et-al.">What we are looking for in Caruso et al.</h2>
+<div id="fig-Caruso-Results" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Caruso-Results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Caruso_Results.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Caruso-Results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Scales results
+</figcaption>
+</figure>
+</div>
+<p>Caruso et al.&nbsp;manipulated the availability of the concept <em>money</em> in an experimental condition and compared it to a control condition. As dependent variables they used three scales (in Experiments 1-3): System Justification Scale (SJS), Belief in a Just World scale (BJW) and the Social Dominance Orientation scale (SDO). Inspecting Table 1 from Caruso et al (<a href="#fig-Caruso-Results" class="quarto-xref">Figure&nbsp;1</a>) we see that the Money (Priming) condition, in all three experiments, resulted in higher values on each of these scales. It is noteworthy, that there is variance between the three experiments in terms of differences between Money-Control in absolute values (0.07, 0.21, 0.64, respectively) but also in terms of effect sizes of the three t-tests: <em>d</em> = .80, .40 and .51 (respectively for Exp1, 2 and 3).</p>
+<section id="how-we-re-built-the-different-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="how-we-re-built-the-different-conditions">How we (re-)built the different conditions</h3>
+<p>In their Experiment 1 Caruso et al.&nbsp;used pictures of a US Dollar note (Priming) or noise (Control) as displayed in <a href="#fig-caruso-prime" class="quarto-xref">Figure&nbsp;2</a>.</p>
+<div id="fig-caruso-prime" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-caruso-prime-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Caruso_Prime.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-caruso-prime-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Pictures from the Priming and Control Condition, Caruso et al.&nbsp;(2013)
+</figcaption>
+</figure>
+</div>
+<p>We adapted these pictures to Swiss money (see <a href="#fig-background-money" class="quarto-xref">Figure&nbsp;3</a>) or a neutral picture (see <strong>?@fig-background-control</strong>) as the background in the SJS questionnaire.</p>
+<div id="fig-background-money" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-background-money-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/background_money.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-background-money-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Background money prime
+</figcaption>
+</figure>
+</div>
+<div id="fig-background-neutral" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-background-neutral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/background_neutral.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-background-neutral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Background neutral
+</figcaption>
+</figure>
+</div>
+<p>For the Belief in a Just World scale in Caruso Experiment 2 / 3 and Tong Experiment 1 we used a sentence scrambling task similar to the one in Caruso et al.&nbsp;(2013) with translated (to German) and adapted sentences. We rated each of the suggested sentences for their fit to the current study and picked the ones with the highest overall rating by all collaborators in this study.</p>
+<p>The final set of sentence is the following:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>Sentence priming stimuli for Control and Priming</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 88%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Ich gehe immer am zweiten Dienstag des Monats ins Tanzen.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Sein Wissen stieg mit der Anzahl besuchter Kurse.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Kontinuität ist der Schlüssel zu einem langfristigen Erfolg.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Auf dem Weg nach Hause verlor ich meine Kopfhörer.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Damit ich von meinem Freund einen Apfel bekomme gebe ich ihm Schokolade.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Ich stehe am Morgen auf um den Alltag zu bestreiten.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Beim Einkaufen wähle ich Produkte der Intuition nach .</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Mit genug Willenskraft kannst du viele Träume verwirklichen.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Reiseunternehmen beschäftigen sich mit Ländern auf der ganzen Welt.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Ferienmangel kann im Alltag zu Angst und Stress führen.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Nach jahrelanger Abklärung erhielt sie endlich eine Bewilligung.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Ich muss mein ungesundes, kalorienreiches Essverhalten neu überdenken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Fleiss und aktives Engagement ermöglichen es mir meine Träume zu erfüllen.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Die Teilnehmer wurden gebeten über ihre täglichen Routinen nachzudenken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">Das kleine Kind kaut Kaugummis vor der Schule.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Ich bezahle meine Rechnungen immer am zweiten Dienstag des Monats.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Sein Vermögen wuchs durch kluge Investitionen in Aktien.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Sparen ist langfristig der Schlüssel zur finanziellen Stabilität.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Auf dem Weg nach Hause verlor ich meine Brieftasche.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Damit ich von einem Freund Schokolade bekomme, gebe ich ihm Geld.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Ich stehe am Morgen auf, um Geld zu verdienen.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Beim Einkaufen achte ich auf den Preis.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Mit genug Geld kannst du viele Träume verwirklichen.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Der Finanzmarkt beschäftigt sich auf der ganzen Welt mit Geldflüssen.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Stress und Geldnöte im Alltag können zu Angst im Alltag führen.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Nach jahrelanger Arbeit erhielt sie endlich eine Gehaltserhöhung.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Ich muss mein monatliches knappes Budget neu überdenken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Macht und Geld ermöglichen es mir, meine Träume zu erfüllen.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Die Teilnehmer wurden gebeten, über ihre aktuellen Geldausgaben nachzudenken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Priming</td>
+<td style="text-align: left;">Das kleine Kind kauft vor der Schule Kaugummis.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Finally, for Tong Experiment 2 / 3, we generated a new sorting task, where participants were asked to sort pictures of either currencies (Money Prime, see <a href="#fig-sorting-priming" class="quarto-xref">Figure&nbsp;5</a>) or pictures of different languages (control) into pre-defined classes (see <a href="#fig-sorting-control" class="quarto-xref">Figure&nbsp;6</a>).</p>
+<div id="fig-sorting-priming" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sorting-priming-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Money_Picture_Asign.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sorting-priming-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Money sorting
+</figcaption>
+</figure>
+</div>
+<div id="fig-sorting-control" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sorting-control-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Text_Picture_Asign.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sorting-control-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Text sorting
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>We follow the analyses templates of the original papers and ask for Caruso et al.&nbsp;(2013) whether we find differences on the three scales based on a simple t-test on the averaged scale values (per condition <em>priming</em> v. <em>control</em>). I will summarize the results for all three experiments below.</p>
+<section id="caruso-experiment-1-sjs" class="level3">
+<h3 class="anchored" data-anchor-id="caruso-experiment-1-sjs">Caruso Experiment 1 SJS</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-C1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-C1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-C1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-C1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Results Replication Caruso Experiment 1
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  av_SJS by Condition
+t = 0.3, df = 161, p-value = 0.8
+alternative hypothesis: true difference in means between group Control and group Priming is not equal to 0
+95 percent confidence interval:
+ -0.21  0.27
+sample estimates:
+mean in group Control mean in group Priming 
+                  3.9                   3.9 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Cohen's d
+
+d estimate: 0.039 (negligible)
+95 percent confidence interval:
+lower upper 
+-0.27  0.34 </code></pre>
+</div>
+</div>
+</section>
+<section id="caruso-2-bjw-gwal-scale" class="level3">
+<h3 class="anchored" data-anchor-id="caruso-2-bjw-gwal-scale">Caruso 2 BJW (GWAL) Scale</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-C2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-C2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-C2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-C2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Results Replication Caruso Experiment 2
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  av_BJW by Condition
+t = -0.3, df = 159, p-value = 0.8
+alternative hypothesis: true difference in means between group Control and group Priming is not equal to 0
+95 percent confidence interval:
+ -0.32  0.24
+sample estimates:
+mean in group Control mean in group Priming 
+                  2.8                   2.8 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Cohen's d
+
+d estimate: -0.041 (negligible)
+95 percent confidence interval:
+lower upper 
+-0.35  0.26 </code></pre>
+</div>
+</div>
+</section>
+<section id="caruso-3-sdo-scale" class="level3">
+<h3 class="anchored" data-anchor-id="caruso-3-sdo-scale">Caruso 3 SDO Scale</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-C3" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-C3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-C3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-C3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Results Replication Caruso Experiment 3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  av_SDO by Condition
+t = -0.8, df = 151, p-value = 0.4
+alternative hypothesis: true difference in means between group Control and group Priming is not equal to 0
+95 percent confidence interval:
+ -0.21  0.09
+sample estimates:
+mean in group Control mean in group Priming 
+                  4.4                   4.5 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Cohen's d
+
+d estimate: -0.13 (negligible)
+95 percent confidence interval:
+lower upper 
+-0.43  0.18 </code></pre>
+</div>
+</div>
+<p>This is a pretty clear result - the average differences in all three experiments are zero to .1 on the respective scales. Inspecting the effect sizes the range between .03 and .1 (in absolute terms) supports the idea that there are no sensible effects between the tested conditions on the scales. Alright, one down, one to go - let’s see how the choice experiments fair under different priming conditions.</p>
+</section>
+</section>
+<section id="what-we-are-looking-for-in-tong-et-al." class="level2">
+<h2 class="anchored" data-anchor-id="what-we-are-looking-for-in-tong-et-al.">What we are looking for in Tong et al.</h2>
+<p>The three experiments in Tong et al.&nbsp;(2013) also use different priming methods: sentence construction (as in Caruso et al.&nbsp;2013, see <span class="citation" data-cites="tab-results-sentence">@tab-results-sentence</span>) and a sorting task (see <a href="#fig-sorting-priming" class="quarto-xref">Figure&nbsp;5</a> and <a href="#fig-sorting-control" class="quarto-xref">Figure&nbsp;6</a>). The dependent measures were simple choices in this study, between different sets of goods that have either more hedonic (cake, Sci-Fi Book, Coke) or more utilitarian (battery, dictionary, pen) connotation.</p>
+<p>Following the original paper, we used the same analytic strategy and calculated chi-2 tests separately for each of three experiments.</p>
+<p>Inspecting the results in Tong et al.&nbsp;(2013) the following patterns were found. I will simply summaries the choices in the money priming condition where in Exp 1: 70 % / Exp 2: 57 % / Exp 3: 77 % of participants choose the hedonic option compared to Exp 1: 40 % / Exp 2: 30 % / Exp 3: 55 % in the control condition). So overall sizable differences in the choice patterns between 22 and 30 points difference between the conditions.</p>
+<section id="tong-1-battery-cake" class="level3">
+<h3 class="anchored" data-anchor-id="tong-1-battery-cake">Tong 1 Battery Cake</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-T1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-T1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-T1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-T1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Results Replication Tong Experiment 1
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T1_BC$Condition and T1_BC$Choice_T_Battery
+X-squared = 0.9, df = 1, p-value = 0.3</code></pre>
+</div>
+</div>
+</section>
+<section id="tong-2-sci-fi-duden" class="level3">
+<h3 class="anchored" data-anchor-id="tong-2-sci-fi-duden">Tong 2 Sci-Fi Duden</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-T2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-T2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-T2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-T2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Results Replication Tong Experiment 2
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T2_Book$Condition and T2_Book$Choice
+X-squared = 0.8, df = 1, p-value = 0.4</code></pre>
+</div>
+</div>
+</section>
+<section id="tong-3-pen-v.-coke" class="level3">
+<h3 class="anchored" data-anchor-id="tong-3-pen-v.-coke">Tong 3 Pen v. Coke</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-results-T3" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-results-T3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="staticfig-results-T3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-results-T3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Results Replication Tong Experiment 3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T3_Pen$Condition and T3_Pen$Choice
+X-squared = 0.4, df = 1, p-value = 0.5</code></pre>
+</div>
+</div>
+<p>Inspecting <a href="#fig-results-T1" class="quarto-xref">Figure&nbsp;10</a>, <a href="#fig-results-T2" class="quarto-xref">Figure&nbsp;11</a>, <a href="#fig-results-T3" class="quarto-xref">Figure&nbsp;12</a> and the subsequent chi-2 tests, it becomes clear, that, again, we do not find significant differences in these tests, or sizable differences on the pure choices. Overall the conditions differ around 10 % between control and money priming - which is much smaller, than in the original.</p>
+</section>
+</section>
+</section>
+<section id="caveats" class="level1">
+<h1>Caveats</h1>
+<p>So, some caveats … there are of course many - but I will focus on two:</p>
+<ol type="1">
+<li>within-subject effect</li>
+<li>no control condition</li>
+</ol>
+<p>We ran a within-subject design across the 6 experimental studies - while both Caruso and Tong used a between subjects design, with somewhat small samples (see our power analysis in the <a href="https://osf.io/24xwe/">Pre-Regs</a>), we decided to run a within-subjects study where participants either got treated with the priming or the control condition. To mitigate the possible order effects we randomized two blocks (Tong v. Caruso) … running all analysis again with this Block Order does not result in a significant main effect for Order or an interaction between Condition * Order. The same is true for Tong when we run separate chi-2 tests for the two different order conditions (see below <a href="#sec-order" class="quarto-xref">Section&nbsp;4.1</a>).</p>
+<p>Another small oversight was the addition of a control condition in Tong in Experiment 2 where they added an ‘empty’ control task, where no identification of currency or foreign language was included. I belief this is a smaller issue.</p>
+<p>Overall this was a fun exercise, a good teaching experience (in a rather large group).</p>
+<section id="sec-order" class="level2">
+<h2 class="anchored" data-anchor-id="sec-order">Withing versus between subjects - design</h2>
+<p>Here I add some additional analysis, checking for an effect of <em>Order</em> - which is the variation of whether Tong or Charuso appeared first for participants (as discussed above).</p>
+<section id="caruso-1-sjs" class="level3">
+<h3 class="anchored" data-anchor-id="caruso-1-sjs">Caruso 1 SJS</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>                 Df Sum Sq Mean Sq F value Pr(&gt;F)
+Condition         1    0.0   0.038    0.06   0.80
+Order             1    0.1   0.132    0.22   0.64
+Condition:Order   1    0.0   0.000    0.00   0.99
+Residuals       164   98.1   0.598               
+1 observation deleted due to missingness</code></pre>
+</div>
+</div>
+</section>
+<section id="caruso-2-bjw-gwal-scale-1" class="level3">
+<h3 class="anchored" data-anchor-id="caruso-2-bjw-gwal-scale-1">Caruso 2 BJW (GWAL) Scale</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>                 Df Sum Sq Mean Sq F value Pr(&gt;F)
+Condition         1    0.1   0.061    0.07   0.79
+Order             1    0.1   0.145    0.17   0.68
+Condition:Order   1    0.0   0.049    0.06   0.81
+Residuals       165  140.4   0.851               </code></pre>
+</div>
+</div>
+</section>
+<section id="caruso-3-sdo-scale-1" class="level3">
+<h3 class="anchored" data-anchor-id="caruso-3-sdo-scale-1">Caruso 3 SDO Scale</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>                 Df Sum Sq Mean Sq F value Pr(&gt;F)
+Condition         1    0.2   0.162    0.67   0.41
+Order             1    0.0   0.009    0.04   0.85
+Condition:Order   1    0.6   0.608    2.52   0.11
+Residuals       165   39.7   0.241               </code></pre>
+</div>
+</div>
+</section>
+<section id="tong-1-battery-cake-1" class="level3">
+<h3 class="anchored" data-anchor-id="tong-1-battery-cake-1">Tong 1 Battery Cake</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T1_BC[T1_BC$Order == "Block1", ]$Condition and T1_BC[T1_BC$Order == "Block1", ]$Choice
+X-squared = 2, df = 1, p-value = 0.1</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T1_BC[T1_BC$Order == "Block2", ]$Condition and T1_BC[T1_BC$Order == "Block2", ]$Choice
+X-squared = 0.03, df = 1, p-value = 0.9</code></pre>
+</div>
+</div>
+</section>
+<section id="tong-2-sci-fi-duden-1" class="level3">
+<h3 class="anchored" data-anchor-id="tong-2-sci-fi-duden-1">Tong 2 Sci-Fi Duden</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T2_Book[T2_Book$Order == "Block1", ]$Condition and T2_Book[T2_Book$Order == "Block1", ]$Choice
+X-squared = 0.04, df = 1, p-value = 0.8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T2_Book[T1_BC$Order == "Block2", ]$Condition and T2_Book[T2_Book$Order == "Block2", ]$Choice
+X-squared = 1, df = 1, p-value = 0.3</code></pre>
+</div>
+</div>
+</section>
+<section id="tong-3-pen-v.-coke-1" class="level3">
+<h3 class="anchored" data-anchor-id="tong-3-pen-v.-coke-1">Tong 3 Pen v. Coke</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T3_Pen[T3_Pen$Order == "Block1", ]$Condition and T3_Pen[T3_Pen$Order == "Block1", ]$Choice
+X-squared = 0.07, df = 1, p-value = 0.8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  T3_Pen[T3_Pen$Order == "Block2", ]$Condition and T3_Pen[T3_Pen$Order == "Block2", ]$Choice
+X-squared = 2, df = 1, p-value = 0.2</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="sec-ref" class="level1">
+<h1>References</h1>
+<ul>
+<li>Caruso, E. M., Vohs, K. D., Baxter, B., &amp; Waytz, A. (2013). <a href="https://doi.org/10.1037/a0029288">Mere exposure to money increases endorsement of free-market systems and social inequality</a>. <i>Journal of Experimental Psychology: General, 142</i>(2), 301.</li>
+<li>Tong, L., Zheng, Y., &amp; Zhao, P. (2013). <a href="https://doi.org/10.1007/s11002-013-9224-7">Is money really the root of all evil? The impact of priming money on consumer choice</a>. <i>Marketing Letters, 24</i>, 119-129.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>2024 Michael Schulte-Mecklenbeck</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

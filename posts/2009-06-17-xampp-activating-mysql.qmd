@@ -4,7 +4,6 @@ date: 2009-06-17T12:50:56-07:00
 author: Michael
 categories:
   - Tech
-  - XAMPP
 ---
 Here is the problem: I want to have a server (Apache, MySQL) on my local machine (for the current purpose it was a Windows machine) to do some developing, testing or a demo. Getting [XAMPP](http://www.apachefriends.org/en/xampp.html) at [Sourceforge](http://sourceforge.net) is straight forward, installing it works like a charm.
 

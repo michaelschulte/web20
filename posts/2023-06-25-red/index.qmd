@@ -3,7 +3,7 @@ title: "Replication: Red"
 author: "MSM"
 date: "2024-01-07"
 draft: false
-categories: [Replication, Perception, Consumer Behavior, Failedreplication]
+categories: [Replication, Perception, Failed Replication]
 sidebar:
   contents: auto
 editor_options: 

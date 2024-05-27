@@ -1,0 +1,31 @@
+sentence_id,sentence
+1_C_T1,Ich gehe immer am zweiten Dienstag des Monats ins Tanzen.                 
+2_C_T2,Sein Wissen stieg mit der Anzahl besuchter Kurse.                         
+3_C_T3,Kontinuität ist der Schlüssel zu einem langfristigen Erfolg.              
+4_C_T4,Auf dem Weg nach Hause verlor ich meine Kopfhörer.                        
+5_C_T5,Damit ich von meinem Freund einen Apfel bekomme gebe ich ihm Schokolade.  
+6_C_T6,Ich stehe am Morgen auf um den Alltag zu bestreiten.                      
+7_C_T7,Beim Einkaufen wähle ich Produkte der Intuition nach .                    
+8_C_T8,Mit genug Willenskraft kannst du viele Träume verwirklichen.              
+9_C_T9,Reiseunternehmen beschäftigen sich mit Ländern auf der ganzen Welt.       
+10_C_T10,Ferienmangel kann im Alltag zu Angst und Stress führen.                   
+11_C_T11,Nach jahrelanger Abklärung erhielt sie endlich eine Bewilligung.          
+12_C_T12,Ich muss mein ungesundes, kalorienreiches Essverhalten neu überdenken.    
+13_C_T13,Fleiss und aktives Engagement ermöglichen es mir meine Träume zu erfüllen.
+14_C_T14,Die Teilnehmer wurden gebeten über ihre täglichen Routinen nachzudenken.  
+15_C_T15,Das kleine Kind kaut Kaugummis vor der Schule.    
+1_P_T1,Ich bezahle meine Rechnungen immer am zweiten Dienstag des Monats.    
+2_P_T2,Sein Vermögen wuchs durch kluge Investitionen in Aktien.              
+3_P_T3,Sparen ist langfristig der Schlüssel zur finanziellen Stabilität.     
+4_P_T4,Auf dem Weg nach Hause verlor ich meine Brieftasche.                  
+5_P_T5,Damit ich von einem Freund Schokolade bekomme, gebe ich ihm Geld.     
+6_P_T6,Ich stehe am Morgen auf, um Geld zu verdienen.                        
+7_P_T7,Beim Einkaufen achte ich auf den Preis.                               
+8_P_T8,Mit genug Geld kannst du viele Träume verwirklichen.
+9_P_T9,Der Finanzmarkt beschäftigt sich auf der ganzen Welt mit Geldflüssen. 
+10_P_T10,Stress und Geldnöte im Alltag können zu Angst im Alltag führen.       
+11_P_T11,Nach jahrelanger Arbeit erhielt sie endlich eine Gehaltserhöhung.     
+12_P_T12,Ich muss mein monatliches knappes Budget neu überdenken.              
+13_P_T13,Macht und Geld ermöglichen es mir, meine Träume zu erfüllen.          
+14_P_T14,Die Teilnehmer wurden gebeten, über ihre aktuellen Geldausgaben nachzudenken.
+15_P_T15,Das kleine Kind kauft vor der Schule Kaugummis.   

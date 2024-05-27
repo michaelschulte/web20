@@ -8,6 +8,16 @@ keep-md: true
 
 
 
+::: {#not-published-year .cell execution_count=2}
+### 2024{#not-published-2024}
+
+```{=html}
+<ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck, Wagner, Gert G., and Hertwig, Ralph. (2024) "How personal experiences shaped risk judgments during COVID- 19." <em>Journal of Risk Research.</em><br><a class="btn btn-outline-dark btn-sm", href="/pdf/Schulte-Mecklenbeck2023.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
+        Paper
+    </a></li></ul>
+```
+
 ### 2021{#not-published-2021}
 
 ```{=html}
@@ -231,3 +241,7 @@ keep-md: true
         Paper
     </a></li></ul>
 ```
+
+:::
+
+

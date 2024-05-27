@@ -5,7 +5,7 @@ author: Michael
 categories:
   - Science
 ---
-Very interesting [article in WIRED](http://www.wired.com/magazine/2009/12/fail_accept_defeat/all/1) on accepting failure and how ignoring it changes the way scientists make progress (or not).
+Very interesting [article in WIRED](https://www.wired.com/2009/12/fail-accept-defeat/) on accepting failure and how ignoring it changes the way scientists make progress (or not).
 
 Good theme for new years resolutions &#8230;
 

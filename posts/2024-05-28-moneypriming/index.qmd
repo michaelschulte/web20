@@ -1,0 +1,400 @@
+---
+title: "Replication: Money Priming"
+author: "MSM"
+date: "2024-05-27"
+draft: false
+categories: [Replication, Priming, Failed Replication]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      comment = NA, 
+                      fig.width = 6, 
+                      fig.height = 6,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(kableExtra)
+library(sjPlot)
+library(effsize)
+library(tidyr)
+library(broom)
+library(lme4)
+library(here)
+library(DT)
+
+theme_pres <- function(x_rotate = FALSE, ang = -45, legend = FALSE){
+  theme_minimal(base_size = 18) +
+    theme(
+      text = element_text(size = 14),
+      axis.text.x = if(x_rotate == TRUE) element_text(angle = ang, vjust = 0.3, hjust = 0.5),
+      legend.position = if(legend == FALSE) "none",
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank()
+    )
+}
+
+
+group <- 'BAFS2024'
+raw <- read_csv(here(paste0('0_data/', group, '_complete_df_pub.csv')))
+av_scale <- read_csv(here(paste0('0_data/', group, '_scale_av.csv')))
+manipulation <- read_delim(here(paste0('0_data/', group, '_Saetze_Manipulation.txt'))) %>%
+                mutate(sentence = str_trim(sentence)) %>%
+                mutate(sentence_id = case_when(str_detect(sentence_id, 'C') ~ 'Control',
+                                               TRUE ~ 'Priming')) %>%
+                rename('condition' = 'sentence_id')
+options(digits=2)
+
+T1_BC <- 
+raw %>%
+  select(Choice_T_Battery, Order, Condition) %>%
+  mutate(Choice = case_when(Choice_T_Battery == 1 ~ 'Battery',
+                            Choice_T_Battery == 2 ~ 'Cake')) %>%
+                            na.omit()
+
+# Tong 2 Choice Books
+T2_Book <- 
+  raw %>%
+  select(Choice_T_Vocabulary, Order, Condition) %>%
+  mutate(Choice = case_when(Choice_T_Vocabulary == 1 ~ 'Duden',
+                            Choice_T_Vocabulary == 2 ~ 'SciFi')) %>%
+  na.omit()
+
+# Tong 3 Choice Coke or Pen
+T3_Pen <- 
+  raw %>%
+  select(Choice_T_Pen, Order, Condition) %>%
+  mutate(Choice = case_when(Choice_T_Pen == 1 ~ 'Pen',
+                            Choice_T_Pen == 2 ~ 'Coke')) %>%
+  na.omit()
+
+# Caruso 1 SJS
+C1_SJS <-
+raw %>%
+  select(starts_with('SJ_S'), Order, Condition) %>%
+  pivot_longer(cols = c( -Order, -Condition)) %>%
+  na.omit()
+
+# Caruso 2 BJW (GWAL) Scale
+# NA remove
+C2_BJW <- 
+  raw %>%
+  select(starts_with('BJW_'), Order, Condition) %>%
+  pivot_longer(cols = c( -Order, -Condition)) %>%
+  na.omit()
+
+# Caruso 3 SDO Scale
+# NA remove
+C3_SDO <-
+raw %>%
+  select(starts_with('SDO'), Order, Condition) %>%
+  pivot_longer(cols = c( -Order, -Condition)) %>%
+  na.omit()
+
+```
+
+# Original work 
+
+- Caruso et al. (2013). Mere exposure to money increases endorsement of free-market systems and social inequality.
+- Tong et al. (2013). Is money really the root of all evil? The impact of priming money on consumer choice.
+
+# Team Bachelor `r paste(group)`
+
+- Rahel Amrein
+- Luc Blunier
+- Angelo Cario
+- Francesco Contino
+- Manon Czibula
+- Sarah Gassler
+- Nina Hässig
+- Jonas Huser
+- Max Hofer
+- Camille Meyer
+- Yann Ruh
+- Evan Sarbach
+- Noah Schibli
+- Patrick Stuber
+- Luca Trachsel
+- Louis Veya
+- Mike von Arx
+- Chantal Wegmueller 
+ 
+[OSF / Pre-Regs (German)](https://osf.io/24xwe/)
+
+## Abstract Caruso et al.
+The present research tested whether incidental exposure to money affects people's endorsement of social systems that legitimize social inequality. We found that subtle reminders of the concept of money, relative to nonmoney concepts, led participants to endorse more strongly the existing social system in the United States in general (Experiment 1 ) and free-market capitalism in particular (Experiment 4), to assert more strongly that victims deserve their fate (Experiment 2), and to believe more strongly that socially advantaged groups should dominate socially disadvantaged groups (Experiment 3). We further found that reminders of money increased preference for a free-market system of organ transplants that benefited the wealthy at the expense of the poor even though this was not the prevailing system (Experiment 5) and that this effect was moderated by participants' nationality. These results demonstrate how merely thinking about money can influence beliefs about the social order and the extent to which people deserve their station in life.
+
+
+## Abstract Tong et al.
+Despite the ubiquitous importance of money, the psychology of money has until recently received relatively little attention. While the literature has found that priming money has notable psychological consequences, little research has been done on the impact of priming money on consumer choice, particularly, their choice between hedonic and utilitarian options. The current research proposes that priming money will increase the likelihood of a prevention regulatory focus, and consequently, consumers will be more likely to choose more prudent alternatives when facing a trade- off between hedonic and utilitarian options. Results of four experiments show that participants in the money priming condition were more likely to choose utilitarian over hedonic options, compared with participants in the control condition. Furthermore, this effect was mediated by consumers’ situational prevention focus on the exposure to money primes, but attenuated when credit cards are primed.
+
+
+# Replication
+
+## Demographics
+
+We collected data from 407 participants. After applying our pre-registered exclusion criteria (answering both control questions correctly) *n* =  `r dim(raw)[1]+1` participants remained. Additionally we excluded anybody whose survey completion time exceeded three times the SD over the mean.
+
+$$CompletionTime_{i} < M_{CompletionTime} + 3SD_{CompletionTime}$$
+This step gave us a final sample of *n* =  `r dim(raw)[1]` participants.
+Due to my oversight, we did not collect gender or age information.
+
+## What we are looking for in Caruso et al.
+
+![Scales results](images/Caruso_Results.png){#fig-Caruso-Results}
+
+Caruso et al. manipulated the availability of the concept *money* in an experimental condition and compared it to a control condition. As dependent variables they used three scales (in Experiments 1-3): System Justification Scale (SJS), Belief in a Just World scale (BJW) and the Social Dominance Orientation scale (SDO). Inspecting Table 1 from Caruso et al (@fig-Caruso-Results) we see that the Money (Priming) condition, in all three experiments, resulted in higher values on each of these scales. It is noteworthy, that there is variance between the three experiments in terms of differences between Money-Control in absolute values (0.07, 0.21, 0.64, respectively) but also in terms of effect sizes of the three t-tests: *d* = .80, .40 and .51 (respectively for Exp1, 2 and 3). 
+
+### How we (re-)built the different conditions
+
+In their Experiment 1 Caruso et al. used pictures of a US Dollar note (Priming) or noise (Control) as displayed in @fig-caruso-prime. 
+
+![Pictures from the Priming and Control Condition, Caruso et al. (2013)](images/Caruso_Prime.png){#fig-caruso-prime}
+
+We adapted these pictures to Swiss money (see @fig-background-money) or a neutral picture (see @fig-background-control) as the background in the SJS questionnaire. 
+
+![Background money prime](images/background_money.png){#fig-background-money}
+
+![Background neutral](images/background_neutral.png){#fig-background-neutral}
+
+For the Belief in a Just World scale in Caruso Experiment 2 / 3 and Tong Experiment 1 we used a sentence scrambling task similar to the one in Caruso et al. (2013) with translated (to German) and adapted sentences. We rated each of the suggested sentences for their fit to the current study and picked the ones with the highest overall rating by all collaborators in this study.
+
+The final set of sentence is the following:
+
+```{r}
+#| label: tab-results-sentence
+#| tab-cap: "Sentence priming stimuli for Control and Priming"
+(kable(manipulation))
+```
+
+Finally, for Tong Experiment 2 / 3, we generated a new sorting task, where participants were asked to sort pictures of either currencies (Money Prime, see @fig-sorting-priming) or pictures of different languages (control) into pre-defined classes (see @fig-sorting-control). 
+
+![Money sorting](images/Money_Picture_Asign.png){#fig-sorting-priming}
+
+![Text sorting](images/Text_Picture_Asign.png){#fig-sorting-control}
+
+## Results
+
+We follow the analyses templates of the original papers and ask for Caruso et al. (2013) whether we find differences on the three scales based on a simple t-test on the averaged scale values (per condition *priming* v. *control*).
+I will summarize the results for all three experiments below.
+
+### Caruso Experiment 1 SJS
+  
+
+```{r}
+#| label: fig-results-C1
+#| fig-cap: "Results Replication Caruso Experiment 1"
+
+C1_SJS %>%
+  ggplot(aes(Condition, value, color = Condition, group = Condition)) +
+  stat_summary(fun.data = "mean_cl_boot", 
+               linewidth = 1, 
+               size = 1) +
+  scale_color_brewer(palette = 'Set1') +
+
+  scale_y_continuous(n.breaks = 7,
+                     limits = c(1,7)) +
+  theme_pres(legend = TRUE) +
+  labs(y = 'Average scale value',
+       title = 'C1 - SJS')
+```
+
+
+```{r}
+t.test(av_SJS ~ Condition, data = av_scale)
+cohen.d(av_SJS ~ Condition, data = av_scale)
+```
+
+### Caruso 2 BJW (GWAL) Scale
+
+```{r}
+#| label: fig-results-C2
+#| fig-cap: "Results Replication Caruso Experiment 2"
+C2_BJW  %>%
+  ggplot(aes(Condition, value, color = Condition, group = Condition)) +
+  stat_summary(fun.data = "mean_cl_boot", 
+               linewidth = 1, 
+               size = 1) +
+  scale_color_brewer(palette = 'Set1') +
+  
+  scale_y_continuous(n.breaks = 6,
+                     limits = c(1,6)) +
+  theme_pres(legend = TRUE) +
+  labs(y = 'Average scale value',
+       title = 'Caruso 2 BJW (GWAL) Scale')
+```
+
+```{r}
+t.test(av_BJW ~ Condition, data = av_scale)
+cohen.d(av_BJW ~ Condition, data = av_scale)
+
+```
+
+
+### Caruso 3 SDO Scale
+
+```{r}
+#| label: fig-results-C3
+#| fig-cap: "Results Replication Caruso Experiment 3"
+C3_SDO  %>%
+  ggplot(aes(Condition, value, color = Condition, group = Condition)) +
+  stat_summary(fun.data = "mean_cl_boot", 
+               linewidth = 1, 
+               size = 1) +
+  scale_color_brewer(palette = 'Set1') +
+  
+  scale_y_continuous(n.breaks = 7,
+                     limits = c(1,7)) +
+  theme_pres(legend = TRUE) +
+  labs(y = 'Average scale value',
+       title = 'Caruso 3 SDO Scale')
+```
+
+```{r}
+t.test(av_SDO ~ Condition, data = av_scale)
+cohen.d(av_SDO ~ Condition, data = av_scale)
+```
+
+This is a pretty clear result - the average differences in all three experiments are zero to .1 on the respective scales. Inspecting the effect sizes the range between .03 and .1 (in absolute terms) supports the idea that there are no sensible effects between the tested conditions on the scales. Alright, one down, one to go - let's see how the choice experiments fair under different priming conditions.
+
+## What we are looking for in Tong et al.
+
+The three experiments in Tong et al. (2013) also use different priming methods: sentence construction (as in Caruso et al. 2013, see @tab-results-sentence) and a sorting task (see @fig-sorting-priming and @fig-sorting-control). The dependent measures were simple choices in this study, between different sets of goods that have either more hedonic (cake, Sci-Fi Book, Coke) or more utilitarian (battery, dictionary, pen) connotation. 
+
+Following the original paper, we used the same analytic strategy and calculated chi-2 tests separately for each of three experiments.
+
+Inspecting the results in Tong et al. (2013) the following patterns were found. I will simply summaries the choices in the money priming condition where in Exp 1: 70 % / Exp 2: 57 % / Exp 3: 77 % of participants choose the hedonic option compared to Exp 1: 40 % / Exp 2: 30 % / Exp 3: 55 % in the control condition). So overall sizable differences in the choice patterns between 22 and 30 points difference between the conditions.
+
+### Tong 1 Battery Cake
+
+```{r}
+#| label: fig-results-T1
+#| fig-cap: "Results Replication Tong Experiment 1"
+T1_BC %>%
+  group_by(Condition) %>%
+    count(Choice) %>%
+    mutate(percent = n/sum(n)) %>%
+  ggplot(aes(Condition, percent, fill = Choice, group = Choice)) +
+           geom_bar(stat = 'identity') +
+  scale_fill_brewer(palette = 'Set1') +
+  theme_pres(legend = TRUE) +
+  ylim(0,1) +
+  labs(y = 'Percent',
+       title = 'T1 - Battery v. Cake')
+```
+
+```{r}
+chisq.test(T1_BC$Condition, T1_BC$Choice_T_Battery, correct=FALSE)
+```
+
+### Tong 2 Sci-Fi Duden
+
+```{r}
+#| label: fig-results-T2
+#| fig-cap: "Results Replication Tong Experiment 2"
+T2_Book %>%
+  group_by(Condition) %>%
+  count(Choice) %>%
+  mutate(percent = n/sum(n)) %>%
+  ggplot(aes(Condition, percent, fill = Choice, group = Choice)) +
+  geom_bar(stat = 'identity') +
+  scale_fill_brewer(palette = 'Set1') +
+  theme_pres(legend = TRUE) +
+  ylim(0,1) +
+  labs(y = 'Percent',
+       title = 'T2 - SciFi v. Duden')
+```
+
+```{r}
+chisq.test(T2_Book$Condition, T2_Book$Choice, correct=FALSE)
+```
+
+### Tong 3 Pen v. Coke
+
+```{r}
+#| label: fig-results-T3
+#| fig-cap: "Results Replication Tong Experiment 3"
+T3_Pen %>%
+  group_by(Condition) %>%
+  count(Choice) %>%
+  mutate(percent = n/sum(n)) %>%
+  ggplot(aes(Condition, percent, fill = Choice, group = Choice)) +
+  geom_bar(stat = 'identity') +
+  scale_fill_brewer(palette = 'Set1') +
+  theme_pres(legend = TRUE) +
+  ylim(0,1) +
+  labs(y = 'Percent',
+       title = 'T3 - Pen v. Coke')
+```
+
+```{r}
+chisq.test(T3_Pen$Condition, T3_Pen$Choice, correct=FALSE)
+```
+
+Inspecting @fig-results-T1, @fig-results-T2, @fig-results-T3 and the subsequent chi-2 tests, it becomes clear, that, again, we do not find significant differences in these tests, or sizable differences on the pure choices. Overall the conditions differ around 10 % between control and money priming - which is much smaller, than in the original.
+
+
+# Caveats
+
+So, some caveats ... there are of course many - but I will focus on two:
+
+1) within-subject effect
+2) no control condition
+
+We ran a within-subject design across the 6 experimental studies - while both Caruso and Tong used a between subjects design, with somewhat small samples (see our power analysis in the [Pre-Regs](https://osf.io/24xwe/)), we decided to run a within-subjects study where participants either got treated with the priming or the control condition. To mitigate the possible order effects we randomized two blocks (Tong v. Caruso) ... running all analysis again with this Block Order does not result in a significant main effect for Order or an interaction between Condition * Order. The same is true for Tong when we run separate chi-2 tests for the two different order conditions (see below @sec-order).
+
+Another small oversight was the addition of a control condition in Tong in Experiment 2 where they added an 'empty' control task, where no identification of currency or foreign language was included. I belief this is a smaller issue.
+
+Overall this was a fun exercise, a good teaching experience (in a rather large group).
+
+
+## Withing versus between subjects - design {#sec-order}
+
+Here I add some additional analysis, checking for an effect of *Order* - which is the variation of whether Tong or Charuso appeared first for participants (as discussed above).
+
+### Caruso 1 SJS
+  
+```{r}
+model <- (aov(av_SJS ~ Condition * Order, data = av_scale))
+summary(model)
+```
+### Caruso 2 BJW (GWAL) Scale
+```{r}
+model <- (aov(av_BJW ~ Condition * Order, data = av_scale))
+summary(model)
+```
+### Caruso 3 SDO Scale
+```{r}
+model <- (aov(av_SDO ~ Condition * Order, data = av_scale))
+summary(model)
+```
+
+### Tong 1 Battery Cake
+```{r}
+chisq.test(T1_BC[T1_BC$Order == 'Block1',]$Condition, T1_BC[T1_BC$Order == 'Block1',]$Choice, correct=FALSE)
+chisq.test(T1_BC[T1_BC$Order == 'Block2',]$Condition, T1_BC[T1_BC$Order == 'Block2',]$Choice, correct=FALSE)
+```
+### Tong 2 Sci-Fi Duden
+```{r}
+chisq.test(T2_Book[T2_Book$Order == 'Block1',]$Condition, T2_Book[T2_Book$Order == 'Block1',]$Choice, correct=FALSE)
+chisq.test(T2_Book[T1_BC$Order == 'Block2',]$Condition, T2_Book[T2_Book$Order == 'Block2',]$Choice, correct=FALSE)
+```
+
+### Tong 3 Pen v. Coke
+```{r}
+chisq.test(T3_Pen[T3_Pen$Order == 'Block1',]$Condition, T3_Pen[T3_Pen$Order == 'Block1',]$Choice, correct=FALSE)
+chisq.test(T3_Pen[T3_Pen$Order == 'Block2',]$Condition, T3_Pen[T3_Pen$Order == 'Block2',]$Choice, correct=FALSE)
+```
+
+
+# References {#sec-ref}
+
+- Caruso, E. M., Vohs, K. D., Baxter, B., & Waytz, A. (2013). [Mere exposure to money increases endorsement of free-market systems and social inequality](https://doi.org/10.1037/a0029288). <i>Journal of Experimental Psychology: General, 142</i>(2), 301.
+- Tong, L., Zheng, Y., & Zhao, P. (2013). [Is money really the root of all evil? The impact of priming money on consumer choice](https://doi.org/10.1007/s11002-013-9224-7). <i>Marketing Letters, 24</i>, 119-129.

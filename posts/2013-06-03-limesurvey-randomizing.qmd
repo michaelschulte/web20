@@ -3,7 +3,6 @@ title: Limesurvey randomizing
 date: 2013-06-03T12:55:47-07:00
 author: Michael
 categories:
-  - Limesurvey
   - Open Source
 ---
 It is kind of an odd problem.  

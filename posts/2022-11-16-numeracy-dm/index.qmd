@@ -3,7 +3,7 @@ title: "Replication: Numeracy and decision making"
 author: "MSM"
 date: "2022-12-16"
 draft: false
-categories: [Replication, Framing, Numeracy, Failedreplication]
+categories: [Replication, Framing, Numeracy, Failed Replication]
 sidebar:
   contents: auto
 editor_options: 
