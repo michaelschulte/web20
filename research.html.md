@@ -12,7 +12,11 @@ keep-md: true
 ### 2024{#not-published-2024}
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck, Wagner, Gert G., and Hertwig, Ralph. (2024) "How personal experiences shaped risk judgments during COVID- 19." <em>Journal of Risk Research.</em><br><a class="btn btn-outline-dark btn-sm", href="/pdf/Schulte-Mecklenbeck2023.pdf" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'>Lohse, Johannes, Rahal, Rima-Maria, Michael Schulte-Mecklenbeck, Sofianos, Andis, and Wollbrant, Conny. (2024) "Investigations of Decision Processes at the Intersection of Psychology and Economics." <em>Journal of Economic Psychology.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.joep.2024.102741" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
+        Paper
+    </a></li>
+<li class='list-group-item'>Michael Schulte-Mecklenbeck, Wagner, Gert G., and Hertwig, Ralph. (2024) "How personal experiences shaped risk judgments during COVID- 19." <em>Journal of Risk Research.</em><br><a class="btn btn-outline-dark btn-sm", href="/pdf/Schulte-Mecklenbeck2023.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
