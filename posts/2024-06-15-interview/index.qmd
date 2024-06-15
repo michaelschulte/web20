@@ -1,0 +1,20 @@
+---
+title: "Interview"
+author: "MSM"
+date: "2024-06-15"
+draft: false
+categories: [Interview]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+![Foto: Erin Gyger (08.06.2024)](../_images/einkauf.png)
+
+Fabian Rütschi und Erin Gyger, zwei SchülerInnen aus Bern, haben mich unlängst für ein Interview, im Rahmen ihres Deutschkurses, angefragt. 
+Wir haben uns dann getroffen und einen langen Spaziergang durch den Coop Ryfflihof in Bern gemacht, danach noch ein sehr nettes Gespräch.
+
+All das, und mehr, wurde dann verschriftlicht und ist [hier](https://fabian661.lilo.gg) nachzulesen.
+
+Merci Erin und Fabian!
