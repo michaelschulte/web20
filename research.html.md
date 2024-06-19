@@ -16,7 +16,7 @@ keep-md: true
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li>
-<li class='list-group-item'>Michael Schulte-Mecklenbeck, Wagner, Gert G., and Hertwig, Ralph. (2024) "How personal experiences shaped risk judgments during COVID- 19." <em>Journal of Risk Research.</em><br><a class="btn btn-outline-dark btn-sm", href="/pdf/Schulte-Mecklenbeck2023.pdf" target="_blank" rel="noopener noreferrer">
+<li class='list-group-item'>Michael Schulte-Mecklenbeck, Wagner, Gert G., and Hertwig, Ralph. (2024) "How personal experiences shaped risk judgments during COVID- 19." <em>Journal of Risk Research.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1080/13669877.2024.2350712" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
