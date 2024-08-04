@@ -12,7 +12,11 @@ keep-md: true
 ### 2024{#not-published-2024}
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'>Lohse, Johannes, Rahal, Rima-Maria, Michael Schulte-Mecklenbeck, Sofianos, Andis, and Wollbrant, Conny. (2024) "Investigations of Decision Processes at the Intersection of Psychology and Economics." <em>Journal of Economic Psychology.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.joep.2024.102741" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'>Brett Buttliere, Alexios Arvanitis, Michał Białek, Shoham Choshen-Hillel, Shai Davidai, Thomas Gilovich, Uriel Haran, Ángela Jiang-Wang, Qiao Kang Teo, Vojtech Kotrba, Chengwei Liu, David Mandel, Gordon Pennycook, Tobias R. Rebholz, Michael Schulte-Mecklenbeck, Norbert Schwarz, Zeev Shtudiner, Steven Sloman, Joakim Sundh, Cass Sunstein, Daniel Västfjäll, and Mario Weick}. (2024) "Kahneman in Quotes and Reflections." <em>Psychological Inquiry.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1080/1047840X.2024.2366813" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
+        Paper
+    </a></li>
+<li class='list-group-item'>Lohse, Johannes, Rahal, Rima-Maria, Michael Schulte-Mecklenbeck, Sofianos, Andis, and Wollbrant, Conny. (2024) "Investigations of Decision Processes at the Intersection of Psychology and Economics." <em>Journal of Economic Psychology.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.joep.2024.102741" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li>
