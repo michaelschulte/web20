@@ -12,7 +12,11 @@ keep-md: true
 ### 2024{#not-published-2024}
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'>Brett Buttliere, Alexios Arvanitis, Michał Białek, Shoham Choshen-Hillel, Shai Davidai, Thomas Gilovich, Uriel Haran, Ángela Jiang-Wang, Qiao Kang Teo, Vojtech Kotrba, Chengwei Liu, David Mandel, Gordon Pennycook, Tobias R. Rebholz, Michael Schulte-Mecklenbeck, Norbert Schwarz, Zeev Shtudiner, Steven Sloman, Joakim Sundh, Cass Sunstein, Daniel Västfjäll, and Mario Weick}. (2024) "Kahneman in Quotes and Reflections." <em>Psychological Inquiry.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1080/1047840X.2024.2366813" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'>Swami, V. and et al.. (2024) "Connectedness to nature and exposure to natural environments: An examination of the measurement invariance of the Connectedness to Nature Scale (CNS) and Nature Exposure Scale (NES) across 65 nations, 40 languages, gender identities, and age groups." <em>Journal of Environmental Psychology.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.jenvp.2024.102432" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
+        Paper
+    </a></li>
+<li class='list-group-item'>Brett Buttliere, Alexios Arvanitis, Michał Białek, Shoham Choshen-Hillel, Shai Davidai, Thomas Gilovich, Uriel Haran, Ángela Jiang-Wang, Qiao Kang Teo, Vojtech Kotrba, Chengwei Liu, David Mandel, Gordon Pennycook, Tobias R. Rebholz, Michael Schulte-Mecklenbeck, Norbert Schwarz, Zeev Shtudiner, Steven Sloman, Joakim Sundh, Cass Sunstein, Daniel Västfjäll, and Mario Weick. (2024) "Kahneman in Quotes and Reflections." <em>Psychological Inquiry.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1080/1047840X.2024.2366813" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li>
