@@ -33,7 +33,7 @@ keep-md: true
 ### 2021{#not-published-2021}
 
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'>Schweinsberg, Martin, Feldman, Michael, Staub, Nicola, van den Akker, Olmo R, van Aert, Robbie CM, Van Assen, Marcel ALM, Liu, Yang, Althoff, Tim, Heer, Jeffrey, Kale, Alex, Michael Schulte-Mecklenbeck, and others.. (2021) "Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis." <em>Organizational Behavior and Human Decision Processes.</em><br><a class="btn btn-outline-dark btn-sm", href="https://www.sciencedirect.com/science/article/pii/S0749597821000200?via%3Dihub" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'>Schweinsberg, Martin, Feldman, Michael, Staub, Nicola, van den Akker, Olmo R, van Aert, Robbie CM, Van Assen, Marcel ALM, Liu, Yang, Althoff, Tim, Heer, Jeffrey, Kale, Alex, Michael Schulte-Mecklenbeck, and others. (2021) "Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis." <em>Organizational Behavior and Human Decision Processes.</em><br><a class="btn btn-outline-dark btn-sm", href="https://www.sciencedirect.com/science/article/pii/S0749597821000200?via%3Dihub" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>

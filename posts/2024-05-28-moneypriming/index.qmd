@@ -79,7 +79,12 @@ T3_Pen <-
 C1_SJS <-
 raw %>%
   select(starts_with('SJ_S'), Order, Condition) %>%
-  pivot_longer(cols = c( -Order, -Condition)) %>%
+  pivot_longer(cols = c(-Order, -Condition)) %>%
+  mutate(value_trans = case_when(name == 'SJ_S_P_3' ~ 7 - value, 
+                                 name == 'SJ_S_P_7' ~ 7 - value,
+                                 name == 'SJ_S_C_3' ~ 7 - value, 
+                                 name == 'SJ_S_C_7' ~ 7 - value,
+                                 TRUE ~ value)) %>%
   na.omit()
 
 # Caruso 2 BJW (GWAL) Scale
@@ -145,6 +150,13 @@ We collected data from 407 participants. After applying our pre-registered exclu
 $$CompletionTime_{i} < M_{CompletionTime} + 3SD_{CompletionTime}$$
 This step gave us a final sample of *n* =  `r dim(raw)[1]` participants.
 Due to my oversight, we did not collect gender or age information.
+
+::: {.callout-note}
+Correction Dec 2024: Francesco Contino alerted me to a grave oversight when analyzing the data - I missed that in the SJS two items (3 and 7) have to be reverse coded ... this is added in the current analysis and fortunately does not change any test results but, of course, the means (slightly). 
+
+Thanks for finding this issue!
+:::
+
 
 ## What we are looking for in Caruso et al.
 

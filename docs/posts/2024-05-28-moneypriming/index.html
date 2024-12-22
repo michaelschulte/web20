@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="MSM">
 <meta name="dcterms.date" content="2024-05-27">
 
-<title>Michael Schulte-Mecklenbeck - Replication: Money Priming</title>
+<title>Replication: Money Priming – Michael Schulte-Mecklenbeck</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-de4de07f82120c2cab44c9d2883d6f16.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
   gtag('config', 'G-6YMRGKPWZY');
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -124,7 +124,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -147,7 +147,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -242,10 +242,24 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="demographics">Demographics</h2>
 <p>We collected data from 407 participants. After applying our pre-registered exclusion criteria (answering both control questions correctly) <em>n</em> = 172 participants remained. Additionally we excluded anybody whose survey completion time exceeded three times the SD over the mean.</p>
 <p><span class="math display">\[CompletionTime_{i} &lt; M_{CompletionTime} + 3SD_{CompletionTime}\]</span> This step gave us a final sample of <em>n</em> = 171 participants. Due to my oversight, we did not collect gender or age information.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Correction Dec 2024: Francesco Contino alerted me to a grave oversight when analyzing the data - I missed that in the SJS two items (3 and 7) have to be reverse coded … this is added in the current analysis and fortunately does not change any test results but, of course, the means (slightly).</p>
+<p>Thanks for finding this issue!</p>
+</div>
+</div>
 </section>
 <section id="what-we-are-looking-for-in-caruso-et-al." class="level2">
 <h2 class="anchored" data-anchor-id="what-we-are-looking-for-in-caruso-et-al.">What we are looking for in Caruso et al.</h2>
-<div id="fig-Caruso-Results" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-Caruso-Results" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-Caruso-Results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Caruso_Results.png" class="img-fluid figure-img">
@@ -259,7 +273,7 @@ Figure&nbsp;1: Scales results
 <section id="how-we-re-built-the-different-conditions" class="level3">
 <h3 class="anchored" data-anchor-id="how-we-re-built-the-different-conditions">How we (re-)built the different conditions</h3>
 <p>In their Experiment 1 Caruso et al.&nbsp;used pictures of a US Dollar note (Priming) or noise (Control) as displayed in <a href="#fig-caruso-prime" class="quarto-xref">Figure&nbsp;2</a>.</p>
-<div id="fig-caruso-prime" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-caruso-prime" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-caruso-prime-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Caruso_Prime.png" class="img-fluid figure-img">
@@ -270,7 +284,7 @@ Figure&nbsp;2: Pictures from the Priming and Control Condition, Caruso et al.&nb
 </figure>
 </div>
 <p>We adapted these pictures to Swiss money (see <a href="#fig-background-money" class="quarto-xref">Figure&nbsp;3</a>) or a neutral picture (see <strong>?@fig-background-control</strong>) as the background in the SJS questionnaire.</p>
-<div id="fig-background-money" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-background-money" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-background-money-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/background_money.png" class="img-fluid figure-img">
@@ -280,7 +294,7 @@ Figure&nbsp;3: Background money prime
 </figcaption>
 </figure>
 </div>
-<div id="fig-background-neutral" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-background-neutral" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-background-neutral-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/background_neutral.png" class="img-fluid figure-img">
@@ -294,7 +308,7 @@ Figure&nbsp;4: Background neutral
 <p>The final set of sentence is the following:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <caption>Sentence priming stimuli for Control and Priming</caption>
 <colgroup>
 <col style="width: 11%">
@@ -432,7 +446,7 @@ Figure&nbsp;4: Background neutral
 </div>
 </div>
 <p>Finally, for Tong Experiment 2 / 3, we generated a new sorting task, where participants were asked to sort pictures of either currencies (Money Prime, see <a href="#fig-sorting-priming" class="quarto-xref">Figure&nbsp;5</a>) or pictures of different languages (control) into pre-defined classes (see <a href="#fig-sorting-control" class="quarto-xref">Figure&nbsp;6</a>).</p>
-<div id="fig-sorting-priming" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-sorting-priming" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sorting-priming-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Money_Picture_Asign.png" class="img-fluid figure-img">
@@ -442,7 +456,7 @@ Figure&nbsp;5: Money sorting
 </figcaption>
 </figure>
 </div>
-<div id="fig-sorting-control" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-sorting-control" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sorting-control-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/Text_Picture_Asign.png" class="img-fluid figure-img">
@@ -461,7 +475,7 @@ Figure&nbsp;6: Text sorting
 <h3 class="anchored" data-anchor-id="caruso-experiment-1-sjs">Caruso Experiment 1 SJS</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-C1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-results-C1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-results-C1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="staticfig-results-C1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
@@ -502,7 +516,7 @@ lower upper
 <h3 class="anchored" data-anchor-id="caruso-2-bjw-gwal-scale">Caruso 2 BJW (GWAL) Scale</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-C2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-results-C2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-results-C2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="staticfig-results-C2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
@@ -543,7 +557,7 @@ lower upper
 <h3 class="anchored" data-anchor-id="caruso-3-sdo-scale">Caruso 3 SDO Scale</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-C3" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-results-C3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-results-C3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="staticfig-results-C3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
@@ -591,7 +605,7 @@ lower upper
 <h3 class="anchored" data-anchor-id="tong-1-battery-cake">Tong 1 Battery Cake</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-T1" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-results-T1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-results-T1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="staticfig-results-T1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
@@ -617,7 +631,7 @@ X-squared = 0.9, df = 1, p-value = 0.3</code></pre>
 <h3 class="anchored" data-anchor-id="tong-2-sci-fi-duden">Tong 2 Sci-Fi Duden</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-T2" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-results-T2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-results-T2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="staticfig-results-T2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
@@ -643,7 +657,7 @@ X-squared = 0.8, df = 1, p-value = 0.4</code></pre>
 <h3 class="anchored" data-anchor-id="tong-3-pen-v.-coke">Tong 3 Pen v. Coke</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-results-T3" class="quarto-figure quarto-figure-center quarto-float anchored" data-fig-align="center">
+<div id="fig-results-T3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-results-T3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="staticfig-results-T3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576">
@@ -823,18 +837,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -866,7 +869,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -874,7 +897,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -971,7 +994,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
