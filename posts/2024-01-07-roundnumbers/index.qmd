@@ -1,7 +1,7 @@
 ---
 title: "Replication: Round numbers"
 author: "MSM"
-date: "2024-01-07"
+date: "2024-12-22"
 draft: true
 categories: [Replication, Number Perception, Consumer Behavior]
 sidebar:
@@ -64,7 +64,7 @@ preferences for the ideal degree of rounding for numbers spanning seven orders o
 
 # Replication
 
-We ran a direct replication of experiment 1 of Nguyen et al. (2022). We developed a set of six new tasks (see [Appendix](#appendix)) that structurally followed the original: two numbers (either `round` or`precise`) and two additional numbers that were not relevant for the task.
+We ran a direct replication of experiment 1 of Nguyen et al. (2022) and developed a set of six new tasks (see [Appendix](#appendix)) that structurally followed the original: two numbers (either `round` or `precise`) and two additional numbers that were not relevant for the task.
 
 ```{r}
 #| label: tab-targets
@@ -81,11 +81,11 @@ knitr::kable(
 ```
 
 
-So, clearly we produced two, quite different sets of stimuli. Set 1 had a average of `r mean(targets[targets$set == 1 & targets$number_id == 1,]$target,1)` for the first number and `r mean(targets[targets$set == 1 & targets$number_id == 2,]$target,1)`, whereas set 2 had `r mean(targets[targets$set == 2 & targets$number_id == 1,]$target,1)` for the first  and `r mean(targets[targets$set == 2 & targets$number_id == 2,]$target,1)` for the second number. 
+So, clearly we produced two, quite different sets of stimuli. Set 1 had a average of `r mean(targets[targets$set == 1 & targets$number_id == 1,]$target,1)` for the first number and `r mean(targets[targets$set == 1 & targets$number_id == 2,]$target,1)`, whereas set 2 had `r mean(targets[targets$set == 2 & targets$number_id == 1,]$target,1)` for the first  and `r mean(targets[targets$set == 2 & targets$number_id == 2,]$target,1)` for the second number. Let's see whether these differences will result in the same set of resutls.
 
 # Demographics
 
-The original paper had 1300 participants recruited on Amazon’s Mechanical Turk. We recruited through word of mouth among friends and family of the student group running this study.  
+The original paper had 1300 participants recruited on Amazon’s Mechanical Turk. We recruited through word of mouth among friends and family of the student group running this study, resulting in a substaintially smaller sample.  
 
 Overall we collected data from **`r length(demographie$ID)` participants**. 
 Female participants (*n* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% summarise(m = sd(Alter))` years; Male participants (*n* = `r demographie %>% filter(Geschlecht == "Männlich") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Männlich") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Männlich") %>% summarise(m = sd(Alter))` years; non-binary participants (`r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% summarise(m = sd(Alter))` years old.

@@ -4,12 +4,9 @@ image: '_content/_image/avatar.jpg'
 about:
   template: trestles
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/SchulteMi
-    - icon: mastodon
-      text: Mastodon
-      href: https://scicomm.xyz/web/@schultem
+    - icon: Bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/michaelschulte.bsky.social
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/michael-schulte-mecklenbeck-3a2271193/
