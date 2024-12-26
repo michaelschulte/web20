@@ -2,10 +2,9 @@
 title: "About"
 image: '_content/_image/avatar.jpg'
 about:
-  template: trestles
+  template: trestles 
   links:
-    - icon: Bluesky
-      text: Bluesky
+    - text:  "{{< fa brands bluesky >}} Bluesky"
       href: https://bsky.app/profile/michaelschulte.bsky.social
     - icon: linkedin
       text: LinkedIn
