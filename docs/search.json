@@ -490,41 +490,6 @@
     "text": "Current position\nUniversity of Bern, Switzerland\nMax-Planck-Institute for Human Development in Berlin."
   },
   {
-    "objectID": "posts/2024-01-07-roundnumbers/index.html",
-    "href": "posts/2024-01-07-roundnumbers/index.html",
-    "title": "Replication: Round numbers",
-    "section": "",
-    "text": "Nguyen, H. A., Hofman, J. M., & Goldstein, D. G. (2022). Round numbers can sharpen cognition. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (pp. 1-15)."
-  },
-  {
-    "objectID": "posts/2024-01-07-roundnumbers/index.html#abstract",
-    "href": "posts/2024-01-07-roundnumbers/index.html#abstract",
-    "title": "Replication: Round numbers",
-    "section": "Abstract",
-    "text": "Abstract\nScientists and journalists strive to report numbers with high precision to keep readers well-informed. Our work investigates whether this practice can backfire due to the cognitive costs of processing multi-digit precise numbers. In a pre-registered randomized experiment, we presented readers with several news stories containing numbers in either precise or round versions. We then measured their ability to approximately recall these numbers and make estimates based on what they read. Our results revealed a counterintuitive effect where reading round numbers helped people better approximate the precise values, while seeing precise numbers made them worse. We also conducted two surveys to elicit individual preferences for the ideal degree of rounding for numbers spanning seven orders of magnitude in various contexts. From the surveys, we found that people tended to prefer more precision when the rounding options contained only digits (e.g., “2,500,000”) than when they contained modifier terms (e.g., “2.5 million”). We conclude with a discussion of how these findings can be"
-  },
-  {
-    "objectID": "posts/2024-01-07-roundnumbers/index.html#experiment---round-versus-precise",
-    "href": "posts/2024-01-07-roundnumbers/index.html#experiment---round-versus-precise",
-    "title": "Replication: Round numbers",
-    "section": "Experiment - Round versus precise",
-    "text": "Experiment - Round versus precise\nLet’s first look at the overall effect found in the original experiment - in Figure 1 we see an increase from Precise to Round of ~ 20 percentage points … that’s quite something.\n\n\n\n\n\n\n\n\nFigure 1: Results Nguyen Experiment 1\n\n\n\n\n\nApplying the same rule as Nguyen et al. (2022) we code all responses that fall within a 10% of the precise number as a correct response. Looking at the percentage of correct responses between the precise (0.6) and round (0.6) condition we see that the round condition has a ~ 7% higher percentage of correct responses than precise (see Figure 2).\n\n\n\n\n\n\n\n\nFigure 2: Results Replication Experiment 1\n\n\n\n\n\nWe run a simple Chi-2 test to see whether our ~ 7% still reach a significant difference -\n\n\n\n    2-sample test for equality of proportions with continuity correction\n\ndata:  c(prop_table$n[2], prop_table$n[4]) out of c(prop_table$n[1] + prop_table$n[2], prop_table$n[3] + prop_table$n[4])\nX-squared = 13, df = 1, p-value = 0.0003\nalternative hypothesis: two.sided\n95 percent confidence interval:\n -0.11 -0.03\nsample estimates:\nprop 1 prop 2 \n   0.6    0.6 \n\n\n\n\n\n \ncheck within range\n\n\nPredictors\nEstimates\nCI\np\n\n\n(Intercept)\n0.55\n0.53 – 0.58\n&lt;0.001\n\n\ncondition [Round]\n0.07\n0.03 – 0.11\n&lt;0.001\n\n\nObservations\n2538\n\n\nR2\n0.005\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Split in set 1 and set 2\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 4: Facets of all numbers"
-  },
-  {
-    "objectID": "posts/2024-01-07-roundnumbers/index.html#overview-task-values",
-    "href": "posts/2024-01-07-roundnumbers/index.html#overview-task-values",
-    "title": "Replication: Round numbers",
-    "section": "Overview Task values",
-    "text": "Overview Task values\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nId\nSet\nTask\nNo 1 precise\nNo 1 rounded\nNo 2 precise\nNo 2 rounded\nTarget Percent precise\nPercent rounded\n\n\n\n\n1\n2\nArztpraxen\n25’439\n25’000\n19’004\n19’000\n74.7 %\n76 %\n\n\n2\n2\nGotthardtunnel\n16’942\n17’000\n2’257\n2’300\n13.3 %\n13.5 %\n\n\n3\n1\nArbeitslosigkeit\n89’881\n90’000\n2’280\n2’500\n2.5 %\n2.8 %\n\n\n4\n1\nUrteile\n103’156\n100’000\n1’945\n2’000\n1.9 %\n2.0%\n\n\n5\n1\nGeographie\n41’285\n40’000\n7’105\n7’000\n17.2 %\n17.5 %\n\n\n6\n2\nUmsatzlöhne\n16’553\n17’000\n3’750\n4’000\n22.7 %\n23.5 %"
-  },
-  {
-    "objectID": "posts/2024-01-07-roundnumbers/index.html#tasks-in-german",
-    "href": "posts/2024-01-07-roundnumbers/index.html#tasks-in-german",
-    "title": "Replication: Round numbers",
-    "section": "Tasks in German",
-    "text": "Tasks in German\n\n1. Arztpraxen\n\nJede vierte Ärztin bzw. Jeder vierte Arzt war Ende 2021 mindestens 60 Jahre alt. Ende 2021 waren in den Arztpraxen und ambulanten Zentren in der Schweiz 25’439 [25’000] Ärztinnen und Ärzte tätig, was 19’004 [19’000] Vollzeitäquivalenten entspricht. Gut 25% der Ärztinnen und Ärzte war mindestens 60 Jahre alt. Dies zeigen die jüngsten Ergebnisse des Bundesamtes für Statistik (BFS).\n\nSource\n\n\n2. Gotthardtunnel\n\nDer Gotthard-Strassentunnel ist mit 16’942 [17’000] Metern Länge der viertlängste Strassentunnel der Welt und der längste Strassentunnel in den Alpen. Die Autostrasse verbindet Göschenen im Kanton Uri mit Airolo im Kanton Tessin. Im Jahr 2012 wurde er durchschnittlich von 17’061 Fahrzeugen pro Tag befahren, wovon 2’257 [2’300] schwere Lkw waren.\n\nSource\n\n\n3. Umsatzlöhne\n\nDer Zürcher Gastronom Michel Péclard sorgte diesen Sommer mit einem neuen Lohnmodell für Aufsehen. Einem seiner Kellner bezahlte er 16’553 [17’000] Franken in einem Monat. Péclard setzt beim Servicepersonal seiner Restaurants auf Umsatzbeteiligung. Der Toplohn sei zwar eine Ausnahme gewesen. Doch seine Angestellten hätten im Sommer monatlich zwischen 8’000 und 12’000 Franken verdient – weit über dem garantierten Mindestlohn von 3’750 [4’000] Franken für Ungelernte.\n\nSource\n\n\n4. Arbeitslosigkeit\n\nGemäss den Erhebungen des Staatssekretariats für Wirtschaft (SECO) waren Ende August diesen Jahres 89’881 [90’000] Arbeitslose bei den Regionalen Arbeitsvermittlungszentren (RAV) eingeschrieben, 2’280 [2’500] mehr als im Vormonat. Die Arbeitslosenquote stieg von 1,9 % im Juli auf 2,0 % im Berichtsmonat.\n\nSource\n\n\n5. Erwachsenenstrafurteile\n\nIm letzten Jahr ist die Zahl der Strafregistereinträge gegenüber dem Vorjahr um 3% auf 103’156 [103’000] Verurteilungen gestiegen. Die Verstösse aufgrund des Strassenverkehrsgesetzes erhöhten sich leicht, jene aufgrund des Betäubungsmittelgesetzes gingen um 13% zurück. Insgesamt wurden 1’945 [2’000] Landesverweisungen ausgesprochen.\n\nSource\n\n\n6. Geographie\n\nMit einer Fläche von 41’285 [40’000] Quadratkilometern ist die Schweiz von allen Ländern Europas eines der flächenmäßig kleineren. Der Binnenstaat in Mitteleuropa grenzt an Deutschland, Österreich, Liechtenstein, Frankreich und Italien und hat Anteil an drei großen europäischen Sprachräumen (Deutsch, Italienisch, Französisch). Das Land ist aufgeteilt in 26 teilsouveräne Kantone. Graubünden ist mit einer Fläche von 7’105 [7’000] Quadratkilometern der größte, der Kanton Basel-Stadt mit rund 37 Quadratkilometern der kleinste.\n\nSource"
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Publications",
