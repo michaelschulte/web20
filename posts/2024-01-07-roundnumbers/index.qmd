@@ -1,7 +1,7 @@
 ---
 title: "Replication: Round numbers"
 author: "MSM"
-date: "2024-12-22"
+date: "2024-12-30"
 draft: true
 categories: [Replication, Number Perception, Consumer Behavior]
 sidebar:
@@ -31,6 +31,8 @@ library(here)
 library(DT)
 library(lsr)
 library(tinytable)
+library(patchwork)
+library(png)
 group <- 'BAHS2023'
 demographie <- read_csv(here(paste0('0_data/',group,'_demographie_pub.csv')))
 complete_df <- read_csv(here(paste0('0_data/',group,'_complete_df_pub.csv')))
@@ -58,13 +60,13 @@ Nguyen, H. A., Hofman, J. M., & Goldstein, D. G. (2022). [Round numbers can shar
 [Pre-Reg (German)](https://osf.io/47jx2)
 
 ## Abstract
-Scientists and journalists strive to report numbers with high precision to keep readers well-informed. Our work investigates whether this practice can backfre due to the cognitive costs of processing multi-digit precise numbers. In a pre-registered randomized experiment, we presented readers with several news stories containing numbers in either precise or round versions. We then measured
-their ability to approximately recall these numbers and make estimates based on what they read. Our results revealed a counterintuitive efect where reading round numbers helped people better approximate the precise values, while seeing precise numbers made them worse. We also conducted two surveys to elicit individual
-preferences for the ideal degree of rounding for numbers spanning seven orders of magnitude in various contexts. From the surveys, we found that people tended to prefer more precision when the rounding options contained only digits (e.g., "2,500,000") than when they contained modifer terms (e.g., "2.5 million"). We conclude with a discussion of how these fndings can be 
+Scientists and journalists strive to report numbers with high precision to keep readers well-informed. Our work investigates whether this practice can backfire due to the cognitive costs of processing multi-digit precise numbers. In a pre-registered randomized experiment, we presented readers with several news stories containing numbers in either precise or round versions. We then measured their ability to approximately recall these numbers and make estimates based on what they read. Our results revealed a counterintuitive effect where reading round numbers helped people better approximate the precise values, while seeing precise numbers made them worse. We also conducted two surveys to elicit individual preferences for the ideal degree of rounding for numbers spanning seven orders of magnitude in various contexts. From the surveys, we found that people tended to prefer more precision when the rounding options contained only digits (e.g., "2,500,000") than when they contained modifier terms (e.g., "2.5 million"). We conclude with a discussion of how these findings can be 
 
 # Replication
 
-We ran a direct replication of experiment 1 of Nguyen et al. (2022) and developed a set of six new tasks (see [Appendix](#appendix)) that structurally followed the original: two numbers (either `round` or `precise`) and two additional numbers that were not relevant for the task.
+We ran a direct replication of experiment 1 of Nguyen et al. (2022) and developed a set of six new tasks (see [Appendix](#appendix)) that structurally followed the original: two numbers (either `round` or `precise`) and two additional numbers that were not relevant for the task. all six task were written in German den thematically centered on Switzerland mainly relying on the Swiss Statistical (BFS) and Health Services (BFG) as sources. 
+
+Generating stimuli is tricky - our set deviated quite a bit from the original. Set 1 had a average of `r mean(targets[targets$set == 1 & targets$number_id == 1,]$target,1)` for the first number and `r mean(targets[targets$set == 1 & targets$number_id == 2,]$target,1)`, whereas set 2 had `r mean(targets[targets$set == 2 & targets$number_id == 1,]$target,1)` for the first  and `r mean(targets[targets$set == 2 & targets$number_id == 2,]$target,1)` for the second number. 
 
 ```{r}
 #| label: tab-targets
@@ -80,12 +82,11 @@ knitr::kable(
 )
 ```
 
-
-So, clearly we produced two, quite different sets of stimuli. Set 1 had a average of `r mean(targets[targets$set == 1 & targets$number_id == 1,]$target,1)` for the first number and `r mean(targets[targets$set == 1 & targets$number_id == 2,]$target,1)`, whereas set 2 had `r mean(targets[targets$set == 2 & targets$number_id == 1,]$target,1)` for the first  and `r mean(targets[targets$set == 2 & targets$number_id == 2,]$target,1)` for the second number. Let's see whether these differences will result in the same set of resutls.
+Let's see whether these differences will get us the same set of results.
 
 # Demographics
 
-The original paper had 1300 participants recruited on Amazon’s Mechanical Turk. We recruited through word of mouth among friends and family of the student group running this study, resulting in a substaintially smaller sample.  
+The original paper had 1300 participants recruited on Amazon’s Mechanical Turk. We recruited through word of mouth among friends and family of the student group running this study, resulting in a substantially smaller sample.  
 
 Overall we collected data from **`r length(demographie$ID)` participants**. 
 Female participants (*n* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Weiblich") %>% summarise(m = sd(Alter))` years; Male participants (*n* = `r demographie %>% filter(Geschlecht == "Männlich") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Männlich") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Männlich") %>% summarise(m = sd(Alter))` years; non-binary participants (`r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% count()`) were *M* = `r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% summarise(m = mean(Alter))`, *SD* = `r demographie %>% filter(Geschlecht == "Nichtbinär/drittes Geschlecht") %>% summarise(m = sd(Alter))` years old.
@@ -112,12 +113,26 @@ checked_df %>%
   summarise(perc = mean(check_within_range))
 ```
 
-Let's first look at the overall effect of the manipulation (see Figure @fig-overview). Applying the same rule as Nguyen et al. (2022) we code all responses that fall within a 10% of the precise number as a correct response. Looking at the percentage of correct responses between the precise (`r prop_table_prec[1,2]`) and round (`r prop_table_prec[2,2]`) condition we see that the round condition has a ~`r prop_table_prec[2,2] - prop_table_prec[1,2]*100`% higher percentage of correct responses than precise. 
+Let's first look at the overall effect found in the original experiment - in @fig-original we see an increase from Precise to Round of **~ 20 percentage points** ... that's quite something. 
 
+```{r}
+#| label: fig-original
+#| fig-cap: "Results Nguyen Experiment 1" 
+
+
+fig_original <- readPNG('images/Fig1_Original.png')
+grid::grid.raster(fig_original)
+
+```
+
+
+Applying the same rule as Nguyen et al. (2022) we code all responses that fall within a 10% of the precise number as a correct response. Looking at the percentage of correct responses between the precise (`r prop_table_prec[1,2]`) and round (`r prop_table_prec[2,2]`) condition we see that the round condition has a **~ `r round((prop_table_prec[2,2] - prop_table_prec[1,2])*100, 0)`%** higher percentage of correct responses than precise (see @fig-overview). 
+ 
 ```{r}
 #| label: fig-overview
 #| fig-cap: "Results Replication Experiment 1" 
 
+fig1 <- 
 checked_df %>%
   filter(test == 'Question') %>%
   group_by(condition) %>%
@@ -127,20 +142,25 @@ checked_df %>%
   ggplot(aes(condition, m_perc)) +
   geom_point() +
   geom_errorbar(aes(ymin = m_perc-se, ymax = m_perc+se), width = .11) +
-  theme_bw() +
+  theme_bw(base_size = 18) +
   labs(title = 'Across all recall tasks',
        y = 'Percent of approximately correct responses')
+
+fig1
 ```
 
-```{r}
-res <- prop.test(x = c(prop_table$n[2], prop_table$n[4]), n = c(prop_table$n[1] + prop_table$n[2], prop_table$n[3] + prop_table$n[4]))
-# Printing the results
-res 
 
+
+We run a simple Chi-2 test to see whether our **~ `r round((prop_table_prec[2,2] - prop_table_prec[1,2])*100, 0)`%** still reach a significant difference - 
+
+```{r}
+prop.test(x = c(prop_table$n[2], prop_table$n[4]), n = c(prop_table$n[1] + prop_table$n[2], prop_table$n[3] + prop_table$n[4]))
+
+model <-
 checked_df %>%
   filter(test == 'Question') %>%
-t.test(check_within_range ~ condition, data = .)
-
+glm(check_within_range ~ condition, data = .)
+tab_model(model)
 ```
 
 
