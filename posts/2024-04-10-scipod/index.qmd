@@ -2,7 +2,7 @@
 title: "Scipod"
 author: "MSM"
 date: "2024-04-10"
-draft: false
+draft: true
 categories: [Default Effekt, Teaching, Podcast]
 sidebar:
   contents: auto
