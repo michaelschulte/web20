@@ -3,7 +3,7 @@ title: "Scipod"
 author: "MSM"
 date: "2024-04-10"
 draft: false
-categories: [Default Effekt, Teaching, Podcast]
+categories: [Default Effekt, Teaching, Podcast, SciPod]
 sidebar:
   contents: auto
 editor_options: 
@@ -29,4 +29,4 @@ Fünf Gruppen haben sich im Frühjahr 2024 an die Arbeit gemacht und ihre Ideen 
 
 # References
 
-Johnson, E. J., & Goldstein, D. (2003). [Do defaults save lives?](https://doi.org/10.1126/science.1091721).*Science, 302*(5649), 1338-1339.
+Johnson, E. J., & Goldstein, D. (2003). [Do defaults save lives?](https://doi.org/10.1126/science.1091721). *Science, 302*(5649), 1338-1339.

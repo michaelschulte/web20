@@ -28,7 +28,8 @@ Hier sind die **Ergebnisse** dieser Runde zum Nachhören:
 - [Schulte](podcasts/Schulte.mp3)
 - [RUG-PULLERS](podcasts/RUG-PULLERS.mp3)
 - [FiveCision](podcasts/FiveCision.mp3)
+- [SMART](podcasts/SMART.mp3)
 
 # References
 
-Johnson, E. J., & Goldstein, D. (2003). [Do defaults save lives?](https://doi.org/10.1126/science.1091721).*Science, 302*(5649), 1338-1339.
+Johnson, E. J., & Goldstein, D. (2003). [Do defaults save lives?](https://doi.org/10.1126/science.1091721). *Science, 302*(5649), 1338-1339.
