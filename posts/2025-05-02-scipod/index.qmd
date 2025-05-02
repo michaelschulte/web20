@@ -22,7 +22,7 @@ Hier sind die **Ergebnisse** dieser Runde zum Nachhören:
 # Podcasts
 
 - [Die olympischen Ringe](podcasts/Die_olympischen_Ringe.mp3)
-- [Trilogie](podcasts/Triologie.wav)
+- [Trilogie](podcasts/Triologie.mp3)
 - [TeamThink](podcasts/TeamThink.mp3)
 - [SFFKJ-Consulting](podcasts/SFFKJ-Consulting.mp3)
 - [Schulte](podcasts/Schulte.mp3)
