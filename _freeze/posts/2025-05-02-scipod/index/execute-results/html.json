@@ -1,0 +1,15 @@
+{
+  "hash": "0ddd692a298a2a3bbe8885ddf40a3bb3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Scipod\"\nauthor: \"MSM\"\ndate: \"2025-05-02\"\ndraft: false\ncategories: [Default Effekt, Teaching, Podcast, SciPod]\nsidebar:\n  contents: auto\neditor_options: \n  chunk_output_type: console\n---\n\n::: {.cell .column-margin}\n::: {.cell-output-display}\n![](../_images/hex-scipod.png){width=100%}\n:::\n:::\n\n\n\n**'Etwas zum Anfassen erzeugen'** - Runde 2 -> im Frühjahrsemester 2025 im Rahmen meiner Lehrveranstaltung 'Wie entscheiden wir uns?' an der Universität Bern gab es die 2. Runde mit dem Auftrag an die Studierenden eine **Podcast** zum 'Default Effekt' zu **planen, aufzunehmen und zu produzieren**. \n\nHier sind die **Ergebnisse** dieser Runde zum Nachhören:\n\n# Podcasts\n\n- [Die olympischen Ringe](podcasts/Die_olympischen_Ringe.mp3)\n- [Trilogie](podcasts/Triologie.wav)\n- [TeamThink](podcasts/TeamThink.mp3)\n- [SFFKJ-Consulting](podcasts/SFFKJ-Consulting.mp3)\n- [Schulte](podcasts/Schulte.mp3)\n- [RUG-PULLERS](podcasts/RUG-PULLERS.mp3)\n- [FiveCision](podcasts/FiveCision.mp3)\n\n# References\n\nJohnson, E. J., & Goldstein, D. (2003). [Do defaults save lives?](https://doi.org/10.1126/science.1091721).*Science, 302*(5649), 1338-1339.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
