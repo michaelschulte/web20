@@ -1,0 +1,20 @@
+---
+title: "Scipod"
+author: "MSM"
+date: "2025-12-01"
+draft: false
+categories: [methods]
+sidebar:
+  contents: auto
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r out.width='100%', echo = FALSE}
+#| column: margin
+knitr::include_graphics('../_images/dimido.png')
+```
+
+Here it is our [TueWenThu](https://studie.ch/christmas/) (German Versions: [DiMiDo](https://studie.ch/weihnachten/)) Adventkalender - trouble remembering what a p-value is - we are here to help - on Tuesdays, Wednesdays and Fridays - all through December - with a new method every day (well on core days) - enjoy!
+
+![TueWenThu Adventkalender](../_images/dimido.png)

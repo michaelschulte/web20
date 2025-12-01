@@ -7,10 +7,8 @@ keep-md: true
 
 
 
-
 ::: {#not-published-year .cell execution_count=2}
 ### 2024{#not-published-2024}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Swami, V. and et al.. (2024) "Connectedness to nature and exposure to natural environments: An examination of the measurement invariance of the Connectedness to Nature Scale (CNS) and Nature Exposure Scale (NES) across 65 nations, 40 languages, gender identities, and age groups." <em>Journal of Environmental Psychology.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1016/j.jenvp.2024.102432" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -29,27 +27,21 @@ keep-md: true
         Paper
     </a></li></ul>
 ```
-
 ### 2021{#not-published-2021}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Schweinsberg, Martin, Feldman, Michael, Staub, Nicola, van den Akker, Olmo R, van Aert, Robbie CM, Van Assen, Marcel ALM, Liu, Yang, Althoff, Tim, Heer, Jeffrey, Kale, Alex, Michael Schulte-Mecklenbeck, and others. (2021) "Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis." <em>Organizational Behavior and Human Decision Processes.</em><br><a class="btn btn-outline-dark btn-sm", href="https://www.sciencedirect.com/science/article/pii/S0749597821000200?via%3Dihub" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2020{#not-published-2020}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Claudio Georgii, Michael Schulte-Mecklenbeck, Anna Richard, Zoé Van Dyck, and Jens Blechert. (2020) "The dynamics of self-control: within-participant modeling of binary food choices and underlying decision processes as a function of restrained eating." <em>Psychological Research.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Georgii2019.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2019{#not-published-2019}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Tomas Lejarraga, Michael Schulte-Mecklenbeck, Thorsten Pachur, and Ralph Hertwig. (2019) "The attention–aversion gap: how allocation of attention relates to loss aversion." <em>Evolution and Human Behavior.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Lejarraga2019.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -71,9 +63,7 @@ keep-md: true
         Github
     </a></li></ul>
 ```
-
 ### 2018{#not-published-2018}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Anton Kuehberger and Michael Schulte-Mecklenbeck. (2018) "Selecting target papers for replication." <em>Behavioral and Brain Sciences.</em><br><a class="btn btn-outline-dark btn-sm", href="https://doi.org/10.1017/S0140525X18000742" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -100,9 +90,7 @@ keep-md: true
         Paper
     </a></li></ul>
 ```
-
 ### 2017{#not-published-2017}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck, Nanon L Spaanjaars, and Cilia LM Witteman. (2017) "The (in) visibility of psychodiagnosticians expertise." <em>Journal of behavioral decision making.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2015.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -121,9 +109,7 @@ keep-md: true
         Paper
     </a></li></ul>
 ```
-
 ### 2016{#not-published-2016}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Tomas Lejarraga, Michael Schulte-Mecklenbeck, and Daniel Smedema. (2016) "The pyeTribe: Simultaneous eyetracking for economic games." <em>Behavior Research Methods.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Lejarraga2016.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -134,36 +120,28 @@ keep-md: true
         Paper
     </a></li></ul>
 ```
-
 ### 2014{#not-published-2014}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck and Anton Kühberger. (2014) "Out of sight--out of mind? Information acquisition patterns in risky choice framing." <em>Polish Psychological Bulletin.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2014.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2013{#not-published-2013}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck, Matthias Sohn, Emanuel de Bellis, Nathalie Martin, and Ralph Hertwig. (2013) "A Lack of Appetite for Information and Computation: Simple Heuristics in Food Choice." <em>Appetite.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2013.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2012{#not-published-2012}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck and Ryan O Murphy. (2012) "Flashlight as a process tracing method." <em>Encyclopedia of cyber behavior.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2012.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2011{#not-published-2011}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck, Anton Kühberger, and Rob Ranyard. (2011) "The role of process data in the development and testing of process models of judgment and decision making." <em>Judgment & Decision Making.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2011Process.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -179,34 +157,26 @@ keep-md: true
     </a></li>
 <li class='list-group-item'>Michael Schulte-Mecklenbeck, Anton Kühberger, and Rob Ranyard. (2011) "A handbook of process tracing methods for decision research: A critical review and user’s guide."<br></li></ul>
 ```
-
 ### 2010{#not-published-2010}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>A Kuhberger, Michael Schulte-Mecklenbeck, and Rob Ranyard. (2010) "Windows for understanding the mind: Introduction to a handbook of process tracing methods for decision research." <em>A handbook of process tracing methods for decision research: A critical review and user’s guide.</em><br></li>
 <li class='list-group-item'>Bernd Figner, Ryan O Murphy, Michael Schulte-Mecklenbeck, Anton Kuehberger, and Rob Ranyard. (2010) "None." <em>A handbook of process tracing methods for decision research: A critical review and user’s guide.</em><br></li></ul>
 ```
-
 ### 2009{#not-published-2009}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Elisabeth Norman and Michael Schulte-Mecklenbeck. (2009) "Take a quick click at that! Mouselab and eye-tracking as tools to measure intuition." <em>Foundations for tracing intuition.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Norman2009.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2008{#not-published-2008}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Eric J Johnson, Michael Schulte-Mecklenbeck, and Martijn C Willemsen. (2008) "Process models deserve process data: Comment on Brandstätter, Gigerenzer, and Hertwig (2006)." <em>Psychological Review.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/JohnsonSchulte-MecklenbeckWillemsen2008.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2005{#not-published-2005}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck and Moritz Neun. (2005) "WebDiP: A tool for information search experiments on the World-Wide Web." <em>Behavior Research Methods.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2005.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
@@ -217,43 +187,34 @@ keep-md: true
         Paper
     </a></li></ul>
 ```
-
 ### 2003{#not-published-2003}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Michael Schulte-Mecklenbeck and Oswald Huber. (2003) "Information search in the laboratory and on the Web: With or without an experimenter." <em>Behavior Research Methods, Instruments, & Computers.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Schulte-Mecklenbeck2003.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 2002{#not-published-2002}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Anton Kühberger, Michael Schulte-Mecklenbeck, and Josef Perner. (2002) "Framing decisions: Hypothetical and real." <em>Organizational Behavior and Human Decision Processes.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Kuehberger2002.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 1999{#not-published-1999}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Anton Kühberger, Michael Schulte-Mecklenbeck, and Josef Perner. (1999) "The effects of framing, reflection, probability, and payoff on risk preference in choice tasks." <em>Organizational behavior and human decision processes.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Kuhberger1999.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 ### 1995{#not-published-1995}
-
 ```{=html}
 <ul class='list-group list-group-flush'><li class='list-group-item'>Anton Kühberger, Josef Perner, Michael Schulte-Mecklenbeck, and Robert Leingruber. (1995) "Choice or no choice: is the langer effect evidence against simulation." <em>Mind & language.</em><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Kuehberger1995.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a></li></ul>
 ```
-
 :::
 
 
