@@ -1,5 +1,5 @@
 ---
-title: "Scipod"
+title: "DiMiDo Adventkalender"
 author: "MSM"
 date: "2025-12-01"
 draft: false
