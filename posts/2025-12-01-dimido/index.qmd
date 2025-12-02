@@ -15,6 +15,6 @@ editor_options:
 knitr::include_graphics('../_images/dimido.png')
 ```
 
-Here it is our [TueWenThu](https://studie.ch/christmas/) (German Versions: [DiMiDo](https://studie.ch/weihnachten/)) Adventkalender - trouble remembering what a p-value is - we are here to help - on Tuesdays, Wednesdays and Fridays - all through December - with a new method every day (well on core days) - enjoy!
+Here it is our [TueWenThu](https://studie.ch/christmas/) (German Versions: [DiMiDo](https://studie.ch/weihnachten/)) Adventkalender - trouble remembering what a p-value is - we are here to help - on Tuesdays, Wednesdays and Thursdays - all through December - with a new method every day (well on core days) - enjoy!
 
 ![TueWenThu Adventkalender](../_images/dimido.png)
