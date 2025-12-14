@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I study how people make decisions. More specifically, I am interested in what (cognitive) processes happen, when we make decisions and how we can measure all of that. Within these lines of research I developed my own tools to study decision processes (WebDiP, Flashlight, The pyeTribe) and want to understand decisions in the lab, under controlled circumstances as well as in the wild.\nFurthermore I am interested in open [science|data|methods], replication studies and new (and old) teaching methods."
+    "text": "I’m an Associate Professor for Methodology and Decision Science at the University of Bern and also hold an Associate Researcher position at the Max Planck Institute for Human Development, Berlin. My research focuses on understanding how people make decisions—not just what they choose, but the processes that unfold as they decide."
   },
   {
     "objectID": "about.html#what-i-am-interested-in",
@@ -768,5 +768,40 @@
     "title": "DiMiDo Adventkalender",
     "section": "",
     "text": "Here it is our TueWenThu (German Versions: DiMiDo) Adventkalender - trouble remembering what a p-value is - we are here to help - on Tuesdays, Wednesdays and Thursdays - all through December - with a new method every day (well on core days) - enjoy!\n\n\n\nTueWenThu Adventkalender"
+  },
+  {
+    "objectID": "about.html#research",
+    "href": "about.html#research",
+    "title": "About",
+    "section": "Research",
+    "text": "Research\nI develop and apply process-tracing methods that open a window into the mind during decision-making. These methods—including eye-tracking, mouse-tracking, and information board paradigms like MouselabWeb—allow us to observe the dynamics of information acquisition, integration, and preference formation in real time."
+  },
+  {
+    "objectID": "about.html#recent-publication",
+    "href": "about.html#recent-publication",
+    "title": "About",
+    "section": "Recent publication",
+    "text": "Recent publication\nA recent highlight is our comprehensive tutorial on movement tracking published in Behavior Research Methods (2025), where my co-authors and I guide researchers through the entire process of using the mousetrap R package to study psychological processes through cursor movements. This work represents years of methodological development and reflects my commitment to making advanced process-tracing techniques accessible to the broader research community. I co-edited the Handbook of Process Tracing Methods (2nd edition, 2019), which has become a standard reference for researchers interested in going beyond simple outcome measures to understand the mechanisms underlying judgment and choice."
+  },
+  {
+    "objectID": "about.html#teaching",
+    "href": "about.html#teaching",
+    "title": "About",
+    "section": "Teaching",
+    "text": "Teaching\nAt the University of Bern, I teach Marketing Research Methods, where I emphasize both methodological rigor and practical application. My courses blend traditional research methods with hands-on experience in R programming and data visualization."
+  },
+  {
+    "objectID": "about.html#open-science",
+    "href": "about.html#open-science",
+    "title": "About",
+    "section": "Open Science",
+    "text": "Open Science\nI’m a strong proponent of open science, open data, and reproducible research. As node leader for the Swiss Replication Network at the University of Bern, I actively contribute to improving research practices in psychology and related fields. Replication studies are a recurring feature in my teaching, where students learn firsthand how to critically evaluate and reproduce published findings."
+  },
+  {
+    "objectID": "about.html#recent-publications",
+    "href": "about.html#recent-publications",
+    "title": "About",
+    "section": "Recent Publications",
+    "text": "Recent Publications\nWe published a comprehensive tutorial on movement tracking in Behavior Research Methods. A guide through the entire process of using the mousetrap R package to study psychological processes through mouse cursor movements."
   }
 ]

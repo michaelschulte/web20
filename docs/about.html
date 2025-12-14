@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,13 +33,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-35fd0a5f43bb2600a33a7e8521cd9424.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-003c7ce323138a8a6468cb23c965a473.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -160,15 +161,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
-<section id="what-i-am-interested-in" class="level2">
-<h2 data-anchor-id="what-i-am-interested-in">What I am interested in</h2>
-<p>I study how people make decisions. More specifically, I am interested in what (cognitive) processes happen, when we make decisions and how we can measure all of that. Within these lines of research I developed my own tools to study decision processes (<a href="https://github.com/michaelschulte/webdip">WebDiP</a>, <a href="https://github.com/michaelschulte/flashlight">Flashlight</a>, <a href="https://github.com/michaelschulte/ThePyeTribe">The pyeTribe</a>) and want to understand decisions in the lab, under controlled circumstances as well as in the wild.</p>
-<p>Furthermore I am interested in open [science|data|methods], replication studies and new (and old) teaching methods.</p>
+<p>I’m an Associate Professor for Methodology and Decision Science at the University of Bern and also hold an Associate Researcher position at the Max Planck Institute for Human Development, Berlin. My research focuses on understanding how people make decisions—not just what they choose, but the processes that unfold as they decide.</p>
+<section id="research" class="level2">
+<h2 data-anchor-id="research">Research</h2>
+<p>I develop and apply process-tracing methods that open a window into the mind during decision-making. These methods—including eye-tracking, mouse-tracking, and information board paradigms like MouselabWeb—allow us to observe the dynamics of information acquisition, integration, and preference formation in real time.</p>
 </section>
-<section id="current-position" class="level2">
-<h2 data-anchor-id="current-position">Current position</h2>
-<p>University of Bern, Switzerland</p>
-<p>Max-Planck-Institute for Human Development in Berlin.</p>
+<section id="teaching" class="level2">
+<h2 data-anchor-id="teaching">Teaching</h2>
+<p>At the University of Bern, I teach Marketing Research Methods, where I emphasize both methodological rigor and practical application. My courses blend traditional research methods with hands-on experience in R programming and data visualization.</p>
+</section>
+<section id="recent-publications" class="level2">
+<h2 data-anchor-id="recent-publications">Recent Publications</h2>
+<p>We published a comprehensive tutorial on movement tracking in <a href="https://doi.org/10.3758/s13428-025-02695-2">Behavior Research Methods</a>. A guide through the entire process of using the <a href="https://cran.r-project.org/web/packages/mousetrap/index.html">mousetrap</a> R package to study psychological processes through mouse cursor movements.</p>
 
 
 </section>
@@ -219,13 +223,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -574,7 +579,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>2025 Michael Schulte-Mecklenbeck</p>
+<p>2026 Michael Schulte-Mecklenbeck</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
