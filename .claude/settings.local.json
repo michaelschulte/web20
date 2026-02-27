@@ -6,7 +6,12 @@
       "Bash(quarto:*)",
       "Bash(QUARTO_PYTHON=/Users/michael/git_stuff/website_schulte-mecklenbeck/.venv/bin/python3 quarto check:*)",
       "Bash(QUARTO_PYTHON=.venv/bin/python3 quarto render:*)",
-      "Bash(echo QUARTO_PYTHON=$QUARTO_PYTHON:*)"
+      "Bash(echo QUARTO_PYTHON=$QUARTO_PYTHON:*)",
+      "WebFetch(domain:www.schulte-mecklenbeck.com)",
+      "Bash(git:*)",
+      "Bash(python3:*)",
+      "Bash(du:*)",
+      "Bash(grep:*)"
     ]
   }
 }
