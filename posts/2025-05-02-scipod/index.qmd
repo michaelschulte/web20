@@ -3,7 +3,7 @@ title: "Scipod"
 author: "MSM"
 date: "2025-05-02"
 draft: false
-categories: [Default Effekt, Teaching, Podcast, SciPod]
+categories: [Default Effect, Teaching, Podcast]
 sidebar:
   contents: auto
 editor_options: 

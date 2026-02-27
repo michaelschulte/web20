@@ -2,7 +2,7 @@
 title: "Spirit of Bern 2026"
 author: "MSM"
 date: "2026-02-27"
-categories: [teaching, AI]
+categories: [Teaching, AI]
 ---
 
 ![](spirit.png)

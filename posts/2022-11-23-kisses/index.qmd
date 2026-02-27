@@ -4,7 +4,7 @@ author: "MSM"
 date: "2023-01-16"
 draft: FALSE
 toc: TRUE
-categories: [Replication, Emotion, Choice]
+categories: [Replication, Emotion, Decision Making]
 sidebar:
   contents: auto
 editor_options: 

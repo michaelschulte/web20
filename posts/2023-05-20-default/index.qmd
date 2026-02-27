@@ -3,7 +3,7 @@ title: "Replication: Default effect"
 author: "MSM"
 date: "2023-05-20"
 draft: false
-categories: [Replication, Default Effekt, Framing]
+categories: [Replication, Default Effect, Framing]
 sidebar:
   contents: auto
 editor_options: 

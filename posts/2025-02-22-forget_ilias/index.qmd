@@ -3,7 +3,7 @@ title: "Forget Ilias - Build your course page with Quarto"
 author: "MSM"
 date: "2025-02-22"
 draft: false
-categories: [R, Quarto]
+categories: [Methods]
 sidebar:
   contents: auto
 editor_options: 

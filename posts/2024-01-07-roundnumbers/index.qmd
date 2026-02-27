@@ -3,7 +3,7 @@ title: "Replication: Round numbers"
 author: "MSM"
 date: "2024-12-30"
 draft: true
-categories: [Replication, Number Perception, Consumer Behavior]
+categories: [Replication, Perception, Consumer Behavior]
 sidebar:
   contents: auto
 editor_options: 

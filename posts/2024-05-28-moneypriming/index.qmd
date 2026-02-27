@@ -3,7 +3,7 @@ title: "Replication: Money Priming"
 author: "MSM"
 date: "2024-05-27"
 draft: false
-categories: [Replication, Priming, Failed Replication]
+categories: [Replication, Priming]
 sidebar:
   contents: auto
 editor_options: 
