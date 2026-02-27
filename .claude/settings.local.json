@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(quarto render:*)",
+      "Bash(source:*)",
+      "Bash(quarto:*)",
+      "Bash(QUARTO_PYTHON=/Users/michael/git_stuff/website_schulte-mecklenbeck/.venv/bin/python3 quarto check:*)",
+      "Bash(QUARTO_PYTHON=.venv/bin/python3 quarto render:*)",
+      "Bash(echo QUARTO_PYTHON=$QUARTO_PYTHON:*)"
+    ]
+  }
+}

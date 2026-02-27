@@ -1,0 +1,14 @@
+---
+title: "Spirit of Bern 2026"
+author: "MSM"
+date: "2026-02-27"
+categories: [teaching, AI]
+---
+
+![](spirit.png)
+
+Ich war beim [Spirit of Bern (2026)](https://spiritofbern.ch) eingeladen über KI in der universitären Lehre zu sprechen - tolle Veranstaltung, zahlreiches Publikum, auch wenn es hier noch nicht danach aussieht :)
+
+Meine Slides [{{< fa file-download >}}](slides.html)
+
+![](room.png)

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,14 +70,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-35fd0a5f43bb2600a33a7e8521cd9424.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-003c7ce323138a8a6468cb23c965a473.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -129,7 +130,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -277,13 +278,13 @@ window.Quarto = {
 <p>where</p>
 <p><span class="math inline">\(SD_{pooled} = {\sqrt{SD_{1}^2 + SD_{2}^2} \over 2}\)</span></p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>sd_pooled <span class="ot">&lt;-</span> <span class="fu">sqrt</span>((<span class="fl">4.7</span><span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fl">6.3</span><span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span><span class="dv">2</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> (<span class="fl">4.6</span> <span class="sc">-</span> <span class="fl">2.7</span>) <span class="sc">/</span> sd_pooled</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>sd_pooled <span class="ot">&lt;-</span> <span class="fu">sqrt</span>((<span class="fl">4.7</span><span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fl">6.3</span><span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span><span class="dv">2</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> (<span class="fl">4.6</span> <span class="sc">-</span> <span class="fl">2.7</span>) <span class="sc">/</span> sd_pooled</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>So, we get a Cohen’s d = 0.34, which constitutes a small effect according to Cohen, 1992. Lets see how our own replication does for Experiment 1a.</p>
 <p>Our 150 participants each made 45 choices, so we are expecting a tibble with 150*45 = 6750 rows. Lets see:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate data frame for choices</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate data frame for choices</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Lee_Choice_Coded <span class="ot">&lt;-</span> </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Lee_Choice <span class="sc">%&gt;%</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(Lee_Items) <span class="sc">%&gt;%</span></span>
@@ -295,7 +296,7 @@ window.Quarto = {
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>Lee_Choice_Select <span class="ot">&lt;-</span> </span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>   Lee_Choice_Coded <span class="sc">%&gt;%</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>   <span class="fu">select</span>(Experiment, condition, ID, combination, coded_choice)</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Lee_Choice_Select</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Lee_Choice_Select</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6,750 × 5
    Experiment condition ID       combination coded_choice
@@ -323,9 +324,9 @@ window.Quarto = {
 <p>So, we will do the same :) - first we setup a tibble with all possible triplets and then identify (in)transitivity for choices on each product pair and then pair-triplets.</p>
 <p><a href="https://cran.r-project.org/web/packages/gtools/index.html">gtools</a> provides functions to “Enumerate the Combinations or Permutations of the Elements of a Vector” - cool - exactly what we need … The function takes two arguments n = the size of the source vector, in our case 10 products, and r = size of the target vector, our triplets. This gives us a 720x3 matrix (only the first 5 rows displayed here).</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate combinations</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate combinations</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>comb <span class="ot">&lt;-</span> <span class="fu">permutations</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">r =</span> <span class="dv">3</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(comb, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(comb, <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3]
 [1,]    1    2    3
@@ -337,7 +338,7 @@ window.Quarto = {
 </div>
 <p>We transfer the matrix into a tibble and paste together all combinations of products - so there are three pairs that identify the three combinations of products. The new variable defines all transitive choices for all possible permutations of choice pairs.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate space with all possible choice combinations</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate space with all possible choice combinations</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>space <span class="ot">&lt;-</span> </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">as_tibble</span>(comb) <span class="sc">%&gt;%</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pair1 =</span> <span class="fu">paste0</span>(V1,V2),</span>
@@ -345,7 +346,7 @@ window.Quarto = {
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">pair3 =</span> <span class="fu">paste0</span>(V1,V3),</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">transitive =</span> <span class="fu">paste0</span>(V1,V2,V1)) <span class="sc">%&gt;%</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">'V'</span>))</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>space</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>space</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 720 × 4
    pair1 pair2 pair3 transitive
@@ -534,13 +535,14 @@ d estimate: -0.009098058 (negligible)
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -889,7 +891,7 @@ d estimate: -0.009098058 (negligible)
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>2025 Michael Schulte-Mecklenbeck</p>
+<p>2026 Michael Schulte-Mecklenbeck</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

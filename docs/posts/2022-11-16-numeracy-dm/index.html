@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,14 +70,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-35fd0a5f43bb2600a33a7e8521cd9424.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-003c7ce323138a8a6468cb23c965a473.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -240,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>How are high and low numerates distributed? We use the German Berlin Numeracy Scale (BNT, Cockely et al., 2012) to measure numeracy with 4 questions. Splitting this score with &lt;=2 for <em>low</em> and &gt;2 for <em>high</em> numerates gives us the following distribution:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<table class="table caption-top table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -302,11 +303,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 <p>The Framing effect is small in the 19-81 condition and increases with increasing negative and connected decreasing positive percentage. I am using the <code>map()</code> function to run an Anova for each <em>task_id</em> - which will give us 5 Anovas with 2 lines each in the results tibble - here is the code that does that - a simple t-test would do the same, but could not figure out how to map that …</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>framing <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>framing <span class="sc">%&gt;%</span> </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span>(<span class="at">data =</span> <span class="sc">-</span>task_id) <span class="sc">%&gt;%</span> </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">map</span>(data, <span class="sc">~</span> <span class="fu">anova</span>(<span class="fu">lm</span>(rating <span class="sc">~</span> frame, .)))) <span class="sc">%&gt;%</span> </span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(task_id, model) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">unnest</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">unnest</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 6
    task_id    Df `Sum Sq` `Mean Sq` `F value`  `Pr(&gt;F)`
@@ -343,8 +344,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <p>Hmmmm - we clearly see a difference between positive and negative frame, knew that already, but the difference between the numeracy groups seems small …</p>
 <p>I will run something a bit more complex - a multi level model where I use <em>frame</em> and <em>numeracy</em> (score) as predictors. I also add a random intercept for <em>participants</em> (ID) and nest <em>task_id</em> into that.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>framing_model <span class="ot">&lt;-</span> <span class="fu">lmer</span>(rating <span class="sc">~</span> frame <span class="sc">*</span> score <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>task_id) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>ID), <span class="at">data =</span> framing)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(framing_model)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>framing_model <span class="ot">&lt;-</span> <span class="fu">lmer</span>(rating <span class="sc">~</span> frame <span class="sc">*</span> score <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>task_id) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>ID), <span class="at">data =</span> framing)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(framing_model)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Linear mixed model fit by REML ['lmerMod']
 Formula: rating ~ frame * score + (1 | task_id) + (1 | ID)
@@ -379,9 +380,9 @@ frameps:scr  0.322 -0.814 -0.721</code></pre>
 </div>
 <p>Immediately we run into the problem that the output, in principle, has all the necessary information but it would be great to have this as a bit nicer overview - here the <code>sjPlot</code> package is super useful - it has a function called <code>tab_model()</code> that takes the output of <code>lmer()</code> as an input and provides well formatted html-ouput:</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tab_model</span>(framing_model,</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tab_model</span>(framing_model,</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">show.df =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">show.stat =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">show.stat =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table style="border-collapse:collapse; border:none;">
 <tbody><tr>
@@ -531,13 +532,14 @@ frameps:scr  0.322 -0.814 -0.721</code></pre>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -886,7 +888,7 @@ frameps:scr  0.322 -0.814 -0.721</code></pre>
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>2025 Michael Schulte-Mecklenbeck</p>
+<p>2026 Michael Schulte-Mecklenbeck</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
