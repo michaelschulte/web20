@@ -20,7 +20,6 @@ FOULS=t(DF2)[,c('Fouls')]<br />
 qplot(names(FOULS), as.numeric(FOULS), geom="bar", stat='identity', fill=Fouls) + xlab('Country') + ylab('Fouls') + coord_flip() + scale_fill_continuous(low="black", high="red") + labs(fill='Fouls')`
 
 We can produce the following chart:  
-[<img src="2010/07/World_Cup_2010_Fouls-300x300.png" alt="" title="World_Cup_2010_Fouls" width="300" height="300" class="alignleft size-medium wp-image-121" srcset="2010/07/World_Cup_2010_Fouls-300x300.png 300w, 2010/07/World_Cup_2010_Fouls-150x150.png 150w, 2010/07/World_Cup_2010_Fouls.png 400w" sizes="(max-width: 300px) 100vw, 300px" />](2010/07/World_Cup_2010_Fouls.png)
 
 Two things to note:  
 `c('Fouls')` is a handy way to address columns in a R data frame by name  

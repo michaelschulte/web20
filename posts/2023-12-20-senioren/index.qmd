@@ -21,6 +21,8 @@ For my argument below (see Figure @fig-ioannidis) I needed the crowd (roughly 17
 
 ![Power](images/power.png){#fig-power}
 
+![Significance](images/sig.png){#fig-sig}
+
 So, with power and significance taken care of we moved of the Ioannidis' argument about the number of true results in science (he talked about this in his 2005 paper: [Why Most Published Research Findings Are False](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124) and in his 2014 paper [How to Make More Published Research True](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001747) ... see also Figure @fig-ioannidis
 
 ![Ioannidis](images/ioannidis.png){#fig-ioannidis}

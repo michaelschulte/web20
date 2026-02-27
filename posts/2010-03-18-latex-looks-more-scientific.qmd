@@ -5,4 +5,4 @@ author: Michael
 categories:
   - LaTeX
 ---
-There are long discussions on the benefits of LaTeX over Word, but this statement from a (not too serious) [paper](http://www.stat.columbia.edu/~gelman/research/unpublished/zombies.pdf) of [Andrew Gelman](http://www.stat.columbia.edu/~gelman/) (a Professor of Statistics and Political Sciences at Columbia University) hits the spot: [<img src="2010/03/Screen-shot-2010-03-18-at-2.29.06-PM1-300x56.png" alt="" title="Screen shot 2010-03-18 at 2.29.06 PM" width="300" height="56" class="alignleft size-medium wp-image-99" srcset="2010/03/Screen-shot-2010-03-18-at-2.29.06-PM1-300x56.png 300w, 2010/03/Screen-shot-2010-03-18-at-2.29.06-PM1.png 674w" sizes="(max-width: 300px) 100vw, 300px" />](2010/03/Screen-shot-2010-03-18-at-2.29.06-PM1.png)
+There are long discussions on the benefits of LaTeX over Word, but this statement from a (not too serious) [paper](http://www.stat.columbia.edu/~gelman/research/unpublished/zombies.pdf) of [Andrew Gelman](http://www.stat.columbia.edu/~gelman/) (a Professor of Statistics and Political Sciences at Columbia University) hits the spot: *"LaTeX is the better typesetting system."*

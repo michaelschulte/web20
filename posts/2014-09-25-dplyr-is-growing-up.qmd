@@ -7,19 +7,6 @@ categories:
 ---
 &nbsp;
 
-[<img class="alignleft size-medium wp-image-361" src="/uploads//2014/09/tvs-old-new-300x170.jpg" alt="tvs-old+new" width="300" height="170" srcset="2014/09/tvs-old-new-300x170.jpg 300w, 2014/09/tvs-old-new.jpg 400w" sizes="(max-width: 300px) 100vw, 300px" />](/uploads//2014/09/tvs-old-new.jpg)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 dplyr is the new plyr &#8211; and it is awesome!
 

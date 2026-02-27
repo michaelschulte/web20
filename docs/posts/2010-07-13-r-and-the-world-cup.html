@@ -175,8 +175,7 @@ ul.task-list li input[type="checkbox"] {
 We can read a specific part from a spreadsheet hosted on Google into our local R environment. Some deatils: “&amp;gid=” (sheet number) and “%range=” (cell ranges: A1%3A ) and “&amp;output=csv” to download in CSV format.</p>
 <p>With some more lines, using the awsome <a href="http://had.co.nz/ggplot2/">ggplot2</a><br>
 <code>&lt;br /&gt; library(qqplot2)&lt;br /&gt; FOULS=t(DF2)[,c('Fouls')]&lt;br /&gt; qplot(names(FOULS), as.numeric(FOULS), geom="bar", stat='identity', fill=Fouls) + xlab('Country') + ylab('Fouls') + coord_flip() + scale_fill_continuous(low="black", high="red") + labs(fill='Fouls')</code></p>
-<p>We can produce the following chart:<br>
-<a href="2010/07/World_Cup_2010_Fouls.png"><img src="2010/07/World_Cup_2010_Fouls-300x300.png" alt="" title="World_Cup_2010_Fouls" width="300" height="300" class="alignleft size-medium wp-image-121" srcset="2010/07/World_Cup_2010_Fouls-300x300.png 300w, 2010/07/World_Cup_2010_Fouls-150x150.png 150w, 2010/07/World_Cup_2010_Fouls.png 400w" sizes="(max-width: 300px) 100vw, 300px"></a></p>
+<p>We can produce the following chart:</p>
 <p>Two things to note:<br>
 <code>c('Fouls')</code> is a handy way to address columns in a R data frame by name<br>
 <code>scale_fill_continuous(low="black", high="red")</code> takes care of the color coding of the bars in reference to the number of fouls</p>
