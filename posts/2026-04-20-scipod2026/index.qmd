@@ -24,7 +24,7 @@ Hier sind die **Ergebnisse** dieser Runde zum Nachhören:
 [Brain_Bites](podcasts/1_Brain_Bites.mp3)<br>
 [Denkstoff](podcasts/2_Denkstoff.mp3)<br>
 [Spaghettiturm](podcasts/3_Spaghettiturm.mp3)<br>
-[Bauchgefühl](podcasts/4_Bauchgefühl.mpeg)<br>
+[Bauchgefühl](podcasts/4_Bauchgefuehl.mpeg)<br>
 [Gruppe5](podcasts/5_Gruppe5.mp3)<br>
 [Gruppe6](podcasts/6_Gruppe6.mp3)<br>
 [Gruppe7](podcasts/7_Gruppe7.mp3)<br>
