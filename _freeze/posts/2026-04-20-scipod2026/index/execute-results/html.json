@@ -1,0 +1,15 @@
+{
+  "hash": "927bd2b42e96ac4defc7d59038633751",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Scipod 2026\"\nauthor: \"MSM\"\ndate: \"2026-04-20\"\ndraft: false\ncategories: [Teaching, Podcast]\nsidebar:\n  contents: auto\neditor_options: \n  chunk_output_type: console\n---\n\n\n::: {.cell .column-margin}\n::: {.cell-output-display}\n![](../_images/hex-scipod.png){width=100%}\n:::\n:::\n\n\n**'Etwas zum Anfassen erzeugen'** - Runde 3 -> Neues Jahr, neues Thema - in diesem Jahr haben wir Risikokommunikation behandelt. Wieder sind spannende Themen entstanden!\n\nHier sind die **Ergebnisse** dieser Runde zum Nachhören:\n\n# Podcasts\n\n[Brain_Bites](podcasts/1_Brain_Bites.mp3)\n[Denkstoff](podcasts/2_Denkstoff.mp3)\n[Spaghettiturm](podcasts/3_Spaghettiturm.mp3)\n[Bauchgefüh](podcasts/4_Bauchgefühl.mpeg)\n[Gruppe6](podcasts/6_Gruppe6.mp3)\n[Gruppe7](podcasts/7_Gruppe7.mp3)\n\n# References\n\nGigerenzer, G. (2026). Risk communication: Truth and trickery about cancer screening. In T. Reimer, L. van Swol, & A. Florack (Eds.), *The Routledge handbook of communication and social cognition* (pp. 367-387). Routledge.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
