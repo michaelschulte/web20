@@ -11,7 +11,7 @@ website:
         file: 'index.qmd'
       - about.qmd
       - text: 'CV'
-        file: '_content/CV_Index.pdf'
+        file: '_content/_pdf/CV_Index.pdf'
       - text: 'Publications'
         file: 'research.qmd'
   page-footer: "2026 Michael Schulte-Mecklenbeck"
