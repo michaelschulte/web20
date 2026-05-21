@@ -3,8 +3,7 @@ title: LaTeX tips
 date: 2009-06-25T11:13:33-07:00
 author: Michael
 categories:
-  - LaTeX
-  - Tech
+  - Methods
 ---
 Two things are often bothering when one starts to work with LaTeX: in text referencing of literature and Umlaute (for our German speaking friends) ****
 

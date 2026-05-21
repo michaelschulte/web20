@@ -3,7 +3,7 @@ title: awesome visualization tool for R
 date: 2011-07-15T04:07:04-07:00
 author: Michael
 categories:
-  - Google
+  - Methods
   - R
 ---
 <http://cran.r-project.org/web/packages/googleVis/> enables chart generation similar to the ones instroduced by [Hans Roesling](http://en.wikipedia.org/wiki/Hans_Rosling) in his [TED talk](http://en.wikipedia.org/wiki/Hans_Rosling) on poverty &#8211; extremly cool 🙂

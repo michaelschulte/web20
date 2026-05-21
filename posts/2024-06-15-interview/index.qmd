@@ -3,7 +3,7 @@ title: "Interview"
 author: "MSM"
 date: "2024-06-15"
 draft: false
-categories: [Interview]
+categories: [Science]
 sidebar:
   contents: auto
 editor_options: 

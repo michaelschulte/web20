@@ -3,7 +3,7 @@ title: Sublime autocompletion
 date: 2016-01-28T08:47:44-07:00
 author: Michael
 categories:
-  - LaTeX
+  - Methods
 ---
 They say about [Sublime](http://www.sublimetext.com/): &#8220;The text editor you will fall in love with&#8221;
 

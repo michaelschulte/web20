@@ -4,7 +4,7 @@ date: 2015-11-10T03:39:33-07:00
 author: Michael
 categories:
   - Decision Making
-  - Eye tracking
+  - Process Tracing
   - Methods
 ---
 Cilia Witteman and Nanon Spaanjaars (my dutch connection) worked together on a piece on whether psychodiagnosticians improve over time (they don&#8217;t) in their ability to classify symptoms to DSM categories. This turned out to be a pretty cool paper combining eye-tracking data with a practical, and hopefully, relevant question.

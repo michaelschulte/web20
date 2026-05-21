@@ -3,7 +3,7 @@ title: "Replication: Red"
 author: "MSM"
 date: "2024-01-07"
 draft: false
-categories: [Replication, Perception]
+categories: [Replication, Science]
 sidebar:
   contents: auto
 editor_options: 

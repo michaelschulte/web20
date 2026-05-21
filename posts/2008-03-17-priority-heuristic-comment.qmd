@@ -2,7 +2,7 @@
 title: "Priority Heuristic comment"
 author: "MSM"
 date: "2008-03-17"
-categories: [Heuristics]
+categories: [Decision Making]
 ---
 
 We [Johnson, Schulte-Mecklenbeck, & Willemsen, 2008](https://doi.org/10.1037/0033-295X.115.1.263) have got a new paper out that comments on the Priority Heuristic as described in Brandstaetter, Gigerenzer and Hertwig, 2006. 

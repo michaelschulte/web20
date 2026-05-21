@@ -3,7 +3,7 @@ title: R Style Guide
 date: 2012-09-21T22:59:18-07:00
 author: Michael
 categories:
-  - Google
+  - Methods
   - R
   - Statistics
 ---

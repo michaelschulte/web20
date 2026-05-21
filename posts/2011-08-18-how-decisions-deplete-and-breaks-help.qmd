@@ -4,7 +4,6 @@ date: 2011-08-18T22:31:18-07:00
 author: Michael
 categories:
   - Decision Making
-  - Ego depletion
 ---
 The New York Times published a [nice overview](http://nyti.ms/qpAHLe) of the work on decision making and [ego depletion](http://en.wikipedia.org/wiki/Ego_depletion) (often ego depletion is used as a synonym with resource depletion, which is somewhat confusing because of the use of the later in economy to described the situation when raw materials are exhausted in a region).
 

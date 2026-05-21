@@ -3,7 +3,7 @@ title: 'Everything is fucked &#8230;'
 date: 2016-08-12T00:05:23-07:00
 author: Michael
 categories:
-  - Ego depletion
+  - Decision Making
   - Replication
   - Science
   - Teaching

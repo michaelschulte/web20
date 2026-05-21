@@ -4,9 +4,8 @@ date: 2015-02-07T15:15:17-07:00
 author: Michael
 categories:
   - Decision Making
-  - Flashlight
-  - Open Source
-  - Papers
+  - Process Tracing
+  - Open Science
 ---
 Recently [Ryan Murphy](http://vlab.ethz.ch/ROM/DBGT/Homepage.html) and myself realised that a startup here in Berlin features ideas of our 2011 [Flashlight paper](http://www.schulte-mecklenbeck.com/pubs/Schulte2011.pdf).
 

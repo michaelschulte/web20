@@ -4,7 +4,7 @@ date: 2017-04-12T07:45:12-07:00
 author: Michael
 categories:
   - Decision Making
-  - Process tracing
+  - Process Tracing
 ---
 Some papers have somewhat weird starting points &#8211; this one had an awesome starting point &#8211; Lake Louise (Canada):
 

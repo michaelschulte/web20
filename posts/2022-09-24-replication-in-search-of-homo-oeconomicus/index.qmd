@@ -2,7 +2,7 @@
 title: "Replication: In search of homo economicus"
 author: "MSM"
 date: "2022-10-02"
-categories: [Replication, Decision Making, Emotion]
+categories: [Replication, Decision Making]
 sidebar:
   contents: auto
 editor_options: 

@@ -3,11 +3,8 @@ title: Handbook of Process Tracing Methods
 author: MSM
 date: '2019-06-20'
 categories:
-  - Process tracing
+  - Process Tracing
   - Decision Making
-  - Eye tracking
-  - Flashlight
-  - Mousetracking
 ---
 WOOP WOOP - here it is - the second edition of our beloved "Handbook of Process Tracing Methods" 
 

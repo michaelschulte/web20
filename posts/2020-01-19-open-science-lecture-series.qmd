@@ -3,7 +3,7 @@ title: Open Science Lecture Series
 author: MSM
 date: '2020-01-19'
 categories:
-  - Open science
+  - Open Science
 ---
 
 This will be fun - Lecture series on Open Science, Replication, Reproducibility, Open Data and many more.
