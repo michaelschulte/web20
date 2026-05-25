@@ -1,0 +1,24 @@
+/* =============================================
+   GLOBAL BASE
+   ============================================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #2c3e50;
+}
+
+a {
+  color: #2980b9;
+}
+
+a:hover {
+  color: #1a5276;
+  text-decoration: underline;
+}
