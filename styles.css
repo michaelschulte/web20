@@ -68,3 +68,74 @@ footer.footer {
 .nav-footer a:hover {
   color: #fff;
 }
+
+/* =============================================
+   BLOG LISTING
+   ============================================= */
+/* Category filter pills (sidebar: All, Decision Making…) */
+.quarto-listing-category .category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #ecf0f1;
+  color: #555;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.quarto-listing-category .category:hover,
+.quarto-listing-category .category.active {
+  background: #2c3e50;
+  color: #fff;
+}
+
+/* Post rows */
+.quarto-post {
+  padding: 22px 0 !important;
+  border-top: 1px solid #ecf0f1 !important;
+  border-bottom: none !important;
+}
+
+/* Post title */
+.listing-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  line-height: 1.35 !important;
+}
+
+/* Post date + metadata */
+.listing-date,
+.metadata {
+  font-size: 11px !important;
+  color: #7f8c8d !important;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+/* Post description */
+.listing-description {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Per-post category tags */
+.listing-category {
+  font-size: 10px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  background: #ecf0f1 !important;
+  color: #7f8c8d !important;
+  border: none !important;
+  border-radius: 3px !important;
+  padding: 2px 8px !important;
+}
+
+.listing-category:hover {
+  background: #2c3e50 !important;
+  color: #fff !important;
+}
