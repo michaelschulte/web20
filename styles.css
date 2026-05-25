@@ -172,3 +172,46 @@ footer.footer {
   color: #444;
   line-height: 1.7;
 }
+
+/* =============================================
+   POST DETAIL
+   ============================================= */
+.quarto-title .title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: -0.4px;
+  line-height: 1.25;
+}
+
+.quarto-title-meta {
+  font-size: 11px;
+  color: #7f8c8d;
+}
+
+.quarto-title-meta-heading {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #7f8c8d;
+}
+
+#quarto-document-content p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #333;
+}
+
+#quarto-document-content h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 36px;
+}
+
+#quarto-document-content pre,
+#quarto-document-content pre.sourceCode {
+  background: #f4f6f8;
+  border: 1px solid #dde3ea;
+  border-radius: 4px;
+}
