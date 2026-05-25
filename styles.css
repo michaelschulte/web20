@@ -139,3 +139,36 @@ footer.footer {
   background: #2c3e50 !important;
   color: #fff !important;
 }
+
+/* =============================================
+   ABOUT PAGE (trestles template)
+   ============================================= */
+.quarto-about-trestles .about-entity {
+  border-right: 1px solid #ecf0f1;
+  padding-right: 28px;
+}
+
+.about-link {
+  color: #2980b9 !important;
+  font-size: 13px;
+}
+
+.about-link:hover {
+  color: #1a5276 !important;
+}
+
+.about-contents h2 {
+  font-size: 13px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 6px;
+  margin-top: 28px;
+}
+
+.about-contents p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
