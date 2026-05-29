@@ -4,7 +4,7 @@ Swami2025SWLS:
     - Swami, V.
     - et al.
   venue: PLoS One.
-  paper: _content/_pdf/Swami2025_Plos.pdf
+  paper: https://doi.org/10.1371/journal.pone.0313107
   year: 2025
   doi: 10.1371/journal.pone.0313107
 
@@ -14,7 +14,7 @@ Swami2025SCS:
     - Swami, V.
     - et al.
   venue: Mindfulness.
-  paper: _content/_pdf/Swami2025.pdf
+  paper: https://doi.org/10.1007/s12671-025-02560-5
   year: 2025
   doi: 10.1007/s12671-025-02560-5
 
@@ -327,7 +327,7 @@ Tyner:
     - Nosek, B. A.
     - Errington, T. M.
   venue: Nature.
-  paper:
+  paper: https://doi.org/10.1038/s41586-025-10078-y
   year: 2026
   doi: 10.1038/s41586-025-10078-y
 
