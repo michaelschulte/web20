@@ -1,36 +1,37 @@
-Swami: 
+Swami2025SWLS:
   title: 'Life satisfaction around the world: Measurement invariance of the Satisfaction With Life Scale (SWLS) across 65 nations, 40 languages, gender identities, and age groups'
-  authors: 
+  authors:
     - Swami, V.
     - et al.
   venue: PLoS One.
   paper: _content/_pdf/Swami2025_Plos.pdf
   year: 2025
 
-Swami: 
+Swami2025SCS:
   title: 'Self-Compassion Around the World: Measurement Invariance of the Short Form of the Self-Compassion Scale (SCS-SF) Across 65 Nations, 40 Languages, Gender Identities, and Age Groups'
-  authors: 
+  authors:
     - Swami, V.
     - et al.
-  venue: Mindfullness.
+  venue: Mindfulness.
   paper: _content/_pdf/Swami2025.pdf
   year: 2025
 
 Wulff:
-  title: 'Connectedness to nature and exposure to natural environments: An examination of the measurement invariance of the Connectedness to Nature Scale (CNS) and Nature Exposure Scale (NES) across 65 nations, 40 languages, gender identities, and age groups'
+  title: 'Movement tracking of psychological processes: A tutorial using mousetrap'
   authors:
   - Wulff, D.U.
   - Kieslich, P.J.
-  - Henninger, F. 
+  - Henninger, F.
   - Haslbeck, J.M.B.
   - me
   venue: Behavior Research Methods.
   paper: _content/_pdf/Wulff2025.pdf
   year: 2025
+  doi: 10.3758/s13428-025-02695-2
 
-Tyner: 
+Tyner:
   title: 'Investigating the replicability of the social and behavioral sciences'
-  authors: 
+  authors:
     - Tyner, A. H.
     - Abatayo, A. L.
     - Daley, M.
@@ -324,10 +325,10 @@ Tyner:
     - Nosek, B. A.
     - Errington, T. M.
   venue: Nature.
-  paper: 
+  paper:
   year: 2025
 
-Swami:
+Swami2024:
   title: 'Connectedness to nature and exposure to natural environments: An examination of the measurement invariance of the Connectedness to Nature Scale (CNS) and Nature Exposure Scale (NES) across 65 nations, 40 languages, gender identities, and age groups'
   authors:
   - Swami, V.
@@ -335,6 +336,7 @@ Swami:
   venue: Journal of Environmental Psychology.
   paper: https://doi.org/10.1016/j.jenvp.2024.102432
   year: 2024
+  doi: 10.1016/j.jenvp.2024.102432
 
 Kahneman:
   title: 'Kahneman in Quotes and Reflections'
@@ -364,6 +366,7 @@ Kahneman:
   venue: Psychological Inquiry.
   paper: https://doi.org/10.1080/1047840X.2024.2366813
   year: 2024
+  doi: 10.1080/1047840X.2024.2366813
 
 Editorial:
   title: 'Investigations of Decision Processes at the Intersection of Psychology and Economics'
@@ -376,9 +379,10 @@ Editorial:
   venue: Journal of Economic Psychology.
   paper: https://doi.org/10.1016/j.joep.2024.102741
   year: 2024
+  doi: 10.1016/j.joep.2024.102741
 
 Experience:
-  title:  'How personal experiences shaped risk judgments during COVID- 19'
+  title: 'How personal experiences shaped risk judgments during COVID-19'
   authors:
     - me
     - Wagner, Gert G.
@@ -386,9 +390,10 @@ Experience:
   venue: Journal of Risk Research.
   paper: https://doi.org/10.1080/13669877.2024.2350712
   year: 2024
+  doi: 10.1080/13669877.2024.2350712
 
 SameData:
-  title:  'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis'
+  title: 'Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis'
   authors:
     - Schweinsberg, Martin
     - Feldman, Michael
@@ -405,6 +410,7 @@ SameData:
   venue: Organizational Behavior and Human Decision Processes.
   paper: https://www.sciencedirect.com/science/article/pii/S0749597821000200?via%3Dihub
   year: 2021
+  doi: 10.1016/j.obhdp.2021.02.003
 
 Dynamic:
   authors:
@@ -417,6 +423,7 @@ Dynamic:
   title: "The dynamics of self-control: within-participant modeling of binary food choices and underlying decision processes as a function of restrained eating"
   venue: Psychological Research.
   paper: _content/_pdf/Georgii2019.pdf
+  doi: 10.1007/s00426-019-01185-3
 
 Attention:
   authors:
@@ -428,10 +435,11 @@ Attention:
   title: 'The attention–aversion gap: how allocation of attention relates to loss aversion'
   venue: Evolution and Human Behavior.
   paper: _content/_pdf/Lejarraga2019.pdf
+  doi: 10.1016/j.evolhumbehav.2019.05.008
 
 Mouse:
   authors:
-    -  PJ Kieslich
+    - PJ Kieslich
     - F Henninger
     - DU Wulff
     - JMB Haslbeck
@@ -440,7 +448,6 @@ Mouse:
   title: 'Mouse-tracking: A practical guide to implementation and analysis'
   venue: A Handbook of Process Tracing Methods.
   paper: https://doi.org/10.31234/osf.io/zuvqa
-
 
 Foundations:
   authors:
@@ -461,18 +468,18 @@ Foundations:
   venue: OSF.
   paper: https://osf.io/preprints/metaarxiv/b4v8p/
 
-
 Inference:
   authors:
     - Martin Schoemann
     - me
     - Frank Renkewitz
     - Stefan Scherbaum
-  year:  2019
+  year: 2019
   title: 'Forward inference in risky choice: Mapping gaze and decision processes'
   venue: Journal of Behavioral Decision Making.
   paper: _content/_pdf/Schoemann2019.pdf
   github: https://osf.io/q3ybt/
+  doi: 10.1002/bdm.2129
 
 BBS:
   authors:
@@ -482,11 +489,11 @@ BBS:
   title: Selecting target papers for replication
   venue: Behavioral and Brain Sciences.
   paper: https://doi.org/10.1017/S0140525X18000742
-
+  doi: 10.1017/S0140525X18000742
 
 RRP:
   authors:
-  - Michael O’Donnell
+  - Michael O'Donnell
   - Leif D Nelson
   - Evi Ackermann
   - Balazs Aczel
@@ -497,6 +504,7 @@ RRP:
   title: 'Registered replication report: Dijksterhuis and van Knippenberg (1998)'
   venue: Perspectives on Psychological Science.
   paper: _content/_pdf/ODonnell2018.pdf
+  doi: 10.1177/1745691618755704
 
 Facial:
   authors:
@@ -506,8 +514,9 @@ Facial:
   - Andrea C Samson
   year: 2018
   title: 'Facial expression analysis with AFFDEX and FACET: A validation study'
-  venue: Behavior research methods.
+  venue: Behavior Research Methods.
   paper: _content/_pdf/Stockli2018.pdf
+  doi: 10.3758/s13428-017-0996-1
 
 Blind:
   authors:
@@ -518,9 +527,9 @@ Blind:
   - Ralph Hertwig
   year: 2018
   title: 'Blind haste: As light decreases, speeding increases'
-  venue: PLoS one.
+  venue: PLoS One.
   paper: _content/_pdf/deBellis2018.pdf
-
+  doi: 10.1371/journal.pone.0188951
 
 RRPMulti:
   authors:
@@ -539,11 +548,8 @@ RRPMulti:
   venue: OSF.
   paper: https://psyarxiv.com/zeux9/
 
-
 8steps:
   authors:
-    - Sophia Crüwell
-    - Johnny van Doorn
     - Sophia Crüwell
     - Johnny van Doorn
     - Alexander Etz
@@ -554,9 +560,10 @@ RRPMulti:
     - Sam Parsons
     - me
   year: 2018
-  title:  '8 Easy Steps to Open Science: An Annotated Reading List (To Give to your busy Supervisor/Office Mate)'
-  venue: Open Science.
+  title: '8 Easy Steps to Open Science: An Annotated Reading List (To Give to your busy Supervisor/Office Mate)'
+  venue: Zeitschrift für Psychologie.
   paper: https://psyarxiv.com/cfzyx
+  doi: 10.1027/2151-2604/a000387
 
 Invisible:
   authors:
@@ -564,9 +571,10 @@ Invisible:
   - Nanon L Spaanjaars
   - Cilia LM Witteman
   year: 2017
-  title: 'The (in) visibility of psychodiagnosticians expertise'
-  venue: Journal of behavioral decision making.
+  title: 'The (in)visibility of psychodiagnosticians expertise'
+  venue: Journal of Behavioral Decision Making.
   paper: _content/_pdf/Schulte-Mecklenbeck2015.pdf
+  doi: 10.1002/bdm.1925
 
 PT:
   authors:
@@ -578,7 +586,7 @@ PT:
   title: 'Prospect Theory Reflects Selective Allocation of Attention'
   venue: 'Journal of Experimental Psychology: General.'
   paper: _content/_pdf/Pachur2018.pdf
-
+  doi: 10.1037/xge0000406
 
 PTMethods:
   authors:
@@ -591,8 +599,9 @@ PTMethods:
     - M. Willemsen
   year: 2017
   title: 'Process tracing methods in decision making: on growing up in the 70ties'
-  venue:  Current Directions in Psychological Science.
+  venue: Current Directions in Psychological Science.
   paper: _content/_pdf/Schulte-Mecklenbeck2017Process.pdf
+  doi: 10.1177/0963721417708229
 
 Inducing:
   authors:
@@ -604,6 +613,7 @@ Inducing:
   title: 'Inducing Thought Processes: Bringing Process Measures and Cognitive Processes Closer Together'
   venue: Journal of Behavioral Decision Making.
   paper: _content/_pdf/Schulte-Mecklenbeck2017.pdf
+  doi: 10.1002/bdm.2007
 
 PyeTribe:
   authors:
@@ -614,6 +624,7 @@ PyeTribe:
   title: 'The pyeTribe: Simultaneous eyetracking for economic games'
   venue: Behavior Research Methods.
   paper: _content/_pdf/Lejarraga2016.pdf
+  doi: 10.3758/s13428-016-0819-9
 
 Deliberative:
   authors:
@@ -626,6 +637,7 @@ Deliberative:
   title: 'Deliberative versus intuitive diagnostic decision'
   venue: Psychology.
   paper: _content/_pdf/Skvortsova2016.pdf
+  doi: 10.4236/psych.2016.712143
 
 Out:
   authors:
@@ -635,6 +647,7 @@ Out:
   title: 'Out of sight--out of mind? Information acquisition patterns in risky choice framing'
   venue: Polish Psychological Bulletin.
   paper: _content/_pdf/Schulte-Mecklenbeck2014.pdf
+  doi: 10.2478/ppb-2014-0004
 
 Lack:
   authors:
@@ -645,8 +658,9 @@ Lack:
   - Ralph Hertwig
   year: 2013
   title: 'A Lack of Appetite for Information and Computation: Simple Heuristics in Food Choice'
-  venue: 'Appetite.'
+  venue: Appetite.
   paper: _content/_pdf/Schulte-Mecklenbeck2013.pdf
+  doi: 10.1016/j.appet.2013.08.008
 
 Flash:
   authors:
@@ -666,6 +680,7 @@ ProcessJDM:
   title: 'The role of process data in the development and testing of process models of judgment and decision making'
   venue: 'Judgment & Decision Making.'
   paper: _content/_pdf/Schulte-Mecklenbeck2011Process.pdf
+  doi: 10.1017/s1930297500004162
 
 Flash2:
   authors:
@@ -674,8 +689,9 @@ Flash2:
   - Florian Hutzler
   year: 2011
   title: 'Flashlight--Recording information acquisition online'
-  venue: Computers in human behavior.
+  venue: Computers in Human Behavior.
   paper: _content/_pdf/Schulte-Mecklenbeck2011.pdf
+  doi: 10.1016/j.chb.2011.03.004
 
 AIS:
   authors:
@@ -693,8 +709,7 @@ PTHandbook:
   - Anton Kühberger
   - Rob Ranyard
   year: 2011
-  title: 'A handbook of process tracing methods for decision research: A critical review and user’s guide'
-
+  title: "A handbook of process tracing methods for decision research: A critical review and user's guide"
 
 Intro:
   authors:
@@ -702,8 +717,8 @@ Intro:
   - me
   - Rob Ranyard
   year: 2010
-  title:  'Windows for understanding the mind: Introduction to a handbook of process tracing methods for decision research'
-  venue: 'A handbook of process tracing methods for decision research: A critical review and user’s guide.'
+  title: 'Windows for understanding the mind: Introduction to a handbook of process tracing methods for decision research'
+  venue: "A handbook of process tracing methods for decision research: A critical review and user's guide."
 
 Skin:
   authors:
@@ -714,7 +729,7 @@ Skin:
   - Rob Ranyard
   year: 2010
   title:
-  venue: 'A handbook of process tracing methods for decision research: A critical review and user’s guide.'
+  venue: "A handbook of process tracing methods for decision research: A critical review and user's guide."
   paper:
 
 Quick:
@@ -726,7 +741,6 @@ Quick:
   venue: 'Foundations for tracing intuition.'
   paper: _content/_pdf/Norman2009.pdf
 
-
 PH:
   authors:
   - Eric J Johnson
@@ -736,7 +750,7 @@ PH:
   title: 'Process models deserve process data: Comment on Brandstätter, Gigerenzer, and Hertwig (2006)'
   venue: Psychological Review.
   paper: _content/_pdf/JohnsonSchulte-MecklenbeckWillemsen2008.pdf
-
+  doi: 10.1037/0033-295x.115.1.263
 
 Webdip:
   authors:
@@ -746,7 +760,7 @@ Webdip:
   title: 'WebDiP: A tool for information search experiments on the World-Wide Web'
   venue: Behavior Research Methods.
   paper: _content/_pdf/Schulte-Mecklenbeck2005.pdf
-
+  doi: 10.3758/bf03192697
 
 APS:
   authors:
@@ -764,6 +778,7 @@ InfoSearch:
   title: 'Information search in the laboratory and on the Web: With or without an experimenter'
   venue: 'Behavior Research Methods, Instruments, & Computers.'
   paper: _content/_pdf/Schulte-Mecklenbeck2003.pdf
+  doi: 10.3758/bf03202545
 
 hypo:
   authors:
@@ -774,6 +789,7 @@ hypo:
   title: 'Framing decisions: Hypothetical and real'
   venue: Organizational Behavior and Human Decision Processes.
   paper: _content/_pdf/Kuehberger2002.pdf
+  doi: 10.1016/s0749-5978(02)00021-3
 
 framing:
   authors:
@@ -782,8 +798,9 @@ framing:
   - Josef Perner
   year: 1999
   title: 'The effects of framing, reflection, probability, and payoff on risk preference in choice tasks'
-  venue:  Organizational behavior and human decision processes.
+  venue: Organizational Behavior and Human Decision Processes.
   paper: _content/_pdf/Kuhberger1999.pdf
+  doi: 10.1006/obhd.1999.2830
 
 Mind:
   authors:
@@ -793,5 +810,6 @@ Mind:
   - Robert Leingruber
   year: 1995
   title: 'Choice or no choice: is the langer effect evidence against simulation'
-  venue: "Mind & language."
+  venue: "Mind & Language."
   paper: _content/_pdf/Kuehberger1995.pdf
+  doi: 10.1111/j.1468-0017.1995.tb00022.x
