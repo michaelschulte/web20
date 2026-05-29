@@ -282,7 +282,7 @@ The three experiments in Tong et al. (2013) also use different priming methods: 
 
 Following the original paper, we used the same analytic strategy and calculated chi-2 tests separately for each of three experiments.
 
-Inspecting the results in Tong et al. (2013) the following patterns were found. I will simply summaries the choices in the money priming condition where in Exp 1: 70 % / Exp 2: 57 % / Exp 3: 77 % of participants choose the hedonic option compared to Exp 1: 40 % / Exp 2: 30 % / Exp 3: 55 % in the control condition). So overall sizable differences in the choice patterns between 22 and 30 points difference between the conditions.
+Inspecting the results in Tong et al. (2013) the following patterns were found. I will simply summarize the choices in the money priming condition where in Exp 1: 70 % / Exp 2: 57 % / Exp 3: 77 % of participants choose the hedonic option compared to Exp 1: 40 % / Exp 2: 30 % / Exp 3: 55 % in the control condition). So overall sizable differences in the choice patterns between 22 and 30 points difference between the conditions.
 
 ### Tong 1 Battery Cake
 
@@ -362,14 +362,14 @@ So, some caveats ... there are of course many - but I will focus on two:
 
 We ran a within-subject design across the 6 experimental studies - while both Caruso and Tong used a between subjects design, with somewhat small samples (see our power analysis in the [Pre-Regs](https://osf.io/24xwe/)), we decided to run a within-subjects study where participants either got treated with the priming or the control condition. To mitigate the possible order effects we randomized two blocks (Tong v. Caruso) ... running all analysis again with this Block Order does not result in a significant main effect for Order or an interaction between Condition * Order. The same is true for Tong when we run separate chi-2 tests for the two different order conditions (see below @sec-order).
 
-Another small oversight was the addition of a control condition in Tong in Experiment 2 where they added an 'empty' control task, where no identification of currency or foreign language was included. I belief this is a smaller issue.
+Another small oversight was the addition of a control condition in Tong in Experiment 2 where they added an 'empty' control task, where no identification of currency or foreign language was included. I believe this is a smaller issue.
 
 Overall this was a fun exercise, a good teaching experience (in a rather large group).
 
 
-## Withing versus between subjects - design {#sec-order}
+## Within versus between subjects - design {#sec-order}
 
-Here I add some additional analysis, checking for an effect of *Order* - which is the variation of whether Tong or Charuso appeared first for participants (as discussed above).
+Here I add some additional analysis, checking for an effect of *Order* - which is the variation of whether Tong or Caruso appeared first for participants (as discussed above).
 
 ### Caruso 1 SJS
   

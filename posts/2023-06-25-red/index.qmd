@@ -73,7 +73,7 @@ The original paper had the following number of participants in each experiment:
 
 Overall we collected data from **328 participants**. Two pre-registered attention checks were built into the questionnaire which had to be **passed both** for inclusion. This step reduced the sample to: **270 participants**. Finally we asked participants whether they are color-blind - this step removed two participants. 
 
-After aplying these exclusion criteriawe ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Female participants were on average *M =* `r demographie %>% filter(gender == 'female') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'female') %>% summarise(m = sd(age)) %>% pull(m)` years, male participants were  *M =* `r demographie %>% filter(gender == 'male') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'male') %>% summarise(m = sd(age)) %>% pull(m)` years.
+After applying these exclusion criteria, we ended up with `r length(demographie$ID)` participants (`r table(demographie$gender)[2]/(table(demographie$gender)[1]+table(demographie$gender)[2])*100`% female). Female participants were on average *M =* `r demographie %>% filter(gender == 'female') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'female') %>% summarise(m = sd(age)) %>% pull(m)` years, male participants were  *M =* `r demographie %>% filter(gender == 'male') %>% summarise(m = mean(age)) %>% pull(m)` years, *SD =* `r demographie %>% filter(gender == 'male') %>% summarise(m = sd(age)) %>% pull(m)` years.
 
 
 ## Experiment 1 - The Cube (Original Study 1)
@@ -278,7 +278,7 @@ The authors also found effects of `saturation` on `arousal` and `mood`. We plot 
 
 ```{r}
 #| label: fig-results-A
-#| fig-cap: "Results Replication Study 3 - Arrousal" 
+#| fig-cap: "Results Replication Study 3 - Arousal"
 laptop %>%
   select(ID, Color, Sat, arrousal) %>%
   mutate(Sat = as_factor(Sat),
@@ -291,7 +291,7 @@ laptop %>%
   stat_summary(fun.data = mean_cl_normal,  geom = "errorbar", width = .3, position = position_dodge(width = .3), size = 1.5) +
   scale_color_manual(values = c('#4053b9','#45c43e', '#c53d45')) +
   labs(x = 'Saturation %',
-       y = 'Arrousal') +
+       y = 'Arousal') +
   theme_bw(base_size = 20) 
 ```
 
@@ -432,7 +432,7 @@ couch_clean %>%
   ylim(0,80)
 ```
 
-Runnning the ANOVA on the data we find no significant effect of `saturation` or `color` and no interaction.
+Running the ANOVA on the data we find no significant effect of `saturation` or `color` and no interaction.
 
 ```{r}
 model <- aov(guess_height ~ Sat * Color, data = couch_clean)
@@ -441,11 +441,11 @@ summary(model)
 
 # Caveats
 
-As mentioned above we did not replicate the original studies exactly. We used slighty different objects and additional saturation levels. More importantly we used the same participants again in a **within-subjects** design in an **online** experiment instead of a lab study. Nevertheless in our study 1 we see the same effect of `saturation` on `size` as the authors did in their study 1 - so in principle the effect can be replicated but only for the cubes (without adding an option to judge the cubes as having the same size - then this effect also goes away). 
+As mentioned above we did not replicate the original studies exactly. We used slightly different objects and additional saturation levels. More importantly we used the same participants again in a **within-subjects** design in an **online** experiment instead of a lab study. Nevertheless in our study 1 we see the same effect of `saturation` on `size` as the authors did in their study 1 - so in principle the effect can be replicated but only for the cubes (without adding an option to judge the cubes as having the same size - then this effect also goes away). 
 
 **BUT**: in study 2 we do not find any effects of `saturation` on `size`, `arousal` or `mood`; in study 3 we do not find any effects of `saturation` on `evaluation` or `prize`; in study 4 we do not find any effects of `saturation` on `guessed height`.
 
-I was quite suspicious about the described effects in the original work and my confindence in the effect of `saturation` on `size` did not really increase after this exercise.
+I was quite suspicious about the described effects in the original work and my confidence in the effect of `saturation` on `size` did not really increase after this exercise.
 
 # References
 

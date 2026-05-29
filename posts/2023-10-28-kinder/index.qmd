@@ -47,7 +47,7 @@ Just going with the number of red ones (if you want a red) is misleading ... we 
 
 ## Game theory
 
-Finally - and definitly most chaotic of all - we played two rounds of game theory. First a dictator game, imagining one of the other kids as their partner. Then I paired them up and let them play an Ultimatum game in pairs with (Sugus)[https://en.wikipedia.org/wiki/Sugus] sweets.  
+Finally - and definitely most chaotic of all - we played two rounds of game theory. First a dictator game, imagining one of the other kids as their partner. Then I paired them up and let them play an Ultimatum game in pairs with [Sugus](https://en.wikipedia.org/wiki/Sugus) sweets.  
 
 ![Dictator game](images/dictator.png){#fig-dictator}
 
@@ -57,7 +57,7 @@ Both rounds were pretty wild but we ended up in a nice discussion on fairness - 
 
 ## Take Aways
 
-- I was way off how long things take - favorite example: I told them to form pairs of two for the ultimatum game ... it took us about 10 minutes to achive this, planned about 2 :)
+- I was way off how long things take - favorite example: I told them to form pairs of two for the ultimatum game ... it took us about 10 minutes to achieve this, planned about 2 :)
 - responses in paper and pencil are tricky to live analyse - I normally run [FormR](formr.org) as a frontend and a R script in the background that analyse/visualize data automatically - easy, once setup. Here we did two things - entering values from the response papers into Google Sheets and sticking dots onto a flipchart to generate a distribution graph - both works but both takes a lot of time (even with 3 people in the room)
 - Kids (at least in this class) are super responsive and engaged - I am used to getting not a lot of feedback/questions from my students - with the kids 7-10 hands are up for every questions - great, but again a time issue if you want to address the questions properly
 

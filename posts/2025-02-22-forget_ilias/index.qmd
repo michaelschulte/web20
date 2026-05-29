@@ -10,9 +10,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-[Ilias](https://www.ilias.de/en/lms-ilias-solutions-university/) is the start and end of all sorrow. Unfortunatly (my uni)[www.unibe.ch] is locked in with Ilias - this post is not about this sad truth but a solution for all my interactions with students in my courses. What I was looking for is an easy, reproducible solution that allows me to generate slides, pdfs of said slides (students want pdfs for taking notes) and a webpage with all the necessary info about the course in one go. Ideally I want to work together with a TA on all of this. 
+[Ilias](https://www.ilias.de/en/lms-ilias-solutions-university/) is the start and end of all sorrow. Unfortunately, [my uni](https://www.unibe.ch) is locked in with Ilias - this post is not about this sad truth but a solution for all my interactions with students in my courses. What I was looking for is an easy, reproducible solution that allows me to generate slides, pdfs of said slides (students want pdfs for taking notes) and a webpage with all the necessary info about the course in one go. Ideally I want to work together with a TA on all of this. 
 
-So, here we go: I am teaching a lot of methods courses - hence [Quarto](quarto.org) is a natural choice. For the combination of slides and a webpage a Quarto Project.  
+So, here we go: I am teaching a lot of methods courses - hence [Quarto](https://quarto.org) is a natural choice. For the combination of slides and a webpage, a Quarto Project is the natural fit.  
 
 Simply get started with:
 

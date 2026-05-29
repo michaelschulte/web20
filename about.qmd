@@ -16,7 +16,7 @@ about:
       href: https://scholar.google.co.uk/citations?user=qdLOuGwAAAAJ
 ---
 
-I'm an Associate Professor for Research Methods and Decision Science at the University of Bern and also hold an Associate Researcher position at the Max Planck Institute for Human Development, Berlin. My research focuses on understanding how people make decisions—not just what they choose-but the processes that unfold as they decide.
+I'm an Associate Professor for Research Methods and Decision Science at the University of Bern and also hold an Associate Researcher position at the Max Planck Institute for Human Development, Berlin. My research focuses on understanding how people make decisions—not just what they choose—but the processes that unfold as they decide.
 
 ## Research
 

@@ -136,7 +136,7 @@ There is a clear framing effect and a step wise default effect (see @fig-exp2).
 ![Results Johnson et al. Exp 2](images/Fig1.png){#fig-exp2}
 
 
-There several differences inspecting our results. Our rank ordered results give us the pattern: **612534**. Remarkable are also the much lower participation rates (below 50%) for `Not participate` and `No Default` in both framing conditions. Only `Participate` in the positive frame is above 75% (see @fig-results-exp2).
+There are several differences inspecting our results. Our rank ordered results give us the pattern: **612534**. Remarkable are also the much lower participation rates (below 50%) for `Not participate` and `No Default` in both framing conditions. Only `Participate` in the positive frame is above 75% (see @fig-results-exp2).
 
 ```{r}
 #| label: fig-results-exp2
@@ -168,10 +168,10 @@ sum_exp2 %>%
   theme_bw(base_size = 16) +
   scale_color_viridis_d() + 
   labs(x = 'Default',
-       y = 'Prozent choice')
+       y = 'Percent choice')
 ```
 
-Running the logistic regression predicting *choice* with *framing X default X answer option* (see @tbl-result2) shows a significant framing effect as well as an effect for the the presence of an answer option (Y/N). The two-way interaction terms for framing and default is significant. There is also a three-way-interaction of framing, default and answer option mainly driven by the difference between participate and no-default.
+Running the logistic regression predicting *choice* with *framing X default X answer option* (see @tbl-result2) shows a significant framing effect as well as an effect for the presence of an answer option (Y/N). The two-way interaction terms for framing and default is significant. There is also a three-way-interaction of framing, default and answer option mainly driven by the difference between participate and no-default.
 
 
 ```{r}
