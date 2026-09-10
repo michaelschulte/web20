@@ -128,7 +128,7 @@ demo <-
          starts_with('Interesse'), starts_with('Feedback'))
 ```
 
-Davon sind `r dim(demo %>% filter(gender == 'Weiblich'))[1]` weiblich (*M* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre), `r dim(demo %>% filter(gender == 'Männlich'))[1]` männlich (*M* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre), `r dim(demo %>% filter(gender == 'Divers'))[1]` divers und `r dim(demo %>% filter(is.na(gender)))[1]` ohne Geschlechtsangaben.
+Davon sind `r dim(demo %>% filter(gender == 'Weiblich'))[1]` weiblich (*M* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre), `r dim(demo %>% filter(gender == 'Männlich'))[1]` männlich (*M* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre), `r dim(demo %>% filter(gender == 'Divers'))[1]` divers (*M* = `r demo %>% filter(gender == 'Divers') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Divers') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre) und `r dim(demo %>% filter(is.na(gender)))[1]` ohne Geschlechtsangaben.
 
 # Replikation Studie S3
 
