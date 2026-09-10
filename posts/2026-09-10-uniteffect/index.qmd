@@ -68,7 +68,7 @@ excl_duration <-
   filter(age >= 18 | is.na(age)) %>%
   filter(Finished == TRUE) %>%
   mutate(duration = as.numeric(`Duration (in seconds)`) / 60) %>%
-  filter(duration >= 3 | duration <= 12)
+  filter(duration >= 3 & duration <= 12)
 
 bekannt <-
   internal %>%
