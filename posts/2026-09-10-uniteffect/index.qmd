@@ -88,7 +88,26 @@ Kontrollfragen <-
   reframe(sum = sum(sum)) %>%
   filter(sum > 1)
 
-included <- Kontrollfragen %>% distinct(ID) %>% pull(ID)
+# Same chain as the Overview: age, completion and duration are applied
+# before the attention check decides who stays in.
+included <-
+  internal %>%
+  filter(age >= 18 | is.na(age)) %>%
+  filter(Finished == TRUE) %>%
+  mutate(duration = as.numeric(`Duration (in seconds)`) / 60) %>%
+  filter(duration >= 3 & duration <= 12) %>%
+  select(ID, starts_with('K_'), starts_with('Feedback')) %>%
+  filter(Feedback_Q1 == 'Nein') %>%
+  mutate(
+    check_1 = case_when(K_1 == 'Blau' ~ 1, TRUE ~ 0),
+    check_2 = case_when(K_2 == 'fliegen' ~ 1, TRUE ~ 0),
+    check_3 = case_when(K_3 == 2 ~ 1, TRUE ~ 0)) %>%
+  mutate(sum = (check_1 + check_2 + check_3)) %>%
+  group_by(ID) %>%
+  reframe(sum = sum(sum)) %>%
+  filter(sum > 1) %>%
+  distinct(ID) %>%
+  pull(ID)
 ```
 
 An der Studie nahmen `r dim(internal)[1]` Personen teil. Die folgenden Filter wurden angewandt:
