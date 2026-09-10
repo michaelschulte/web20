@@ -58,3 +58,6 @@ Claude.md
 CLAUDE.html
 .positai
 .superpowers/
+
+# Internal cohort data: needed to render, never published
+0_data/*_internal.csv
