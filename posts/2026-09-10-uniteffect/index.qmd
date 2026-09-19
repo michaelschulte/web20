@@ -29,7 +29,7 @@ group <- 'BAFS2026'
 
 # Sample description, kept out of the public file
 internal <- read_csv(here(paste0('0_data/', group, '_internal.csv')))
-# Shareable version, linked below
+# Shareable version, without gender, year of birth and age
 public <- read_csv(here(paste0('0_data/', group, '_public.csv')))
 
 options(digits = 1)
@@ -39,6 +39,8 @@ options(scipen = 999)
 # Original work
 
 Pandelaere, M., Briers, B., & Lembregts, C. (2011). [How to make a 29% increase look bigger: The unit effect in option comparisons](https://doi.org/10.1086/659000). *Journal of Consumer Research*, 38(2), 308-322.
+
+The unit effect: the same difference looks bigger when it is expressed in a unit that produces larger numbers. A Snickers against a mandarin is 488 versus 53 kcal, or 2042 versus 222 kJ. It's the same gap, but 1820 feels like a lot more than 435. We ran two studies, S3 and S4, and in each one the unit was varied between participants.
 
 # Team BA spring 2026
 
@@ -115,7 +117,7 @@ A total of `r dim(internal)[1]` people took part in the study. The following fil
 1. Under 18 years of age: `r dim(internal)[1]-dim(excl_age)[1]` participants removed
 2. Study not completed: `r dim(internal)[1]-dim(excl_finished)[1]` removed
 3. Study completed too quickly or too slowly: `r dim(internal)[1]-dim(excl_duration)[1]` removed
-4. Already knew the study (answered 'yes'):`r dim(internal)[1]-dim(bekannt)[1]` removed
+4. Already knew the study (answered 'yes'): `r dim(internal)[1]-dim(bekannt)[1]` removed
 5. At least 2 of 3 control questions correct: `r dim(internal)[1]-dim(Kontrollfragen)[1]` removed
 
 That leaves `r length(included)` in the sample. Note: the criteria are listed as applied independently, not cumulatively.
@@ -132,7 +134,9 @@ Of these, `r dim(demo %>% filter(gender == 'Weiblich'))[1]` are female (*M* = `r
 
 # Replication Study S3
 
-The same choices presented in kcal versus kJ. Eight tasks each, averaged, with kJ converted to kcal.
+Participants made seven choices between a lower- and a higher-calorie snack, for example a mandarin (53 kcal) or a Snickers (488 kcal). One group saw the energy content in kcal, the other in kJ. For each choice we take the energy value of the chosen snack and convert kJ to kcal (1 kcal = 4.184 kJ), so both groups are on the same scale. If the unit effect holds, the larger kJ numbers make the gap between the snacks look bigger, and the kJ group should end up with fewer calories.
+
+The figure shows the mean over all choices in each group, with 95% confidence intervals.
 
 ```{r fig-s3}
 S3 <-
@@ -178,9 +182,13 @@ A t-test between the two conditions (kcal v. kJ) gives:
 t.test(choice_value ~ unit, data = S3) |> report()
 ```
 
+The kJ group chose lower-calorie snacks. The effect is small, but it goes in the direction the unit effect predicts.
+
 # Replication Study S4
 
-Delivery time presented in days versus months. Ten tasks each, with months converted to days.
+Participants made ten choices between standard delivery and a more expensive express delivery, for example standard delivery in 62 days for CHF 499 or express 31 days earlier for CHF 534. One group saw the times in days (ET), the other in months (EM). Here the unit effect predicts that 31 days sounds like more time saved than 1 month, so the days group should pay for express more often. Two more groups saw the same choices in an attention version, in days (AET) and in months (AEM).
+
+For each choice we take the number of days in the chosen answer: the delivery time for standard, the time saved for express. Months are converted to days (1 month = 31 days, as in the materials). Standard always carries the larger number, so a higher mean means more people chose standard delivery.
 
 ```{r fig-s4}
 S4 <-
@@ -231,6 +239,8 @@ S4_TM <-
 t.test(days ~ unit, data = S4_TM) |> report()
 ```
 
+The two groups chose almost identically, so for delivery times the unit effect does not replicate.
+
 A t-test between the two conditions (months v. attention months) gives:
 
 ```{r}
@@ -241,6 +251,4 @@ S4_AET <-
 t.test(days ~ unit, data = S4_AET) |> report()
 ```
 
-# Data
-
-The shared version of the dataset is available as [`BAFS2026_public.csv`](../../0_data/BAFS2026_public.csv). It contains the experimental responses without gender, year of birth and age. For analyses that need those fields, please contact the author.
+The attention version of the months condition does not differ reliably from the plain one either.
