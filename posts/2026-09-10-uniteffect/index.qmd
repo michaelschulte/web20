@@ -51,7 +51,7 @@ Pandelaere, M., Briers, B., & Lembregts, C. (2011). [How to make a 29% increase 
 - Lena Kowal
 - Michelle Zurwerra
 
-# Stichprobe
+# Sample
 
 ```{r}
 excl_age <-
@@ -110,15 +110,15 @@ included <-
   pull(ID)
 ```
 
-An der Studie nahmen `r dim(internal)[1]` Personen teil. Die folgenden Filter wurden angewandt:
+A total of `r dim(internal)[1]` people took part in the study. The following filters were applied:
 
-1. Alter unter 18 Jahre: `r dim(internal)[1]-dim(excl_age)[1]` TeilnehmerInnen entfernt
-2. Studie nicht abgeschlossen: `r dim(internal)[1]-dim(excl_finished)[1]` entfernt
-3. Studie in zu kurzer oder zu langer Zeit bearbeitet: `r dim(internal)[1]-dim(excl_duration)[1]` entfernt
-4. Feedback Studie bekannt - alle 'Ja': `r dim(internal)[1]-dim(bekannt)[1]` entfernt
-5. Min 2 von 3 Kontrollfragen korrekt: `r dim(internal)[1]-dim(Kontrollfragen)[1]` entfernt
+1. Under 18 years of age: `r dim(internal)[1]-dim(excl_age)[1]` participants removed
+2. Study not completed: `r dim(internal)[1]-dim(excl_finished)[1]` removed
+3. Study completed too quickly or too slowly: `r dim(internal)[1]-dim(excl_duration)[1]` removed
+4. Already knew the study (answered 'yes'):`r dim(internal)[1]-dim(bekannt)[1]` removed
+5. At least 2 of 3 control questions correct: `r dim(internal)[1]-dim(Kontrollfragen)[1]` removed
 
-Es verbleiben `r length(included)` in der Stichprobe. Note: Die Kriterien sind bei unabhängiger Anwendung aufgelistet, nicht kumulativ.
+That leaves `r length(included)` in the sample. Note: the criteria are listed as applied independently, not cumulatively.
 
 ```{r}
 demo <-
@@ -128,11 +128,11 @@ demo <-
          starts_with('Interesse'), starts_with('Feedback'))
 ```
 
-Davon sind `r dim(demo %>% filter(gender == 'Weiblich'))[1]` weiblich (*M* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre), `r dim(demo %>% filter(gender == 'Männlich'))[1]` männlich (*M* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre), `r dim(demo %>% filter(gender == 'Divers'))[1]` divers (*M* = `r demo %>% filter(gender == 'Divers') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Divers') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` Jahre) und `r dim(demo %>% filter(is.na(gender)))[1]` ohne Geschlechtsangaben.
+Of these, `r dim(demo %>% filter(gender == 'Weiblich'))[1]` are female (*M* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Weiblich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` years), `r dim(demo %>% filter(gender == 'Männlich'))[1]` male (*M* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Männlich') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` years), `r dim(demo %>% filter(gender == 'Divers'))[1]` non-binary (*M* = `r demo %>% filter(gender == 'Divers') %>% summarise(age = round(mean(age, na.rm = TRUE),1))`, *SD* = `r demo %>% filter(gender == 'Divers') %>% summarise(age = round(sd(age, na.rm = TRUE),1))` years) and `r dim(demo %>% filter(is.na(gender)))[1]` did not report a gender.
 
-# Replikation Studie S3
+# Replication Study S3
 
-Darstellung der gleichen Wahlen in kcal versus kJ. Je 8 Aufgaben, gemittelt und kJ in kcal konvertiert.
+The same choices presented in kcal versus kJ. Eight tasks each, averaged, with kJ converted to kcal.
 
 ```{r fig-s3}
 S3 <-
@@ -172,15 +172,15 @@ S3 %>%
   theme(legend.position = "none")
 ```
 
-Ein t-test zwischen den beiden Bedingungen (kcal v. kJ) resultiert in:
+A t-test between the two conditions (kcal v. kJ) gives:
 
 ```{r}
 t.test(choice_value ~ unit, data = S3) |> report()
 ```
 
-# Replikation Studie S4
+# Replication Study S4
 
-Darstellung der Lieferzeit in Tagen versus Monaten. Je 10 Aufgaben, Monate in Tage konvertiert.
+Delivery time presented in days versus months. Ten tasks each, with months converted to days.
 
 ```{r fig-s4}
 S4 <-
@@ -221,7 +221,7 @@ S4 %>%
   theme(legend.position = "none")
 ```
 
-Ein t-test zwischen den beiden Bedingungen (Tage v. Monate) resultiert in:
+A t-test between the two conditions (days v. months) gives:
 
 ```{r}
 S4_TM <-
@@ -231,7 +231,7 @@ S4_TM <-
 t.test(days ~ unit, data = S4_TM) |> report()
 ```
 
-Ein t-test zwischen den beiden Bedingungen (Monate v. Attention Monate) resultiert in:
+A t-test between the two conditions (months v. attention months) gives:
 
 ```{r}
 S4_AET <-
@@ -241,6 +241,6 @@ S4_AET <-
 t.test(days ~ unit, data = S4_AET) |> report()
 ```
 
-# Daten
+# Data
 
-Die geteilte Version des Datensatzes liegt als [`BAFS2026_public.csv`](../../0_data/BAFS2026_public.csv) vor. Sie enthält die experimentellen Antworten ohne Angaben zu Geschlecht, Jahrgang und Alter. Für Analysen, die diese Angaben benötigen, wenden Sie sich bitte an den Autor.
+The shared version of the dataset is available as [`BAFS2026_public.csv`](../../0_data/BAFS2026_public.csv). It contains the experimental responses without gender, year of birth and age. For analyses that need those fields, please contact the author.
