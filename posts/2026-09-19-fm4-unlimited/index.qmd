@@ -1,0 +1,338 @@
+---
+title: "Shazam listens to FM4 Unlimited"
+author: "MSM"
+date: "2026-09-19"
+draft: true
+categories: [Music, Data, Methods]
+image: staticfig-bpm-host-1.png
+sidebar:
+  contents: auto
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      comment = NA,
+                      fig.width = 8,
+                      fig.height = 5,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(reactable)
+library(here)
+
+# Written by fm4down.py --tracklist; see 'Data' at the end
+tracks_raw <- read_csv(here('0_data/fm4_unlimited_tracks.csv'), show_col_types = FALSE)
+probes_raw <- read_csv(here('0_data/fm4_unlimited_probes.csv'), show_col_types = FALSE)
+
+probe_window <- 12  # seconds of audio per Shazam probe
+
+# Who plays a mix, read off FM4's mix titles. 'Summermix' and the Prater
+# warmup name no DJ, so they stay unattributed.
+add_dj <- function(df) {
+  df |>
+    mutate(
+      dj = case_when(
+        str_detect(mix, "Functionist") ~ "DJ Functionist",
+        str_detect(mix, "Beware") ~ "DJ Beware",
+        str_detect(mix, "Anna Ullrich") ~ "Anna Ullrich",
+        str_detect(mix, "Mi?yra Lim") ~ "Myra Lim",  # FM4 spells her 'Miyra' once
+        str_detect(mix, "Joyce Muniz") ~ "Joyce Muniz",
+        str_detect(mix, "Davidecks") ~ "Davidecks & Drums",
+        str_detect(mix, "Jugo") ~ "Jugo Ürdens",
+        # guests of the episodes backfilled from archive.org
+        str_detect(mix, "Josi Miller") ~ "Josi Miller",
+        str_detect(mix, "B\\.Visible") ~ "B.Visible",
+        str_detect(mix, "Benjamin Fröhlich") ~ "Benjamin Fröhlich",
+        str_detect(mix, "Jorkes") ~ "Jorkes",
+        str_detect(mix, "Rare Grooves Vienna") ~ "Rare Grooves Vienna",
+        str_detect(mix, "Kamehameharin") ~ "Kamehameharin",
+        str_detect(mix, regex("Who Is Ela", ignore_case = TRUE)) ~ "Who Is Ela",
+        str_detect(mix, "Anni Herzer") ~ "Anni Herzer",
+        str_detect(mix, "Soulcat") ~ "DJ Soulcat",
+        str_detect(mix, "Seba Kayan") ~ "Seba Kayan",
+        str_detect(mix, "Alexandra Feusi") ~ "Alexandra Feusi",
+        str_detect(mix, "DJ Phil\\b") ~ "DJ Phil",
+        str_detect(mix, "Jon Gravy") ~ "Jon Gravy",
+        str_detect(mix, "Mona Lee") ~ "Mona Lee & GLADD",
+        .default = "Unattributed"),
+      host = case_when(
+        dj %in% c("DJ Functionist", "DJ Beware", "Unattributed") ~ dj,
+        .default = "Guests") |>
+        factor(levels = c("DJ Functionist", "DJ Beware", "Guests", "Unattributed")),
+      setting = if_else(str_detect(show, "Live"), "Live club recording", "Radio mix"),
+      mix_label = paste0(format(episode_date, "%d %b"), " · ", mix)) |>
+    # some nights have two sets with the same title (two 'DJ Functionist' parts)
+    mutate(mix_label = if (n_distinct(mix_no) > 1) paste0(mix_label, " #", mix_no) else mix_label,
+           .by = c(episode_date, mix))
+}
+
+tracks <- tracks_raw |>
+  add_dj() |>
+  mutate(year = as.integer(str_extract(released, "\\d{4}")),
+         age = year(episode_date) - year)
+
+probes <- probes_raw |>
+  add_dj() |>
+  mutate(recognised = !is.na(key), in_track = !is.na(track_no))
+
+mixes <- probes |>
+  group_by(episode_date, show, mix_no, mix, mix_label, dj, host, setting) |>
+  summarise(minutes = (max(t_s) + probe_window) / 60,
+            recognised = mean(recognised),
+            identified = mean(in_track),
+            .groups = "drop") |>
+  left_join(tracks |> count(episode_date, mix_no, name = "tracks"),
+            by = c("episode_date", "mix_no")) |>
+  mutate(tracks = replace_na(tracks, 0))
+
+bpm_ok <- \(x) between(x, 70, 200)
+
+# One colour per host (colour-blind checked); grey for 'no DJ named'
+host_colours <- c("DJ Functionist" = "#2a78d6", "DJ Beware" = "#eb6834",
+                  "Guests" = "#1baf7a", "Unattributed" = "#a9a79f")
+ink <- "#2c3e50"
+
+theme_set(
+  theme_minimal(base_size = 15) +
+    theme(panel.grid.minor = element_blank(),
+          panel.grid.major = element_line(colour = "#ebeae6", linewidth = 0.3),
+          plot.title.position = "plot",
+          plot.title = element_text(face = "bold", colour = ink),
+          plot.subtitle = element_text(colour = "#52514e"),
+          axis.text = element_text(colour = "#6b6a66"),
+          strip.text = element_text(face = "bold", colour = ink, hjust = 0),
+          legend.position = "top",
+          legend.justification = "left",
+          legend.location = "plot",
+          legend.title = element_blank()))
+
+pct <- \(x) scales::percent(x, accuracy = 1)
+
+# Keylock keeps the pitch while the speed changes; a turntable changes both
+tracks <- tracks |>
+  mutate(style = case_when(
+    abs(speed_pct) < 1 ~ "about original speed",
+    abs(pitch_pct - speed_pct) < 0.5 ~ "turntable",
+    abs(pitch_pct) < 0.5 ~ "keylock",
+    .default = "unclear"))
+max_speed <- max(abs(tracks$speed_pct), na.rm = TRUE)
+```
+
+FM4 Unlimited is the Friday night mix show on Austria's Radio FM4: three hours of DJ Functionist, DJ Beware and guests. FM4 used to publish a playlist for every show, but the last one I could find is from April 2025. So I let a computer listen instead: every Unlimited mix since November 2025 went through Shazam, 12 seconds at a time.
+
+# How it works
+
+- The mixes of the last 30 days come from ORF's on-demand archive, which is all it keeps. Older shows come from a fan's weekly recordings on [archive.org](https://archive.org/details/saviour1981mixes), cut into the same sets. Where neither the file names nor a whole-night recording revealed the running order of an evening, the sets are listed in the usual order of the show (Functionist, guest, Beware) - that affects 11 of the 46 evenings, and only the order they are listed in.
+- Every 30 seconds a 12-second clip of the mix goes to Shazam (through the unofficial [shazamio](https://github.com/shazamio/ShazamIO) client).
+- The tempo of each clip is measured locally: [librosa](https://librosa.org) finds the beats in 20 seconds of audio, and a straight line through the beat times gives the tempo. Where the beats don't line up (breakdowns, two tracks at once) the clip gets no tempo.
+- For identified tracks Shazam also reports how much faster or slower the DJ played the track than the released version.
+- **A track counts only when at least two clips agree on it.**
+
+That last rule comes from a test run. For 11 April 2025 there is both an official FM4 playlist and a recording, so I checked the method against it. Of the first 11 tracks on the official list, Shazam found 10 (one credited to a different artist). It also produced nine one-off matches, and every one of them was wrong. Every track matched twice or more was right.
+
+::: {.callout-note}
+## What Shazam misses
+
+Short tracks blended into their neighbours, unreleased edits and promos, and anything Shazam simply doesn't know. Speed changes matter less than I expected: Shazam recognised tracks played up to `r sprintf("%.1f", max_speed)`% off their released speed, with or without keylock.
+:::
+
+# The mixes
+
+```{r}
+n_artists <- n_distinct(tracks$artist)
+```
+
+`r nrow(mixes)` mixes from `r n_distinct(mixes$episode_date)` broadcasts between `r format(min(mixes$episode_date), "%d %B %Y")` and `r format(max(mixes$episode_date), "%d %B %Y")`: `r round(sum(mixes$minutes) / 60)` hours of music. Shazam answered for `r pct(mean(probes$recognised))` of the `r format(nrow(probes), big.mark = "'")` clips, and `r pct(mean(probes$in_track))` of the time lies inside a confirmed track. That makes **`r nrow(tracks)` identified tracks by `r n_artists` artists**.
+
+```{r fig-coverage, fig.height=7.5}
+mixes |>
+  mutate(mix_label = fct_reorder(mix_label, identified)) |>
+  ggplot(aes(identified, mix_label, fill = host)) +
+  geom_col(width = 0.7) +
+  geom_text(aes(label = pct(identified)), hjust = -0.15, size = 3.6, colour = "#52514e") +
+  facet_wrap(~setting, ncol = 1, scales = "free_y", space = "free_y") +
+  scale_x_continuous(labels = scales::percent, limits = c(0, 1.1), expand = c(0, 0)) +
+  scale_fill_manual(values = host_colours) +
+  labs(title = "How much of each mix was identified",
+       subtitle = "Share of the mix inside a track confirmed by two or more clips",
+       x = NULL, y = NULL)
+```
+
+```{r}
+coverage <- mixes |>
+  mutate(group = case_when(setting == "Live club recording" ~ "live",
+                           host == "DJ Functionist" ~ "functionist",
+                           host == "DJ Beware" ~ "beware",
+                           .default = "other")) |>
+  group_by(group) |>
+  summarise(range = paste0(pct(min(identified)), "–", pct(max(identified))))
+coverage_of <- \(g) coverage$range[coverage$group == g]
+```
+
+How much gets identified depends mostly on who plays: `r coverage_of("functionist")` of DJ Functionist's radio mixes, but only `r coverage_of("beware")` of DJ Beware's. The live recordings from Schloss Lamberg (`r coverage_of("live")`) also have crowd noise and tracks layered on top of each other to deal with.
+
+# Tempo
+
+```{r}
+bpm_by_host <- tracks |>
+  filter(bpm_ok(bpm)) |>
+  group_by(host) |>
+  summarise(median = median(bpm), n = n())
+faster <- mean(tracks$speed_pct > 0.5, na.rm = TRUE)
+```
+
+```{r fig-bpm-host, fig.height=8}
+tracks |>
+  filter(bpm_ok(bpm)) |>
+  mutate(mix_label = fct_reorder(mix_label, bpm, .fun = median)) |>
+  ggplot(aes(bpm, mix_label, colour = host)) +
+  geom_point(size = 2.4, alpha = 0.7) +
+  scale_colour_manual(values = host_colours) +
+  labs(title = "Tempo of the tracks as played",
+       subtitle = "One dot per identified track, one row per mix",
+       x = "BPM", y = NULL)
+```
+
+```{r fig-bpm-curve, fig.height=6}
+probes |>
+  filter(bpm_ok(bpm)) |>
+  group_by(episode_date, mix_no) |>
+  arrange(t_s, .by_group = TRUE) |>
+  mutate(bpm_smooth = zoo::rollmedian(bpm, k = 5, fill = NA)) |>
+  ungroup() |>
+  filter(!is.na(bpm_smooth)) |>
+  ggplot(aes(t_s / 60, bpm_smooth, group = interaction(episode_date, mix_no), colour = host)) +
+  geom_line(linewidth = 0.6, alpha = 0.8) +
+  facet_wrap(~host) +
+  scale_colour_manual(values = host_colours, guide = "none") +
+  labs(title = "Tempo over the course of each mix",
+       subtitle = "One line per mix; rolling median over 2.5 minutes",
+       x = "Minutes into the mix", y = "BPM")
+```
+
+```{r}
+# Alice Deejay's own version; other artists' 'Better Off Alone' tracks are different records
+boa <- tracks |> filter(artist == "Alice Deejay", str_detect(title, "Better Off Alone")) |> arrange(bpm)
+```
+
+Shazam's speed reading plus the measured tempo gives each track's original tempo, and there is a neat check of that maths in the data: Alice Deejay's *Better Off Alone* turns up `r nrow(boa)` times, from `r round(min(boa$bpm))` BPM up to `r round(max(boa$bpm))` BPM (`r sprintf("%+.1f", max(boa$speed_pct))`% off the record, played by `r boa$dj[which.max(boa$bpm)]`). Every time the computed original tempo comes out at `r paste(unique(round(boa$original_bpm)), collapse = " and ")` BPM.
+
+DJs rarely play a track at exactly its released speed. Half of the tracks were within `r sprintf("%.1f", median(abs(tracks$speed_pct), na.rm = TRUE))`% of it, and `r pct(faster)` were sped up by more than half a percent.
+
+```{r fig-speed}
+tracks |>
+  filter(!is.na(speed_pct)) |>
+  ggplot(aes(speed_pct, fill = host)) +
+  geom_histogram(binwidth = 1, boundary = 0.5, colour = "white", linewidth = 0.4) +
+  geom_vline(xintercept = 0, colour = "#c3c2b7") +
+  scale_fill_manual(values = host_colours) +
+  labs(title = "Pitching tracks up or down",
+       subtitle = "Speed in the mix compared to the released track",
+       x = "Speed change (%)", y = "Tracks")
+```
+
+Shazam also reports how far the *pitch* moved. That separates two ways of changing speed: with keylock the pitch stays put, on a turntable it moves with the speed.
+
+```{r fig-keylock, fig.height=6.5}
+tracks |>
+  filter(!is.na(speed_pct), !is.na(pitch_pct)) |>
+  ggplot(aes(speed_pct, pitch_pct, colour = host)) +
+  geom_hline(yintercept = 0, colour = "#c3c2b7") +
+  geom_abline(colour = "#c3c2b7") +
+  geom_point(size = 2.6, alpha = 0.7) +
+  scale_colour_manual(values = host_colours) +
+  coord_equal() +
+  labs(title = "Keylock or turntable?",
+       subtitle = "Diagonal: turntable · flat line: keylock",
+       x = "Speed change (%)", y = "Pitch change (%)")
+```
+
+```{r}
+style_by_host <- tracks |>
+  filter(style %in% c("turntable", "keylock")) |>
+  count(host, style) |>
+  pivot_wider(names_from = style, values_from = n, values_fill = 0)
+style_n <- \(h, s) style_by_host |> filter(host == h) |> pull(all_of(s)) |> sum()
+```
+
+The two residents differ clearly. Of the tracks DJ Beware played at least 1% off speed, `r style_n("DJ Beware", "turntable")` moved in pitch along with the speed and `r style_n("DJ Beware", "keylock")` kept their pitch: turntable style. DJ Functionist mostly uses keylock (`r style_n("DJ Functionist", "keylock")` tracks with keylock, `r style_n("DJ Functionist", "turntable")` without), and so do the guests (`r style_n("Guests", "keylock")` to `r style_n("Guests", "turntable")`).
+
+# Artists and labels
+
+Jugo Ürdens' slot at Schloss Lamberg was a live concert of his own songs, so it is left out of the artist and label charts.
+
+```{r fig-artists, fig.height=6}
+tracks |>
+  filter(dj != "Jugo Ürdens") |>
+  count(artist, sort = TRUE) |>
+  slice_head(n = 15) |>
+  mutate(artist = fct_reorder(artist, n)) |>
+  ggplot(aes(n, artist)) +
+  geom_col(width = 0.7, fill = ink) +
+  geom_text(aes(label = n), hjust = -0.5, size = 3.8, colour = "#52514e") +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.1)), breaks = scales::breaks_pretty()) +
+  labs(title = "Most played artists",
+       subtitle = "Collaborations count as one credit, as Shazam lists them",
+       x = "Tracks", y = NULL)
+```
+
+```{r fig-labels, fig.height=6}
+tracks |>
+  filter(!is.na(label), dj != "Jugo Ürdens") |>
+  count(label, sort = TRUE) |>
+  slice_head(n = 15) |>
+  mutate(label = fct_reorder(label, n)) |>
+  ggplot(aes(n, label)) +
+  geom_col(width = 0.7, fill = ink) +
+  geom_text(aes(label = n), hjust = -0.5, size = 3.8, colour = "#52514e") +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.1)), breaks = scales::breaks_pretty()) +
+  labs(title = "Most played labels", x = "Tracks", y = NULL)
+```
+
+# How new is the music?
+
+```{r}
+new_share <- mean(tracks$age <= 1, na.rm = TRUE)
+```
+
+`r pct(new_share)` of the identified tracks came out this year or last year. Shazam reports the release it matched, so a remaster or re-release counts as new.
+
+```{r fig-years}
+tracks |>
+  filter(!is.na(year)) |>
+  mutate(year = pmax(year, 1990)) |>
+  ggplot(aes(year, fill = host)) +
+  geom_bar(width = 0.8) +
+  scale_fill_manual(values = host_colours) +
+  scale_x_continuous(breaks = seq(1990, 2025, 5),
+                     labels = \(x) if_else(x == 1990, "≤1990", as.character(x))) +
+  labs(title = "Release year of the identified tracks", x = NULL, y = "Tracks")
+```
+
+# All tracks
+
+Every identified track, searchable. *Start* is the time in the mix; the Shazam link leads to the track.
+
+```{r tbl-tracks}
+tracks |>
+  arrange(episode_date, mix_no, start_s) |>
+  transmute(Date = episode_date, DJ = dj, Start = start, Artist = artist,
+            Title = title, Label = label, Year = year, BPM = round(bpm),
+            Shazam = shazam_url) |>
+  reactable(searchable = TRUE, compact = TRUE, striped = TRUE, defaultPageSize = 15,
+            columns = list(
+              Date = colDef(minWidth = 95),
+              Title = colDef(minWidth = 200),
+              Shazam = colDef(minWidth = 70, cell = \(url) if (is.na(url)) "" else
+                htmltools::tags$a(href = url, target = "_blank", "open"))))
+```
+
+# Data
+
+- [`fm4_unlimited_tracks.csv`](../../0_data/fm4_unlimited_tracks.csv): one row per identified track (mix, start time, artist, title, album, label, release year, genre, ISRC, Shazam link, tempo, speed change).
+- [`fm4_unlimited_probes.csv`](../../0_data/fm4_unlimited_probes.csv): one row per 12-second clip (tempo, Shazam's answer, and which track it belongs to).

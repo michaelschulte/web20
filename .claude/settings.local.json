@@ -11,7 +11,20 @@
       "Bash(git:*)",
       "Bash(python3:*)",
       "Bash(du:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Skill(run)",
+      "Bash(/usr/bin/python3 -c \"import yaml, nbformat, jupyter_client, ipykernel, IPython; print\\('full stack OK'\\)\")",
+      "Bash(nohup python3 -m http.server 8321)",
+      "Bash(curl -s -o /dev/null -w \"index.html -> HTTP %{http_code}\\\\n\" http://localhost:8321/)",
+      "Bash(curl -s -o /dev/null -w \"about.html -> HTTP %{http_code}\\\\n\" http://localhost:8321/about.html)",
+      "Bash(curl -s -o /dev/null -w \"research.html -> HTTP %{http_code}\\\\n\" http://localhost:8321/research.html)",
+      "Bash(curl -s -o /dev/null -w \"styles.css -> HTTP %{http_code}\\\\n\" http://localhost:8321/styles.css)",
+      "Bash(curl -s http://localhost:8321/styles.css)",
+      "Bash(curl -s http://localhost:8321/research.html)",
+      "Bash(zsh -l -c 'echo \"QUARTO_PYTHON=$QUARTO_PYTHON\"; test -x \"$QUARTO_PYTHON\" && echo \"executable: YES\" || echo \"executable: NO\"; \"$QUARTO_PYTHON\" -c \"import yaml,nbformat,jupyter_client,ipykernel,IPython;print\\(\\\\\"kernel stack OK\\\\\"\\)\"')",
+      "Bash(env -u QUARTO_PYTHON zsh -i -c 'echo \"QUARTO_PYTHON=$QUARTO_PYTHON\"; \"$QUARTO_PYTHON\" -c \"import yaml,nbformat,jupyter_client,ipykernel,IPython;print\\(\\\\\"kernel stack OK\\\\\"\\)\"')",
+      "Bash(env -u QUARTO_PYTHON zsh -i -c 'quarto render research.qmd')",
+      "Bash(open http://localhost:8321/)"
     ]
   }
 }

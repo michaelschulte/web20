@@ -1,0 +1,520 @@
+---
+title: "Replication: Fortune favors the bold"
+author: "MSM"
+date: "2026-01-21"
+draft: false
+categories: [Replication, Science, Learning]
+sidebar:
+  contents: auto
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      eval = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      comment = NA,
+                      fig.width = 8,
+                      fig.height = 6,
+                      fig.align = 'center',
+                      fig.path = "static")
+library(tidyverse)
+library(knitr)
+library(here)
+
+group <- 'BAFS2025'
+
+# Shareable version, one row per answer, no demographics
+public <- read_csv(here(paste0('0_data/', group, '_public.csv')))
+# Sample description, kept out of the public file
+internal <- read_csv(here(paste0('0_data/', group, '_internal.csv')))
+
+# Condition labels used in every figure and table below.
+cond_levels <- c('FT', 'DT', 'DZ', 'DL', 'FA', 'DA')
+cond_labels <- c(FT = 'Text, plain',
+                 DT = 'Text, hard font',
+                 DZ = 'Text, digits',
+                 DL = 'Text, gaps',
+                 FA = 'Audio, clear',
+                 DA = 'Audio, distorted')
+
+# One colour for fluent, one for every kind of disfluency.
+flu_cols <- c('fluent' = '#0072B2', 'disfluent' = '#D55E00')
+
+label_cond <- function(x) factor(cond_labels[x], levels = cond_labels[cond_levels])
+is_fluent  <- function(x) if_else(x %in% c('FT', 'FA'), 'fluent', 'disfluent')
+
+# Memory score: seven questions per participant, a blank answer counts as not
+# recalled. One row per participant.
+score <-
+  public %>%
+  filter(scale == 'memory') %>%
+  group_by(ID, condition) %>%
+  summarise(set = first(set), correct = sum(value), p = correct / 7, .groups = 'drop') %>%
+  mutate(cond = label_cond(condition),
+         fluency = is_fluent(condition),
+         modality = factor(if_else(condition %in% c('FA', 'DA'), 'Audio', 'Text'),
+                           levels = c('Text', 'Audio')))
+
+# Questionnaire scores, one value per participant.
+scale_score <- function(lbl) {
+  public %>%
+    filter(scale == lbl) %>%
+    group_by(ID) %>%
+    summarise(!!lbl := mean(value, na.rm = TRUE), .groups = 'drop')
+}
+
+d <-
+  score %>%
+  left_join(scale_score('mindset'), by = 'ID') %>%
+  left_join(scale_score('nfc'), by = 'ID')
+
+mc <-
+  public %>%
+  filter(scale == 'mancheck') %>%
+  select(ID, condition, item, response, value) %>%
+  mutate(cond = label_cond(condition), fluency = is_fluent(condition))
+
+# Mean with a 95% confidence interval, used by every figure and table.
+summarise_ci <- function(d, x, ...) {
+  d %>%
+    group_by(...) %>%
+    summarise(
+      n = n(),
+      mean = mean({{ x }}, na.rm = TRUE),
+      sd = sd({{ x }}, na.rm = TRUE),
+      se = sd / sqrt(n),
+      ci_lower = mean - qt(0.975, n - 1) * se,
+      ci_upper = mean + qt(0.975, n - 1) * se,
+      .groups = 'drop')
+}
+
+# Pull the numbers out of the model objects so that the text below comes from
+# the data rather than being typed in by hand.
+fmt_p <- function(p) {
+  if (p < .001) '*p* < .001' else paste0('*p* = ', sub('^0', '', sprintf('%.3f', p)))
+}
+
+# Drop the leading zero from a number that cannot exceed one.
+nz <- function(x, digits = 2) sub('^(-?)0', '\\1', sprintf(paste0('%.', digits, 'f'), x))
+
+# Cohen's d with a pooled within-group SD. The groups are taken in the same
+# order as t.test takes them, so t and d always carry the same sign.
+cohen_d <- function(formula, data) {
+  mf <- model.frame(formula, data)
+  y <- mf[[1]]
+  g <- factor(mf[[2]])
+  a <- y[g == levels(g)[1]]
+  b <- y[g == levels(g)[2]]
+  s_pool <- sqrt(((length(a) - 1) * var(a) + (length(b) - 1) * var(b)) /
+                   (length(a) + length(b) - 2))
+  (mean(a) - mean(b)) / s_pool
+}
+
+# Sums of squares for a model: an aov, an lm, or a table that car::Anova has
+# already produced.
+ss_table <- function(model) {
+  if (inherits(model, 'aov')) summary(model)[[1]]
+  else if (inherits(model, 'anova')) model
+  else anova(model)
+}
+
+# Partial eta squared for one term.
+eta2p <- function(model, term) {
+  s <- ss_table(model)
+  i <- which(trimws(rownames(s)) == term)
+  s$`Sum Sq`[i] / (s$`Sum Sq`[i] + s$`Sum Sq`[nrow(s)])
+}
+
+fmt_t <- function(test, d) {
+  sprintf('*t*(%.1f) = %.2f, %s, *d* = %.2f',
+          test$parameter, test$statistic, fmt_p(test$p.value), d)
+}
+
+fmt_F <- function(model, term) {
+  s <- ss_table(model)
+  i <- which(trimws(rownames(s)) == term)
+  sprintf('*F*(%d, %d) = %.2f, %s, \u03b7\u00b2~p~ = %s',
+          s$Df[i], s$Df[nrow(s)], s$`F value`[i], fmt_p(s$`Pr(>F)`[i]),
+          nz(eta2p(model, term), 3))
+}
+
+# A correlation is its own effect size; report it with an interval.
+fmt_r <- function(test) {
+  sprintf('*r* = %s, 95%% CI [%s, %s], %s',
+          nz(test$estimate), nz(test$conf.int[1]), nz(test$conf.int[2]),
+          fmt_p(test$p.value))
+}
+
+# Same as fmt_t, without the markdown, for use inside a table cell.
+t_txt <- function(test, d) {
+  sprintf('t(%.1f) = %.2f, p = %s, d = %.2f', test$parameter, test$statistic,
+          sub('^0', '', sprintf('%.2f', test$p.value)), d)
+}
+
+pct <- function(x) sprintf('%.1f%%', 100 * x)
+
+# Mean accuracy of a single condition, in percent.
+acc <- function(cnd) pct(mean(score$p[score$condition == cnd]))
+
+options(digits = 3)
+options(scipen = 999)
+```
+
+```{css, echo=FALSE}
+.stim {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1em;
+  background: #fbfbfb;
+}
+.stim .cap {
+  font-family: inherit;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 0.4em;
+}
+.stim ul { margin: 0; }
+.plain    { font-family: Arial, Helvetica, sans-serif; color: #000; }
+.hardfont { font-family: Haettenschweiler, Impact, "Arial Narrow", sans-serif;
+            font-style: italic; color: #999; }
+.digits   { font-family: Arial, Helvetica, sans-serif; color: #000; }
+.gaps     { font-family: Arial, Helvetica, sans-serif; color: #000; }
+```
+
+# Original work
+
+Diemand-Yauman, C., Oppenheimer, D. M., & Vaughan, E. B. (2011). [Fortune favors the bold (and the Italicized): Effects of disfluency on educational outcomes](https://doi.org/10.1016/j.cognition.2010.09.012). *Cognition*, 118(1), 111-115.
+
+## Abstract
+
+> Previous research has shown that disfluency -- the subjective experience of difficulty associated with cognitive operations -- leads to deeper processing. Two studies explore the extent to which this deeper processing engendered by disfluency interventions can lead to improved memory performance. Study 1 found that information in hard-to-read fonts was better remembered than easier to read information in a controlled laboratory setting. Study 2 extended this finding to high school classrooms. The results suggest that superficial changes to learning materials could yield significant improvements in educational outcomes.
+
+# Team BA spring 2025
+
+- Wadija Ali Ebrahim
+- Noah Born
+- Nina Burki
+- Alain Gehri
+- Nando Kolb
+- Tina Loretan
+- Sebastian Pfäffli
+- Nhat Ngan Phan
+- Noemi Righetti
+- Anja Saner
+- Luca Schellinger
+- Alexandra Tellenbach
+
+# The idea
+
+Make a text slightly harder to read and people will remember more of it. That is the claim and it is wonderfully cheap. Diemand-Yauman and colleagues had participants learn the features of three invented alien species, printed either in clean 16-point Arial or in a small grey hard-to-read font. Fifteen minutes and a distraction task later, the hard-font group recalled 86.5% of the tested features and the clean-font group 72.8% -- fourteen percentage points, from nothing more than a typographic nuisance.
+
+The mechanism is supposed to be metacognitive. Struggling slightly to decode the words signals that you have not mastered the material, and that signal recruits the slower, more elaborative processing that makes things stick. A *desirable difficulty*, in Bjork's phrase.
+
+If that is really what is going on, then the specific nuisance should not matter much. So we replicated the original font manipulation and added three more ways of making the same material harder to take in.
+
+```{r}
+n_total <- 198
+n_finished <- 113
+n_final <- nrow(internal)
+```
+
+Everyone learned the same three alien species -- the Pangerisch, the Norgletti and the Derlenga, seven features each -- and was randomly assigned to one of six presentation formats.
+
+::: {.stim}
+::: {.cap}
+Text, plain -- the control
+:::
+::: {.plain}
+**Der Norgletti**
+
+- 60 cm gross
+- Ernährt sich von Blütenblättern und Pollen
+- Hat ein einzelnes gelbes Horn auf dem Kopf
+:::
+:::
+
+::: {.stim}
+::: {.cap}
+Text, hard font -- the original manipulation
+:::
+::: {.hardfont}
+**Der Norgletti**
+
+- 60 cm gross
+- Ernährt sich von Blütenblättern und Pollen
+- Hat ein einzelnes gelbes Horn auf dem Kopf
+:::
+:::
+
+::: {.stim}
+::: {.cap}
+Text, digits -- letters replaced by look-alike numbers
+:::
+::: {.digits}
+**D3R N0RGL3TT1**
+
+- 60 Z3NT1M3T3R 6R0SS
+- 3RNÄHRT 51CH V0N BLÜT3NBLÄTT3RN UND P0LL3N
+- H4T 31N 31NZ3LN35 63LB3S H0RN 4UF D3M K0PF
+:::
+:::
+
+::: {.stim}
+::: {.cap}
+Text, gaps -- letters deleted
+:::
+::: {.gaps}
+**Der Norgletti**
+
+- 60 Z_ntim_t_r gr_ss
+- Ern_hrt sich von B_ütenbl_tt_rn und P_llen
+- Hat ein e_nzel_es g_lbes Ho_n auf dem Ko_f
+:::
+:::
+
+The two remaining conditions moved the same content from the eyes to participant's ears: a **clear audio** recording of the species descriptions, and a **distorted audio** version of the same recording. 
+
+After the learning phase a set of filler tasks was introduced -- mood ratings, a questionnaire, a sentence task, a word-sorting task -- these tasks ran for about fifteen minutes, as in the original. The memory test followed: seven open questions about the aliens' features, answered by typing rather than choosing, and scored by hand afterwards. Three parallel question sets existed and each participant was given one of them at random, so no single feature carried the whole result.
+
+We added two questionnaires suggested by the disfluency literature: Dweck's three-item 'mindset scale', and the 17-item 'Need for Cognition' scale. If effortful processing is the engine, people who enjoy effortful thinking or who believe ability is malleable are the obvious candidates for a larger effect.
+
+# Sample
+
+The questionnaire was distributed through the students' own networks -- fellow students, friends, family. `r n_total` people opened it and `r n_finished` reached the end.
+
+We excluded `r n_finished - n_final` of those: participants who failed **both** embedded attention checks, who reported uncorrected vision problems (the study is about reading), or who did not report German at C1 or C2 level. That leaves **`r n_final` participants** in the analysed sample. Requiring only one of the two attention checks to be correct is a lenient rule.
+
+```{r}
+#| label: tbl-demo
+internal %>%
+  mutate(gender = recode(gender,
+                         Weiblich = 'Female',
+                         `Männlich` = 'Male',
+                         `Nichtbinär/drittes Geschlecht` = 'Non-binary')) %>%
+  group_by(Gender = gender) %>%
+  summarise(n = n(),
+            `Mean age` = round(mean(age, na.rm = TRUE), 1),
+            `SD age` = round(sd(age, na.rm = TRUE), 1),
+            .groups = 'drop') %>%
+  kable(caption = 'Participants by gender.')
+```
+
+```{r}
+#| label: tbl-cond
+score %>%
+  count(Condition = cond) %>%
+  left_join(internal %>% mutate(Condition = label_cond(condition)) %>%
+              group_by(Condition) %>%
+              summarise(`Mean age` = round(mean(age, na.rm = TRUE), 1), .groups = 'drop'),
+            by = 'Condition') %>%
+  kable(caption = 'Participants per condition.')
+```
+
+The sample is a convenience sample, wider in age than a student pool (mean `r round(mean(internal$age, na.rm = TRUE), 1)` years, SD `r round(sd(internal$age, na.rm = TRUE), 1)`) and rather small once it is split six ways: between `r min(table(score$condition))` and `r max(table(score$condition))` people per condition.
+
+# Does a hard font help you remember?
+
+The memory score is simply the proportion of the seven questions a participant answered correctly. Answers were coded by hand, so "Pollen und Blüten" counts as a hit even though it is not word for word what the text said; a question left blank counts as not recalled.
+
+```{r}
+#| label: fig-text
+#| fig-cap: "Recall after a fifteen-minute delay in the two conditions that replicate the original experiment: plain Arial against the hard-to-read font."
+score %>%
+  filter(condition %in% c('FT', 'DT')) %>%
+  summarise_ci(p, cond, fluency) %>%
+  ggplot(aes(x = cond, y = mean, colour = fluency)) +
+  geom_point(size = 5) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.15, linewidth = 0.8) +
+  scale_colour_manual(values = flu_cols) +
+  scale_y_continuous(labels = scales::percent, limits = c(0.2, 0.9)) +
+  labs(title = 'Recall after a delay, the original comparison',
+       subtitle = 'Mean proportion correct with 95% CI',
+       x = NULL, y = 'Questions recalled', colour = NULL) +
+  theme_minimal(base_size = 18) +
+  theme(legend.position = 'bottom')
+```
+
+```{r}
+#| label: aov-text
+t_text <- t.test(p ~ condition, data = filter(score, condition %in% c('DT', 'FT')))
+ci_text <- sprintf('%.1f', 100 * t_text$conf.int)
+d_text <- cohen_d(p ~ condition, data = filter(score, condition %in% c('DT', 'FT')))
+```
+
+@fig-text puts the two conditions that mirror the original side by side. Participants who read the plain Arial version recalled `r acc('FT')` of the features; participants who read the hard-font version recalled `r acc('DT')`. The difference is `r round(abs(diff(c(mean(score$p[score$condition == "FT"]), mean(score$p[score$condition == "DT"])))) * 100, 1)` percentage points, it points the wrong way, and it is nowhere near significant (`r fmt_t(t_text, d_text)`). The 95% confidence interval runs from `r ci_text[1]` to `r ci_text[2]` percentage points -- wide enough to contain the original's +14, which is the honest way to put it: this comparison, on its own, cannot rule the original effect out.
+
+**The font effect does not replicate.**
+
+# The three other ways of making it hard
+
+```{r}
+#| label: fig-all
+#| fig-cap: "Recall after a fifteen-minute delay in all six conditions, split by whether the material was read or heard."
+score %>%
+  summarise_ci(p, cond, fluency, modality) %>%
+  ggplot(aes(x = cond, y = mean, colour = fluency)) +
+  geom_point(size = 5) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.15, linewidth = 0.8) +
+  scale_colour_manual(values = flu_cols) +
+  scale_y_continuous(labels = scales::percent, limits = c(0.2, 0.9)) +
+  facet_grid(~ modality, scales = 'free_x', space = 'free_x') +
+  labs(title = 'Recall after a delay, all six conditions',
+       subtitle = 'Mean proportion correct with 95% CI',
+       x = NULL, y = 'Questions recalled', colour = NULL) +
+  theme_minimal(base_size = 18) +
+  theme(legend.position = 'bottom',
+        axis.text.x = element_text(angle = 20, hjust = 1))
+```
+
+```{r}
+#| label: tbl-all
+score %>%
+  summarise_ci(p, cond) %>%
+  transmute(Condition = cond, n,
+            Mean = pct(mean), SD = pct(sd),
+            `95% CI` = paste0('[', pct(ci_lower), ', ', pct(ci_upper), ']')) %>%
+  kable(caption = 'Recall by condition.')
+```
+
+```{r}
+#| label: power
+library(pwr)
+n_dt <- sum(score$condition == 'DT'); n_ft <- sum(score$condition == 'FT')
+n_dis <- sum(score$fluency == 'disfluent'); n_flu <- sum(score$fluency == 'fluent')
+# Effect size of the original: t(26) = 2.3 with 14 participants per group.
+d_orig <- 2.3 * sqrt(1/14 + 1/14)
+pow_text <- pwr.t2n.test(n1 = n_dt, n2 = n_ft, d = d_orig)$power
+pow_pool <- pwr.t2n.test(n1 = n_dis, n2 = n_flu, d = d_orig)$power
+```
+
+```{r}
+#| label: aov-all
+aov_all <- aov(p ~ condition, data = score)
+# The four cells are unequal, so the main effects come from Type III sums of
+# squares, which need sum-to-zero contrasts to test what they should.
+aov_22 <- aov(p ~ fluency * modality,
+              data = filter(score, condition %in% c('FT', 'DT', 'FA', 'DA')),
+              contrasts = list(fluency = contr.sum, modality = contr.sum))
+a22 <- car::Anova(aov_22, type = 3)
+t_audio <- t.test(p ~ condition, data = filter(score, condition %in% c('DA', 'FA')))
+d_audio <- cohen_d(p ~ condition, data = filter(score, condition %in% c('DA', 'FA')))
+t_pool <- t.test(p ~ fluency, data = score)
+d_pool <- cohen_d(p ~ fluency, data = score)
+mean_flu <- mean(score$p[score$fluency == 'fluent'])
+mean_dis <- mean(score$p[score$fluency == 'disfluent'])
+ci_pool <- round(100 * t_pool$conf.int, 1)
+```
+
+@fig-all adds the four conditions the original never ran. Nothing separates the six groups (`r fmt_F(aov_all, 'condition')`). The digits version (`r acc('DZ')`) and the gap version (`r acc('DL')`) sit right where the plain text sits. Distorted audio (`r acc('DA')`) is the weakest condition of all and clear audio (`r acc('FA')`) is not much better, but the two do not differ reliably either (`r fmt_t(t_audio, d_audio)`).
+
+Pooling all four disfluent conditions against the two fluent ones gives the comparison the most statistical room: `r pct(mean_dis)` versus `r pct(mean_flu)`, a difference of `r round(100 * abs(mean_dis - mean_flu), 1)` percentage points in the wrong direction (`r fmt_t(t_pool, d_pool)`, 95% CI [`r ci_pool[1]`, `r ci_pool[2]`] percentage points). With `r n_dis` disfluent and `r n_flu` fluent participants, that test had a `r round(100 * pow_pool)`% chance of catching an effect the size of the original one (*d* = `r round(d_orig, 2)`). It caught nothing.
+
+The only hint of a difference is between the eye and the ear: text conditions beat audio conditions by a margin that is suggestive rather than reliable (`r fmt_F(a22, 'modality')` in a fluency × modality ANOVA on the four conditions that have a fluent and a disfluent version), with no trace of a fluency effect (`r fmt_F(a22, 'fluency')`) and no interaction (`r fmt_F(a22, 'fluency:modality')`).
+
+# Did the manipulations land?
+
+A null result is only interesting if the manipulation did something. We asked everyone afterwards how hard the material had been to take in, and how hard it had been to learn, both on a five-point scale.
+
+```{r}
+#| label: fig-mc
+#| fig-cap: "Manipulation check: how hard the material was to take in (left panel) and how hard the information was to learn (right panel), rated on a five-point scale from 1 = very easy to 5 = very hard."
+mc %>%
+  filter(item %in% c('MC_0_1', 'MC_0_2')) %>%
+  mutate(item = factor(recode(item,
+                              MC_0_1 = 'Material hard to read / hear',
+                              MC_0_2 = 'Information hard to learn'),
+                       levels = c('Material hard to read / hear',
+                                  'Information hard to learn'))) %>%
+  summarise_ci(value, cond, item, fluency) %>%
+  ggplot(aes(x = cond, y = mean, colour = fluency)) +
+  geom_point(size = 4) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.15, linewidth = 0.8) +
+  scale_colour_manual(values = flu_cols) +
+  facet_wrap(~ item) +
+  ylim(1, 5) +
+  labs(title = 'Perceived difficulty',
+       subtitle = 'Mean with 95% CI (1 = very easy, 5 = very hard)',
+       x = NULL, y = 'Rating', colour = NULL) +
+  theme_minimal(base_size = 16) +
+  theme(legend.position = 'bottom',
+        axis.text.x = element_text(angle = 25, hjust = 1))
+```
+
+```{r}
+#| label: mc-tests
+mat <- mc %>% filter(item == 'MC_0_1')
+aov_mat <- aov(value ~ condition, data = mat)
+# Formatted t test and Cohen's d for one pair of conditions.
+mc_res <- function(a, b) {
+  pair <- filter(mat, condition %in% c(a, b))
+  fmt_t(t.test(value ~ condition, data = pair), cohen_d(value ~ condition, data = pair))
+}
+m_mat <- function(cnd) sprintf('%.2f', mean(mat$value[mat$condition == cnd], na.rm = TRUE))
+noticed <- mc %>% filter(item == 'MC_1', !is.na(value))
+learn <- mc %>% filter(item == 'MC_0_2')
+m_learn <- function(cnd) sprintf('%.2f', mean(learn$value[learn$condition == cnd], na.rm = TRUE))
+```
+
+The conditions did differ in how hard they felt (`r fmt_F(aov_mat, 'condition')`; left panel of @fig-mc), but not in the way the design intended. Distorted audio was clearly harder than clear audio (`r m_mat('DA')` versus `r m_mat('FA')`, `r mc_res('DA', 'FA')`), and the digits version was harder than plain text (`r m_mat('DZ')` versus `r m_mat('FT')`, `r mc_res('DZ', 'FT')`). The hard font, on the other hand, barely registered (`r m_mat('DT')` versus `r m_mat('FT')`, `r mc_res('DT', 'FT')`), and neither did the gaps (`r m_mat('DL')`, `r mc_res('DL', 'FT')`).
+
+That cuts both ways. The original authors stress that their manipulation is subtle -- a reader who never sees the fluent version is "unlikely to be even consciously aware of the added difficulty". A font that does not feel harder is exactly what they describe, so a flat manipulation check is not by itself evidence that nothing happened. But it does mean that in our version of the study, the two conditions that *were* felt as harder are also the two that produced no memory benefit whatsoever. Difficulty that participants notice is not doing the work here.
+
+The right-hand panel of @fig-mc adds something the recall data only hinted at. Both audio conditions -- the clear recording as much as the distorted one -- were rated as harder to *learn* from than any of the four text conditions (`r m_learn('FA')` and `r m_learn('DA')` against `r m_learn('FT')` for plain text). Listening once to a spoken list is simply a worse way to memorise it than reading it, and that shows up in both the ratings and the recall.
+
+Asked directly whether the presentation format had affected their ability to take the material in, `r sum(noticed$value == 1)` of `r nrow(noticed)` said yes -- in every condition, including the plain one.
+
+# Mindset and need for cognition
+
+```{r}
+#| label: moderators
+r_mind <- cor.test(d$p, d$mindset)
+r_nfc <- cor.test(d$p, d$nfc)
+lm_mind <- lm(p ~ fluency * scale(mindset), data = d)
+lm_nfc <- lm(p ~ fluency * scale(nfc), data = d)
+```
+
+Mindset scores are unrelated to how much people recalled (`r fmt_r(r_mind)`), and so is Need for Cognition (`r fmt_r(r_nfc)`). More to the point, neither moderates the effect of disfluency: the interaction term is not significant for mindset (`r fmt_F(lm_mind, 'fluency:scale(mindset)')`) or for Need for Cognition (`r fmt_F(lm_nfc, 'fluency:scale(nfc)')`). There is no subgroup in this sample for whom the hard font paid off.
+
+# Where that leaves us
+
+```{r}
+#| label: tbl-summary
+tibble(
+  Comparison = c('Hard font vs. plain text',
+                 'Digits vs. plain text',
+                 'Gaps vs. plain text',
+                 'Distorted vs. clear audio',
+                 'All disfluent vs. all fluent'),
+  Original = c(sprintf('86.5%% vs. 72.8%%, t(26) = 2.3, p < .05, d = %.2f', d_orig),
+               'not tested', 'not tested', 'not tested', 'not tested'),
+  Replication = c(
+    sprintf('%s vs. %s, %s', acc('DT'), acc('FT'), t_txt(t_text, d_text)),
+    sprintf('%s vs. %s', acc('DZ'), acc('FT')),
+    sprintf('%s vs. %s', acc('DL'), acc('FT')),
+    sprintf('%s vs. %s, %s', acc('DA'), acc('FA'), t_txt(t_audio, d_audio)),
+    sprintf('%s vs. %s, %s', pct(mean_dis), pct(mean_flu), t_txt(t_pool, d_pool))),
+  Outcome = c('not replicated', 'no effect', 'no effect', 'no effect', 'no effect')
+) %>%
+  kable(caption = 'Original finding and our replication.')
+```
+
+Four ways of making the same material harder to absorb, and not one of them improved recall. That is a clean result, and it is worth being clear about how strong a claim it supports.
+
+The single comparison that mirrors the original -- hard font against plain text, `r sum(score$condition == 'DT')` against `r sum(score$condition == 'FT')` participants -- is underpowered. With groups that size we had a `r round(100 * pow_text)`% chance of detecting an effect as large as the one the original reports, so a null there is weak evidence on its own. The pooled comparison is a different matter: `r sum(score$fluency == 'disfluent')` disfluent participants against `r sum(score$fluency == 'fluent')` fluent ones, a design with ample power for an effect of that size, and what it found was `r round(100 * abs(mean_dis - mean_flu), 1)` percentage points pointing the other way.
+
+This is also where the broader literature has landed: Rummer, Schweppe and Schwede ran three modified replications of exactly this experiment [Fortune is fickle: null-effects of disfluency on learning outcomes](https://doi.org/10.1007/s11409-015-9151-5) (*Metacognition and Learning*, 2016). A meta-analysis of 25 studies with 3135 participants by Xie, Zhou and Liu found [no effect of perceptual disfluency on recall](https://doi.org/10.1007/s10648-018-9442-x) (*d* = -0.01) or transfer, but a clear effect on how well people *thought* they had learned and on how long they spent trying -- though that meta-analysis has itself been [criticised for coding errors](https://doi.org/10.1007/s10648-020-09579-1).
+
+What we can add is that the failure is not specific to fonts. Digits in place of letters, missing letters, a degraded recording -- the disfluency idea predicts a benefit from all of them, and none appeared, not even among the people who like to think hard or believe that ability is trainable. Meanwhile the two manipulations participants did report as harder are also the two disfluent conditions with the lowest recall. Desirable difficulty appears to be a narrow target, and merely making things annoying does not hit it.
+
+Caveats. Our sample is a convenience sample spread thin across six conditions, so each individual cell is small. The learning material was translated into German, which changes word lengths and therefore how the digit and gap manipulations read. The questionnaire ran online and unsupervised, so we do not know how long anyone actually spent on the learning page -- a participant who read the hard font for twice as long as intended has, in effect, undone the manipulation. And the memory test was scored by hand from free-text answers.
+
+# Data
+
+The anonymised responses behind every figure and table on this page are in [`BAFS2025_public.csv`](https://github.com/schulte-mecklenbeck/web20/blob/main/0_data/BAFS2025_public.csv). Gender, age and education are held back and are not published.
