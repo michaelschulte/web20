@@ -309,3 +309,10 @@ In the two ways we look at the two experiments - t-test significance and Cohen's
 # References
 
 Lee, L., Amir, O., & Ariely, D. (2009). In search of homo economicus: Cognitive noise and the role of emotion in preference consistency. *Journal of consumer research, 36*(2), 173-187. [DOI](https://doi.org/10.1086/597160)
+
+# Data
+
+The anonymised responses behind every figure and table on this page:
+
+- [`BAHS2021_raw_public.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2021_raw_public.csv): one row per participant, keyed on a random `ID`. The 45 binary choices of each condition sit in `L1a_*` (names), `Lee2_*` (pictures), `Lee3_*` (color) and `Lee4_*` (B&W), the knowledge questions in `L_KNOWLEDGE_*` and `KNOW_*`, a separate choice and willingness-to-pay block in `A0_*` to `A6_*`, the product ratings in `Rating_Product_*`, and the per-item click counts and page times in the `TIMING_*` columns. `Gender` and `Age` are included. Respondent IP addresses and coordinates were part of the Qualtrics export and have been removed.
+- [`BAHS2021_combinations.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2021_combinations.csv): the experimental plan -- for each `QuestionId`, the two items that were compared (`combi1`, `combi2`).
