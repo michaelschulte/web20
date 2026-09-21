@@ -408,3 +408,11 @@ chisq.test(T3_Pen[T3_Pen$Order == 'Block2',]$Condition, T3_Pen[T3_Pen$Order == '
 
 - Caruso, E. M., Vohs, K. D., Baxter, B., & Waytz, A. (2013). [Mere exposure to money increases endorsement of free-market systems and social inequality](https://doi.org/10.1037/a0029288). <i>Journal of Experimental Psychology: General, 142</i>(2), 301.
 - Tong, L., Zheng, Y., & Zhao, P. (2013). [Is money really the root of all evil? The impact of priming money on consumer choice](https://doi.org/10.1007/s11002-013-9224-7). <i>Marketing Letters, 24</i>, 119-129.
+
+# Data
+
+The anonymised responses behind every figure and table on this page:
+
+- [`BAFS2024_complete_df_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2024_complete_df_pub.csv): the questionnaire as exported, one row per participant, with the priming `Condition` and the `Order` the scales were shown in.
+- [`BAFS2024_scale_av.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2024_scale_av.csv): the per-participant scale averages used in the analysis -- `av_SDO`, `av_BJW` and `av_SJS` -- alongside `Condition` and `Order`.
+- [`BAFS2024_Saetze_Manipulation.txt`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2024_Saetze_Manipulation.txt): the sentences used in the scrambling task, with `sentence_id` marking the control and treatment sets.

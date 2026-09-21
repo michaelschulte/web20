@@ -1,0 +1,643 @@
+RecordedDate,Experiment,Frage,Rep_Zu,Sicherheit,value,response,ID
+2022-11-02T17:29:41Z,E1,F1,R,S,Option 2: 500 CHF,Geld,rywW6CqAFI
+2022-11-02T17:29:41Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,rywW6CqAFI
+2022-11-02T17:29:41Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,rywW6CqAFI
+2022-11-02T17:29:41Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,rywW6CqAFI
+2022-11-02T17:36:34Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,BamNxhKn9H
+2022-11-02T17:36:34Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,BamNxhKn9H
+2022-11-02T17:37:34Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,zEZoFHPqmB
+2022-11-02T17:37:34Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,zEZoFHPqmB
+2022-11-02T17:48:35Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,8B1Ypp2w8L
+2022-11-02T17:48:35Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,8B1Ypp2w8L
+2022-11-02T17:48:35Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,8B1Ypp2w8L
+2022-11-02T17:48:35Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,8B1Ypp2w8L
+2022-11-02T17:50:32Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,9WBeE99ZgG
+2022-11-02T17:50:32Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,9WBeE99ZgG
+2022-11-02T17:50:32Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,9WBeE99ZgG
+2022-11-02T17:50:32Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,9WBeE99ZgG
+2022-11-02T17:51:35Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,HdU5zA6oCK
+2022-11-02T17:51:35Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,HdU5zA6oCK
+2022-11-02T17:51:48Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,WMj3Yte6cT
+2022-11-02T17:51:48Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,WMj3Yte6cT
+2022-11-02T18:04:50Z,E1,F1,R,S,Option 2: 500 CHF,Geld,KwGP9sdMrB
+2022-11-02T18:04:50Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,KwGP9sdMrB
+2022-11-02T18:04:50Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,KwGP9sdMrB
+2022-11-02T18:04:50Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,KwGP9sdMrB
+2022-11-02T18:08:45Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,muh7GJ3NEv
+2022-11-02T18:08:45Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,muh7GJ3NEv
+2022-11-02T18:18:41Z,E1,F1,R,S,Option 2: 500 CHF,Geld,xcWSYRWudT
+2022-11-02T18:18:41Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,xcWSYRWudT
+2022-11-02T18:18:41Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,xcWSYRWudT
+2022-11-02T18:18:41Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,xcWSYRWudT
+2022-11-02T18:22:47Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,bzL5JFWZrf
+2022-11-02T18:22:47Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,bzL5JFWZrf
+2022-11-02T18:22:47Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,bzL5JFWZrf
+2022-11-02T18:22:47Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,bzL5JFWZrf
+2022-11-02T18:26:23Z,E1,F1,R,S,Option 2: 500 CHF,Geld,td5NxWr9QA
+2022-11-02T18:26:23Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,td5NxWr9QA
+2022-11-02T18:26:23Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,td5NxWr9QA
+2022-11-02T18:26:23Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,td5NxWr9QA
+2022-11-02T18:28:26Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,qVSBmM4pnr
+2022-11-02T18:28:26Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,qVSBmM4pnr
+2022-11-02T18:30:55Z,E1,F1,R,S,Option 2: 500 CHF,Geld,kOha11kVWw
+2022-11-02T18:30:55Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,kOha11kVWw
+2022-11-02T18:30:55Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,kOha11kVWw
+2022-11-02T18:30:55Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,kOha11kVWw
+2022-11-02T18:31:45Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,tvOe8sl9EH
+2022-11-02T18:31:45Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,tvOe8sl9EH
+2022-11-02T18:44:53Z,E1,F1,R,S,Option 2: 500 CHF,Geld,lD0oZ3ZwMm
+2022-11-02T18:44:53Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,lD0oZ3ZwMm
+2022-11-02T18:44:53Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,lD0oZ3ZwMm
+2022-11-02T18:44:53Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,lD0oZ3ZwMm
+2022-11-02T18:53:39Z,E1,F1,R,S,Option 2: 500 CHF,Geld,ZiLi3jXkhi
+2022-11-02T18:53:39Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,ZiLi3jXkhi
+2022-11-02T18:53:39Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,ZiLi3jXkhi
+2022-11-02T18:53:39Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,ZiLi3jXkhi
+2022-11-02T18:58:41Z,E1,F1,R,S,Option 2: 500 CHF,Geld,HZ4qjuFj0q
+2022-11-02T18:58:41Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,HZ4qjuFj0q
+2022-11-02T18:58:41Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,HZ4qjuFj0q
+2022-11-02T18:58:41Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,HZ4qjuFj0q
+2022-11-02T19:07:47Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,ZAKA4EnViT
+2022-11-02T19:07:47Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,ZAKA4EnViT
+2022-11-02T19:07:53Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,dtAf7VWyPr
+2022-11-02T19:07:53Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,dtAf7VWyPr
+2022-11-02T19:08:45Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,1uLsmlvIFM
+2022-11-02T19:08:45Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,1uLsmlvIFM
+2022-11-02T19:08:45Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,1uLsmlvIFM
+2022-11-02T19:08:45Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,1uLsmlvIFM
+2022-11-02T19:16:06Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,wUx387GJXQ
+2022-11-02T19:16:06Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,wUx387GJXQ
+2022-11-02T19:25:12Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,Yxb7YFIHwR
+2022-11-02T19:25:12Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,Yxb7YFIHwR
+2022-11-02T19:33:20Z,E1,F1,R,S,Option 2: 500 CHF,Geld,yHAoRNGrkU
+2022-11-02T19:33:20Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,yHAoRNGrkU
+2022-11-02T19:33:20Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,yHAoRNGrkU
+2022-11-02T19:33:20Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,yHAoRNGrkU
+2022-11-02T19:52:44Z,E1,F1,R,S,Option 2: 500 CHF,Geld,q4K0Iyn6Yp
+2022-11-02T19:52:44Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,q4K0Iyn6Yp
+2022-11-02T19:52:44Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,q4K0Iyn6Yp
+2022-11-02T19:52:44Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,q4K0Iyn6Yp
+2022-11-02T20:13:43Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,o2Rbl8zBeN
+2022-11-02T20:13:43Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,o2Rbl8zBeN
+2022-11-02T20:13:43Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,o2Rbl8zBeN
+2022-11-02T20:13:43Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,o2Rbl8zBeN
+2022-11-02T21:04:15Z,E1,F1,R,S,Option 2: 500 CHF,Geld,4m2vq9cyfN
+2022-11-02T21:04:15Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,4m2vq9cyfN
+2022-11-02T21:04:15Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,4m2vq9cyfN
+2022-11-02T21:04:15Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,4m2vq9cyfN
+2022-11-02T21:27:46Z,E1,F1,R,S,Option 2: 500 CHF,Geld,nQH1FCyQbo
+2022-11-02T21:27:46Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,nQH1FCyQbo
+2022-11-02T21:27:46Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,nQH1FCyQbo
+2022-11-02T21:27:46Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,nQH1FCyQbo
+2022-11-02T21:55:31Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,2QvsBzAajF
+2022-11-02T21:55:31Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,2QvsBzAajF
+2022-11-02T22:14:07Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,89DgF2SwLj
+2022-11-02T22:14:07Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,89DgF2SwLj
+2022-11-02T22:27:04Z,E1,F1,R,S,Option 2: 500 CHF,Geld,WgL0oeaiS9
+2022-11-02T22:27:04Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,WgL0oeaiS9
+2022-11-02T22:27:04Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,WgL0oeaiS9
+2022-11-02T22:27:04Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,WgL0oeaiS9
+2022-11-02T22:31:10Z,E1,F1,R,S,Option 2: 500 CHF,Geld,oeugr1r0F9
+2022-11-02T22:31:10Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,oeugr1r0F9
+2022-11-02T22:31:10Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,oeugr1r0F9
+2022-11-02T22:31:10Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,oeugr1r0F9
+2022-11-02T23:06:45Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,LzsRryYSie
+2022-11-02T23:06:45Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,LzsRryYSie
+2022-11-02T23:48:37Z,E1,F1,R,S,Option 2: 500 CHF,Geld,wgj8jUc4qX
+2022-11-02T23:48:37Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,wgj8jUc4qX
+2022-11-02T23:48:37Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,wgj8jUc4qX
+2022-11-02T23:48:37Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,wgj8jUc4qX
+2022-11-03T06:57:41Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,SpSXt1S2js
+2022-11-03T06:57:41Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,SpSXt1S2js
+2022-11-03T07:05:08Z,E1,F1,R,S,Option 2: 500 CHF,Geld,UCBi1HUZbw
+2022-11-03T07:05:08Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,UCBi1HUZbw
+2022-11-03T07:05:08Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,UCBi1HUZbw
+2022-11-03T07:05:08Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,UCBi1HUZbw
+2022-11-03T07:25:03Z,E1,F1,R,S,Option 2: 500 CHF,Geld,UfPGTKnVnc
+2022-11-03T07:25:03Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,UfPGTKnVnc
+2022-11-03T07:25:03Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,UfPGTKnVnc
+2022-11-03T07:25:03Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,UfPGTKnVnc
+2022-11-03T08:13:11Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,4Q8ELCJYaB
+2022-11-03T08:13:11Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,4Q8ELCJYaB
+2022-11-03T08:49:25Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,Y0DcdFqY5y
+2022-11-03T08:49:25Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,Y0DcdFqY5y
+2022-11-03T09:00:22Z,E1,F1,R,S,Option 2: 500 CHF,Geld,oSsZzcvbUM
+2022-11-03T09:00:22Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,oSsZzcvbUM
+2022-11-03T09:00:22Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,oSsZzcvbUM
+2022-11-03T09:00:22Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,oSsZzcvbUM
+2022-11-03T09:01:35Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,XwawKbVXFK
+2022-11-03T09:01:35Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,XwawKbVXFK
+2022-11-03T09:10:25Z,E1,F1,R,S,Option 2: 500 CHF,Geld,nGhAXvybJe
+2022-11-03T09:10:25Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,nGhAXvybJe
+2022-11-03T09:10:25Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,nGhAXvybJe
+2022-11-03T09:10:25Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,nGhAXvybJe
+2022-11-03T09:17:22Z,E1,F1,R,S,Option 2: 500 CHF,Geld,UJdmp4AYO1
+2022-11-03T09:17:22Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,UJdmp4AYO1
+2022-11-03T09:17:22Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,UJdmp4AYO1
+2022-11-03T09:17:22Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,UJdmp4AYO1
+2022-11-03T09:18:27Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,3RzeJw2vCK
+2022-11-03T09:18:27Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,3RzeJw2vCK
+2022-11-03T09:19:07Z,E1,F1,R,S,Option 2: 500 CHF,Geld,qceo2phOnD
+2022-11-03T09:19:07Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,qceo2phOnD
+2022-11-03T09:19:07Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,qceo2phOnD
+2022-11-03T09:19:07Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,qceo2phOnD
+2022-11-03T09:31:32Z,E1,F1,R,S,Option 2: 500 CHF,Geld,k2BCf34gKs
+2022-11-03T09:31:32Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,k2BCf34gKs
+2022-11-03T09:31:32Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,k2BCf34gKs
+2022-11-03T09:31:32Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,k2BCf34gKs
+2022-11-03T09:35:03Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,5gRfISa6Sp
+2022-11-03T09:35:03Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,5gRfISa6Sp
+2022-11-03T09:40:05Z,E1,F1,R,S,Option 2: 500 CHF,Geld,rJPvaTLPyj
+2022-11-03T09:40:05Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,rJPvaTLPyj
+2022-11-03T09:40:05Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,rJPvaTLPyj
+2022-11-03T09:40:05Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,rJPvaTLPyj
+2022-11-03T09:40:07Z,E1,F1,R,S,Option 2: 500 CHF,Geld,bWE7Cchf5i
+2022-11-03T09:40:07Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,bWE7Cchf5i
+2022-11-03T09:40:07Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,bWE7Cchf5i
+2022-11-03T09:40:07Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,bWE7Cchf5i
+2022-11-03T09:42:42Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,xSjMpAaf4S
+2022-11-03T09:42:42Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,xSjMpAaf4S
+2022-11-03T09:52:03Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,1eCJcvmz9K
+2022-11-03T09:52:03Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,1eCJcvmz9K
+2022-11-03T10:13:51Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,P3e6OGbC53
+2022-11-03T10:13:51Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,P3e6OGbC53
+2022-11-03T10:46:11Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,Ey065YbHNg
+2022-11-03T10:46:11Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,Ey065YbHNg
+2022-11-03T10:52:17Z,E1,F1,R,S,Option 2: 500 CHF,Geld,pHCrrSNrXA
+2022-11-03T10:52:17Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,pHCrrSNrXA
+2022-11-03T10:52:17Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,pHCrrSNrXA
+2022-11-03T10:52:17Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,pHCrrSNrXA
+2022-11-03T11:02:14Z,E1,F1,R,S,Option 2: 500 CHF,Geld,LrEm4V0WR9
+2022-11-03T11:02:14Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,LrEm4V0WR9
+2022-11-03T11:02:14Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,LrEm4V0WR9
+2022-11-03T11:02:14Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,LrEm4V0WR9
+2022-11-03T11:17:26Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,kRJhloj6im
+2022-11-03T11:17:26Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,kRJhloj6im
+2022-11-03T11:54:14Z,E1,F1,R,S,Option 2: 500 CHF,Geld,WHApWLCvk2
+2022-11-03T11:54:14Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,WHApWLCvk2
+2022-11-03T11:54:14Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,WHApWLCvk2
+2022-11-03T11:54:14Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,WHApWLCvk2
+2022-11-03T12:40:46Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,QrjpSHGw84
+2022-11-03T12:40:46Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,QrjpSHGw84
+2022-11-03T13:46:36Z,E1,F1,R,S,Option 2: 500 CHF,Geld,N3IyWnhpkU
+2022-11-03T13:46:36Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,N3IyWnhpkU
+2022-11-03T13:46:36Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,N3IyWnhpkU
+2022-11-03T13:46:36Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,N3IyWnhpkU
+2022-11-03T15:37:15Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,YyLoppZdTn
+2022-11-03T15:37:15Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,YyLoppZdTn
+2022-11-03T16:52:42Z,E1,F1,R,S,Option 2: 500 CHF,Geld,eSDc34Uwju
+2022-11-03T16:52:42Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,eSDc34Uwju
+2022-11-03T16:52:42Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,eSDc34Uwju
+2022-11-03T16:52:42Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,eSDc34Uwju
+2022-11-03T18:33:49Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,ggd95HdyCO
+2022-11-03T18:33:49Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,ggd95HdyCO
+2022-11-03T19:41:18Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,2G31W1U23y
+2022-11-03T19:41:18Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,2G31W1U23y
+2022-11-03T22:01:55Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,VO40xbM54M
+2022-11-03T22:01:55Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,VO40xbM54M
+2022-11-03T22:01:55Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,VO40xbM54M
+2022-11-03T22:01:55Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,VO40xbM54M
+2022-11-03T22:40:21Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,HH7sS77WkC
+2022-11-03T22:40:21Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,HH7sS77WkC
+2022-11-04T06:42:12Z,E1,F1,R,S,Option 2: 500 CHF,Geld,2wu9xO26X2
+2022-11-04T06:42:12Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,2wu9xO26X2
+2022-11-04T06:42:12Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,2wu9xO26X2
+2022-11-04T06:42:12Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,2wu9xO26X2
+2022-11-04T06:56:08Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,hJJ5PNbkKl
+2022-11-04T06:56:08Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,hJJ5PNbkKl
+2022-11-04T06:56:08Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,hJJ5PNbkKl
+2022-11-04T06:56:08Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,hJJ5PNbkKl
+2022-11-04T06:56:43Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,REzI0Jgvwd
+2022-11-04T06:56:43Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,REzI0Jgvwd
+2022-11-04T08:28:07Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,GUP7sJDTvJ
+2022-11-04T08:28:07Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,GUP7sJDTvJ
+2022-11-04T08:57:13Z,E1,F1,R,S,Option 2: 500 CHF,Geld,Qf2eDTu34K
+2022-11-04T08:57:13Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,Qf2eDTu34K
+2022-11-04T08:57:13Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Qf2eDTu34K
+2022-11-04T08:57:13Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,Qf2eDTu34K
+2022-11-04T09:10:48Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,QruZNer0ME
+2022-11-04T09:10:48Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,QruZNer0ME
+2022-11-04T09:10:48Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,QruZNer0ME
+2022-11-04T09:10:48Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,QruZNer0ME
+2022-11-04T09:42:02Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,oxxP3uaZGr
+2022-11-04T09:42:02Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,oxxP3uaZGr
+2022-11-04T14:14:24Z,E1,F1,R,S,Option 2: 500 CHF,Geld,CRSHyr3t48
+2022-11-04T14:14:24Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,CRSHyr3t48
+2022-11-04T14:14:24Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,CRSHyr3t48
+2022-11-04T14:14:24Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,CRSHyr3t48
+2022-11-04T15:40:45Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,R9Hw9dZCLN
+2022-11-04T15:40:45Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,R9Hw9dZCLN
+2022-11-05T11:50:25Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,S35lMTGWhO
+2022-11-05T11:50:25Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,S35lMTGWhO
+2022-11-05T11:50:25Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,S35lMTGWhO
+2022-11-05T11:50:25Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,S35lMTGWhO
+2022-11-06T10:27:13Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,QI4YOSi6b7
+2022-11-06T10:27:13Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,QI4YOSi6b7
+2022-11-06T10:33:40Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,zjrNfsskIR
+2022-11-06T10:33:40Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,zjrNfsskIR
+2022-11-06T13:47:10Z,E1,F1,R,S,Option 2: 500 CHF,Geld,KBmAHnqzkK
+2022-11-06T13:47:10Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,KBmAHnqzkK
+2022-11-06T13:47:10Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,KBmAHnqzkK
+2022-11-06T13:47:10Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,KBmAHnqzkK
+2022-11-06T14:19:39Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,3EQ8RAcCYK
+2022-11-06T14:19:39Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,3EQ8RAcCYK
+2022-11-06T21:00:12Z,E1,F1,R,S,Option 2: 500 CHF,Geld,esIKa1W0l0
+2022-11-06T21:00:12Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,esIKa1W0l0
+2022-11-06T21:00:12Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,esIKa1W0l0
+2022-11-06T21:00:12Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,esIKa1W0l0
+2022-11-07T13:52:02Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,cm4NR0Grt9
+2022-11-07T13:52:02Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,cm4NR0Grt9
+2022-11-07T14:13:39Z,E1,F1,R,S,Option 2: 500 CHF,Geld,8XLKFtQKZD
+2022-11-07T14:13:39Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,8XLKFtQKZD
+2022-11-07T14:13:39Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,8XLKFtQKZD
+2022-11-07T14:13:39Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,8XLKFtQKZD
+2022-11-07T14:22:45Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,IHK6LlEjn9
+2022-11-07T14:22:45Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,IHK6LlEjn9
+2022-11-07T14:24:07Z,E1,F1,R,S,Option 2: 500 CHF,Geld,nP9oJbuqqD
+2022-11-07T14:24:07Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,nP9oJbuqqD
+2022-11-07T14:24:07Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,nP9oJbuqqD
+2022-11-07T14:24:07Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,nP9oJbuqqD
+2022-11-07T14:25:09Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,LCvvkifZW9
+2022-11-07T14:25:09Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,LCvvkifZW9
+2022-11-07T14:29:20Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,kUi40eGW5p
+2022-11-07T14:29:20Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,kUi40eGW5p
+2022-11-07T14:29:20Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,kUi40eGW5p
+2022-11-07T14:29:20Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,kUi40eGW5p
+2022-11-07T14:34:36Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,FxNtxzne90
+2022-11-07T14:34:36Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,FxNtxzne90
+2022-11-07T14:37:08Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,KVZNshfaW4
+2022-11-07T14:37:08Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,KVZNshfaW4
+2022-11-07T15:09:43Z,E1,F1,R,S,Option 2: 500 CHF,Geld,sxx4Wvakx8
+2022-11-07T15:09:43Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,sxx4Wvakx8
+2022-11-07T15:09:43Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,sxx4Wvakx8
+2022-11-07T15:09:43Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,sxx4Wvakx8
+2022-11-07T15:11:35Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,AxwV56hpy5
+2022-11-07T15:11:35Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,AxwV56hpy5
+2022-11-07T15:13:36Z,E1,F1,R,S,Option 2: 500 CHF,Geld,tXUgcH4oov
+2022-11-07T15:13:36Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,tXUgcH4oov
+2022-11-07T15:13:36Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,tXUgcH4oov
+2022-11-07T15:13:36Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,tXUgcH4oov
+2022-11-07T15:17:23Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,PbrAibEQ1Q
+2022-11-07T15:17:23Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,PbrAibEQ1Q
+2022-11-07T15:27:01Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,HTO7wg1A5u
+2022-11-07T15:27:01Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,HTO7wg1A5u
+2022-11-07T15:33:21Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,MTY1aNR9HG
+2022-11-07T15:33:21Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,MTY1aNR9HG
+2022-11-07T15:33:42Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,OrpOvAlFoo
+2022-11-07T15:33:42Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,OrpOvAlFoo
+2022-11-07T15:33:42Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,OrpOvAlFoo
+2022-11-07T15:33:42Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,OrpOvAlFoo
+2022-11-07T15:41:37Z,E1,F1,R,S,Option 2: 500 CHF,Geld,99PNu6mI7V
+2022-11-07T15:41:37Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,99PNu6mI7V
+2022-11-07T15:41:37Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,99PNu6mI7V
+2022-11-07T15:41:37Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,99PNu6mI7V
+2022-11-07T15:42:42Z,E1,F1,R,S,Option 2: 500 CHF,Geld,wTQE7hvSEK
+2022-11-07T15:42:42Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,wTQE7hvSEK
+2022-11-07T15:42:42Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,wTQE7hvSEK
+2022-11-07T15:42:42Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,wTQE7hvSEK
+2022-11-07T16:07:23Z,E1,F1,R,S,Option 2: 500 CHF,Geld,ZKeXDISu9t
+2022-11-07T16:07:23Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,ZKeXDISu9t
+2022-11-07T16:07:23Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,ZKeXDISu9t
+2022-11-07T16:07:23Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,ZKeXDISu9t
+2022-11-07T16:09:45Z,E1,F1,R,S,Option 2: 500 CHF,Geld,2scA5Fx3zr
+2022-11-07T16:09:45Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,2scA5Fx3zr
+2022-11-07T16:09:45Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,2scA5Fx3zr
+2022-11-07T16:09:45Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,2scA5Fx3zr
+2022-11-07T16:43:25Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,qclek5F2aU
+2022-11-07T16:43:25Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,qclek5F2aU
+2022-11-07T16:53:19Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,YNVVBgqSiu
+2022-11-07T16:53:19Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,YNVVBgqSiu
+2022-11-07T16:56:59Z,E1,F1,R,S,Option 2: 500 CHF,Geld,1I7cbrvW44
+2022-11-07T16:56:59Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,1I7cbrvW44
+2022-11-07T16:56:59Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,1I7cbrvW44
+2022-11-07T16:56:59Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,1I7cbrvW44
+2022-11-07T17:14:17Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,ULaQvgvoDf
+2022-11-07T17:14:17Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,ULaQvgvoDf
+2022-11-07T17:25:08Z,E1,F1,R,S,Option 2: 500 CHF,Geld,J8RVJ6mt8l
+2022-11-07T17:25:08Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,J8RVJ6mt8l
+2022-11-07T17:25:08Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,J8RVJ6mt8l
+2022-11-07T17:25:08Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,J8RVJ6mt8l
+2022-11-07T17:26:50Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,oVkRu8YtiT
+2022-11-07T17:26:50Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,oVkRu8YtiT
+2022-11-07T18:12:55Z,E1,F1,R,S,Option 2: 500 CHF,Geld,Bg0j30oUQp
+2022-11-07T18:12:55Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,Bg0j30oUQp
+2022-11-07T18:12:55Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Bg0j30oUQp
+2022-11-07T18:12:55Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,Bg0j30oUQp
+2022-11-07T19:11:16Z,E1,F1,R,S,Option 2: 500 CHF,Geld,JhJ9p5wXZ0
+2022-11-07T19:11:16Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,JhJ9p5wXZ0
+2022-11-07T19:11:16Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,JhJ9p5wXZ0
+2022-11-07T19:11:16Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,JhJ9p5wXZ0
+2022-11-07T19:16:48Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,kvRPZJowT4
+2022-11-07T19:16:48Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,kvRPZJowT4
+2022-11-07T19:30:48Z,E1,F1,R,S,Option 2: 500 CHF,Geld,jOr8SHxnhg
+2022-11-07T19:30:48Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,jOr8SHxnhg
+2022-11-07T19:30:48Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,jOr8SHxnhg
+2022-11-07T19:30:48Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,jOr8SHxnhg
+2022-11-07T19:49:54Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,7ONaHvIx1O
+2022-11-07T19:49:54Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,7ONaHvIx1O
+2022-11-07T20:04:06Z,E1,F1,R,S,Option 2: 500 CHF,Geld,DWTi33ARNQ
+2022-11-07T20:04:06Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,DWTi33ARNQ
+2022-11-07T20:04:06Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,DWTi33ARNQ
+2022-11-07T20:04:06Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,DWTi33ARNQ
+2022-11-07T20:15:50Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,TJTL1slgAm
+2022-11-07T20:15:50Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,TJTL1slgAm
+2022-11-07T20:47:10Z,E1,F1,R,S,Option 2: 500 CHF,Geld,OP2Ks8ZJug
+2022-11-07T20:47:10Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,OP2Ks8ZJug
+2022-11-07T20:47:10Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,OP2Ks8ZJug
+2022-11-07T20:47:10Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,OP2Ks8ZJug
+2022-11-07T21:20:47Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,bT53fzf8sM
+2022-11-07T21:20:47Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,bT53fzf8sM
+2022-11-07T21:20:47Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,bT53fzf8sM
+2022-11-07T21:20:47Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,bT53fzf8sM
+2022-11-07T21:51:25Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,JvsuWU2AAs
+2022-11-07T21:51:25Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,JvsuWU2AAs
+2022-11-07T21:56:55Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,cBrevs5Uho
+2022-11-07T21:56:55Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,cBrevs5Uho
+2022-11-07T23:08:30Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,zGy7sEbqfM
+2022-11-07T23:08:30Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,zGy7sEbqfM
+2022-11-08T02:36:36Z,E1,F1,R,S,Option 2: 500 CHF,Geld,rG4TqyqyoP
+2022-11-08T02:36:36Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,rG4TqyqyoP
+2022-11-08T02:36:36Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,rG4TqyqyoP
+2022-11-08T02:36:36Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,rG4TqyqyoP
+2022-11-08T06:12:19Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,FWpHKxuebh
+2022-11-08T06:12:19Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,FWpHKxuebh
+2022-11-08T08:16:20Z,E1,F1,R,S,Option 2: 500 CHF,Geld,MstfFwshOy
+2022-11-08T08:16:20Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,MstfFwshOy
+2022-11-08T08:16:20Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,MstfFwshOy
+2022-11-08T08:16:20Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,MstfFwshOy
+2022-11-08T11:11:27Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,jFMbMtqv8V
+2022-11-08T11:11:27Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,jFMbMtqv8V
+2022-11-08T11:53:49Z,E1,F1,R,S,Option 2: 500 CHF,Geld,qNSmX3JU4T
+2022-11-08T11:53:49Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,qNSmX3JU4T
+2022-11-08T11:53:49Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,qNSmX3JU4T
+2022-11-08T11:53:49Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,qNSmX3JU4T
+2022-11-08T12:50:32Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,JgGwvQhI3B
+2022-11-08T12:50:32Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,JgGwvQhI3B
+2022-11-08T13:55:27Z,E1,F1,R,S,Option 2: 500 CHF,Geld,Jwsl8159fG
+2022-11-08T13:55:27Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,Jwsl8159fG
+2022-11-08T13:55:27Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Jwsl8159fG
+2022-11-08T13:55:27Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,Jwsl8159fG
+2022-11-08T16:23:19Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,Z9RVMWbxAL
+2022-11-08T16:23:19Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,Z9RVMWbxAL
+2022-11-08T16:23:19Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,Z9RVMWbxAL
+2022-11-08T16:23:19Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,Z9RVMWbxAL
+2022-11-08T21:51:06Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,yXw2YQsVD4
+2022-11-08T21:51:06Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,yXw2YQsVD4
+2022-11-08T23:48:12Z,E1,F1,R,S,Option 2: 500 CHF,Geld,IpVPcVoAro
+2022-11-08T23:48:12Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,IpVPcVoAro
+2022-11-08T23:48:12Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,IpVPcVoAro
+2022-11-08T23:48:12Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,IpVPcVoAro
+2022-11-09T15:17:31Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,ygoAiC7xcF
+2022-11-09T15:17:31Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,ygoAiC7xcF
+2022-11-09T15:17:31Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,ygoAiC7xcF
+2022-11-09T15:17:31Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,ygoAiC7xcF
+2022-11-09T16:19:15Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,wJ88B4R0Ku
+2022-11-09T16:19:15Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,wJ88B4R0Ku
+2022-11-09T20:38:52Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,edNztIDzdt
+2022-11-09T20:38:52Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,edNztIDzdt
+2022-11-10T08:30:33Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,ipyxdgEzbA
+2022-11-10T08:30:33Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,ipyxdgEzbA
+2022-11-10T08:56:55Z,E1,F1,R,S,Option 2: 500 CHF,Geld,rv6JtcPwB2
+2022-11-10T08:56:55Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,rv6JtcPwB2
+2022-11-10T08:56:55Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,rv6JtcPwB2
+2022-11-10T08:56:55Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,rv6JtcPwB2
+2022-11-10T09:05:12Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,8Br6YUsq1o
+2022-11-10T09:05:12Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,8Br6YUsq1o
+2022-11-10T10:03:25Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,evVQ9TsLtx
+2022-11-10T10:03:25Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,evVQ9TsLtx
+2022-11-10T10:03:25Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,evVQ9TsLtx
+2022-11-10T10:03:25Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,evVQ9TsLtx
+2022-11-10T10:33:16Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,vHzVFSNSc9
+2022-11-10T10:33:16Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,vHzVFSNSc9
+2022-11-10T10:55:35Z,E1,F1,R,S,Option 2: 500 CHF,Geld,GoHCqN9T1g
+2022-11-10T10:55:35Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,GoHCqN9T1g
+2022-11-10T10:55:35Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,GoHCqN9T1g
+2022-11-10T10:55:35Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,GoHCqN9T1g
+2022-11-10T11:39:37Z,E1,F1,R,S,Option 2: 500 CHF,Geld,g4EfYhCFbl
+2022-11-10T11:39:37Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,g4EfYhCFbl
+2022-11-10T11:39:37Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,g4EfYhCFbl
+2022-11-10T11:39:37Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,g4EfYhCFbl
+2022-11-10T18:37:38Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,rhbBYtANeA
+2022-11-10T18:37:38Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,rhbBYtANeA
+2022-11-10T18:45:45Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,VTygx7cWTV
+2022-11-10T18:45:45Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,VTygx7cWTV
+2022-11-10T19:53:46Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,RDAdAaetwq
+2022-11-10T19:53:46Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,RDAdAaetwq
+2022-11-10T19:53:46Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,RDAdAaetwq
+2022-11-10T19:53:46Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,RDAdAaetwq
+2022-11-10T20:33:24Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,9fG5ioya2L
+2022-11-10T20:33:24Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,9fG5ioya2L
+2022-11-10T21:14:41Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,AZFFsucN9I
+2022-11-10T21:14:41Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,AZFFsucN9I
+2022-11-10T21:51:30Z,E1,F1,R,S,Option 2: 500 CHF,Geld,IFhTRp9DKy
+2022-11-10T21:51:30Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,IFhTRp9DKy
+2022-11-10T21:51:30Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,IFhTRp9DKy
+2022-11-10T21:51:30Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,IFhTRp9DKy
+2022-11-10T21:54:10Z,E1,F1,R,S,Option 2: 500 CHF,Geld,On2oendvNk
+2022-11-10T21:54:10Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,On2oendvNk
+2022-11-10T21:54:10Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,On2oendvNk
+2022-11-10T21:54:10Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,On2oendvNk
+2022-11-10T21:59:00Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,AixKUttZbp
+2022-11-10T21:59:00Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,AixKUttZbp
+2022-11-10T21:59:43Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,eSfQQwTGXA
+2022-11-10T21:59:43Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,eSfQQwTGXA
+2022-11-10T22:00:31Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,tSDG3kSROp
+2022-11-10T22:00:31Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,tSDG3kSROp
+2022-11-10T22:02:10Z,E1,F1,R,S,Option 2: 500 CHF,Geld,ppNuNh14Mt
+2022-11-10T22:02:10Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,ppNuNh14Mt
+2022-11-10T22:02:10Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,ppNuNh14Mt
+2022-11-10T22:02:10Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,ppNuNh14Mt
+2022-11-10T22:05:10Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,o2OCHIuAku
+2022-11-10T22:05:10Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,o2OCHIuAku
+2022-11-10T22:05:10Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,o2OCHIuAku
+2022-11-10T22:05:10Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,o2OCHIuAku
+2022-11-10T22:17:27Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,Zw0ZgdoQF3
+2022-11-10T22:17:27Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,Zw0ZgdoQF3
+2022-11-10T22:30:29Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,28u4P8RwBq
+2022-11-10T22:30:29Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,28u4P8RwBq
+2022-11-10T22:30:29Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,28u4P8RwBq
+2022-11-10T22:30:29Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,28u4P8RwBq
+2022-11-10T22:35:39Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,eUYgoGysEc
+2022-11-10T22:35:39Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,eUYgoGysEc
+2022-11-10T22:42:27Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,F9jDFwqXye
+2022-11-10T22:42:27Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,F9jDFwqXye
+2022-11-10T22:49:25Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,J0MCLDcrpK
+2022-11-10T22:49:25Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,J0MCLDcrpK
+2022-11-10T22:52:10Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,Jy38lZ38nc
+2022-11-10T22:52:10Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,Jy38lZ38nc
+2022-11-10T22:52:10Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Jy38lZ38nc
+2022-11-10T22:52:10Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,Jy38lZ38nc
+2022-11-10T22:57:31Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,qKzC8xjVLQ
+2022-11-10T22:57:31Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,qKzC8xjVLQ
+2022-11-10T23:02:04Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,euNag1r3fd
+2022-11-10T23:02:04Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,euNag1r3fd
+2022-11-10T23:04:35Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,zMd5zGhzht
+2022-11-10T23:04:35Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,zMd5zGhzht
+2022-11-10T23:04:39Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,UiRPUQA9Y8
+2022-11-10T23:04:39Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,UiRPUQA9Y8
+2022-11-10T23:05:08Z,E1,F1,R,S,Option 2: 500 CHF,Geld,hoy50kNMte
+2022-11-10T23:05:08Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,hoy50kNMte
+2022-11-10T23:05:08Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,hoy50kNMte
+2022-11-10T23:05:08Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,hoy50kNMte
+2022-11-10T23:15:28Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,3b6umZo4yb
+2022-11-10T23:15:28Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,3b6umZo4yb
+2022-11-10T23:15:28Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,3b6umZo4yb
+2022-11-10T23:15:28Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,3b6umZo4yb
+2022-11-10T23:19:36Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,z1k2nR0FR3
+2022-11-10T23:19:36Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,z1k2nR0FR3
+2022-11-10T23:19:36Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,z1k2nR0FR3
+2022-11-10T23:19:36Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,z1k2nR0FR3
+2022-11-10T23:36:00Z,E1,F1,R,S,Option 2: 500 CHF,Geld,tlGRS4Lv7J
+2022-11-10T23:36:00Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,tlGRS4Lv7J
+2022-11-10T23:36:00Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,tlGRS4Lv7J
+2022-11-10T23:36:00Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,tlGRS4Lv7J
+2022-11-10T23:38:21Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,XJ7OwK1Y11
+2022-11-10T23:38:21Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,XJ7OwK1Y11
+2022-11-11T02:37:26Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,MjvK4caLCg
+2022-11-11T02:37:26Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,MjvK4caLCg
+2022-11-11T06:36:18Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,hmozN0idHl
+2022-11-11T06:36:18Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,hmozN0idHl
+2022-11-11T06:36:18Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,hmozN0idHl
+2022-11-11T06:36:18Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,hmozN0idHl
+2022-11-11T06:38:11Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,jWEjJD8AVP
+2022-11-11T06:38:11Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,jWEjJD8AVP
+2022-11-11T06:47:58Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,XNHrMTCxUg
+2022-11-11T06:47:58Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,XNHrMTCxUg
+2022-11-11T06:54:48Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,T2NZXA3TZM
+2022-11-11T06:54:48Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,T2NZXA3TZM
+2022-11-11T06:54:48Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,T2NZXA3TZM
+2022-11-11T06:54:48Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,T2NZXA3TZM
+2022-11-11T07:02:37Z,E1,F1,R,S,Option 2: 500 CHF,Geld,Fn4y7SiWh8
+2022-11-11T07:02:37Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,Fn4y7SiWh8
+2022-11-11T07:02:37Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Fn4y7SiWh8
+2022-11-11T07:02:37Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,Fn4y7SiWh8
+2022-11-11T07:03:24Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,UHUH3YhjWp
+2022-11-11T07:03:24Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,UHUH3YhjWp
+2022-11-11T07:03:24Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,UHUH3YhjWp
+2022-11-11T07:03:24Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,UHUH3YhjWp
+2022-11-11T07:06:48Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,OPiRE4S52r
+2022-11-11T07:06:48Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,OPiRE4S52r
+2022-11-11T07:26:14Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,DZzvQ6j9Bb
+2022-11-11T07:26:14Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,DZzvQ6j9Bb
+2022-11-11T09:21:08Z,E1,F1,R,S,Option 2: 500 CHF,Geld,hH8zWa7V57
+2022-11-11T09:21:08Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,hH8zWa7V57
+2022-11-11T09:21:08Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,hH8zWa7V57
+2022-11-11T09:21:08Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,hH8zWa7V57
+2022-11-11T09:51:56Z,E1,F1,R,S,Option 2: 500 CHF,Geld,z7Gsk3nbkO
+2022-11-11T09:51:56Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,z7Gsk3nbkO
+2022-11-11T09:51:56Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,z7Gsk3nbkO
+2022-11-11T09:51:56Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,z7Gsk3nbkO
+2022-11-11T10:38:05Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,ejzKKOLvdz
+2022-11-11T10:38:05Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,ejzKKOLvdz
+2022-11-11T15:41:47Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,u6dz7KWCRd
+2022-11-11T15:41:47Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,u6dz7KWCRd
+2022-11-11T18:31:11Z,E1,F1,R,S,Option 2: 500 CHF,Geld,MA5CSC2LVg
+2022-11-11T18:31:11Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,MA5CSC2LVg
+2022-11-11T18:31:11Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,MA5CSC2LVg
+2022-11-11T18:31:11Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,MA5CSC2LVg
+2022-11-11T19:49:29Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,CgA2pVCCzg
+2022-11-11T19:49:29Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,CgA2pVCCzg
+2022-11-12T08:48:21Z,E1,F1,R,S,Option 2: 500 CHF,Geld,iMqfSaCMZn
+2022-11-12T08:48:21Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,iMqfSaCMZn
+2022-11-12T08:48:21Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,iMqfSaCMZn
+2022-11-12T08:48:21Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,iMqfSaCMZn
+2022-11-12T13:35:29Z,E1,F1,R,S,Option 2: 500 CHF,Geld,aTvleHdj1K
+2022-11-12T13:35:29Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,aTvleHdj1K
+2022-11-12T13:35:29Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,aTvleHdj1K
+2022-11-12T13:35:29Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,aTvleHdj1K
+2022-11-12T13:39:24Z,E1,F1,R,S,Option 2: 500 CHF,Geld,2qIigsUSed
+2022-11-12T13:39:24Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,2qIigsUSed
+2022-11-12T13:39:24Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,2qIigsUSed
+2022-11-12T13:39:24Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,2qIigsUSed
+2022-11-12T13:39:30Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,u82JQWXmY4
+2022-11-12T13:39:30Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,u82JQWXmY4
+2022-11-12T13:41:04Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,G5qSIz141J
+2022-11-12T13:41:04Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,G5qSIz141J
+2022-11-12T13:41:04Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,G5qSIz141J
+2022-11-12T13:41:04Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,G5qSIz141J
+2022-11-12T13:45:48Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,TSeEFVBW5P
+2022-11-12T13:45:48Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,TSeEFVBW5P
+2022-11-12T14:02:45Z,E1,F1,R,S,Option 2: 500 CHF,Geld,6yPKj2hHzn
+2022-11-12T14:02:45Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,6yPKj2hHzn
+2022-11-12T14:02:45Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,6yPKj2hHzn
+2022-11-12T14:02:45Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,6yPKj2hHzn
+2022-11-12T14:15:43Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,AeMhLNJb3H
+2022-11-12T14:15:43Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,AeMhLNJb3H
+2022-11-12T14:26:06Z,E1,F1,R,S,Option 2: 500 CHF,Geld,hRNM8hEz1b
+2022-11-12T14:26:06Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,hRNM8hEz1b
+2022-11-12T14:26:06Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,hRNM8hEz1b
+2022-11-12T14:26:06Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,hRNM8hEz1b
+2022-11-12T14:27:31Z,E1,F1,R,S,Option 2: 500 CHF,Geld,Ow4Et6A1pX
+2022-11-12T14:27:31Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,Ow4Et6A1pX
+2022-11-12T14:27:31Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Ow4Et6A1pX
+2022-11-12T14:27:31Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,Ow4Et6A1pX
+2022-11-12T14:33:16Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,E6i86oU7g5
+2022-11-12T14:33:16Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,E6i86oU7g5
+2022-11-12T14:48:58Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,9wz2uysJrb
+2022-11-12T14:48:58Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,9wz2uysJrb
+2022-11-12T14:52:41Z,E1,F1,R,S,Option 2: 500 CHF,Geld,ZqYjr2lDKp
+2022-11-12T14:52:41Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,ZqYjr2lDKp
+2022-11-12T14:52:41Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,ZqYjr2lDKp
+2022-11-12T14:52:41Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,ZqYjr2lDKp
+2022-11-12T16:20:49Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,w8OmphlI36
+2022-11-12T16:20:49Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,w8OmphlI36
+2022-11-12T16:24:45Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,2UMbbccFiK
+2022-11-12T16:24:45Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,2UMbbccFiK
+2022-11-12T18:10:11Z,E1,F1,R,S,Option 2: 500 CHF,Geld,ciSKHCmPqI
+2022-11-12T18:10:11Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,ciSKHCmPqI
+2022-11-12T18:10:11Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,ciSKHCmPqI
+2022-11-12T18:10:11Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,ciSKHCmPqI
+2022-11-13T21:00:10Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,GwEgb85Vk2
+2022-11-13T21:00:10Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,GwEgb85Vk2
+2022-11-14T09:35:41Z,E1,F1,R,S,Option 2: 500 CHF,Geld,2eTzketZED
+2022-11-14T09:35:41Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,2eTzketZED
+2022-11-14T09:35:41Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,2eTzketZED
+2022-11-14T09:35:41Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,2eTzketZED
+2022-11-14T11:54:40Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,kCuHK9YjIg
+2022-11-14T11:54:40Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,kCuHK9YjIg
+2022-11-14T12:45:50Z,E1,F1,R,S,Option 2: 500 CHF,Geld,raFf2TZ0Ap
+2022-11-14T12:45:50Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,raFf2TZ0Ap
+2022-11-14T12:45:50Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,raFf2TZ0Ap
+2022-11-14T12:45:50Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,raFf2TZ0Ap
+2022-11-14T12:46:51Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,YsXVxUI5Vm
+2022-11-14T12:46:51Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,YsXVxUI5Vm
+2022-11-14T17:14:30Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,kxmUiueGEY
+2022-11-14T17:14:30Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,kxmUiueGEY
+2022-11-14T18:05:29Z,E1,F1,R,S,Option 2: 500 CHF,Geld,Frics6vkon
+2022-11-14T18:05:29Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,Frics6vkon
+2022-11-14T18:05:29Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,Frics6vkon
+2022-11-14T18:05:29Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,Frics6vkon
+2022-11-14T19:08:50Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,os5rnB4B3W
+2022-11-14T19:08:50Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,os5rnB4B3W
+2022-11-14T21:08:39Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,kIst36Y7QT
+2022-11-14T21:08:39Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,kIst36Y7QT
+2022-11-14T21:10:01Z,E1,F1,R,S,Option 1 : Ein Meet and Greet mit Ihrem Idol,Option1,iMqBYoSxIs
+2022-11-14T21:10:01Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,iMqBYoSxIs
+2022-11-14T21:10:01Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,iMqBYoSxIs
+2022-11-14T21:10:01Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,iMqBYoSxIs
+2022-11-14T21:16:02Z,E1,F1,R,S,Option 2: 500 CHF,Geld,XBE7Y8jwuM
+2022-11-14T21:16:02Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,XBE7Y8jwuM
+2022-11-14T21:16:02Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,XBE7Y8jwuM
+2022-11-14T21:16:02Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,XBE7Y8jwuM
+2022-11-14T21:21:25Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,hy0HapxpOn
+2022-11-14T21:21:25Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,hy0HapxpOn
+2022-11-14T22:14:58Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,eIeCBgJYI0
+2022-11-14T22:14:58Z,E1,F4,Z,U,Option 2: Sie erhalten mit einer Chance von 1% einen Geldbetrag von 10'000 CHF,Geld,eIeCBgJYI0
+2022-11-14T22:42:24Z,E1,F1,R,S,Option 2: 500 CHF,Geld,7h9zmhKbH4
+2022-11-14T22:42:24Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,7h9zmhKbH4
+2022-11-14T22:42:24Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,7h9zmhKbH4
+2022-11-14T22:42:24Z,E2,F10,Z,S,Option 2: Ihre Steuern werden von jemanden übernommen,Geld,7h9zmhKbH4
+2022-11-14T23:26:37Z,E1,F2,R,U,Option 1: Eine Chance von 1% auf ein Meet and Greet mit Ihrem Idol,Option1,zbQGd52o8m
+2022-11-14T23:26:37Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,zbQGd52o8m
+2022-11-15T13:07:25Z,E1,F1,R,S,Option 2: 500 CHF,Geld,u7DjH9t2u5
+2022-11-15T13:07:25Z,E2,F5,R,S,Option 1: Coupon für USA-Reise von 500 CHF,Option1,u7DjH9t2u5
+2022-11-15T13:07:25Z,E1,F3,Z,S,Option 2: Sie erhalten einen Geldbetrag von 10'000 CHF,Geld,u7DjH9t2u5
+2022-11-15T13:07:25Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,u7DjH9t2u5
+2022-11-15T19:35:29Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,UO6gsxx5YA
+2022-11-15T19:35:29Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,UO6gsxx5YA
+2022-11-15T21:26:28Z,E1,F2,R,U,Option 2: Eine Chance von 1% auf 500 CHF,Geld,pqywUDpR1P
+2022-11-15T21:26:28Z,E1,F4,Z,U,Option 1: Sie können mit einer Chance von 1% einen Ihren liebsten Momente wieder erleben,Option1,pqywUDpR1P
+2022-11-16T15:32:52Z,E1,F1,R,S,Option 2: 500 CHF,Geld,i7B0KKb6ev
+2022-11-16T15:32:52Z,E2,F5,R,S,Option 2: Coupon für Semestergebühren von 500 CHF,Geld,i7B0KKb6ev
+2022-11-16T15:32:52Z,E1,F3,Z,S,Option 1: Sie können einen Ihrer liebsten Momente wieder erleben,Option1,i7B0KKb6ev
+2022-11-16T15:32:52Z,E2,F10,Z,S,Option 1: Ausverkauftes Konzert ihres Lieblingsmusikers,Option1,i7B0KKb6ev

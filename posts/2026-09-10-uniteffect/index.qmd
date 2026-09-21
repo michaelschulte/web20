@@ -252,3 +252,7 @@ t.test(days ~ unit, data = S4_AET) |> report()
 ```
 
 The attention version of the months condition does not differ reliably from the plain one either.
+
+# Data
+
+The anonymised responses behind every figure and table on this page are in [`BAFS2026_public.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2026_public.csv): one row per participant, with the random `ID`, the `consent` and `job` items, the answers to both replication studies (`S3_*` and `S4_*`), the `Manipulation` and `Kontrollfrage` checks, `Interesse` and `Feedback`, and the questionnaire metadata. Gender, birth year and age are held back and are not published.

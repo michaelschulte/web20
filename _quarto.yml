@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    # Keep the data files linked from posts served from the site, even when the
+    # only post linking to them is a draft and Quarto stops copying them.
+    - 0_data/*.csv
+    # The internal cohort versions are needed to render but never published; the
+    # 0_data/*_internal.csv gitignore rule does not reach docs/0_data/.
+    - "!0_data/*_internal.csv"
 
 website:
   title: "Michael Schulte-Mecklenbeck"

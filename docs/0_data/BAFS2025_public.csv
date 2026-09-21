@@ -1,0 +1,2851 @@
+ID,condition,scale,set,item,response,value
+2VCDEXqNra,DZ,mancheck,NA,MC_0_1,NA,NA
+2VCDEXqNra,DZ,mancheck,NA,MC_0_2,NA,NA
+2VCDEXqNra,DZ,mancheck,NA,MC_1,NA,NA
+2VCDEXqNra,DZ,memory,FB2,FB2_1,3 Meter,1
+2VCDEXqNra,DZ,memory,FB2,FB2_2,Blütenblätter und Pollen,1
+2VCDEXqNra,DZ,memory,FB2,FB2_3,Dick und rau,1
+2VCDEXqNra,DZ,memory,FB2,FB2_4,Blau,1
+2VCDEXqNra,DZ,memory,FB2,FB2_5,Gelbes Horn,1
+2VCDEXqNra,DZ,memory,FB2,FB2_6,In Gruppen,1
+2VCDEXqNra,DZ,memory,FB2,FB2_7,Nahrung sammeln,1
+2VCDEXqNra,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+2VCDEXqNra,DZ,mindset,NA,GMS_2,Stimme überhaupt nicht zu,1
+2VCDEXqNra,DZ,mindset,NA,GMS_3,Stimme nicht zu,2
+2VCDEXqNra,DZ,nfc,NA,NfC_1,sehr zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_10,sehr zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_11,sehr zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_13,sehr zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_14,eher zutreffend,4
+2VCDEXqNra,DZ,nfc,NA,NfC_15,sehr zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_16,weder noch,3
+2VCDEXqNra,DZ,nfc,NA,NfC_17,eher zutreffend,4
+2VCDEXqNra,DZ,nfc,NA,NfC_2,sehr zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_5,eher zutreffend,2
+2VCDEXqNra,DZ,nfc,NA,NfC_6,eher zutreffend,4
+2VCDEXqNra,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+2VCDEXqNra,DZ,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+2VCDEXqNra,DZ,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+2v0hUzJ0La,FA,mancheck,NA,MC_0_1,Leicht,2
+2v0hUzJ0La,FA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+2v0hUzJ0La,FA,mancheck,NA,MC_1,Ja,1
+2v0hUzJ0La,FA,memory,FB2,FB2_1,60 cm,0
+2v0hUzJ0La,FA,memory,FB2,FB2_2,Blüten und Pollen,1
+2v0hUzJ0La,FA,memory,FB2,FB2_3,Schuppen,0
+2v0hUzJ0La,FA,memory,FB2,FB2_4,Braun,0
+2v0hUzJ0La,FA,memory,FB2,FB2_5,Ein Horn,1
+2v0hUzJ0La,FA,memory,FB2,FB2_6,In Gruppen,1
+2v0hUzJ0La,FA,memory,FB2,FB2_7,-,0
+2v0hUzJ0La,FA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+2v0hUzJ0La,FA,mindset,NA,GMS_2,Stimme nicht zu,2
+2v0hUzJ0La,FA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+2v0hUzJ0La,FA,nfc,NA,NfC_1,eher nicht zutreffend,2
+2v0hUzJ0La,FA,nfc,NA,NfC_10,eher zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_11,eher zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+2v0hUzJ0La,FA,nfc,NA,NfC_13,weder noch,3
+2v0hUzJ0La,FA,nfc,NA,NfC_14,weder noch,3
+2v0hUzJ0La,FA,nfc,NA,NfC_15,eher zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_16,eher zutreffend,2
+2v0hUzJ0La,FA,nfc,NA,NfC_17,eher zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_2,eher zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_3,eher zutreffend,2
+2v0hUzJ0La,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_5,weder noch,3
+2v0hUzJ0La,FA,nfc,NA,NfC_6,eher zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_7,weder noch,3
+2v0hUzJ0La,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+2v0hUzJ0La,FA,nfc,NA,NfC_9,eher nicht zutreffend,4
+3RaWuKBJsy,DZ,mancheck,NA,MC_0_1,Leicht,2
+3RaWuKBJsy,DZ,mancheck,NA,MC_0_2,Schwierig,4
+3RaWuKBJsy,DZ,mancheck,NA,MC_1,Ja,1
+3RaWuKBJsy,DZ,memory,FB3,FB3_1,60 cm,1
+3RaWuKBJsy,DZ,memory,FB3,FB3_2,Honig,0
+3RaWuKBJsy,DZ,memory,FB3,FB3_3,glatte Haut,1
+3RaWuKBJsy,DZ,memory,FB3,FB3_4,braun,1
+3RaWuKBJsy,DZ,memory,FB3,FB3_6,Zacken,0
+3RaWuKBJsy,DZ,memory,FB3,FB3_7,Ins Schilf,0
+3RaWuKBJsy,DZ,memory,FB3,FB3_8,Trommelartige Laute,1
+3RaWuKBJsy,DZ,mindset,NA,GMS_1,Stimme zu,5
+3RaWuKBJsy,DZ,mindset,NA,GMS_2,Stimme zu,5
+3RaWuKBJsy,DZ,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_1,eher nicht zutreffend,2
+3RaWuKBJsy,DZ,nfc,NA,NfC_10,weder noch,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_11,weder noch,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_12,weder noch,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+3RaWuKBJsy,DZ,nfc,NA,NfC_14,eher zutreffend,4
+3RaWuKBJsy,DZ,nfc,NA,NfC_15,weder noch,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_16,eher zutreffend,2
+3RaWuKBJsy,DZ,nfc,NA,NfC_17,eher zutreffend,4
+3RaWuKBJsy,DZ,nfc,NA,NfC_2,eher nicht zutreffend,2
+3RaWuKBJsy,DZ,nfc,NA,NfC_3,eher zutreffend,2
+3RaWuKBJsy,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+3RaWuKBJsy,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+3RaWuKBJsy,DZ,nfc,NA,NfC_6,weder noch,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+3RaWuKBJsy,DZ,nfc,NA,NfC_8,weder noch,3
+3RaWuKBJsy,DZ,nfc,NA,NfC_9,weder noch,3
+3dFgyH4FVa,FA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+3dFgyH4FVa,FA,mancheck,NA,MC_0_2,Schwierig,4
+3dFgyH4FVa,FA,mancheck,NA,MC_1,Ja,1
+3dFgyH4FVa,FA,memory,FB2,FB2_1,3m,1
+3dFgyH4FVa,FA,memory,FB2,FB2_2,Pollen und Blütenblätter,1
+3dFgyH4FVa,FA,memory,FB2,FB2_3,Schuppen,0
+3dFgyH4FVa,FA,memory,FB2,FB2_4,blau,1
+3dFgyH4FVa,FA,memory,FB2,FB2_5,Ein gelbes Horn,1
+3dFgyH4FVa,FA,memory,FB2,FB2_6,in Gruppen,1
+3dFgyH4FVa,FA,memory,FB2,FB2_7,Nahrung sammeln,1
+3dFgyH4FVa,FA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+3dFgyH4FVa,FA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+3dFgyH4FVa,FA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+3dFgyH4FVa,FA,nfc,NA,NfC_1,eher nicht zutreffend,2
+3dFgyH4FVa,FA,nfc,NA,NfC_10,eher zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_11,eher zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_13,eher zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_14,weder noch,3
+3dFgyH4FVa,FA,nfc,NA,NfC_15,eher nicht zutreffend,2
+3dFgyH4FVa,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_17,weder noch,3
+3dFgyH4FVa,FA,nfc,NA,NfC_2,weder noch,3
+3dFgyH4FVa,FA,nfc,NA,NfC_3,eher nicht zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_5,eher zutreffend,2
+3dFgyH4FVa,FA,nfc,NA,NfC_6,weder noch,3
+3dFgyH4FVa,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+3dFgyH4FVa,FA,nfc,NA,NfC_8,weder noch,3
+3dFgyH4FVa,FA,nfc,NA,NfC_9,eher nicht zutreffend,4
+44jJepjgoX,FA,mancheck,NA,MC_0_1,Leicht,2
+44jJepjgoX,FA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+44jJepjgoX,FA,mancheck,NA,MC_1,Nein,0
+44jJepjgoX,FA,memory,FB1,FB1_1,1.5m,1
+44jJepjgoX,FA,memory,FB1,FB1_2,von grünem Blattgemüse,1
+44jJepjgoX,FA,memory,FB1,FB1_3,schuppig,1
+44jJepjgoX,FA,memory,FB1,FB1_4,schwarz,1
+44jJepjgoX,FA,memory,FB1,FB1_5,buschig,1
+44jJepjgoX,FA,memory,FB1,FB1_6,durch zwitschern,1
+44jJepjgoX,FA,memory,FB1,FB1_7,umherstreifen,1
+44jJepjgoX,FA,mindset,NA,GMS_1,Stimme nicht zu,2
+44jJepjgoX,FA,mindset,NA,GMS_2,Stimme nicht zu,2
+44jJepjgoX,FA,mindset,NA,GMS_3,Stimme nicht zu,2
+44jJepjgoX,FA,nfc,NA,NfC_1,eher zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_10,eher zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_11,eher zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_13,eher zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_14,eher zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_15,eher nicht zutreffend,2
+44jJepjgoX,FA,nfc,NA,NfC_16,weder noch,3
+44jJepjgoX,FA,nfc,NA,NfC_17,eher nicht zutreffend,2
+44jJepjgoX,FA,nfc,NA,NfC_2,eher zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_3,eher nicht zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_4,weder noch,3
+44jJepjgoX,FA,nfc,NA,NfC_5,weder noch,3
+44jJepjgoX,FA,nfc,NA,NfC_6,weder noch,3
+44jJepjgoX,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+44jJepjgoX,FA,nfc,NA,NfC_9,eher nicht zutreffend,4
+4wZt5QQRoQ,DL,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+4wZt5QQRoQ,DL,mancheck,NA,MC_0_2,Sehr schwierig,5
+4wZt5QQRoQ,DL,mancheck,NA,MC_1,Nein,0
+4wZt5QQRoQ,DL,memory,FB2,FB2_1,3m,1
+4wZt5QQRoQ,DL,memory,FB2,FB2_2,Blumen und pollen,1
+4wZt5QQRoQ,DL,memory,FB2,FB2_3,Glatt,0
+4wZt5QQRoQ,DL,memory,FB2,FB2_4,Blau,1
+4wZt5QQRoQ,DL,memory,FB2,FB2_5,Horn,1
+4wZt5QQRoQ,DL,memory,FB2,FB2_6,Schleichend,0
+4wZt5QQRoQ,DL,memory,FB2,FB2_7,Keine ahnung,0
+4wZt5QQRoQ,DL,mindset,NA,GMS_1,Stimme nicht zu,2
+4wZt5QQRoQ,DL,mindset,NA,GMS_2,Stimme nicht zu,2
+4wZt5QQRoQ,DL,mindset,NA,GMS_3,Stimme nicht zu,2
+4wZt5QQRoQ,DL,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+4wZt5QQRoQ,DL,nfc,NA,NfC_10,eher zutreffend,4
+4wZt5QQRoQ,DL,nfc,NA,NfC_11,sehr zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_12,sehr zutreffend,1
+4wZt5QQRoQ,DL,nfc,NA,NfC_13,weder noch,3
+4wZt5QQRoQ,DL,nfc,NA,NfC_14,eher zutreffend,4
+4wZt5QQRoQ,DL,nfc,NA,NfC_15,sehr zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_16,überhaupt nicht zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_17,sehr zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_2,eher zutreffend,4
+4wZt5QQRoQ,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+4wZt5QQRoQ,DL,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_6,eher zutreffend,4
+4wZt5QQRoQ,DL,nfc,NA,NfC_7,weder noch,3
+4wZt5QQRoQ,DL,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+4wZt5QQRoQ,DL,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+4zzi7xHIr2,FT,mancheck,NA,MC_0_1,Leicht,2
+4zzi7xHIr2,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+4zzi7xHIr2,FT,mancheck,NA,MC_1,Nein,0
+4zzi7xHIr2,FT,memory,FB3,FB3_1,160cm,0
+4zzi7xHIr2,FT,memory,FB3,FB3_2,Ahornrinde,1
+4zzi7xHIr2,FT,memory,FB3,FB3_3,glatte Haut,1
+4zzi7xHIr2,FT,memory,FB3,FB3_4,NA,0
+4zzi7xHIr2,FT,memory,FB3,FB3_6,Orange Stacheln,1
+4zzi7xHIr2,FT,memory,FB3,FB3_7,Auf einen Haufen,1
+4zzi7xHIr2,FT,memory,FB3,FB3_8,NA,0
+4zzi7xHIr2,FT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+4zzi7xHIr2,FT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+4zzi7xHIr2,FT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+4zzi7xHIr2,FT,nfc,NA,NfC_1,eher zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_10,eher zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_11,eher zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_12,eher zutreffend,2
+4zzi7xHIr2,FT,nfc,NA,NfC_13,weder noch,3
+4zzi7xHIr2,FT,nfc,NA,NfC_14,eher zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_15,eher zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_16,sehr zutreffend,1
+4zzi7xHIr2,FT,nfc,NA,NfC_17,eher zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_2,weder noch,3
+4zzi7xHIr2,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+4zzi7xHIr2,FT,nfc,NA,NfC_6,weder noch,3
+4zzi7xHIr2,FT,nfc,NA,NfC_7,eher nicht zutreffend,4
+4zzi7xHIr2,FT,nfc,NA,NfC_8,weder noch,3
+4zzi7xHIr2,FT,nfc,NA,NfC_9,weder noch,3
+6gT0KIdJUy,DA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+6gT0KIdJUy,DA,mancheck,NA,MC_0_2,Schwierig,4
+6gT0KIdJUy,DA,mancheck,NA,MC_1,Nein,0
+6gT0KIdJUy,DA,memory,FB1,FB1_1,1.5m,1
+6gT0KIdJUy,DA,memory,FB1,FB1_2,Blattgemüse,1
+6gT0KIdJUy,DA,memory,FB1,FB1_3,Schuppige Haut,1
+6gT0KIdJUy,DA,memory,FB1,FB1_4,Schwarz,1
+6gT0KIdJUy,DA,memory,FB1,FB1_5,Buschig und violett,1
+6gT0KIdJUy,DA,memory,FB1,FB1_6,Sie zwitschern,1
+6gT0KIdJUy,DA,memory,FB1,FB1_7,Umherstreunen,1
+6gT0KIdJUy,DA,mindset,NA,GMS_1,Stimme zu,5
+6gT0KIdJUy,DA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+6gT0KIdJUy,DA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+6gT0KIdJUy,DA,nfc,NA,NfC_1,eher nicht zutreffend,2
+6gT0KIdJUy,DA,nfc,NA,NfC_10,eher nicht zutreffend,2
+6gT0KIdJUy,DA,nfc,NA,NfC_11,eher zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+6gT0KIdJUy,DA,nfc,NA,NfC_13,eher nicht zutreffend,2
+6gT0KIdJUy,DA,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+6gT0KIdJUy,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+6gT0KIdJUy,DA,nfc,NA,NfC_16,eher nicht zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_17,sehr zutreffend,5
+6gT0KIdJUy,DA,nfc,NA,NfC_2,eher nicht zutreffend,2
+6gT0KIdJUy,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_5,eher nicht zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+6gT0KIdJUy,DA,nfc,NA,NfC_7,eher nicht zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_8,eher nicht zutreffend,4
+6gT0KIdJUy,DA,nfc,NA,NfC_9,weder noch,3
+6zKNF3PYEC,DA,mancheck,NA,MC_0_1,Sehr schwierig,5
+6zKNF3PYEC,DA,mancheck,NA,MC_0_2,Sehr schwierig,5
+6zKNF3PYEC,DA,mancheck,NA,MC_1,Ja,1
+6zKNF3PYEC,DA,memory,FB3,FB3_1,"1,5metrt",0
+6zKNF3PYEC,DA,memory,FB3,FB3_2,pflanzen,0
+6zKNF3PYEC,DA,memory,FB3,FB3_3,schuppen,0
+6zKNF3PYEC,DA,memory,FB3,FB3_4,NA,0
+6zKNF3PYEC,DA,memory,FB3,FB3_6,NA,0
+6zKNF3PYEC,DA,memory,FB3,FB3_7,NA,0
+6zKNF3PYEC,DA,memory,FB3,FB3_8,NA,0
+6zKNF3PYEC,DA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+6zKNF3PYEC,DA,mindset,NA,GMS_2,Stimme nicht zu,2
+6zKNF3PYEC,DA,mindset,NA,GMS_3,Stimme zu,5
+6zKNF3PYEC,DA,nfc,NA,NfC_1,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_10,sehr zutreffend,5
+6zKNF3PYEC,DA,nfc,NA,NfC_11,sehr zutreffend,5
+6zKNF3PYEC,DA,nfc,NA,NfC_12,eher nicht zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_13,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_14,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_15,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_16,eher zutreffend,2
+6zKNF3PYEC,DA,nfc,NA,NfC_17,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_2,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_5,eher zutreffend,2
+6zKNF3PYEC,DA,nfc,NA,NfC_6,eher zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_7,eher nicht zutreffend,4
+6zKNF3PYEC,DA,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+6zKNF3PYEC,DA,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+6zQfvXNyHd,DT,mancheck,NA,MC_0_1,Leicht,2
+6zQfvXNyHd,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+6zQfvXNyHd,DT,mancheck,NA,MC_1,Ja,1
+6zQfvXNyHd,DT,memory,FB1,FB1_1,"1,6 Meter",0
+6zQfvXNyHd,DT,memory,FB1,FB1_2,Grüne Blätter,1
+6zQfvXNyHd,DT,memory,FB1,FB1_3,Pelzig,0
+6zQfvXNyHd,DT,memory,FB1,FB1_4,Schwarz,1
+6zQfvXNyHd,DT,memory,FB1,FB1_5,Buschig violett,1
+6zQfvXNyHd,DT,memory,FB1,FB1_6,Ãœber angenehme zwitscherlaute,1
+6zQfvXNyHd,DT,memory,FB1,FB1_7,Alleine in der Natur rumstreifen,1
+6zQfvXNyHd,DT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+6zQfvXNyHd,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+6zQfvXNyHd,DT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+6zQfvXNyHd,DT,nfc,NA,NfC_1,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_10,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_11,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_12,weder noch,3
+6zQfvXNyHd,DT,nfc,NA,NfC_13,weder noch,3
+6zQfvXNyHd,DT,nfc,NA,NfC_14,weder noch,3
+6zQfvXNyHd,DT,nfc,NA,NfC_15,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_17,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_2,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_5,eher nicht zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_6,eher zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+6zQfvXNyHd,DT,nfc,NA,NfC_8,weder noch,3
+6zQfvXNyHd,DT,nfc,NA,NfC_9,weder noch,3
+7I35mFNuwu,DT,mancheck,NA,MC_0_1,Leicht,2
+7I35mFNuwu,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+7I35mFNuwu,DT,mancheck,NA,MC_1,Ja,1
+7I35mFNuwu,DT,memory,FB2,FB2_1,3 Meter,1
+7I35mFNuwu,DT,memory,FB2,FB2_2,Pollen und Blütenblätter,1
+7I35mFNuwu,DT,memory,FB2,FB2_3,Schuppen,0
+7I35mFNuwu,DT,memory,FB2,FB2_4,Blau,1
+7I35mFNuwu,DT,memory,FB2,FB2_5,Ein Horn,1
+7I35mFNuwu,DT,memory,FB2,FB2_6,â€¦,0
+7I35mFNuwu,DT,memory,FB2,FB2_7,Nahrungsmittel sammeln,1
+7I35mFNuwu,DT,mindset,NA,GMS_1,Stimme zu,5
+7I35mFNuwu,DT,mindset,NA,GMS_2,Stimme zu,5
+7I35mFNuwu,DT,mindset,NA,GMS_3,Stimme voll zu,6
+7I35mFNuwu,DT,nfc,NA,NfC_1,eher zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_10,eher zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_11,eher zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_13,eher nicht zutreffend,2
+7I35mFNuwu,DT,nfc,NA,NfC_14,eher zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_15,eher nicht zutreffend,2
+7I35mFNuwu,DT,nfc,NA,NfC_16,eher zutreffend,2
+7I35mFNuwu,DT,nfc,NA,NfC_17,sehr zutreffend,5
+7I35mFNuwu,DT,nfc,NA,NfC_2,sehr zutreffend,5
+7I35mFNuwu,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_4,weder noch,3
+7I35mFNuwu,DT,nfc,NA,NfC_5,eher zutreffend,2
+7I35mFNuwu,DT,nfc,NA,NfC_6,weder noch,3
+7I35mFNuwu,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+7I35mFNuwu,DT,nfc,NA,NfC_8,weder noch,3
+7I35mFNuwu,DT,nfc,NA,NfC_9,eher zutreffend,2
+9mXgh08kyP,DA,mancheck,NA,MC_0_1,Schwierig,4
+9mXgh08kyP,DA,mancheck,NA,MC_0_2,Schwierig,4
+9mXgh08kyP,DA,mancheck,NA,MC_1,Ja,1
+9mXgh08kyP,DA,memory,FB1,FB1_1,1m,1
+9mXgh08kyP,DA,memory,FB1,FB1_2,Bambus,0
+9mXgh08kyP,DA,memory,FB1,FB1_3,flach,0
+9mXgh08kyP,DA,memory,FB1,FB1_4,gelb,0
+9mXgh08kyP,DA,memory,FB1,FB1_5,spitz,0
+9mXgh08kyP,DA,memory,FB1,FB1_6,pfeiffen,1
+9mXgh08kyP,DA,memory,FB1,FB1_7,jagen,0
+9mXgh08kyP,DA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+9mXgh08kyP,DA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+9mXgh08kyP,DA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+9mXgh08kyP,DA,nfc,NA,NfC_1,weder noch,3
+9mXgh08kyP,DA,nfc,NA,NfC_10,eher zutreffend,4
+9mXgh08kyP,DA,nfc,NA,NfC_11,sehr zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_13,eher nicht zutreffend,2
+9mXgh08kyP,DA,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+9mXgh08kyP,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+9mXgh08kyP,DA,nfc,NA,NfC_16,weder noch,3
+9mXgh08kyP,DA,nfc,NA,NfC_17,eher zutreffend,4
+9mXgh08kyP,DA,nfc,NA,NfC_2,sehr zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_6,sehr zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+9mXgh08kyP,DA,nfc,NA,NfC_9,weder noch,3
+B3N2q5plQz,DA,mancheck,NA,MC_0_1,Leicht,2
+B3N2q5plQz,DA,mancheck,NA,MC_0_2,Schwierig,4
+B3N2q5plQz,DA,mancheck,NA,MC_1,Nein,0
+B3N2q5plQz,DA,memory,FB3,FB3_1,3 Meter,0
+B3N2q5plQz,DA,memory,FB3,FB3_2,Blütenstaub,0
+B3N2q5plQz,DA,memory,FB3,FB3_3,Schuppige,0
+B3N2q5plQz,DA,memory,FB3,FB3_4,Blau,0
+B3N2q5plQz,DA,memory,FB3,FB3_6,Ein gelbes Hoen,0
+B3N2q5plQz,DA,memory,FB3,FB3_7,Auf einen Erdhaufen,1
+B3N2q5plQz,DA,memory,FB3,FB3_8,Mit Gesang,0
+B3N2q5plQz,DA,mindset,NA,GMS_1,Stimme voll zu,6
+B3N2q5plQz,DA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+B3N2q5plQz,DA,mindset,NA,GMS_3,Stimme zu,5
+B3N2q5plQz,DA,nfc,NA,NfC_1,eher zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_10,eher zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_11,eher zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_12,eher zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_13,eher nicht zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_15,eher zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_16,eher zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_17,eher zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_2,eher zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_5,eher zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_7,eher zutreffend,2
+B3N2q5plQz,DA,nfc,NA,NfC_8,eher nicht zutreffend,4
+B3N2q5plQz,DA,nfc,NA,NfC_9,eher zutreffend,2
+BJwUCpjQql,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+BJwUCpjQql,DZ,mancheck,NA,MC_0_2,Leicht,2
+BJwUCpjQql,DZ,mancheck,NA,MC_1,Nein,0
+BJwUCpjQql,DZ,memory,FB2,FB2_1,3 Meter,1
+BJwUCpjQql,DZ,memory,FB2,FB2_2,Pollen und Blüten,1
+BJwUCpjQql,DZ,memory,FB2,FB2_3,"Dicke, raue",1
+BJwUCpjQql,DZ,memory,FB2,FB2_4,Blau,1
+BJwUCpjQql,DZ,memory,FB2,FB2_5,Gelbes Horn,1
+BJwUCpjQql,DZ,memory,FB2,FB2_6,In Gruppen,1
+BJwUCpjQql,DZ,memory,FB2,FB2_7,Nahrung auftreiben,1
+BJwUCpjQql,DZ,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+BJwUCpjQql,DZ,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+BJwUCpjQql,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+BJwUCpjQql,DZ,nfc,NA,NfC_1,eher nicht zutreffend,2
+BJwUCpjQql,DZ,nfc,NA,NfC_10,eher zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_11,weder noch,3
+BJwUCpjQql,DZ,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+BJwUCpjQql,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+BJwUCpjQql,DZ,nfc,NA,NfC_14,sehr zutreffend,5
+BJwUCpjQql,DZ,nfc,NA,NfC_15,weder noch,3
+BJwUCpjQql,DZ,nfc,NA,NfC_16,eher nicht zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_17,eher zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_2,eher zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+BJwUCpjQql,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_6,eher zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+BJwUCpjQql,DZ,nfc,NA,NfC_8,weder noch,3
+BJwUCpjQql,DZ,nfc,NA,NfC_9,eher zutreffend,2
+BgtiijNyKP,DT,mancheck,NA,MC_0_1,Leicht,2
+BgtiijNyKP,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+BgtiijNyKP,DT,mancheck,NA,MC_1,Ja,1
+BgtiijNyKP,DT,memory,FB3,FB3_1,1.5,0
+BgtiijNyKP,DT,memory,FB3,FB3_2,Grünzeug,0
+BgtiijNyKP,DT,memory,FB3,FB3_3,Dchuppig und rau,0
+BgtiijNyKP,DT,memory,FB3,FB3_4,Braun,1
+BgtiijNyKP,DT,memory,FB3,FB3_6,Orange stacheln,1
+BgtiijNyKP,DT,memory,FB3,FB3_7,NA,0
+BgtiijNyKP,DT,memory,FB3,FB3_8,NA,0
+BgtiijNyKP,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+BgtiijNyKP,DT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+BgtiijNyKP,DT,mindset,NA,GMS_3,Stimme zu,5
+BgtiijNyKP,DT,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+BgtiijNyKP,DT,nfc,NA,NfC_10,weder noch,3
+BgtiijNyKP,DT,nfc,NA,NfC_11,eher zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_13,weder noch,3
+BgtiijNyKP,DT,nfc,NA,NfC_14,eher zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_15,eher nicht zutreffend,2
+BgtiijNyKP,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_17,sehr zutreffend,5
+BgtiijNyKP,DT,nfc,NA,NfC_2,sehr zutreffend,5
+BgtiijNyKP,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_5,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_6,weder noch,3
+BgtiijNyKP,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_8,eher nicht zutreffend,4
+BgtiijNyKP,DT,nfc,NA,NfC_9,eher nicht zutreffend,4
+C2kcOYeGG7,DL,mancheck,NA,MC_0_1,Leicht,2
+C2kcOYeGG7,DL,mancheck,NA,MC_0_2,Schwierig,4
+C2kcOYeGG7,DL,mancheck,NA,MC_1,Nein,0
+C2kcOYeGG7,DL,memory,FB1,FB1_1,3 Meter,0
+C2kcOYeGG7,DL,memory,FB1,FB1_2,"Holunder, Pollen",0
+C2kcOYeGG7,DL,memory,FB1,FB1_3,rauhe,0
+C2kcOYeGG7,DL,memory,FB1,FB1_4,Blau,0
+C2kcOYeGG7,DL,memory,FB1,FB1_5,komisch,0
+C2kcOYeGG7,DL,memory,FB1,FB1_6,NA,0
+C2kcOYeGG7,DL,memory,FB1,FB1_7,graben,0
+C2kcOYeGG7,DL,mindset,NA,GMS_1,Stimme zu,5
+C2kcOYeGG7,DL,mindset,NA,GMS_2,Stimme zu,5
+C2kcOYeGG7,DL,mindset,NA,GMS_3,Stimme voll zu,6
+C2kcOYeGG7,DL,nfc,NA,NfC_1,eher zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_10,eher zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_11,sehr zutreffend,5
+C2kcOYeGG7,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_13,weder noch,3
+C2kcOYeGG7,DL,nfc,NA,NfC_14,eher zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_15,sehr zutreffend,5
+C2kcOYeGG7,DL,nfc,NA,NfC_16,eher zutreffend,2
+C2kcOYeGG7,DL,nfc,NA,NfC_17,eher zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_2,eher zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_5,sehr zutreffend,1
+C2kcOYeGG7,DL,nfc,NA,NfC_6,eher zutreffend,4
+C2kcOYeGG7,DL,nfc,NA,NfC_7,eher zutreffend,2
+C2kcOYeGG7,DL,nfc,NA,NfC_8,weder noch,3
+C2kcOYeGG7,DL,nfc,NA,NfC_9,eher zutreffend,2
+CHrrlNEVaZ,DZ,mancheck,NA,MC_0_1,Sehr schwierig,5
+CHrrlNEVaZ,DZ,mancheck,NA,MC_0_2,Sehr schwierig,5
+CHrrlNEVaZ,DZ,mancheck,NA,MC_1,Ja,1
+CHrrlNEVaZ,DZ,memory,FB3,FB3_1,50,0
+CHrrlNEVaZ,DZ,memory,FB3,FB3_2,Blatt,0
+CHrrlNEVaZ,DZ,memory,FB3,FB3_3,Glatt,1
+CHrrlNEVaZ,DZ,memory,FB3,FB3_4,Schwarz,0
+CHrrlNEVaZ,DZ,memory,FB3,FB3_6,Ein King,0
+CHrrlNEVaZ,DZ,memory,FB3,FB3_7,Basel,0
+CHrrlNEVaZ,DZ,memory,FB3,FB3_8,Garnicht,0
+CHrrlNEVaZ,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+CHrrlNEVaZ,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+CHrrlNEVaZ,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+CHrrlNEVaZ,DZ,nfc,NA,NfC_1,eher nicht zutreffend,2
+CHrrlNEVaZ,DZ,nfc,NA,NfC_10,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_11,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_12,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+CHrrlNEVaZ,DZ,nfc,NA,NfC_14,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_15,eher nicht zutreffend,2
+CHrrlNEVaZ,DZ,nfc,NA,NfC_16,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_17,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_2,eher nicht zutreffend,2
+CHrrlNEVaZ,DZ,nfc,NA,NfC_3,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_4,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_5,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_6,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_7,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_8,weder noch,3
+CHrrlNEVaZ,DZ,nfc,NA,NfC_9,weder noch,3
+E0TzWUG2it,DA,mancheck,NA,MC_0_1,Leicht,2
+E0TzWUG2it,DA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+E0TzWUG2it,DA,mancheck,NA,MC_1,Ja,1
+E0TzWUG2it,DA,memory,FB2,FB2_1,3m,1
+E0TzWUG2it,DA,memory,FB2,FB2_2,Blütenstaub,0
+E0TzWUG2it,DA,memory,FB2,FB2_3,Blau oder rauh,0
+E0TzWUG2it,DA,memory,FB2,FB2_4,Blau,1
+E0TzWUG2it,DA,memory,FB2,FB2_5,Ein gelbes Horn,1
+E0TzWUG2it,DA,memory,FB2,FB2_6,In Gruppen,1
+E0TzWUG2it,DA,memory,FB2,FB2_7,Nahrung bringen,1
+E0TzWUG2it,DA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+E0TzWUG2it,DA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+E0TzWUG2it,DA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+E0TzWUG2it,DA,nfc,NA,NfC_1,weder noch,3
+E0TzWUG2it,DA,nfc,NA,NfC_10,eher zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_11,eher zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_12,eher nicht zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_13,eher zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+E0TzWUG2it,DA,nfc,NA,NfC_15,eher zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_16,eher nicht zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_17,sehr zutreffend,5
+E0TzWUG2it,DA,nfc,NA,NfC_2,eher nicht zutreffend,2
+E0TzWUG2it,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_5,eher nicht zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_6,eher zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_7,eher nicht zutreffend,4
+E0TzWUG2it,DA,nfc,NA,NfC_8,weder noch,3
+E0TzWUG2it,DA,nfc,NA,NfC_9,eher zutreffend,2
+E9U7Ia8J0h,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+E9U7Ia8J0h,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+E9U7Ia8J0h,DZ,mancheck,NA,MC_1,Ja,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_1,60 Zentimeter,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_2,Ahornrinde,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_3,Glatt,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_4,Braun,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_6,Stacheln,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_7,Auf einem Hügel,1
+E9U7Ia8J0h,DZ,memory,FB3,FB3_8,Trompetengeräusche,1
+E9U7Ia8J0h,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+E9U7Ia8J0h,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+E9U7Ia8J0h,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_1,eher zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_10,weder noch,3
+E9U7Ia8J0h,DZ,nfc,NA,NfC_11,eher zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_13,überhaupt nicht zutreffend,1
+E9U7Ia8J0h,DZ,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+E9U7Ia8J0h,DZ,nfc,NA,NfC_15,eher nicht zutreffend,2
+E9U7Ia8J0h,DZ,nfc,NA,NfC_16,eher nicht zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_17,eher nicht zutreffend,2
+E9U7Ia8J0h,DZ,nfc,NA,NfC_2,eher zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_6,weder noch,3
+E9U7Ia8J0h,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+E9U7Ia8J0h,DZ,nfc,NA,NfC_8,eher zutreffend,2
+E9U7Ia8J0h,DZ,nfc,NA,NfC_9,eher zutreffend,2
+EVMmxnBDZP,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+EVMmxnBDZP,DZ,mancheck,NA,MC_0_2,Schwierig,4
+EVMmxnBDZP,DZ,mancheck,NA,MC_1,Nein,0
+EVMmxnBDZP,DZ,memory,FB1,FB1_1,"60 Zentimere oder 1,3 meter",0
+EVMmxnBDZP,DZ,memory,FB1,FB1_2,3 meter,0
+EVMmxnBDZP,DZ,memory,FB1,FB1_3,Keine Ahnung,0
+EVMmxnBDZP,DZ,memory,FB1,FB1_4,Keine ahnung,0
+EVMmxnBDZP,DZ,memory,FB1,FB1_5,Grün,0
+EVMmxnBDZP,DZ,memory,FB1,FB1_6,Keine Ahnung,0
+EVMmxnBDZP,DZ,memory,FB1,FB1_7,Keine Ahnung,0
+EVMmxnBDZP,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+EVMmxnBDZP,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+EVMmxnBDZP,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+EVMmxnBDZP,DZ,nfc,NA,NfC_1,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_10,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_11,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_12,eher zutreffend,2
+EVMmxnBDZP,DZ,nfc,NA,NfC_13,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_14,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_15,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_16,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_17,eher zutreffend,4
+EVMmxnBDZP,DZ,nfc,NA,NfC_2,eher zutreffend,4
+EVMmxnBDZP,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+EVMmxnBDZP,DZ,nfc,NA,NfC_4,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_5,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_6,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_7,weder noch,3
+EVMmxnBDZP,DZ,nfc,NA,NfC_8,eher zutreffend,2
+EVMmxnBDZP,DZ,nfc,NA,NfC_9,eher zutreffend,2
+G7ptb0jrXY,DT,mancheck,NA,MC_0_1,Leicht,2
+G7ptb0jrXY,DT,mancheck,NA,MC_0_2,Schwierig,4
+G7ptb0jrXY,DT,mancheck,NA,MC_1,Ja,1
+G7ptb0jrXY,DT,memory,FB1,FB1_1,60cm,0
+G7ptb0jrXY,DT,memory,FB1,FB1_2,Grünes Blattgemüse,1
+G7ptb0jrXY,DT,memory,FB1,FB1_3,Schuppige Haut,1
+G7ptb0jrXY,DT,memory,FB1,FB1_4,Schwarz,1
+G7ptb0jrXY,DT,memory,FB1,FB1_5,Violett und buschig,1
+G7ptb0jrXY,DT,memory,FB1,FB1_6,angenehmes Zwitschern,1
+G7ptb0jrXY,DT,memory,FB1,FB1_7,alleine durch die Gegend ziehen,1
+G7ptb0jrXY,DT,mindset,NA,GMS_1,Stimme zu,5
+G7ptb0jrXY,DT,mindset,NA,GMS_2,Stimme zu,5
+G7ptb0jrXY,DT,mindset,NA,GMS_3,Stimme zu,5
+G7ptb0jrXY,DT,nfc,NA,NfC_1,eher nicht zutreffend,2
+G7ptb0jrXY,DT,nfc,NA,NfC_10,eher zutreffend,4
+G7ptb0jrXY,DT,nfc,NA,NfC_11,sehr zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_13,eher zutreffend,4
+G7ptb0jrXY,DT,nfc,NA,NfC_14,sehr zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_15,sehr zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_16,eher zutreffend,2
+G7ptb0jrXY,DT,nfc,NA,NfC_17,sehr zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_2,eher zutreffend,4
+G7ptb0jrXY,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+G7ptb0jrXY,DT,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_6,eher zutreffend,4
+G7ptb0jrXY,DT,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+G7ptb0jrXY,DT,nfc,NA,NfC_9,eher zutreffend,2
+GOZ5w42kWg,FT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+GOZ5w42kWg,FT,mancheck,NA,MC_0_2,Schwierig,4
+GOZ5w42kWg,FT,mancheck,NA,MC_1,Ja,1
+GOZ5w42kWg,FT,memory,FB1,FB1_1,3Meter,0
+GOZ5w42kWg,FT,memory,FB1,FB1_2,Gräser,1
+GOZ5w42kWg,FT,memory,FB1,FB1_3,Hart,0
+GOZ5w42kWg,FT,memory,FB1,FB1_4,Blau,0
+GOZ5w42kWg,FT,memory,FB1,FB1_5,Buschig und violett,1
+GOZ5w42kWg,FT,memory,FB1,FB1_6,übers Eier legen,0
+GOZ5w42kWg,FT,memory,FB1,FB1_7,sind auf Jagd,0
+GOZ5w42kWg,FT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+GOZ5w42kWg,FT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+GOZ5w42kWg,FT,mindset,NA,GMS_3,Stimme voll zu,6
+GOZ5w42kWg,FT,nfc,NA,NfC_1,weder noch,3
+GOZ5w42kWg,FT,nfc,NA,NfC_10,eher nicht zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_11,eher nicht zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_12,eher nicht zutreffend,4
+GOZ5w42kWg,FT,nfc,NA,NfC_13,eher nicht zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+GOZ5w42kWg,FT,nfc,NA,NfC_15,eher nicht zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_16,eher zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_17,sehr zutreffend,5
+GOZ5w42kWg,FT,nfc,NA,NfC_2,eher nicht zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_3,eher zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+GOZ5w42kWg,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+GOZ5w42kWg,FT,nfc,NA,NfC_6,eher nicht zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+GOZ5w42kWg,FT,nfc,NA,NfC_8,eher zutreffend,2
+GOZ5w42kWg,FT,nfc,NA,NfC_9,eher nicht zutreffend,4
+GeUpDHZwnl,DA,mancheck,NA,MC_0_1,Schwierig,4
+GeUpDHZwnl,DA,mancheck,NA,MC_0_2,Schwierig,4
+GeUpDHZwnl,DA,mancheck,NA,MC_1,Nein,0
+GeUpDHZwnl,DA,memory,FB3,FB3_1,"1,5 meter",0
+GeUpDHZwnl,DA,memory,FB3,FB3_2,Blätter,0
+GeUpDHZwnl,DA,memory,FB3,FB3_3,Sehr feine,1
+GeUpDHZwnl,DA,memory,FB3,FB3_4,Braun,1
+GeUpDHZwnl,DA,memory,FB3,FB3_6,Weis nicht,0
+GeUpDHZwnl,DA,memory,FB3,FB3_7,Weis nicht,0
+GeUpDHZwnl,DA,memory,FB3,FB3_8,Weis nicht,0
+GeUpDHZwnl,DA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+GeUpDHZwnl,DA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+GeUpDHZwnl,DA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+GeUpDHZwnl,DA,nfc,NA,NfC_1,weder noch,3
+GeUpDHZwnl,DA,nfc,NA,NfC_10,weder noch,3
+GeUpDHZwnl,DA,nfc,NA,NfC_11,eher nicht zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_12,eher zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_13,weder noch,3
+GeUpDHZwnl,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_16,eher zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_17,eher nicht zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_2,weder noch,3
+GeUpDHZwnl,DA,nfc,NA,NfC_3,weder noch,3
+GeUpDHZwnl,DA,nfc,NA,NfC_4,eher zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_5,eher nicht zutreffend,4
+GeUpDHZwnl,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_7,eher zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_8,eher zutreffend,2
+GeUpDHZwnl,DA,nfc,NA,NfC_9,eher zutreffend,2
+HqRpmnDJi7,DT,mancheck,NA,MC_0_1,Schwierig,4
+HqRpmnDJi7,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+HqRpmnDJi7,DT,mancheck,NA,MC_1,Ja,1
+HqRpmnDJi7,DT,memory,FB2,FB2_1,60cm,0
+HqRpmnDJi7,DT,memory,FB2,FB2_2,Blattgemüse,0
+HqRpmnDJi7,DT,memory,FB2,FB2_3,sanfte und weiche Haut,0
+HqRpmnDJi7,DT,memory,FB2,FB2_4,Brau,1
+HqRpmnDJi7,DT,memory,FB2,FB2_5,gelbes Horn,1
+HqRpmnDJi7,DT,memory,FB2,FB2_6,mit ihren Beinen,0
+HqRpmnDJi7,DT,memory,FB2,FB2_7,Nahrung holen,1
+HqRpmnDJi7,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+HqRpmnDJi7,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+HqRpmnDJi7,DT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+HqRpmnDJi7,DT,nfc,NA,NfC_1,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_10,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_11,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_12,sehr zutreffend,1
+HqRpmnDJi7,DT,nfc,NA,NfC_13,sehr zutreffend,5
+HqRpmnDJi7,DT,nfc,NA,NfC_14,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_15,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_17,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_2,eher zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_5,weder noch,3
+HqRpmnDJi7,DT,nfc,NA,NfC_6,weder noch,3
+HqRpmnDJi7,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+HqRpmnDJi7,DT,nfc,NA,NfC_8,weder noch,3
+HqRpmnDJi7,DT,nfc,NA,NfC_9,eher nicht zutreffend,4
+Ju10SpbvIs,DT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+Ju10SpbvIs,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+Ju10SpbvIs,DT,mancheck,NA,MC_1,Nein,0
+Ju10SpbvIs,DT,memory,FB3,FB3_1,2m,0
+Ju10SpbvIs,DT,memory,FB3,FB3_2,?,0
+Ju10SpbvIs,DT,memory,FB3,FB3_3,"Glatt, lila",1
+Ju10SpbvIs,DT,memory,FB3,FB3_4,Braun,1
+Ju10SpbvIs,DT,memory,FB3,FB3_6,Gelbe Hörner,0
+Ju10SpbvIs,DT,memory,FB3,FB3_7,?,0
+Ju10SpbvIs,DT,memory,FB3,FB3_8,Ruhig,0
+Ju10SpbvIs,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+Ju10SpbvIs,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+Ju10SpbvIs,DT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+Ju10SpbvIs,DT,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+Ju10SpbvIs,DT,nfc,NA,NfC_10,eher zutreffend,4
+Ju10SpbvIs,DT,nfc,NA,NfC_11,eher zutreffend,4
+Ju10SpbvIs,DT,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+Ju10SpbvIs,DT,nfc,NA,NfC_13,weder noch,3
+Ju10SpbvIs,DT,nfc,NA,NfC_14,eher zutreffend,4
+Ju10SpbvIs,DT,nfc,NA,NfC_15,weder noch,3
+Ju10SpbvIs,DT,nfc,NA,NfC_16,eher zutreffend,2
+Ju10SpbvIs,DT,nfc,NA,NfC_17,sehr zutreffend,5
+Ju10SpbvIs,DT,nfc,NA,NfC_2,eher nicht zutreffend,2
+Ju10SpbvIs,DT,nfc,NA,NfC_3,weder noch,3
+Ju10SpbvIs,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+Ju10SpbvIs,DT,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+Ju10SpbvIs,DT,nfc,NA,NfC_6,weder noch,3
+Ju10SpbvIs,DT,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+Ju10SpbvIs,DT,nfc,NA,NfC_8,eher nicht zutreffend,4
+Ju10SpbvIs,DT,nfc,NA,NfC_9,weder noch,3
+JvbtCDWqwq,FA,mancheck,NA,MC_0_1,Sehr leicht,1
+JvbtCDWqwq,FA,mancheck,NA,MC_0_2,Sehr schwierig,5
+JvbtCDWqwq,FA,mancheck,NA,MC_1,Ja,1
+JvbtCDWqwq,FA,memory,FB1,FB1_1,NA,0
+JvbtCDWqwq,FA,memory,FB1,FB1_2,NA,0
+JvbtCDWqwq,FA,memory,FB1,FB1_3,Schuppen,1
+JvbtCDWqwq,FA,memory,FB1,FB1_4,Blau,0
+JvbtCDWqwq,FA,memory,FB1,FB1_5,NA,0
+JvbtCDWqwq,FA,memory,FB1,FB1_6,NA,0
+JvbtCDWqwq,FA,memory,FB1,FB1_7,NA,0
+JvbtCDWqwq,FA,mindset,NA,GMS_1,Stimme voll zu,6
+JvbtCDWqwq,FA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+JvbtCDWqwq,FA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+JvbtCDWqwq,FA,nfc,NA,NfC_1,weder noch,3
+JvbtCDWqwq,FA,nfc,NA,NfC_10,eher zutreffend,4
+JvbtCDWqwq,FA,nfc,NA,NfC_11,eher zutreffend,4
+JvbtCDWqwq,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+JvbtCDWqwq,FA,nfc,NA,NfC_13,eher nicht zutreffend,2
+JvbtCDWqwq,FA,nfc,NA,NfC_14,eher nicht zutreffend,2
+JvbtCDWqwq,FA,nfc,NA,NfC_15,weder noch,3
+JvbtCDWqwq,FA,nfc,NA,NfC_16,eher zutreffend,2
+JvbtCDWqwq,FA,nfc,NA,NfC_17,eher nicht zutreffend,2
+JvbtCDWqwq,FA,nfc,NA,NfC_2,weder noch,3
+JvbtCDWqwq,FA,nfc,NA,NfC_3,weder noch,3
+JvbtCDWqwq,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+JvbtCDWqwq,FA,nfc,NA,NfC_5,weder noch,3
+JvbtCDWqwq,FA,nfc,NA,NfC_6,eher nicht zutreffend,2
+JvbtCDWqwq,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+JvbtCDWqwq,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+JvbtCDWqwq,FA,nfc,NA,NfC_9,weder noch,3
+JwePmL5wpO,FT,mancheck,NA,MC_0_1,Sehr leicht,1
+JwePmL5wpO,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+JwePmL5wpO,FT,mancheck,NA,MC_1,Ja,1
+JwePmL5wpO,FT,memory,FB2,FB2_1,3 Meter,1
+JwePmL5wpO,FT,memory,FB2,FB2_2,Nicht Pflanzen,0
+JwePmL5wpO,FT,memory,FB2,FB2_3,Dicke Haut,1
+JwePmL5wpO,FT,memory,FB2,FB2_4,Blau,1
+JwePmL5wpO,FT,memory,FB2,FB2_5,Ein einziges gelbes horn,1
+JwePmL5wpO,FT,memory,FB2,FB2_6,In gruppen,1
+JwePmL5wpO,FT,memory,FB2,FB2_7,Weiss ich nicht mehr,0
+JwePmL5wpO,FT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+JwePmL5wpO,FT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+JwePmL5wpO,FT,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+JwePmL5wpO,FT,nfc,NA,NfC_1,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_10,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_11,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_12,eher nicht zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_13,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_14,weder noch,3
+JwePmL5wpO,FT,nfc,NA,NfC_15,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_16,eher nicht zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_17,sehr zutreffend,5
+JwePmL5wpO,FT,nfc,NA,NfC_2,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+JwePmL5wpO,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_6,eher zutreffend,4
+JwePmL5wpO,FT,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+JwePmL5wpO,FT,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+JwePmL5wpO,FT,nfc,NA,NfC_9,weder noch,3
+KcFXi3hqEg,FA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+KcFXi3hqEg,FA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+KcFXi3hqEg,FA,mancheck,NA,MC_1,Ja,1
+KcFXi3hqEg,FA,memory,FB2,FB2_1,3m,1
+KcFXi3hqEg,FA,memory,FB2,FB2_2,Blüten und Blätter,1
+KcFXi3hqEg,FA,memory,FB2,FB2_3,"Stacheln, schuppig",0
+KcFXi3hqEg,FA,memory,FB2,FB2_4,Blau,1
+KcFXi3hqEg,FA,memory,FB2,FB2_5,Gelbes Horn,1
+KcFXi3hqEg,FA,memory,FB2,FB2_6,Weiss nicht,0
+KcFXi3hqEg,FA,memory,FB2,FB2_7,Sie sammeln Fressen,1
+KcFXi3hqEg,FA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+KcFXi3hqEg,FA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+KcFXi3hqEg,FA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+KcFXi3hqEg,FA,nfc,NA,NfC_1,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_10,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_11,sehr zutreffend,5
+KcFXi3hqEg,FA,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+KcFXi3hqEg,FA,nfc,NA,NfC_13,eher zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_14,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_15,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_17,eher zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_2,eher zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_3,eher nicht zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_5,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_6,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+KcFXi3hqEg,FA,nfc,NA,NfC_8,weder noch,3
+KcFXi3hqEg,FA,nfc,NA,NfC_9,eher zutreffend,2
+LJ11Whci1n,FT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+LJ11Whci1n,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+LJ11Whci1n,FT,mancheck,NA,MC_1,Ja,1
+LJ11Whci1n,FT,memory,FB3,FB3_1,60cm,1
+LJ11Whci1n,FT,memory,FB3,FB3_2,grüne Blätter,0
+LJ11Whci1n,FT,memory,FB3,FB3_3,dick und rau,0
+LJ11Whci1n,FT,memory,FB3,FB3_4,braun,1
+LJ11Whci1n,FT,memory,FB3,FB3_6,Linie aus orangen Stacheln,1
+LJ11Whci1n,FT,memory,FB3,FB3_7,Auf Heuhaufen,1
+LJ11Whci1n,FT,memory,FB3,FB3_8,Mit Lauten,1
+LJ11Whci1n,FT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+LJ11Whci1n,FT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+LJ11Whci1n,FT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+LJ11Whci1n,FT,nfc,NA,NfC_1,weder noch,3
+LJ11Whci1n,FT,nfc,NA,NfC_10,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_11,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_12,eher nicht zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_13,weder noch,3
+LJ11Whci1n,FT,nfc,NA,NfC_14,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_15,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_16,weder noch,3
+LJ11Whci1n,FT,nfc,NA,NfC_17,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_2,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_5,weder noch,3
+LJ11Whci1n,FT,nfc,NA,NfC_6,eher zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_7,eher nicht zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_8,eher nicht zutreffend,4
+LJ11Whci1n,FT,nfc,NA,NfC_9,eher nicht zutreffend,4
+NQtkRREAj5,DL,mancheck,NA,MC_0_1,Leicht,2
+NQtkRREAj5,DL,mancheck,NA,MC_0_2,Schwierig,4
+NQtkRREAj5,DL,mancheck,NA,MC_1,Ja,1
+NQtkRREAj5,DL,memory,FB1,FB1_1,60 cm,0
+NQtkRREAj5,DL,memory,FB1,FB1_2,Blütenstaub,1
+NQtkRREAj5,DL,memory,FB1,FB1_3,Raue Haut,0
+NQtkRREAj5,DL,memory,FB1,FB1_4,Blau,0
+NQtkRREAj5,DL,memory,FB1,FB1_5,Stachelig,0
+NQtkRREAj5,DL,memory,FB1,FB1_6,Zwitschern,1
+NQtkRREAj5,DL,memory,FB1,FB1_7,Herum laufen,1
+NQtkRREAj5,DL,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+NQtkRREAj5,DL,mindset,NA,GMS_2,Stimme nicht zu,2
+NQtkRREAj5,DL,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+NQtkRREAj5,DL,nfc,NA,NfC_1,eher nicht zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_10,eher nicht zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_11,eher zutreffend,4
+NQtkRREAj5,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+NQtkRREAj5,DL,nfc,NA,NfC_13,eher nicht zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_14,eher zutreffend,4
+NQtkRREAj5,DL,nfc,NA,NfC_15,eher nicht zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_16,eher zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_17,eher zutreffend,4
+NQtkRREAj5,DL,nfc,NA,NfC_2,weder noch,3
+NQtkRREAj5,DL,nfc,NA,NfC_3,eher zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_4,eher zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_5,eher zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_6,eher nicht zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_7,eher zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_8,eher zutreffend,2
+NQtkRREAj5,DL,nfc,NA,NfC_9,eher zutreffend,2
+NldUZSCxCK,DT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+NldUZSCxCK,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+NldUZSCxCK,DT,mancheck,NA,MC_1,Nein,0
+NldUZSCxCK,DT,memory,FB3,FB3_1,60 cm,1
+NldUZSCxCK,DT,memory,FB3,FB3_2,Ahornrinde,1
+NldUZSCxCK,DT,memory,FB3,FB3_3,Hat glatte weiche Haut,1
+NldUZSCxCK,DT,memory,FB3,FB3_4,Er hat braune Augen,1
+NldUZSCxCK,DT,memory,FB3,FB3_6,Ein Stachel,1
+NldUZSCxCK,DT,memory,FB3,FB3_7,Auf einen Erdhöufchrn,1
+NldUZSCxCK,DT,memory,FB3,FB3_8,Trompetenartige laute,1
+NldUZSCxCK,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+NldUZSCxCK,DT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+NldUZSCxCK,DT,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+NldUZSCxCK,DT,nfc,NA,NfC_1,weder noch,3
+NldUZSCxCK,DT,nfc,NA,NfC_10,eher zutreffend,4
+NldUZSCxCK,DT,nfc,NA,NfC_11,eher zutreffend,4
+NldUZSCxCK,DT,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+NldUZSCxCK,DT,nfc,NA,NfC_13,weder noch,3
+NldUZSCxCK,DT,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+NldUZSCxCK,DT,nfc,NA,NfC_15,weder noch,3
+NldUZSCxCK,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+NldUZSCxCK,DT,nfc,NA,NfC_17,eher nicht zutreffend,2
+NldUZSCxCK,DT,nfc,NA,NfC_2,weder noch,3
+NldUZSCxCK,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+NldUZSCxCK,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+NldUZSCxCK,DT,nfc,NA,NfC_5,eher zutreffend,2
+NldUZSCxCK,DT,nfc,NA,NfC_6,eher zutreffend,4
+NldUZSCxCK,DT,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+NldUZSCxCK,DT,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+NldUZSCxCK,DT,nfc,NA,NfC_9,eher nicht zutreffend,4
+O3dTsbAlzf,DA,mancheck,NA,MC_0_1,Leicht,2
+O3dTsbAlzf,DA,mancheck,NA,MC_0_2,Sehr schwierig,5
+O3dTsbAlzf,DA,mancheck,NA,MC_1,Ja,1
+O3dTsbAlzf,DA,memory,FB3,FB3_1,3 Meter,0
+O3dTsbAlzf,DA,memory,FB3,FB3_2,Pollen und Blüten,0
+O3dTsbAlzf,DA,memory,FB3,FB3_3,Schuppen,0
+O3dTsbAlzf,DA,memory,FB3,FB3_4,Grün,0
+O3dTsbAlzf,DA,memory,FB3,FB3_6,Stacheln,1
+O3dTsbAlzf,DA,memory,FB3,FB3_7,Ozean,0
+O3dTsbAlzf,DA,memory,FB3,FB3_8,Pfeifen,0
+O3dTsbAlzf,DA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+O3dTsbAlzf,DA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+O3dTsbAlzf,DA,mindset,NA,GMS_3,Stimme zu,5
+O3dTsbAlzf,DA,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+O3dTsbAlzf,DA,nfc,NA,NfC_10,eher zutreffend,4
+O3dTsbAlzf,DA,nfc,NA,NfC_11,eher nicht zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_12,eher zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_13,überhaupt nicht zutreffend,1
+O3dTsbAlzf,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_16,eher zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_17,weder noch,3
+O3dTsbAlzf,DA,nfc,NA,NfC_2,überhaupt nicht zutreffend,1
+O3dTsbAlzf,DA,nfc,NA,NfC_3,sehr zutreffend,1
+O3dTsbAlzf,DA,nfc,NA,NfC_4,sehr zutreffend,1
+O3dTsbAlzf,DA,nfc,NA,NfC_5,weder noch,3
+O3dTsbAlzf,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_7,eher zutreffend,2
+O3dTsbAlzf,DA,nfc,NA,NfC_8,sehr zutreffend,1
+O3dTsbAlzf,DA,nfc,NA,NfC_9,sehr zutreffend,1
+OBYWY9PFfA,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+OBYWY9PFfA,DZ,mancheck,NA,MC_0_2,Schwierig,4
+OBYWY9PFfA,DZ,mancheck,NA,MC_1,Ja,1
+OBYWY9PFfA,DZ,memory,FB1,FB1_1,60 cm gross,0
+OBYWY9PFfA,DZ,memory,FB1,FB1_2,Von grünem Blattgemüse,1
+OBYWY9PFfA,DZ,memory,FB1,FB1_3,Raue haut,0
+OBYWY9PFfA,DZ,memory,FB1,FB1_4,Braune Augen,0
+OBYWY9PFfA,DZ,memory,FB1,FB1_5,Buschig und violett,1
+OBYWY9PFfA,DZ,memory,FB1,FB1_6,Trompetenähnliche Geräusche,0
+OBYWY9PFfA,DZ,memory,FB1,FB1_7,Durch die gegend Streifen,1
+OBYWY9PFfA,DZ,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+OBYWY9PFfA,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+OBYWY9PFfA,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_1,eher nicht zutreffend,2
+OBYWY9PFfA,DZ,nfc,NA,NfC_10,eher zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_11,eher zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_12,eher zutreffend,2
+OBYWY9PFfA,DZ,nfc,NA,NfC_13,weder noch,3
+OBYWY9PFfA,DZ,nfc,NA,NfC_14,weder noch,3
+OBYWY9PFfA,DZ,nfc,NA,NfC_15,weder noch,3
+OBYWY9PFfA,DZ,nfc,NA,NfC_16,eher nicht zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_17,eher zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_2,eher zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_6,weder noch,3
+OBYWY9PFfA,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+OBYWY9PFfA,DZ,nfc,NA,NfC_8,weder noch,3
+OBYWY9PFfA,DZ,nfc,NA,NfC_9,eher zutreffend,2
+PN30mrpLaK,DZ,mancheck,NA,MC_0_1,Leicht,2
+PN30mrpLaK,DZ,mancheck,NA,MC_0_2,Leicht,2
+PN30mrpLaK,DZ,mancheck,NA,MC_1,Nein,0
+PN30mrpLaK,DZ,memory,FB3,FB3_1,60cm,1
+PN30mrpLaK,DZ,memory,FB3,FB3_2,Ahornrinde,1
+PN30mrpLaK,DZ,memory,FB3,FB3_3,Weiche glatte Haut,1
+PN30mrpLaK,DZ,memory,FB3,FB3_4,Braun,1
+PN30mrpLaK,DZ,memory,FB3,FB3_6,Orange Stacheln,1
+PN30mrpLaK,DZ,memory,FB3,FB3_7,Auf ein Erdhaufen,1
+PN30mrpLaK,DZ,memory,FB3,FB3_8,Trompetenlaute,1
+PN30mrpLaK,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+PN30mrpLaK,DZ,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+PN30mrpLaK,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+PN30mrpLaK,DZ,nfc,NA,NfC_1,weder noch,3
+PN30mrpLaK,DZ,nfc,NA,NfC_10,weder noch,3
+PN30mrpLaK,DZ,nfc,NA,NfC_11,eher zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_13,weder noch,3
+PN30mrpLaK,DZ,nfc,NA,NfC_14,weder noch,3
+PN30mrpLaK,DZ,nfc,NA,NfC_15,eher zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_16,sehr zutreffend,1
+PN30mrpLaK,DZ,nfc,NA,NfC_17,eher zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_2,eher zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_6,eher zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_8,eher nicht zutreffend,4
+PN30mrpLaK,DZ,nfc,NA,NfC_9,weder noch,3
+PSyqWbQzKU,DL,mancheck,NA,MC_0_1,Leicht,2
+PSyqWbQzKU,DL,mancheck,NA,MC_0_2,Leicht,2
+PSyqWbQzKU,DL,mancheck,NA,MC_1,Ja,1
+PSyqWbQzKU,DL,memory,FB2,FB2_1,6 Meter,0
+PSyqWbQzKU,DL,memory,FB2,FB2_2,Pollen und Blütenblätter,1
+PSyqWbQzKU,DL,memory,FB2,FB2_3,raue Haut,1
+PSyqWbQzKU,DL,memory,FB2,FB2_4,blau,1
+PSyqWbQzKU,DL,memory,FB2,FB2_5,ein gelbes Horn,1
+PSyqWbQzKU,DL,memory,FB2,FB2_6,in Gruppen,1
+PSyqWbQzKU,DL,memory,FB2,FB2_7,sammeln Futter,1
+PSyqWbQzKU,DL,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+PSyqWbQzKU,DL,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+PSyqWbQzKU,DL,mindset,NA,GMS_3,Stimme zu,5
+PSyqWbQzKU,DL,nfc,NA,NfC_1,weder noch,3
+PSyqWbQzKU,DL,nfc,NA,NfC_10,eher zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_11,sehr zutreffend,5
+PSyqWbQzKU,DL,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+PSyqWbQzKU,DL,nfc,NA,NfC_13,weder noch,3
+PSyqWbQzKU,DL,nfc,NA,NfC_14,weder noch,3
+PSyqWbQzKU,DL,nfc,NA,NfC_15,eher zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_16,sehr zutreffend,1
+PSyqWbQzKU,DL,nfc,NA,NfC_17,sehr zutreffend,5
+PSyqWbQzKU,DL,nfc,NA,NfC_2,eher zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+PSyqWbQzKU,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_5,eher nicht zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_6,eher zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_8,eher nicht zutreffend,4
+PSyqWbQzKU,DL,nfc,NA,NfC_9,eher nicht zutreffend,4
+PffsAwOjg3,FA,mancheck,NA,MC_0_1,Sehr leicht,1
+PffsAwOjg3,FA,mancheck,NA,MC_0_2,Schwierig,4
+PffsAwOjg3,FA,mancheck,NA,MC_1,Ja,1
+PffsAwOjg3,FA,memory,FB3,FB3_1,2 meter,0
+PffsAwOjg3,FA,memory,FB3,FB3_2,Blättern,0
+PffsAwOjg3,FA,memory,FB3,FB3_3,Schuppen,0
+PffsAwOjg3,FA,memory,FB3,FB3_4,Schwarz,0
+PffsAwOjg3,FA,memory,FB3,FB3_6,Hörner,0
+PffsAwOjg3,FA,memory,FB3,FB3_7,Laub,0
+PffsAwOjg3,FA,memory,FB3,FB3_8,Mit tiefen Lauten,1
+PffsAwOjg3,FA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+PffsAwOjg3,FA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+PffsAwOjg3,FA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+PffsAwOjg3,FA,nfc,NA,NfC_1,eher nicht zutreffend,2
+PffsAwOjg3,FA,nfc,NA,NfC_10,eher zutreffend,4
+PffsAwOjg3,FA,nfc,NA,NfC_11,eher zutreffend,4
+PffsAwOjg3,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+PffsAwOjg3,FA,nfc,NA,NfC_13,eher nicht zutreffend,2
+PffsAwOjg3,FA,nfc,NA,NfC_14,eher nicht zutreffend,2
+PffsAwOjg3,FA,nfc,NA,NfC_15,weder noch,3
+PffsAwOjg3,FA,nfc,NA,NfC_16,überhaupt nicht zutreffend,5
+PffsAwOjg3,FA,nfc,NA,NfC_17,weder noch,3
+PffsAwOjg3,FA,nfc,NA,NfC_2,eher nicht zutreffend,2
+PffsAwOjg3,FA,nfc,NA,NfC_3,weder noch,3
+PffsAwOjg3,FA,nfc,NA,NfC_4,weder noch,3
+PffsAwOjg3,FA,nfc,NA,NfC_5,eher nicht zutreffend,4
+PffsAwOjg3,FA,nfc,NA,NfC_6,eher zutreffend,4
+PffsAwOjg3,FA,nfc,NA,NfC_7,eher zutreffend,2
+PffsAwOjg3,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+PffsAwOjg3,FA,nfc,NA,NfC_9,eher zutreffend,2
+QGopYFN2ar,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+QGopYFN2ar,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+QGopYFN2ar,DZ,mancheck,NA,MC_1,Ja,1
+QGopYFN2ar,DZ,memory,FB1,FB1_1,1.5 Meter,1
+QGopYFN2ar,DZ,memory,FB1,FB1_2,grüne Blätter,1
+QGopYFN2ar,DZ,memory,FB1,FB1_3,glatte,0
+QGopYFN2ar,DZ,memory,FB1,FB1_4,braune,0
+QGopYFN2ar,DZ,memory,FB1,FB1_5,buschig violett,1
+QGopYFN2ar,DZ,memory,FB1,FB1_6,x,0
+QGopYFN2ar,DZ,memory,FB1,FB1_7,alleine umherwandern,1
+QGopYFN2ar,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+QGopYFN2ar,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+QGopYFN2ar,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+QGopYFN2ar,DZ,nfc,NA,NfC_1,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_10,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_11,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_13,weder noch,3
+QGopYFN2ar,DZ,nfc,NA,NfC_14,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_15,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_16,weder noch,3
+QGopYFN2ar,DZ,nfc,NA,NfC_17,sehr zutreffend,5
+QGopYFN2ar,DZ,nfc,NA,NfC_2,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_6,eher zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_8,eher nicht zutreffend,4
+QGopYFN2ar,DZ,nfc,NA,NfC_9,eher nicht zutreffend,4
+QcDoq4VCqD,DL,mancheck,NA,MC_0_1,Leicht,2
+QcDoq4VCqD,DL,mancheck,NA,MC_0_2,Leicht,2
+QcDoq4VCqD,DL,mancheck,NA,MC_1,Ja,1
+QcDoq4VCqD,DL,memory,FB3,FB3_1,60cm,1
+QcDoq4VCqD,DL,memory,FB3,FB3_2,Von Ahornrinde,1
+QcDoq4VCqD,DL,memory,FB3,FB3_3,glatte Haut,1
+QcDoq4VCqD,DL,memory,FB3,FB3_4,braun,1
+QcDoq4VCqD,DL,memory,FB3,FB3_6,orange Stacheln,1
+QcDoq4VCqD,DL,memory,FB3,FB3_7,Erdhaufen,1
+QcDoq4VCqD,DL,memory,FB3,FB3_8,Mit einem trompetenartigen Laut,1
+QcDoq4VCqD,DL,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+QcDoq4VCqD,DL,mindset,NA,GMS_2,Stimme zu,5
+QcDoq4VCqD,DL,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+QcDoq4VCqD,DL,nfc,NA,NfC_1,eher nicht zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_10,weder noch,3
+QcDoq4VCqD,DL,nfc,NA,NfC_11,eher nicht zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+QcDoq4VCqD,DL,nfc,NA,NfC_13,weder noch,3
+QcDoq4VCqD,DL,nfc,NA,NfC_14,eher nicht zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_15,eher nicht zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_16,eher zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_17,weder noch,3
+QcDoq4VCqD,DL,nfc,NA,NfC_2,weder noch,3
+QcDoq4VCqD,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+QcDoq4VCqD,DL,nfc,NA,NfC_4,eher zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_5,eher zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_6,eher nicht zutreffend,2
+QcDoq4VCqD,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+QcDoq4VCqD,DL,nfc,NA,NfC_8,weder noch,3
+QcDoq4VCqD,DL,nfc,NA,NfC_9,eher zutreffend,2
+QhZhoGKoTw,DL,mancheck,NA,MC_0_1,Sehr leicht,1
+QhZhoGKoTw,DL,mancheck,NA,MC_0_2,Schwierig,4
+QhZhoGKoTw,DL,mancheck,NA,MC_1,Ja,1
+QhZhoGKoTw,DL,memory,FB3,FB3_1,1.5m,0
+QhZhoGKoTw,DL,memory,FB3,FB3_2,grünfutter,0
+QhZhoGKoTw,DL,memory,FB3,FB3_3,glatt,1
+QhZhoGKoTw,DL,memory,FB3,FB3_4,blau,0
+QhZhoGKoTw,DL,memory,FB3,FB3_6,schuppen,0
+QhZhoGKoTw,DL,memory,FB3,FB3_7,hügel,1
+QhZhoGKoTw,DL,memory,FB3,FB3_8,grunzen,0
+QhZhoGKoTw,DL,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+QhZhoGKoTw,DL,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+QhZhoGKoTw,DL,mindset,NA,GMS_3,Stimme zu,5
+QhZhoGKoTw,DL,nfc,NA,NfC_1,eher zutreffend,4
+QhZhoGKoTw,DL,nfc,NA,NfC_10,sehr zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_11,sehr zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_12,eher zutreffend,2
+QhZhoGKoTw,DL,nfc,NA,NfC_13,weder noch,3
+QhZhoGKoTw,DL,nfc,NA,NfC_14,eher zutreffend,4
+QhZhoGKoTw,DL,nfc,NA,NfC_15,eher zutreffend,4
+QhZhoGKoTw,DL,nfc,NA,NfC_16,NA,NA
+QhZhoGKoTw,DL,nfc,NA,NfC_17,sehr zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_2,sehr zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+QhZhoGKoTw,DL,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_6,eher zutreffend,4
+QhZhoGKoTw,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+QhZhoGKoTw,DL,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+QhZhoGKoTw,DL,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+RlO8FpM0pC,DL,mancheck,NA,MC_0_1,Leicht,2
+RlO8FpM0pC,DL,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+RlO8FpM0pC,DL,mancheck,NA,MC_1,Nein,0
+RlO8FpM0pC,DL,memory,FB2,FB2_1,3 Meter,1
+RlO8FpM0pC,DL,memory,FB2,FB2_2,von Heu,0
+RlO8FpM0pC,DL,memory,FB2,FB2_3,raue Haut,1
+RlO8FpM0pC,DL,memory,FB2,FB2_4,Blau,1
+RlO8FpM0pC,DL,memory,FB2,FB2_5,Gelbes Horn,1
+RlO8FpM0pC,DL,memory,FB2,FB2_6,in Gruppen,1
+RlO8FpM0pC,DL,memory,FB2,FB2_7,aufziehen,0
+RlO8FpM0pC,DL,mindset,NA,GMS_1,Stimme zu,5
+RlO8FpM0pC,DL,mindset,NA,GMS_2,Stimme zu,5
+RlO8FpM0pC,DL,mindset,NA,GMS_3,Stimme zu,5
+RlO8FpM0pC,DL,nfc,NA,NfC_1,weder noch,3
+RlO8FpM0pC,DL,nfc,NA,NfC_10,weder noch,3
+RlO8FpM0pC,DL,nfc,NA,NfC_11,eher zutreffend,4
+RlO8FpM0pC,DL,nfc,NA,NfC_12,weder noch,3
+RlO8FpM0pC,DL,nfc,NA,NfC_13,überhaupt nicht zutreffend,1
+RlO8FpM0pC,DL,nfc,NA,NfC_14,eher zutreffend,4
+RlO8FpM0pC,DL,nfc,NA,NfC_15,eher nicht zutreffend,2
+RlO8FpM0pC,DL,nfc,NA,NfC_16,eher zutreffend,2
+RlO8FpM0pC,DL,nfc,NA,NfC_17,eher zutreffend,4
+RlO8FpM0pC,DL,nfc,NA,NfC_2,weder noch,3
+RlO8FpM0pC,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+RlO8FpM0pC,DL,nfc,NA,NfC_4,eher zutreffend,2
+RlO8FpM0pC,DL,nfc,NA,NfC_5,eher zutreffend,2
+RlO8FpM0pC,DL,nfc,NA,NfC_6,weder noch,3
+RlO8FpM0pC,DL,nfc,NA,NfC_7,sehr zutreffend,1
+RlO8FpM0pC,DL,nfc,NA,NfC_8,eher zutreffend,2
+RlO8FpM0pC,DL,nfc,NA,NfC_9,eher zutreffend,2
+S1HRiSAyC3,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+S1HRiSAyC3,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+S1HRiSAyC3,DZ,mancheck,NA,MC_1,Ja,1
+S1HRiSAyC3,DZ,memory,FB2,FB2_1,3m,1
+S1HRiSAyC3,DZ,memory,FB2,FB2_2,Blumen und Pollen,1
+S1HRiSAyC3,DZ,memory,FB2,FB2_3,Warzig,0
+S1HRiSAyC3,DZ,memory,FB2,FB2_4,Blau,1
+S1HRiSAyC3,DZ,memory,FB2,FB2_5,Hut,0
+S1HRiSAyC3,DZ,memory,FB2,FB2_6,Kriechend,0
+S1HRiSAyC3,DZ,memory,FB2,FB2_7,Futter suchen,1
+S1HRiSAyC3,DZ,mindset,NA,GMS_1,Stimme nicht zu,2
+S1HRiSAyC3,DZ,mindset,NA,GMS_2,Stimme nicht zu,2
+S1HRiSAyC3,DZ,mindset,NA,GMS_3,Stimme nicht zu,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_1,weder noch,3
+S1HRiSAyC3,DZ,nfc,NA,NfC_10,weder noch,3
+S1HRiSAyC3,DZ,nfc,NA,NfC_11,eher zutreffend,4
+S1HRiSAyC3,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+S1HRiSAyC3,DZ,nfc,NA,NfC_13,weder noch,3
+S1HRiSAyC3,DZ,nfc,NA,NfC_14,eher nicht zutreffend,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_15,eher zutreffend,4
+S1HRiSAyC3,DZ,nfc,NA,NfC_16,eher zutreffend,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_17,eher zutreffend,4
+S1HRiSAyC3,DZ,nfc,NA,NfC_2,eher zutreffend,4
+S1HRiSAyC3,DZ,nfc,NA,NfC_3,eher zutreffend,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_4,eher zutreffend,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_5,eher zutreffend,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_6,eher zutreffend,4
+S1HRiSAyC3,DZ,nfc,NA,NfC_7,eher zutreffend,2
+S1HRiSAyC3,DZ,nfc,NA,NfC_8,weder noch,3
+S1HRiSAyC3,DZ,nfc,NA,NfC_9,eher zutreffend,2
+S7cffr4eJe,FT,mancheck,NA,MC_0_1,Leicht,2
+S7cffr4eJe,FT,mancheck,NA,MC_0_2,Schwierig,4
+S7cffr4eJe,FT,mancheck,NA,MC_1,Ja,1
+S7cffr4eJe,FT,memory,FB1,FB1_1,1.60?,0
+S7cffr4eJe,FT,memory,FB1,FB1_2,-,0
+S7cffr4eJe,FT,memory,FB1,FB1_3,-,0
+S7cffr4eJe,FT,memory,FB1,FB1_4,-,0
+S7cffr4eJe,FT,memory,FB1,FB1_5,-,0
+S7cffr4eJe,FT,memory,FB1,FB1_6,untereinander,0
+S7cffr4eJe,FT,memory,FB1,FB1_7,jagen?,0
+S7cffr4eJe,FT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+S7cffr4eJe,FT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+S7cffr4eJe,FT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+S7cffr4eJe,FT,nfc,NA,NfC_1,weder noch,3
+S7cffr4eJe,FT,nfc,NA,NfC_10,eher zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_11,eher zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_12,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_13,weder noch,3
+S7cffr4eJe,FT,nfc,NA,NfC_14,eher zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_15,weder noch,3
+S7cffr4eJe,FT,nfc,NA,NfC_16,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_17,eher zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_2,eher zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_6,weder noch,3
+S7cffr4eJe,FT,nfc,NA,NfC_7,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_8,eher nicht zutreffend,4
+S7cffr4eJe,FT,nfc,NA,NfC_9,eher nicht zutreffend,4
+TI62yKnTgO,DA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+TI62yKnTgO,DA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+TI62yKnTgO,DA,mancheck,NA,MC_1,Ja,1
+TI62yKnTgO,DA,memory,FB3,FB3_1,60cm,1
+TI62yKnTgO,DA,memory,FB3,FB3_2,Ahornrinde,1
+TI62yKnTgO,DA,memory,FB3,FB3_3,NA,0
+TI62yKnTgO,DA,memory,FB3,FB3_4,Braun,1
+TI62yKnTgO,DA,memory,FB3,FB3_6,Orangener Stachel,1
+TI62yKnTgO,DA,memory,FB3,FB3_7,NA,0
+TI62yKnTgO,DA,memory,FB3,FB3_8,Mit trompeten Lauten,1
+TI62yKnTgO,DA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+TI62yKnTgO,DA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+TI62yKnTgO,DA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+TI62yKnTgO,DA,nfc,NA,NfC_1,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_10,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_11,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_12,eher nicht zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_13,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_14,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_15,weder noch,3
+TI62yKnTgO,DA,nfc,NA,NfC_16,eher nicht zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_17,sehr zutreffend,5
+TI62yKnTgO,DA,nfc,NA,NfC_2,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_5,eher nicht zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_6,eher zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_7,eher nicht zutreffend,4
+TI62yKnTgO,DA,nfc,NA,NfC_8,weder noch,3
+TI62yKnTgO,DA,nfc,NA,NfC_9,eher nicht zutreffend,4
+TPXnYuPRUu,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+TPXnYuPRUu,DZ,mancheck,NA,MC_0_2,Leicht,2
+TPXnYuPRUu,DZ,mancheck,NA,MC_1,Ja,1
+TPXnYuPRUu,DZ,memory,FB3,FB3_1,60 cm,1
+TPXnYuPRUu,DZ,memory,FB3,FB3_2,Weidenrunde,0
+TPXnYuPRUu,DZ,memory,FB3,FB3_3,Weich,1
+TPXnYuPRUu,DZ,memory,FB3,FB3_4,Braune,1
+TPXnYuPRUu,DZ,memory,FB3,FB3_6,Orange Stacheln,1
+TPXnYuPRUu,DZ,memory,FB3,FB3_7,Auf ein Haufen,1
+TPXnYuPRUu,DZ,memory,FB3,FB3_8,Flötenartig,0
+TPXnYuPRUu,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+TPXnYuPRUu,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+TPXnYuPRUu,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+TPXnYuPRUu,DZ,nfc,NA,NfC_10,eher nicht zutreffend,2
+TPXnYuPRUu,DZ,nfc,NA,NfC_11,eher zutreffend,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_12,eher zutreffend,2
+TPXnYuPRUu,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+TPXnYuPRUu,DZ,nfc,NA,NfC_14,eher nicht zutreffend,2
+TPXnYuPRUu,DZ,nfc,NA,NfC_15,eher nicht zutreffend,2
+TPXnYuPRUu,DZ,nfc,NA,NfC_16,sehr zutreffend,1
+TPXnYuPRUu,DZ,nfc,NA,NfC_17,sehr zutreffend,5
+TPXnYuPRUu,DZ,nfc,NA,NfC_2,eher nicht zutreffend,2
+TPXnYuPRUu,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_6,eher zutreffend,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+TPXnYuPRUu,DZ,nfc,NA,NfC_8,weder noch,3
+TPXnYuPRUu,DZ,nfc,NA,NfC_9,eher zutreffend,2
+TWBA5zzuf4,DL,mancheck,NA,MC_0_1,Leicht,2
+TWBA5zzuf4,DL,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+TWBA5zzuf4,DL,mancheck,NA,MC_1,Nein,0
+TWBA5zzuf4,DL,memory,FB1,FB1_1,1.50 meter,1
+TWBA5zzuf4,DL,memory,FB1,FB1_2,Von Blättern,1
+TWBA5zzuf4,DL,memory,FB1,FB1_3,Raue haut,0
+TWBA5zzuf4,DL,memory,FB1,FB1_4,Schwarz,1
+TWBA5zzuf4,DL,memory,FB1,FB1_5,Buschig,1
+TWBA5zzuf4,DL,memory,FB1,FB1_6,Zischen,1
+TWBA5zzuf4,DL,memory,FB1,FB1_7,Futter suchen,1
+TWBA5zzuf4,DL,mindset,NA,GMS_1,NA,NA
+TWBA5zzuf4,DL,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+TWBA5zzuf4,DL,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+TWBA5zzuf4,DL,nfc,NA,NfC_1,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_10,weder noch,3
+TWBA5zzuf4,DL,nfc,NA,NfC_11,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_12,eher zutreffend,2
+TWBA5zzuf4,DL,nfc,NA,NfC_13,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_14,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_15,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_16,eher zutreffend,2
+TWBA5zzuf4,DL,nfc,NA,NfC_17,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_2,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_5,weder noch,3
+TWBA5zzuf4,DL,nfc,NA,NfC_6,eher zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_8,eher nicht zutreffend,4
+TWBA5zzuf4,DL,nfc,NA,NfC_9,weder noch,3
+TfLxvMllWi,DL,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+TfLxvMllWi,DL,mancheck,NA,MC_0_2,Schwierig,4
+TfLxvMllWi,DL,mancheck,NA,MC_1,Ja,1
+TfLxvMllWi,DL,memory,FB1,FB1_1,1.5 Meter,1
+TfLxvMllWi,DL,memory,FB1,FB1_2,Grünes Blattgemüse,1
+TfLxvMllWi,DL,memory,FB1,FB1_3,Schuppig,1
+TfLxvMllWi,DL,memory,FB1,FB1_4,Schwarz,1
+TfLxvMllWi,DL,memory,FB1,FB1_5,Buschig und violett,1
+TfLxvMllWi,DL,memory,FB1,FB1_6,Zwitschern,1
+TfLxvMllWi,DL,memory,FB1,FB1_7,Alleine herum wandern,1
+TfLxvMllWi,DL,mindset,NA,GMS_1,Stimme nicht zu,2
+TfLxvMllWi,DL,mindset,NA,GMS_2,Stimme nicht zu,2
+TfLxvMllWi,DL,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+TfLxvMllWi,DL,nfc,NA,NfC_1,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_10,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_11,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_12,eher zutreffend,2
+TfLxvMllWi,DL,nfc,NA,NfC_13,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_14,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_15,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_16,eher nicht zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_17,sehr zutreffend,5
+TfLxvMllWi,DL,nfc,NA,NfC_2,eher zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_5,eher nicht zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_6,weder noch,3
+TfLxvMllWi,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_8,eher nicht zutreffend,4
+TfLxvMllWi,DL,nfc,NA,NfC_9,eher zutreffend,2
+UoBJyQ59cB,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+UoBJyQ59cB,DZ,mancheck,NA,MC_0_2,Schwierig,4
+UoBJyQ59cB,DZ,mancheck,NA,MC_1,Nein,0
+UoBJyQ59cB,DZ,memory,FB2,FB2_1,60 Meter,0
+UoBJyQ59cB,DZ,memory,FB2,FB2_2,Fisch und Fleisch,0
+UoBJyQ59cB,DZ,memory,FB2,FB2_3,Glatt,0
+UoBJyQ59cB,DZ,memory,FB2,FB2_4,Blau,1
+UoBJyQ59cB,DZ,memory,FB2,FB2_5,Fell,0
+UoBJyQ59cB,DZ,memory,FB2,FB2_6,Langsam,0
+UoBJyQ59cB,DZ,memory,FB2,FB2_7,Jagen,0
+UoBJyQ59cB,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+UoBJyQ59cB,DZ,mindset,NA,GMS_2,Stimme zu,5
+UoBJyQ59cB,DZ,mindset,NA,GMS_3,Stimme zu,5
+UoBJyQ59cB,DZ,nfc,NA,NfC_1,eher zutreffend,4
+UoBJyQ59cB,DZ,nfc,NA,NfC_10,eher nicht zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_11,eher zutreffend,4
+UoBJyQ59cB,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+UoBJyQ59cB,DZ,nfc,NA,NfC_13,eher zutreffend,4
+UoBJyQ59cB,DZ,nfc,NA,NfC_14,eher zutreffend,4
+UoBJyQ59cB,DZ,nfc,NA,NfC_15,eher nicht zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_16,eher zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_17,eher zutreffend,4
+UoBJyQ59cB,DZ,nfc,NA,NfC_2,weder noch,3
+UoBJyQ59cB,DZ,nfc,NA,NfC_3,weder noch,3
+UoBJyQ59cB,DZ,nfc,NA,NfC_4,weder noch,3
+UoBJyQ59cB,DZ,nfc,NA,NfC_5,eher zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_6,eher nicht zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_7,eher zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_8,eher zutreffend,2
+UoBJyQ59cB,DZ,nfc,NA,NfC_9,eher nicht zutreffend,4
+V82QMdsxrK,DZ,mancheck,NA,MC_0_1,Leicht,2
+V82QMdsxrK,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+V82QMdsxrK,DZ,mancheck,NA,MC_1,Nein,0
+V82QMdsxrK,DZ,memory,FB3,FB3_1,60 cm,1
+V82QMdsxrK,DZ,memory,FB3,FB3_2,Blütenblätter,0
+V82QMdsxrK,DZ,memory,FB3,FB3_3,Glatte haute,1
+V82QMdsxrK,DZ,memory,FB3,FB3_4,Braun,1
+V82QMdsxrK,DZ,memory,FB3,FB3_6,Eine Reihe gelber Stachel,1
+V82QMdsxrK,DZ,memory,FB3,FB3_7,Auf einem Erdhaufen,1
+V82QMdsxrK,DZ,memory,FB3,FB3_8,In trompetenartigen Tönen,1
+V82QMdsxrK,DZ,mindset,NA,GMS_1,Stimme voll zu,6
+V82QMdsxrK,DZ,mindset,NA,GMS_2,Stimme voll zu,6
+V82QMdsxrK,DZ,mindset,NA,GMS_3,Stimme voll zu,6
+V82QMdsxrK,DZ,nfc,NA,NfC_1,weder noch,3
+V82QMdsxrK,DZ,nfc,NA,NfC_10,eher zutreffend,4
+V82QMdsxrK,DZ,nfc,NA,NfC_11,eher nicht zutreffend,2
+V82QMdsxrK,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+V82QMdsxrK,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+V82QMdsxrK,DZ,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+V82QMdsxrK,DZ,nfc,NA,NfC_15,eher zutreffend,4
+V82QMdsxrK,DZ,nfc,NA,NfC_16,eher zutreffend,2
+V82QMdsxrK,DZ,nfc,NA,NfC_17,weder noch,3
+V82QMdsxrK,DZ,nfc,NA,NfC_2,eher nicht zutreffend,2
+V82QMdsxrK,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+V82QMdsxrK,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+V82QMdsxrK,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+V82QMdsxrK,DZ,nfc,NA,NfC_6,weder noch,3
+V82QMdsxrK,DZ,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+V82QMdsxrK,DZ,nfc,NA,NfC_8,weder noch,3
+V82QMdsxrK,DZ,nfc,NA,NfC_9,eher zutreffend,2
+VU7pDAS3qn,DT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+VU7pDAS3qn,DT,mancheck,NA,MC_0_2,Schwierig,4
+VU7pDAS3qn,DT,mancheck,NA,MC_1,Ja,1
+VU7pDAS3qn,DT,memory,FB3,FB3_1,1.5m,0
+VU7pDAS3qn,DT,memory,FB3,FB3_2,NA,0
+VU7pDAS3qn,DT,memory,FB3,FB3_3,Glatt,1
+VU7pDAS3qn,DT,memory,FB3,FB3_4,Schwarz,0
+VU7pDAS3qn,DT,memory,FB3,FB3_6,Stachel,1
+VU7pDAS3qn,DT,memory,FB3,FB3_7,Auf Gras Haufen,1
+VU7pDAS3qn,DT,memory,FB3,FB3_8,Tief,1
+VU7pDAS3qn,DT,mindset,NA,GMS_1,Stimme zu,5
+VU7pDAS3qn,DT,mindset,NA,GMS_2,Stimme zu,5
+VU7pDAS3qn,DT,mindset,NA,GMS_3,Stimme zu,5
+VU7pDAS3qn,DT,nfc,NA,NfC_1,eher zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_10,weder noch,3
+VU7pDAS3qn,DT,nfc,NA,NfC_11,sehr zutreffend,5
+VU7pDAS3qn,DT,nfc,NA,NfC_12,eher zutreffend,2
+VU7pDAS3qn,DT,nfc,NA,NfC_13,eher zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_14,eher zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_15,eher zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_16,weder noch,3
+VU7pDAS3qn,DT,nfc,NA,NfC_17,sehr zutreffend,5
+VU7pDAS3qn,DT,nfc,NA,NfC_2,sehr zutreffend,5
+VU7pDAS3qn,DT,nfc,NA,NfC_3,weder noch,3
+VU7pDAS3qn,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_5,eher zutreffend,2
+VU7pDAS3qn,DT,nfc,NA,NfC_6,eher nicht zutreffend,2
+VU7pDAS3qn,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_8,eher nicht zutreffend,4
+VU7pDAS3qn,DT,nfc,NA,NfC_9,weder noch,3
+VW6Dh3EvpV,FA,mancheck,NA,MC_0_1,Sehr leicht,1
+VW6Dh3EvpV,FA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+VW6Dh3EvpV,FA,mancheck,NA,MC_1,Ja,1
+VW6Dh3EvpV,FA,memory,FB1,FB1_1,60cm,0
+VW6Dh3EvpV,FA,memory,FB1,FB1_2,Gras,1
+VW6Dh3EvpV,FA,memory,FB1,FB1_3,glatt,0
+VW6Dh3EvpV,FA,memory,FB1,FB1_4,Grün,0
+VW6Dh3EvpV,FA,memory,FB1,FB1_5,lang,0
+VW6Dh3EvpV,FA,memory,FB1,FB1_6,sanft,0
+VW6Dh3EvpV,FA,memory,FB1,FB1_7,Nahrung suchen,1
+VW6Dh3EvpV,FA,mindset,NA,GMS_1,Stimme zu,5
+VW6Dh3EvpV,FA,mindset,NA,GMS_2,Stimme zu,5
+VW6Dh3EvpV,FA,mindset,NA,GMS_3,Stimme zu,5
+VW6Dh3EvpV,FA,nfc,NA,NfC_1,eher zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_10,eher zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_11,eher zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+VW6Dh3EvpV,FA,nfc,NA,NfC_13,weder noch,3
+VW6Dh3EvpV,FA,nfc,NA,NfC_14,eher zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_15,sehr zutreffend,5
+VW6Dh3EvpV,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_17,sehr zutreffend,5
+VW6Dh3EvpV,FA,nfc,NA,NfC_2,eher zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_3,eher nicht zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_5,eher nicht zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_6,weder noch,3
+VW6Dh3EvpV,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+VW6Dh3EvpV,FA,nfc,NA,NfC_8,weder noch,3
+VW6Dh3EvpV,FA,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+W0fJT5G7w3,DT,mancheck,NA,MC_0_1,Leicht,2
+W0fJT5G7w3,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+W0fJT5G7w3,DT,mancheck,NA,MC_1,Nein,0
+W0fJT5G7w3,DT,memory,FB1,FB1_1,"1,5m",1
+W0fJT5G7w3,DT,memory,FB1,FB1_2,Grünblattgemüse,1
+W0fJT5G7w3,DT,memory,FB1,FB1_3,Raue dicke Haut,0
+W0fJT5G7w3,DT,memory,FB1,FB1_4,Schwarz,1
+W0fJT5G7w3,DT,memory,FB1,FB1_5,Violett und flauschig,1
+W0fJT5G7w3,DT,memory,FB1,FB1_6,Mit einem trompeten ähnlichen ruf,0
+W0fJT5G7w3,DT,memory,FB1,FB1_7,alleine herum ziehen,1
+W0fJT5G7w3,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+W0fJT5G7w3,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+W0fJT5G7w3,DT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+W0fJT5G7w3,DT,nfc,NA,NfC_1,weder noch,3
+W0fJT5G7w3,DT,nfc,NA,NfC_10,eher zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_11,eher zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_13,weder noch,3
+W0fJT5G7w3,DT,nfc,NA,NfC_14,eher zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_15,eher zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_17,eher zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_2,eher zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_5,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_6,eher nicht zutreffend,2
+W0fJT5G7w3,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_8,eher nicht zutreffend,4
+W0fJT5G7w3,DT,nfc,NA,NfC_9,weder noch,3
+WPdsru5Cy6,FA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+WPdsru5Cy6,FA,mancheck,NA,MC_0_2,Schwierig,4
+WPdsru5Cy6,FA,mancheck,NA,MC_1,Ja,1
+WPdsru5Cy6,FA,memory,FB1,FB1_1,60 cm,0
+WPdsru5Cy6,FA,memory,FB1,FB1_2,Von Buschblättern,0
+WPdsru5Cy6,FA,memory,FB1,FB1_3,Schuppige Haut,1
+WPdsru5Cy6,FA,memory,FB1,FB1_4,Schwarz,1
+WPdsru5Cy6,FA,memory,FB1,FB1_5,Lang un schuppig,0
+WPdsru5Cy6,FA,memory,FB1,FB1_6,Durch Trötengeräusche,0
+WPdsru5Cy6,FA,memory,FB1,FB1_7,Durchs Gebüsch ziehen,1
+WPdsru5Cy6,FA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+WPdsru5Cy6,FA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+WPdsru5Cy6,FA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+WPdsru5Cy6,FA,nfc,NA,NfC_1,eher zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_10,eher zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_11,weder noch,3
+WPdsru5Cy6,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_13,eher nicht zutreffend,2
+WPdsru5Cy6,FA,nfc,NA,NfC_14,weder noch,3
+WPdsru5Cy6,FA,nfc,NA,NfC_15,weder noch,3
+WPdsru5Cy6,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_17,weder noch,3
+WPdsru5Cy6,FA,nfc,NA,NfC_2,weder noch,3
+WPdsru5Cy6,FA,nfc,NA,NfC_3,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_5,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_6,eher zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+WPdsru5Cy6,FA,nfc,NA,NfC_9,eher nicht zutreffend,4
+X1x1XS2s0q,DL,mancheck,NA,MC_0_1,Leicht,2
+X1x1XS2s0q,DL,mancheck,NA,MC_0_2,Leicht,2
+X1x1XS2s0q,DL,mancheck,NA,MC_1,Nein,0
+X1x1XS2s0q,DL,memory,FB2,FB2_1,3 Meter,1
+X1x1XS2s0q,DL,memory,FB2,FB2_2,NA,0
+X1x1XS2s0q,DL,memory,FB2,FB2_3,Stacheliger Rücken,0
+X1x1XS2s0q,DL,memory,FB2,FB2_4,Blaue Augen,1
+X1x1XS2s0q,DL,memory,FB2,FB2_5,Gelbes Horn,1
+X1x1XS2s0q,DL,memory,FB2,FB2_6,Gruppen,1
+X1x1XS2s0q,DL,memory,FB2,FB2_7,Nahrung suchen,1
+X1x1XS2s0q,DL,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+X1x1XS2s0q,DL,mindset,NA,GMS_2,Stimme nicht zu,2
+X1x1XS2s0q,DL,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+X1x1XS2s0q,DL,nfc,NA,NfC_1,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_10,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_11,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_12,eher zutreffend,2
+X1x1XS2s0q,DL,nfc,NA,NfC_13,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_14,weder noch,3
+X1x1XS2s0q,DL,nfc,NA,NfC_15,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_16,weder noch,3
+X1x1XS2s0q,DL,nfc,NA,NfC_17,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_2,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_4,weder noch,3
+X1x1XS2s0q,DL,nfc,NA,NfC_5,weder noch,3
+X1x1XS2s0q,DL,nfc,NA,NfC_6,eher zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_8,eher nicht zutreffend,4
+X1x1XS2s0q,DL,nfc,NA,NfC_9,eher zutreffend,2
+Xc4NQq4J4x,FT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+Xc4NQq4J4x,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+Xc4NQq4J4x,FT,mancheck,NA,MC_1,Ja,1
+Xc4NQq4J4x,FT,memory,FB2,FB2_1,3 meter,0
+Xc4NQq4J4x,FT,memory,FB2,FB2_2,Blüten,1
+Xc4NQq4J4x,FT,memory,FB2,FB2_3,Rauh,1
+Xc4NQq4J4x,FT,memory,FB2,FB2_4,Blau,1
+Xc4NQq4J4x,FT,memory,FB2,FB2_5,Gelbes Horn,1
+Xc4NQq4J4x,FT,memory,FB2,FB2_6,In Gruppen,1
+Xc4NQq4J4x,FT,memory,FB2,FB2_7,Nahrung suchen,1
+Xc4NQq4J4x,FT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+Xc4NQq4J4x,FT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+Xc4NQq4J4x,FT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+Xc4NQq4J4x,FT,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+Xc4NQq4J4x,FT,nfc,NA,NfC_10,eher zutreffend,4
+Xc4NQq4J4x,FT,nfc,NA,NfC_11,weder noch,3
+Xc4NQq4J4x,FT,nfc,NA,NfC_12,eher zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_13,überhaupt nicht zutreffend,1
+Xc4NQq4J4x,FT,nfc,NA,NfC_14,eher nicht zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_15,eher nicht zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_16,eher zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_17,weder noch,3
+Xc4NQq4J4x,FT,nfc,NA,NfC_2,eher nicht zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_3,eher zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_4,weder noch,3
+Xc4NQq4J4x,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+Xc4NQq4J4x,FT,nfc,NA,NfC_6,eher nicht zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_7,eher zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_8,eher zutreffend,2
+Xc4NQq4J4x,FT,nfc,NA,NfC_9,sehr zutreffend,1
+YWDtePysAj,DL,mancheck,NA,MC_0_1,Sehr leicht,1
+YWDtePysAj,DL,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+YWDtePysAj,DL,mancheck,NA,MC_1,Nein,0
+YWDtePysAj,DL,memory,FB1,FB1_1,1.5 Meter,1
+YWDtePysAj,DL,memory,FB1,FB1_2,Von grünem Blattgemüse,1
+YWDtePysAj,DL,memory,FB1,FB1_3,Raue Haut,0
+YWDtePysAj,DL,memory,FB1,FB1_4,Schwarze Augen,1
+YWDtePysAj,DL,memory,FB1,FB1_5,"Buschiger, violetter Schwanz",1
+YWDtePysAj,DL,memory,FB1,FB1_6,Zwitschernd,1
+YWDtePysAj,DL,memory,FB1,FB1_7,Streigen alleine umher,1
+YWDtePysAj,DL,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+YWDtePysAj,DL,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+YWDtePysAj,DL,mindset,NA,GMS_3,Stimme zu,5
+YWDtePysAj,DL,nfc,NA,NfC_1,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_10,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_11,sehr zutreffend,5
+YWDtePysAj,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_13,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_14,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_15,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_16,weder noch,3
+YWDtePysAj,DL,nfc,NA,NfC_17,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_2,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_5,eher nicht zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_6,eher zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_7,weder noch,3
+YWDtePysAj,DL,nfc,NA,NfC_8,eher nicht zutreffend,4
+YWDtePysAj,DL,nfc,NA,NfC_9,eher nicht zutreffend,4
+YltSjw1NvU,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+YltSjw1NvU,DZ,mancheck,NA,MC_0_2,Schwierig,4
+YltSjw1NvU,DZ,mancheck,NA,MC_1,Nein,0
+YltSjw1NvU,DZ,memory,FB1,FB1_1,3 m,0
+YltSjw1NvU,DZ,memory,FB1,FB1_2,blätter,1
+YltSjw1NvU,DZ,memory,FB1,FB1_3,rau,0
+YltSjw1NvU,DZ,memory,FB1,FB1_4,blau,0
+YltSjw1NvU,DZ,memory,FB1,FB1_5,rau,0
+YltSjw1NvU,DZ,memory,FB1,FB1_6,zwitschern,1
+YltSjw1NvU,DZ,memory,FB1,FB1_7,schlafen,0
+YltSjw1NvU,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+YltSjw1NvU,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+YltSjw1NvU,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+YltSjw1NvU,DZ,nfc,NA,NfC_1,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_10,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_11,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_14,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_15,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_16,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_17,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_2,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_6,eher nicht zutreffend,2
+YltSjw1NvU,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_8,eher nicht zutreffend,4
+YltSjw1NvU,DZ,nfc,NA,NfC_9,eher nicht zutreffend,4
+ZRJIQC31y6,DA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+ZRJIQC31y6,DA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+ZRJIQC31y6,DA,mancheck,NA,MC_1,Ja,1
+ZRJIQC31y6,DA,memory,FB1,FB1_1,NA,0
+ZRJIQC31y6,DA,memory,FB1,FB1_2,NA,0
+ZRJIQC31y6,DA,memory,FB1,FB1_3,NA,0
+ZRJIQC31y6,DA,memory,FB1,FB1_4,NA,0
+ZRJIQC31y6,DA,memory,FB1,FB1_5,NA,0
+ZRJIQC31y6,DA,memory,FB1,FB1_6,Pfeifen,1
+ZRJIQC31y6,DA,memory,FB1,FB1_7,NA,0
+ZRJIQC31y6,DA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+ZRJIQC31y6,DA,mindset,NA,GMS_2,Stimme zu,5
+ZRJIQC31y6,DA,mindset,NA,GMS_3,Stimme nicht zu,2
+ZRJIQC31y6,DA,nfc,NA,NfC_1,eher zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_10,weder noch,3
+ZRJIQC31y6,DA,nfc,NA,NfC_11,weder noch,3
+ZRJIQC31y6,DA,nfc,NA,NfC_12,eher nicht zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_13,weder noch,3
+ZRJIQC31y6,DA,nfc,NA,NfC_14,eher zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_15,weder noch,3
+ZRJIQC31y6,DA,nfc,NA,NfC_16,eher nicht zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_17,eher zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_2,eher nicht zutreffend,2
+ZRJIQC31y6,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_5,eher zutreffend,2
+ZRJIQC31y6,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+ZRJIQC31y6,DA,nfc,NA,NfC_7,weder noch,3
+ZRJIQC31y6,DA,nfc,NA,NfC_8,eher nicht zutreffend,4
+ZRJIQC31y6,DA,nfc,NA,NfC_9,eher zutreffend,2
+ZfE4yoMst9,DA,mancheck,NA,MC_0_1,Schwierig,4
+ZfE4yoMst9,DA,mancheck,NA,MC_0_2,Schwierig,4
+ZfE4yoMst9,DA,mancheck,NA,MC_1,Nein,0
+ZfE4yoMst9,DA,memory,FB2,FB2_1,3Meter,1
+ZfE4yoMst9,DA,memory,FB2,FB2_2,Pflanzen,1
+ZfE4yoMst9,DA,memory,FB2,FB2_3,Schuppig,0
+ZfE4yoMst9,DA,memory,FB2,FB2_4,Blau,1
+ZfE4yoMst9,DA,memory,FB2,FB2_5,NA,0
+ZfE4yoMst9,DA,memory,FB2,FB2_6,NA,0
+ZfE4yoMst9,DA,memory,FB2,FB2_7,Nahrung suchen,1
+ZfE4yoMst9,DA,mindset,NA,GMS_1,Stimme zu,5
+ZfE4yoMst9,DA,mindset,NA,GMS_2,Stimme zu,5
+ZfE4yoMst9,DA,mindset,NA,GMS_3,Stimme zu,5
+ZfE4yoMst9,DA,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+ZfE4yoMst9,DA,nfc,NA,NfC_10,eher nicht zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_11,weder noch,3
+ZfE4yoMst9,DA,nfc,NA,NfC_12,eher zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_13,eher nicht zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_14,weder noch,3
+ZfE4yoMst9,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_16,eher zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_17,eher zutreffend,4
+ZfE4yoMst9,DA,nfc,NA,NfC_2,eher nicht zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_3,weder noch,3
+ZfE4yoMst9,DA,nfc,NA,NfC_4,weder noch,3
+ZfE4yoMst9,DA,nfc,NA,NfC_5,eher zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_7,eher zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_8,eher zutreffend,2
+ZfE4yoMst9,DA,nfc,NA,NfC_9,eher zutreffend,2
+afThtYPqsR,DL,mancheck,NA,MC_0_1,Sehr schwierig,5
+afThtYPqsR,DL,mancheck,NA,MC_0_2,Sehr schwierig,5
+afThtYPqsR,DL,mancheck,NA,MC_1,Ja,1
+afThtYPqsR,DL,memory,FB3,FB3_1,60cm,1
+afThtYPqsR,DL,memory,FB3,FB3_2,Blüten und Pollen,0
+afThtYPqsR,DL,memory,FB3,FB3_3,Blass,0
+afThtYPqsR,DL,memory,FB3,FB3_4,Blau,0
+afThtYPqsR,DL,memory,FB3,FB3_6,-,0
+afThtYPqsR,DL,memory,FB3,FB3_7,-,0
+afThtYPqsR,DL,memory,FB3,FB3_8,-,0
+afThtYPqsR,DL,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+afThtYPqsR,DL,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+afThtYPqsR,DL,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+afThtYPqsR,DL,nfc,NA,NfC_1,sehr zutreffend,5
+afThtYPqsR,DL,nfc,NA,NfC_10,eher zutreffend,4
+afThtYPqsR,DL,nfc,NA,NfC_11,sehr zutreffend,5
+afThtYPqsR,DL,nfc,NA,NfC_12,sehr zutreffend,1
+afThtYPqsR,DL,nfc,NA,NfC_13,sehr zutreffend,5
+afThtYPqsR,DL,nfc,NA,NfC_14,sehr zutreffend,5
+afThtYPqsR,DL,nfc,NA,NfC_15,weder noch,3
+afThtYPqsR,DL,nfc,NA,NfC_16,eher nicht zutreffend,4
+afThtYPqsR,DL,nfc,NA,NfC_17,sehr zutreffend,5
+afThtYPqsR,DL,nfc,NA,NfC_2,weder noch,3
+afThtYPqsR,DL,nfc,NA,NfC_3,weder noch,3
+afThtYPqsR,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+afThtYPqsR,DL,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+afThtYPqsR,DL,nfc,NA,NfC_6,weder noch,3
+afThtYPqsR,DL,nfc,NA,NfC_7,sehr zutreffend,1
+afThtYPqsR,DL,nfc,NA,NfC_8,eher zutreffend,2
+afThtYPqsR,DL,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+ay3G6NLjJr,DL,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+ay3G6NLjJr,DL,mancheck,NA,MC_0_2,Schwierig,4
+ay3G6NLjJr,DL,mancheck,NA,MC_1,Ja,1
+ay3G6NLjJr,DL,memory,FB1,FB1_1,60cm,0
+ay3G6NLjJr,DL,memory,FB1,FB1_2,Das Männchen sucht die Nahrung für die Jungen,0
+ay3G6NLjJr,DL,memory,FB1,FB1_3,Eine Schuppige Haut,1
+ay3G6NLjJr,DL,memory,FB1,FB1_4,Braun,0
+ay3G6NLjJr,DL,memory,FB1,FB1_5,Viollet,1
+ay3G6NLjJr,DL,memory,FB1,FB1_6,Mit zwitschernden Geräuschen,1
+ay3G6NLjJr,DL,memory,FB1,FB1_7,Singen,0
+ay3G6NLjJr,DL,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+ay3G6NLjJr,DL,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+ay3G6NLjJr,DL,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+ay3G6NLjJr,DL,nfc,NA,NfC_1,eher nicht zutreffend,2
+ay3G6NLjJr,DL,nfc,NA,NfC_10,weder noch,3
+ay3G6NLjJr,DL,nfc,NA,NfC_11,eher zutreffend,4
+ay3G6NLjJr,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+ay3G6NLjJr,DL,nfc,NA,NfC_13,weder noch,3
+ay3G6NLjJr,DL,nfc,NA,NfC_14,eher zutreffend,4
+ay3G6NLjJr,DL,nfc,NA,NfC_15,weder noch,3
+ay3G6NLjJr,DL,nfc,NA,NfC_16,eher zutreffend,2
+ay3G6NLjJr,DL,nfc,NA,NfC_17,eher zutreffend,4
+ay3G6NLjJr,DL,nfc,NA,NfC_2,eher nicht zutreffend,2
+ay3G6NLjJr,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+ay3G6NLjJr,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+ay3G6NLjJr,DL,nfc,NA,NfC_5,weder noch,3
+ay3G6NLjJr,DL,nfc,NA,NfC_6,eher nicht zutreffend,2
+ay3G6NLjJr,DL,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+ay3G6NLjJr,DL,nfc,NA,NfC_8,eher zutreffend,2
+ay3G6NLjJr,DL,nfc,NA,NfC_9,eher zutreffend,2
+bsK2ooemeB,FT,mancheck,NA,MC_0_1,Sehr leicht,1
+bsK2ooemeB,FT,mancheck,NA,MC_0_2,Leicht,2
+bsK2ooemeB,FT,mancheck,NA,MC_1,Ja,1
+bsK2ooemeB,FT,memory,FB3,FB3_1,0.9,0
+bsK2ooemeB,FT,memory,FB3,FB3_2,Irgendwas mit Blüten,0
+bsK2ooemeB,FT,memory,FB3,FB3_3,Grob,0
+bsK2ooemeB,FT,memory,FB3,FB3_4,Violett,0
+bsK2ooemeB,FT,memory,FB3,FB3_6,Buckel,0
+bsK2ooemeB,FT,memory,FB3,FB3_7,Auf einem Erdhaufen,1
+bsK2ooemeB,FT,memory,FB3,FB3_8,Tiefe Laute,1
+bsK2ooemeB,FT,mindset,NA,GMS_1,Stimme nicht zu,2
+bsK2ooemeB,FT,mindset,NA,GMS_2,Stimme nicht zu,2
+bsK2ooemeB,FT,mindset,NA,GMS_3,Stimme nicht zu,2
+bsK2ooemeB,FT,nfc,NA,NfC_1,sehr zutreffend,5
+bsK2ooemeB,FT,nfc,NA,NfC_10,eher nicht zutreffend,2
+bsK2ooemeB,FT,nfc,NA,NfC_11,sehr zutreffend,5
+bsK2ooemeB,FT,nfc,NA,NfC_12,eher zutreffend,2
+bsK2ooemeB,FT,nfc,NA,NfC_13,eher zutreffend,4
+bsK2ooemeB,FT,nfc,NA,NfC_14,sehr zutreffend,5
+bsK2ooemeB,FT,nfc,NA,NfC_15,eher zutreffend,4
+bsK2ooemeB,FT,nfc,NA,NfC_16,weder noch,3
+bsK2ooemeB,FT,nfc,NA,NfC_17,eher zutreffend,4
+bsK2ooemeB,FT,nfc,NA,NfC_2,eher zutreffend,4
+bsK2ooemeB,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+bsK2ooemeB,FT,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+bsK2ooemeB,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+bsK2ooemeB,FT,nfc,NA,NfC_6,eher nicht zutreffend,2
+bsK2ooemeB,FT,nfc,NA,NfC_7,sehr zutreffend,1
+bsK2ooemeB,FT,nfc,NA,NfC_8,eher zutreffend,2
+bsK2ooemeB,FT,nfc,NA,NfC_9,sehr zutreffend,1
+c6j42ftNJW,DL,mancheck,NA,MC_0_1,Leicht,2
+c6j42ftNJW,DL,mancheck,NA,MC_0_2,Schwierig,4
+c6j42ftNJW,DL,mancheck,NA,MC_1,Ja,1
+c6j42ftNJW,DL,memory,FB2,FB2_1,Ich hatte keine Geduld mir die Informationen 3 Minuten lang zu merken,0
+c6j42ftNJW,DL,memory,FB2,FB2_2,NA,0
+c6j42ftNJW,DL,memory,FB2,FB2_3,NA,0
+c6j42ftNJW,DL,memory,FB2,FB2_4,NA,0
+c6j42ftNJW,DL,memory,FB2,FB2_5,NA,0
+c6j42ftNJW,DL,memory,FB2,FB2_6,NA,0
+c6j42ftNJW,DL,memory,FB2,FB2_7,NA,0
+c6j42ftNJW,DL,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+c6j42ftNJW,DL,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+c6j42ftNJW,DL,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+c6j42ftNJW,DL,nfc,NA,NfC_1,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_10,eher zutreffend,4
+c6j42ftNJW,DL,nfc,NA,NfC_11,sehr zutreffend,5
+c6j42ftNJW,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+c6j42ftNJW,DL,nfc,NA,NfC_13,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_14,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_15,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_16,eher nicht zutreffend,4
+c6j42ftNJW,DL,nfc,NA,NfC_17,eher nicht zutreffend,2
+c6j42ftNJW,DL,nfc,NA,NfC_2,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_3,eher nicht zutreffend,4
+c6j42ftNJW,DL,nfc,NA,NfC_4,eher zutreffend,2
+c6j42ftNJW,DL,nfc,NA,NfC_5,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_6,weder noch,3
+c6j42ftNJW,DL,nfc,NA,NfC_7,eher zutreffend,2
+c6j42ftNJW,DL,nfc,NA,NfC_8,eher zutreffend,2
+c6j42ftNJW,DL,nfc,NA,NfC_9,weder noch,3
+cuTpua0MA8,FT,mancheck,NA,MC_0_1,Leicht,2
+cuTpua0MA8,FT,mancheck,NA,MC_0_2,Leicht,2
+cuTpua0MA8,FT,mancheck,NA,MC_1,Ja,1
+cuTpua0MA8,FT,memory,FB3,FB3_1,60 cm,1
+cuTpua0MA8,FT,memory,FB3,FB3_2,Ahornrinde,1
+cuTpua0MA8,FT,memory,FB3,FB3_3,"Glatte, weiche Haut",1
+cuTpua0MA8,FT,memory,FB3,FB3_4,Braune Augen,1
+cuTpua0MA8,FT,memory,FB3,FB3_6,Orange Stacheln,1
+cuTpua0MA8,FT,memory,FB3,FB3_7,Erdhügel,1
+cuTpua0MA8,FT,memory,FB3,FB3_8,Durch tiefe Stosslaute,1
+cuTpua0MA8,FT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+cuTpua0MA8,FT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+cuTpua0MA8,FT,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+cuTpua0MA8,FT,nfc,NA,NfC_1,eher zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_10,überhaupt nicht zutreffend,1
+cuTpua0MA8,FT,nfc,NA,NfC_11,sehr zutreffend,5
+cuTpua0MA8,FT,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+cuTpua0MA8,FT,nfc,NA,NfC_13,eher zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_14,eher zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_15,sehr zutreffend,5
+cuTpua0MA8,FT,nfc,NA,NfC_16,eher zutreffend,2
+cuTpua0MA8,FT,nfc,NA,NfC_17,eher zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_2,eher zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_3,eher zutreffend,2
+cuTpua0MA8,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_6,eher zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_7,eher nicht zutreffend,4
+cuTpua0MA8,FT,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+cuTpua0MA8,FT,nfc,NA,NfC_9,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,mancheck,NA,MC_0_1,Leicht,2
+dAtZ4MtgbL,FA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+dAtZ4MtgbL,FA,mancheck,NA,MC_1,Ja,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_1,1.5m,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_2,von Blättern,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_3,Schuppig,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_4,Schwarz,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_5,Violett Wuschelig,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_6,in einem angenehmen Zwitschern,1
+dAtZ4MtgbL,FA,memory,FB1,FB1_7,Aleine umher laufen,1
+dAtZ4MtgbL,FA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+dAtZ4MtgbL,FA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+dAtZ4MtgbL,FA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+dAtZ4MtgbL,FA,nfc,NA,NfC_1,eher zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_10,eher nicht zutreffend,2
+dAtZ4MtgbL,FA,nfc,NA,NfC_11,eher nicht zutreffend,2
+dAtZ4MtgbL,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_13,eher zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_14,weder noch,3
+dAtZ4MtgbL,FA,nfc,NA,NfC_15,weder noch,3
+dAtZ4MtgbL,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_17,weder noch,3
+dAtZ4MtgbL,FA,nfc,NA,NfC_2,eher zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_3,eher zutreffend,2
+dAtZ4MtgbL,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_5,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_6,weder noch,3
+dAtZ4MtgbL,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+dAtZ4MtgbL,FA,nfc,NA,NfC_9,eher zutreffend,2
+dz9RGBPaHt,DT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+dz9RGBPaHt,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+dz9RGBPaHt,DT,mancheck,NA,MC_1,Ja,1
+dz9RGBPaHt,DT,memory,FB3,FB3_1,60 cm,1
+dz9RGBPaHt,DT,memory,FB3,FB3_2,Weiss ich nicht mehr,0
+dz9RGBPaHt,DT,memory,FB3,FB3_3,Weich und glatt,1
+dz9RGBPaHt,DT,memory,FB3,FB3_4,braun,1
+dz9RGBPaHt,DT,memory,FB3,FB3_6,Stacheln,1
+dz9RGBPaHt,DT,memory,FB3,FB3_7,Auf einem Erdhaufen,1
+dz9RGBPaHt,DT,memory,FB3,FB3_8,Laut,1
+dz9RGBPaHt,DT,mindset,NA,GMS_1,Stimme zu,5
+dz9RGBPaHt,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+dz9RGBPaHt,DT,mindset,NA,GMS_3,Stimme voll zu,6
+dz9RGBPaHt,DT,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+dz9RGBPaHt,DT,nfc,NA,NfC_10,eher nicht zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_11,eher nicht zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+dz9RGBPaHt,DT,nfc,NA,NfC_13,überhaupt nicht zutreffend,1
+dz9RGBPaHt,DT,nfc,NA,NfC_14,eher nicht zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_15,eher nicht zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_16,sehr zutreffend,1
+dz9RGBPaHt,DT,nfc,NA,NfC_17,eher zutreffend,4
+dz9RGBPaHt,DT,nfc,NA,NfC_2,eher nicht zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_3,eher zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_4,eher zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_5,eher nicht zutreffend,4
+dz9RGBPaHt,DT,nfc,NA,NfC_6,eher nicht zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+dz9RGBPaHt,DT,nfc,NA,NfC_8,eher zutreffend,2
+dz9RGBPaHt,DT,nfc,NA,NfC_9,sehr zutreffend,1
+e9iFrwoubx,DT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+e9iFrwoubx,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+e9iFrwoubx,DT,mancheck,NA,MC_1,Ja,1
+e9iFrwoubx,DT,memory,FB2,FB2_1,3m,1
+e9iFrwoubx,DT,memory,FB2,FB2_2,Nektar und Pollen,1
+e9iFrwoubx,DT,memory,FB2,FB2_3,"Dicke, raue",1
+e9iFrwoubx,DT,memory,FB2,FB2_4,Blau,1
+e9iFrwoubx,DT,memory,FB2,FB2_5,Ein Horn,1
+e9iFrwoubx,DT,memory,FB2,FB2_6,sie springen,0
+e9iFrwoubx,DT,memory,FB2,FB2_7,Sie sichen Nahrung,1
+e9iFrwoubx,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+e9iFrwoubx,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+e9iFrwoubx,DT,mindset,NA,GMS_3,Stimme zu,5
+e9iFrwoubx,DT,nfc,NA,NfC_1,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_10,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_11,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_13,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+e9iFrwoubx,DT,nfc,NA,NfC_15,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+e9iFrwoubx,DT,nfc,NA,NfC_17,weder noch,3
+e9iFrwoubx,DT,nfc,NA,NfC_2,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_6,sehr zutreffend,5
+e9iFrwoubx,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+e9iFrwoubx,DT,nfc,NA,NfC_8,eher nicht zutreffend,4
+e9iFrwoubx,DT,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+eJMNZh9HUJ,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+eJMNZh9HUJ,DZ,mancheck,NA,MC_0_2,Schwierig,4
+eJMNZh9HUJ,DZ,mancheck,NA,MC_1,Ja,1
+eJMNZh9HUJ,DZ,memory,FB2,FB2_1,6 m,0
+eJMNZh9HUJ,DZ,memory,FB2,FB2_2,grüne Blätter,0
+eJMNZh9HUJ,DZ,memory,FB2,FB2_3,Schuppig,0
+eJMNZh9HUJ,DZ,memory,FB2,FB2_4,blau,1
+eJMNZh9HUJ,DZ,memory,FB2,FB2_5,Horn,1
+eJMNZh9HUJ,DZ,memory,FB2,FB2_6,in Gruppen,1
+eJMNZh9HUJ,DZ,memory,FB2,FB2_7,NA,0
+eJMNZh9HUJ,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+eJMNZh9HUJ,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+eJMNZh9HUJ,DZ,mindset,NA,GMS_3,Stimme zu,5
+eJMNZh9HUJ,DZ,nfc,NA,NfC_1,eher nicht zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_10,eher nicht zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_11,sehr zutreffend,5
+eJMNZh9HUJ,DZ,nfc,NA,NfC_12,eher zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_13,eher nicht zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_14,eher zutreffend,4
+eJMNZh9HUJ,DZ,nfc,NA,NfC_15,weder noch,3
+eJMNZh9HUJ,DZ,nfc,NA,NfC_16,eher zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_17,eher nicht zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_2,eher zutreffend,4
+eJMNZh9HUJ,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+eJMNZh9HUJ,DZ,nfc,NA,NfC_4,eher zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_5,eher zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_6,eher nicht zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_7,eher zutreffend,2
+eJMNZh9HUJ,DZ,nfc,NA,NfC_8,sehr zutreffend,1
+eJMNZh9HUJ,DZ,nfc,NA,NfC_9,weder noch,3
+eaP9TegCig,DA,mancheck,NA,MC_0_1,Leicht,2
+eaP9TegCig,DA,mancheck,NA,MC_0_2,Sehr leicht,1
+eaP9TegCig,DA,mancheck,NA,MC_1,Ja,1
+eaP9TegCig,DA,memory,FB1,FB1_1,3m,0
+eaP9TegCig,DA,memory,FB1,FB1_2,gar nicht,0
+eaP9TegCig,DA,memory,FB1,FB1_3,blau,0
+eaP9TegCig,DA,memory,FB1,FB1_4,braun,0
+eaP9TegCig,DA,memory,FB1,FB1_5,geschuppt,0
+eaP9TegCig,DA,memory,FB1,FB1_6,durch angenehmes zwitschern,1
+eaP9TegCig,DA,memory,FB1,FB1_7,schlafen,0
+eaP9TegCig,DA,mindset,NA,GMS_1,Stimme überhaupt nicht zu,1
+eaP9TegCig,DA,mindset,NA,GMS_2,Stimme überhaupt nicht zu,1
+eaP9TegCig,DA,mindset,NA,GMS_3,Stimme überhaupt nicht zu,1
+eaP9TegCig,DA,nfc,NA,NfC_1,eher nicht zutreffend,2
+eaP9TegCig,DA,nfc,NA,NfC_10,eher zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_11,eher nicht zutreffend,2
+eaP9TegCig,DA,nfc,NA,NfC_12,eher zutreffend,2
+eaP9TegCig,DA,nfc,NA,NfC_13,eher nicht zutreffend,2
+eaP9TegCig,DA,nfc,NA,NfC_14,eher zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_15,weder noch,3
+eaP9TegCig,DA,nfc,NA,NfC_16,weder noch,3
+eaP9TegCig,DA,nfc,NA,NfC_17,eher zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_2,weder noch,3
+eaP9TegCig,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_5,eher nicht zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_6,eher zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_7,eher nicht zutreffend,4
+eaP9TegCig,DA,nfc,NA,NfC_8,weder noch,3
+eaP9TegCig,DA,nfc,NA,NfC_9,eher zutreffend,2
+ezum2GM0u5,DZ,mancheck,NA,MC_0_1,Sehr leicht,1
+ezum2GM0u5,DZ,mancheck,NA,MC_0_2,Leicht,2
+ezum2GM0u5,DZ,mancheck,NA,MC_1,Ja,1
+ezum2GM0u5,DZ,memory,FB1,FB1_1,1.50 Meter.,1
+ezum2GM0u5,DZ,memory,FB1,FB1_2,Mittels grünem Blattgemüse.,1
+ezum2GM0u5,DZ,memory,FB1,FB1_3,Dicke raue Haut.,0
+ezum2GM0u5,DZ,memory,FB1,FB1_4,Schwarz.,1
+ezum2GM0u5,DZ,memory,FB1,FB1_5,Buschig und violett.,1
+ezum2GM0u5,DZ,memory,FB1,FB1_6,Mittels angenehmen Zwitschern.,1
+ezum2GM0u5,DZ,memory,FB1,FB1_7,Sie streifen alleine durch die Gegend.,1
+ezum2GM0u5,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+ezum2GM0u5,DZ,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+ezum2GM0u5,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+ezum2GM0u5,DZ,nfc,NA,NfC_1,eher zutreffend,4
+ezum2GM0u5,DZ,nfc,NA,NfC_10,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_11,eher zutreffend,4
+ezum2GM0u5,DZ,nfc,NA,NfC_12,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_13,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_14,sehr zutreffend,5
+ezum2GM0u5,DZ,nfc,NA,NfC_15,eher zutreffend,4
+ezum2GM0u5,DZ,nfc,NA,NfC_16,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_17,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_2,eher zutreffend,4
+ezum2GM0u5,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+ezum2GM0u5,DZ,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+ezum2GM0u5,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+ezum2GM0u5,DZ,nfc,NA,NfC_6,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_7,eher zutreffend,2
+ezum2GM0u5,DZ,nfc,NA,NfC_8,weder noch,3
+ezum2GM0u5,DZ,nfc,NA,NfC_9,eher nicht zutreffend,4
+f7ewjKN1Oo,DT,mancheck,NA,MC_0_1,Leicht,2
+f7ewjKN1Oo,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+f7ewjKN1Oo,DT,mancheck,NA,MC_1,Ja,1
+f7ewjKN1Oo,DT,memory,FB3,FB3_1,"0,60 m",1
+f7ewjKN1Oo,DT,memory,FB3,FB3_2,Blüten und Pollen,0
+f7ewjKN1Oo,DT,memory,FB3,FB3_3,schuppige Haut,0
+f7ewjKN1Oo,DT,memory,FB3,FB3_4,schwarz,0
+f7ewjKN1Oo,DT,memory,FB3,FB3_6,Stacheln,1
+f7ewjKN1Oo,DT,memory,FB3,FB3_7,Hügelhaufen,1
+f7ewjKN1Oo,DT,memory,FB3,FB3_8,Laute,1
+f7ewjKN1Oo,DT,mindset,NA,GMS_1,Stimme zu,5
+f7ewjKN1Oo,DT,mindset,NA,GMS_2,Stimme zu,5
+f7ewjKN1Oo,DT,mindset,NA,GMS_3,Stimme zu,5
+f7ewjKN1Oo,DT,nfc,NA,NfC_1,eher nicht zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_10,eher zutreffend,4
+f7ewjKN1Oo,DT,nfc,NA,NfC_11,eher zutreffend,4
+f7ewjKN1Oo,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+f7ewjKN1Oo,DT,nfc,NA,NfC_13,eher nicht zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_14,weder noch,3
+f7ewjKN1Oo,DT,nfc,NA,NfC_15,eher zutreffend,4
+f7ewjKN1Oo,DT,nfc,NA,NfC_16,eher zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_17,eher zutreffend,4
+f7ewjKN1Oo,DT,nfc,NA,NfC_2,eher nicht zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_3,weder noch,3
+f7ewjKN1Oo,DT,nfc,NA,NfC_4,eher zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_5,weder noch,3
+f7ewjKN1Oo,DT,nfc,NA,NfC_6,eher nicht zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_7,weder noch,3
+f7ewjKN1Oo,DT,nfc,NA,NfC_8,eher zutreffend,2
+f7ewjKN1Oo,DT,nfc,NA,NfC_9,eher zutreffend,2
+fLEgeCZahI,DT,mancheck,NA,MC_0_1,Leicht,2
+fLEgeCZahI,DT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+fLEgeCZahI,DT,mancheck,NA,MC_1,Ja,1
+fLEgeCZahI,DT,memory,FB1,FB1_1,60cm,0
+fLEgeCZahI,DT,memory,FB1,FB1_2,Blumen,0
+fLEgeCZahI,DT,memory,FB1,FB1_3,Raue haut,0
+fLEgeCZahI,DT,memory,FB1,FB1_4,Braune Augen,0
+fLEgeCZahI,DT,memory,FB1,FB1_5,Wie ein Schwanz,0
+fLEgeCZahI,DT,memory,FB1,FB1_6,Keine ahnung,0
+fLEgeCZahI,DT,memory,FB1,FB1_7,Nahrung suchen für den Nachwuchs,0
+fLEgeCZahI,DT,mindset,NA,GMS_1,Stimme zu,5
+fLEgeCZahI,DT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+fLEgeCZahI,DT,mindset,NA,GMS_3,Stimme zu,5
+fLEgeCZahI,DT,nfc,NA,NfC_1,eher zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_10,sehr zutreffend,5
+fLEgeCZahI,DT,nfc,NA,NfC_11,sehr zutreffend,5
+fLEgeCZahI,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_13,sehr zutreffend,5
+fLEgeCZahI,DT,nfc,NA,NfC_14,eher zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_15,sehr zutreffend,5
+fLEgeCZahI,DT,nfc,NA,NfC_16,eher nicht zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_17,eher zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_2,eher zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_5,eher nicht zutreffend,4
+fLEgeCZahI,DT,nfc,NA,NfC_6,sehr zutreffend,5
+fLEgeCZahI,DT,nfc,NA,NfC_7,weder noch,3
+fLEgeCZahI,DT,nfc,NA,NfC_8,eher zutreffend,2
+fLEgeCZahI,DT,nfc,NA,NfC_9,eher nicht zutreffend,4
+fNHiQdQhc5,DT,mancheck,NA,MC_0_1,Leicht,2
+fNHiQdQhc5,DT,mancheck,NA,MC_0_2,Leicht,2
+fNHiQdQhc5,DT,mancheck,NA,MC_1,Ja,1
+fNHiQdQhc5,DT,memory,FB1,FB1_1,1.2,0
+fNHiQdQhc5,DT,memory,FB1,FB1_2,Blätter,1
+fNHiQdQhc5,DT,memory,FB1,FB1_3,Schuppig,1
+fNHiQdQhc5,DT,memory,FB1,FB1_4,Schwarz,1
+fNHiQdQhc5,DT,memory,FB1,FB1_5,Buschig,1
+fNHiQdQhc5,DT,memory,FB1,FB1_6,Zwitschern,1
+fNHiQdQhc5,DT,memory,FB1,FB1_7,Nichts. Ist ein Mann :-),0
+fNHiQdQhc5,DT,mindset,NA,GMS_1,Stimme zu,5
+fNHiQdQhc5,DT,mindset,NA,GMS_2,Stimme zu,5
+fNHiQdQhc5,DT,mindset,NA,GMS_3,Stimme zu,5
+fNHiQdQhc5,DT,nfc,NA,NfC_1,eher nicht zutreffend,2
+fNHiQdQhc5,DT,nfc,NA,NfC_10,eher zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_11,eher zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_12,weder noch,3
+fNHiQdQhc5,DT,nfc,NA,NfC_13,eher zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_14,weder noch,3
+fNHiQdQhc5,DT,nfc,NA,NfC_15,eher zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_16,eher zutreffend,2
+fNHiQdQhc5,DT,nfc,NA,NfC_17,eher zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_2,eher nicht zutreffend,2
+fNHiQdQhc5,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_5,weder noch,3
+fNHiQdQhc5,DT,nfc,NA,NfC_6,eher nicht zutreffend,2
+fNHiQdQhc5,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+fNHiQdQhc5,DT,nfc,NA,NfC_8,eher zutreffend,2
+fNHiQdQhc5,DT,nfc,NA,NfC_9,weder noch,3
+fh3nTsMPhT,DA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+fh3nTsMPhT,DA,mancheck,NA,MC_0_2,Schwierig,4
+fh3nTsMPhT,DA,mancheck,NA,MC_1,Ja,1
+fh3nTsMPhT,DA,memory,FB1,FB1_1,3m,0
+fh3nTsMPhT,DA,memory,FB1,FB1_2,-,0
+fh3nTsMPhT,DA,memory,FB1,FB1_3,Weiche,0
+fh3nTsMPhT,DA,memory,FB1,FB1_4,Blau,0
+fh3nTsMPhT,DA,memory,FB1,FB1_5,Stechelig,0
+fh3nTsMPhT,DA,memory,FB1,FB1_6,Zwitschern,1
+fh3nTsMPhT,DA,memory,FB1,FB1_7,Alleine umherziehen,1
+fh3nTsMPhT,DA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+fh3nTsMPhT,DA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+fh3nTsMPhT,DA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+fh3nTsMPhT,DA,nfc,NA,NfC_1,weder noch,3
+fh3nTsMPhT,DA,nfc,NA,NfC_10,eher nicht zutreffend,2
+fh3nTsMPhT,DA,nfc,NA,NfC_11,eher zutreffend,4
+fh3nTsMPhT,DA,nfc,NA,NfC_12,eher nicht zutreffend,4
+fh3nTsMPhT,DA,nfc,NA,NfC_13,eher zutreffend,4
+fh3nTsMPhT,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+fh3nTsMPhT,DA,nfc,NA,NfC_15,weder noch,3
+fh3nTsMPhT,DA,nfc,NA,NfC_16,weder noch,3
+fh3nTsMPhT,DA,nfc,NA,NfC_17,eher nicht zutreffend,2
+fh3nTsMPhT,DA,nfc,NA,NfC_2,eher nicht zutreffend,2
+fh3nTsMPhT,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+fh3nTsMPhT,DA,nfc,NA,NfC_4,weder noch,3
+fh3nTsMPhT,DA,nfc,NA,NfC_5,weder noch,3
+fh3nTsMPhT,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+fh3nTsMPhT,DA,nfc,NA,NfC_7,eher zutreffend,2
+fh3nTsMPhT,DA,nfc,NA,NfC_8,eher nicht zutreffend,4
+fh3nTsMPhT,DA,nfc,NA,NfC_9,eher zutreffend,2
+hdloaboyde,DA,mancheck,NA,MC_0_1,Schwierig,4
+hdloaboyde,DA,mancheck,NA,MC_0_2,Schwierig,4
+hdloaboyde,DA,mancheck,NA,MC_1,Ja,1
+hdloaboyde,DA,memory,FB2,FB2_1,1.5m,0
+hdloaboyde,DA,memory,FB2,FB2_2,Grünzeug,0
+hdloaboyde,DA,memory,FB2,FB2_3,Schuppig,0
+hdloaboyde,DA,memory,FB2,FB2_4,Keine Angabe,0
+hdloaboyde,DA,memory,FB2,FB2_5,Gelbe Stacheln,0
+hdloaboyde,DA,memory,FB2,FB2_6,In Gruppen,1
+hdloaboyde,DA,memory,FB2,FB2_7,Nahrung Suchen,1
+hdloaboyde,DA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+hdloaboyde,DA,mindset,NA,GMS_2,Stimme zu,5
+hdloaboyde,DA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+hdloaboyde,DA,nfc,NA,NfC_1,eher nicht zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_10,eher zutreffend,4
+hdloaboyde,DA,nfc,NA,NfC_11,eher zutreffend,4
+hdloaboyde,DA,nfc,NA,NfC_12,weder noch,3
+hdloaboyde,DA,nfc,NA,NfC_13,eher nicht zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_14,eher zutreffend,4
+hdloaboyde,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_16,eher zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_17,eher nicht zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_2,eher zutreffend,4
+hdloaboyde,DA,nfc,NA,NfC_3,eher nicht zutreffend,4
+hdloaboyde,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+hdloaboyde,DA,nfc,NA,NfC_5,eher zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_7,eher zutreffend,2
+hdloaboyde,DA,nfc,NA,NfC_8,weder noch,3
+hdloaboyde,DA,nfc,NA,NfC_9,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,mancheck,NA,MC_0_1,Leicht,2
+i7MLJrTYjh,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+i7MLJrTYjh,DZ,mancheck,NA,MC_1,Ja,1
+i7MLJrTYjh,DZ,memory,FB3,FB3_1,2 Meter,0
+i7MLJrTYjh,DZ,memory,FB3,FB3_2,Blätter,0
+i7MLJrTYjh,DZ,memory,FB3,FB3_3,Schuppen,0
+i7MLJrTYjh,DZ,memory,FB3,FB3_4,Braun,1
+i7MLJrTYjh,DZ,memory,FB3,FB3_6,Horn,0
+i7MLJrTYjh,DZ,memory,FB3,FB3_7,Erdhaufen,1
+i7MLJrTYjh,DZ,memory,FB3,FB3_8,Angenehmen lauten,1
+i7MLJrTYjh,DZ,mindset,NA,GMS_1,Stimme zu,5
+i7MLJrTYjh,DZ,mindset,NA,GMS_2,Stimme zu,5
+i7MLJrTYjh,DZ,mindset,NA,GMS_3,Stimme zu,5
+i7MLJrTYjh,DZ,nfc,NA,NfC_1,weder noch,3
+i7MLJrTYjh,DZ,nfc,NA,NfC_10,eher zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_11,eher zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_13,eher zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_14,eher zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_15,weder noch,3
+i7MLJrTYjh,DZ,nfc,NA,NfC_16,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_17,eher nicht zutreffend,2
+i7MLJrTYjh,DZ,nfc,NA,NfC_2,eher zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_4,weder noch,3
+i7MLJrTYjh,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_6,weder noch,3
+i7MLJrTYjh,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_8,eher nicht zutreffend,4
+i7MLJrTYjh,DZ,nfc,NA,NfC_9,eher nicht zutreffend,4
+iA7MCTvDGK,DL,mancheck,NA,MC_0_1,Leicht,2
+iA7MCTvDGK,DL,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+iA7MCTvDGK,DL,mancheck,NA,MC_1,Nein,0
+iA7MCTvDGK,DL,memory,FB3,FB3_1,60cm,1
+iA7MCTvDGK,DL,memory,FB3,FB3_2,Ahornrinde,1
+iA7MCTvDGK,DL,memory,FB3,FB3_3,Weich,1
+iA7MCTvDGK,DL,memory,FB3,FB3_4,Schwarze,0
+iA7MCTvDGK,DL,memory,FB3,FB3_6,Stacheln,1
+iA7MCTvDGK,DL,memory,FB3,FB3_7,Haufen,1
+iA7MCTvDGK,DL,memory,FB3,FB3_8,Laute,1
+iA7MCTvDGK,DL,mindset,NA,GMS_1,Stimme zu,5
+iA7MCTvDGK,DL,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+iA7MCTvDGK,DL,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+iA7MCTvDGK,DL,nfc,NA,NfC_1,eher nicht zutreffend,2
+iA7MCTvDGK,DL,nfc,NA,NfC_10,weder noch,3
+iA7MCTvDGK,DL,nfc,NA,NfC_11,weder noch,3
+iA7MCTvDGK,DL,nfc,NA,NfC_12,weder noch,3
+iA7MCTvDGK,DL,nfc,NA,NfC_13,eher nicht zutreffend,2
+iA7MCTvDGK,DL,nfc,NA,NfC_14,eher zutreffend,4
+iA7MCTvDGK,DL,nfc,NA,NfC_15,weder noch,3
+iA7MCTvDGK,DL,nfc,NA,NfC_16,eher nicht zutreffend,4
+iA7MCTvDGK,DL,nfc,NA,NfC_17,eher zutreffend,4
+iA7MCTvDGK,DL,nfc,NA,NfC_2,weder noch,3
+iA7MCTvDGK,DL,nfc,NA,NfC_3,eher zutreffend,2
+iA7MCTvDGK,DL,nfc,NA,NfC_4,eher zutreffend,2
+iA7MCTvDGK,DL,nfc,NA,NfC_5,eher nicht zutreffend,4
+iA7MCTvDGK,DL,nfc,NA,NfC_6,eher nicht zutreffend,2
+iA7MCTvDGK,DL,nfc,NA,NfC_7,eher zutreffend,2
+iA7MCTvDGK,DL,nfc,NA,NfC_8,weder noch,3
+iA7MCTvDGK,DL,nfc,NA,NfC_9,eher zutreffend,2
+ky8MHNgKtp,DA,mancheck,NA,MC_0_1,Schwierig,4
+ky8MHNgKtp,DA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+ky8MHNgKtp,DA,mancheck,NA,MC_1,Ja,1
+ky8MHNgKtp,DA,memory,FB2,FB2_1,3 Meter,1
+ky8MHNgKtp,DA,memory,FB2,FB2_2,Blütenblätter und Pollen,1
+ky8MHNgKtp,DA,memory,FB2,FB2_3,"dicke, raue Haut",1
+ky8MHNgKtp,DA,memory,FB2,FB2_4,blaue Augen,1
+ky8MHNgKtp,DA,memory,FB2,FB2_5,gelbes Horn,1
+ky8MHNgKtp,DA,memory,FB2,FB2_6,in einer Gruppe,1
+ky8MHNgKtp,DA,memory,FB2,FB2_7,Sammeln Nahrung,1
+ky8MHNgKtp,DA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+ky8MHNgKtp,DA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+ky8MHNgKtp,DA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+ky8MHNgKtp,DA,nfc,NA,NfC_1,eher nicht zutreffend,2
+ky8MHNgKtp,DA,nfc,NA,NfC_10,eher zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_11,eher zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+ky8MHNgKtp,DA,nfc,NA,NfC_13,weder noch,3
+ky8MHNgKtp,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+ky8MHNgKtp,DA,nfc,NA,NfC_15,eher zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_16,sehr zutreffend,1
+ky8MHNgKtp,DA,nfc,NA,NfC_17,eher zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_2,sehr zutreffend,5
+ky8MHNgKtp,DA,nfc,NA,NfC_3,eher zutreffend,2
+ky8MHNgKtp,DA,nfc,NA,NfC_4,eher nicht zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_5,eher nicht zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_6,eher zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+ky8MHNgKtp,DA,nfc,NA,NfC_8,eher nicht zutreffend,4
+ky8MHNgKtp,DA,nfc,NA,NfC_9,eher nicht zutreffend,4
+lRDiLXCF6l,FT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+lRDiLXCF6l,FT,mancheck,NA,MC_0_2,Schwierig,4
+lRDiLXCF6l,FT,mancheck,NA,MC_1,Ja,1
+lRDiLXCF6l,FT,memory,FB2,FB2_1,3 m,1
+lRDiLXCF6l,FT,memory,FB2,FB2_2,Pollen und Blüten,1
+lRDiLXCF6l,FT,memory,FB2,FB2_3,rau und trocken,1
+lRDiLXCF6l,FT,memory,FB2,FB2_4,Blau,1
+lRDiLXCF6l,FT,memory,FB2,FB2_5,Gelbes Horn,1
+lRDiLXCF6l,FT,memory,FB2,FB2_6,In gruppen,1
+lRDiLXCF6l,FT,memory,FB2,FB2_7,sammeln Nahrung,1
+lRDiLXCF6l,FT,mindset,NA,GMS_1,Stimme nicht zu,2
+lRDiLXCF6l,FT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+lRDiLXCF6l,FT,mindset,NA,GMS_3,Stimme nicht zu,2
+lRDiLXCF6l,FT,nfc,NA,NfC_1,eher zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_10,eher nicht zutreffend,2
+lRDiLXCF6l,FT,nfc,NA,NfC_11,eher zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_12,eher nicht zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_13,eher zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_14,eher nicht zutreffend,2
+lRDiLXCF6l,FT,nfc,NA,NfC_15,sehr zutreffend,5
+lRDiLXCF6l,FT,nfc,NA,NfC_16,eher zutreffend,2
+lRDiLXCF6l,FT,nfc,NA,NfC_17,eher nicht zutreffend,2
+lRDiLXCF6l,FT,nfc,NA,NfC_2,weder noch,3
+lRDiLXCF6l,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+lRDiLXCF6l,FT,nfc,NA,NfC_6,eher nicht zutreffend,2
+lRDiLXCF6l,FT,nfc,NA,NfC_7,eher zutreffend,2
+lRDiLXCF6l,FT,nfc,NA,NfC_8,weder noch,3
+lRDiLXCF6l,FT,nfc,NA,NfC_9,eher zutreffend,2
+ljpiGaTTq0,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+ljpiGaTTq0,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+ljpiGaTTq0,DZ,mancheck,NA,MC_1,Nein,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_1,NA,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_2,NA,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_3,NA,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_4,NA,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_6,NA,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_7,NA,0
+ljpiGaTTq0,DZ,memory,FB3,FB3_8,NA,0
+ljpiGaTTq0,DZ,mindset,NA,GMS_1,Stimme zu,5
+ljpiGaTTq0,DZ,mindset,NA,GMS_2,Stimme zu,5
+ljpiGaTTq0,DZ,mindset,NA,GMS_3,Stimme zu,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_1,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_10,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_11,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_13,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_14,eher zutreffend,4
+ljpiGaTTq0,DZ,nfc,NA,NfC_15,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_16,sehr zutreffend,1
+ljpiGaTTq0,DZ,nfc,NA,NfC_17,eher zutreffend,4
+ljpiGaTTq0,DZ,nfc,NA,NfC_2,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_5,sehr zutreffend,1
+ljpiGaTTq0,DZ,nfc,NA,NfC_6,sehr zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+ljpiGaTTq0,DZ,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+ljpiGaTTq0,DZ,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+m8mMn6iKVa,FT,mancheck,NA,MC_0_1,Leicht,2
+m8mMn6iKVa,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+m8mMn6iKVa,FT,mancheck,NA,MC_1,Ja,1
+m8mMn6iKVa,FT,memory,FB2,FB2_1,3m,1
+m8mMn6iKVa,FT,memory,FB2,FB2_2,Pollen,1
+m8mMn6iKVa,FT,memory,FB2,FB2_3,Orange,0
+m8mMn6iKVa,FT,memory,FB2,FB2_4,Blau,1
+m8mMn6iKVa,FT,memory,FB2,FB2_5,Ein gelbes Horn,1
+m8mMn6iKVa,FT,memory,FB2,FB2_6,Schleichend und langsam?,0
+m8mMn6iKVa,FT,memory,FB2,FB2_7,Nahrung sammeln,1
+m8mMn6iKVa,FT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+m8mMn6iKVa,FT,mindset,NA,GMS_2,Stimme nicht zu,2
+m8mMn6iKVa,FT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+m8mMn6iKVa,FT,nfc,NA,NfC_1,weder noch,3
+m8mMn6iKVa,FT,nfc,NA,NfC_10,eher zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_11,eher zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_12,eher nicht zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_13,eher zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_14,eher zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_15,eher zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_16,weder noch,3
+m8mMn6iKVa,FT,nfc,NA,NfC_17,eher nicht zutreffend,2
+m8mMn6iKVa,FT,nfc,NA,NfC_2,weder noch,3
+m8mMn6iKVa,FT,nfc,NA,NfC_3,weder noch,3
+m8mMn6iKVa,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_5,weder noch,3
+m8mMn6iKVa,FT,nfc,NA,NfC_6,weder noch,3
+m8mMn6iKVa,FT,nfc,NA,NfC_7,eher zutreffend,2
+m8mMn6iKVa,FT,nfc,NA,NfC_8,eher nicht zutreffend,4
+m8mMn6iKVa,FT,nfc,NA,NfC_9,weder noch,3
+moE9l8h93u,FA,mancheck,NA,MC_0_1,Sehr leicht,1
+moE9l8h93u,FA,mancheck,NA,MC_0_2,Schwierig,4
+moE9l8h93u,FA,mancheck,NA,MC_1,Ja,1
+moE9l8h93u,FA,memory,FB2,FB2_1,30 cm,0
+moE9l8h93u,FA,memory,FB2,FB2_2,Laub,0
+moE9l8h93u,FA,memory,FB2,FB2_3,Wartig,0
+moE9l8h93u,FA,memory,FB2,FB2_4,Lila,0
+moE9l8h93u,FA,memory,FB2,FB2_5,Gelbe haare,1
+moE9l8h93u,FA,memory,FB2,FB2_6,Geschlechtsverkher,0
+moE9l8h93u,FA,memory,FB2,FB2_7,Pfeifen,0
+moE9l8h93u,FA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+moE9l8h93u,FA,mindset,NA,GMS_2,Stimme zu,5
+moE9l8h93u,FA,mindset,NA,GMS_3,Stimme voll zu,6
+moE9l8h93u,FA,nfc,NA,NfC_1,eher nicht zutreffend,2
+moE9l8h93u,FA,nfc,NA,NfC_10,sehr zutreffend,5
+moE9l8h93u,FA,nfc,NA,NfC_11,weder noch,3
+moE9l8h93u,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+moE9l8h93u,FA,nfc,NA,NfC_13,eher nicht zutreffend,2
+moE9l8h93u,FA,nfc,NA,NfC_14,eher nicht zutreffend,2
+moE9l8h93u,FA,nfc,NA,NfC_15,eher nicht zutreffend,2
+moE9l8h93u,FA,nfc,NA,NfC_16,eher zutreffend,2
+moE9l8h93u,FA,nfc,NA,NfC_17,eher zutreffend,4
+moE9l8h93u,FA,nfc,NA,NfC_2,weder noch,3
+moE9l8h93u,FA,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+moE9l8h93u,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+moE9l8h93u,FA,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+moE9l8h93u,FA,nfc,NA,NfC_6,sehr zutreffend,5
+moE9l8h93u,FA,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+moE9l8h93u,FA,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+moE9l8h93u,FA,nfc,NA,NfC_9,sehr zutreffend,1
+nazrEJbN5G,FA,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+nazrEJbN5G,FA,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+nazrEJbN5G,FA,mancheck,NA,MC_1,Nein,0
+nazrEJbN5G,FA,memory,FB3,FB3_1,60 cm,1
+nazrEJbN5G,FA,memory,FB3,FB3_2,Ahornzweige,1
+nazrEJbN5G,FA,memory,FB3,FB3_3,glatt,1
+nazrEJbN5G,FA,memory,FB3,FB3_4,braun,1
+nazrEJbN5G,FA,memory,FB3,FB3_6,Stacheln,1
+nazrEJbN5G,FA,memory,FB3,FB3_7,auf Erdhäufen,1
+nazrEJbN5G,FA,memory,FB3,FB3_8,mit tiefen Lauten,1
+nazrEJbN5G,FA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+nazrEJbN5G,FA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+nazrEJbN5G,FA,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+nazrEJbN5G,FA,nfc,NA,NfC_1,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_10,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_11,eher zutreffend,4
+nazrEJbN5G,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+nazrEJbN5G,FA,nfc,NA,NfC_13,eher nicht zutreffend,2
+nazrEJbN5G,FA,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+nazrEJbN5G,FA,nfc,NA,NfC_15,eher nicht zutreffend,2
+nazrEJbN5G,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+nazrEJbN5G,FA,nfc,NA,NfC_17,eher zutreffend,4
+nazrEJbN5G,FA,nfc,NA,NfC_2,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_3,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_4,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_5,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_6,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_7,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_8,weder noch,3
+nazrEJbN5G,FA,nfc,NA,NfC_9,weder noch,3
+oWocRIIhcG,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+oWocRIIhcG,DZ,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+oWocRIIhcG,DZ,mancheck,NA,MC_1,Ja,1
+oWocRIIhcG,DZ,memory,FB2,FB2_1,3 Meter gross,1
+oWocRIIhcG,DZ,memory,FB2,FB2_2,Von grünem Blattgemüse,0
+oWocRIIhcG,DZ,memory,FB2,FB2_3,Schuppige Haut,0
+oWocRIIhcG,DZ,memory,FB2,FB2_4,Schwarze,0
+oWocRIIhcG,DZ,memory,FB2,FB2_5,Ein gelbes Horn,1
+oWocRIIhcG,DZ,memory,FB2,FB2_6,Schleichen umher,0
+oWocRIIhcG,DZ,memory,FB2,FB2_7,Sammeln Nahrung,1
+oWocRIIhcG,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+oWocRIIhcG,DZ,mindset,NA,GMS_2,Stimme zu,5
+oWocRIIhcG,DZ,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+oWocRIIhcG,DZ,nfc,NA,NfC_1,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_10,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_11,sehr zutreffend,5
+oWocRIIhcG,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_13,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_14,weder noch,3
+oWocRIIhcG,DZ,nfc,NA,NfC_15,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_16,weder noch,3
+oWocRIIhcG,DZ,nfc,NA,NfC_17,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_2,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_5,überhaupt nicht zutreffend,5
+oWocRIIhcG,DZ,nfc,NA,NfC_6,eher zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_7,eher nicht zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_8,eher nicht zutreffend,4
+oWocRIIhcG,DZ,nfc,NA,NfC_9,eher nicht zutreffend,4
+pNrlxWnfjP,FT,mancheck,NA,MC_0_1,Leicht,2
+pNrlxWnfjP,FT,mancheck,NA,MC_0_2,Leicht,2
+pNrlxWnfjP,FT,mancheck,NA,MC_1,Ja,1
+pNrlxWnfjP,FT,memory,FB1,FB1_1,"1,5m",1
+pNrlxWnfjP,FT,memory,FB1,FB1_2,Blattgemüse,1
+pNrlxWnfjP,FT,memory,FB1,FB1_3,Schuppige Haut,1
+pNrlxWnfjP,FT,memory,FB1,FB1_4,Schwarze Augen,1
+pNrlxWnfjP,FT,memory,FB1,FB1_5,Buschig &Violett,1
+pNrlxWnfjP,FT,memory,FB1,FB1_6,Zwitschern,1
+pNrlxWnfjP,FT,memory,FB1,FB1_7,Alleine umherstreifen,1
+pNrlxWnfjP,FT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+pNrlxWnfjP,FT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+pNrlxWnfjP,FT,mindset,NA,GMS_3,Stimme grösstenteils zu,4
+pNrlxWnfjP,FT,nfc,NA,NfC_1,eher nicht zutreffend,2
+pNrlxWnfjP,FT,nfc,NA,NfC_10,weder noch,3
+pNrlxWnfjP,FT,nfc,NA,NfC_11,eher zutreffend,4
+pNrlxWnfjP,FT,nfc,NA,NfC_12,weder noch,3
+pNrlxWnfjP,FT,nfc,NA,NfC_13,eher nicht zutreffend,2
+pNrlxWnfjP,FT,nfc,NA,NfC_14,weder noch,3
+pNrlxWnfjP,FT,nfc,NA,NfC_15,eher nicht zutreffend,2
+pNrlxWnfjP,FT,nfc,NA,NfC_16,eher nicht zutreffend,4
+pNrlxWnfjP,FT,nfc,NA,NfC_17,eher zutreffend,4
+pNrlxWnfjP,FT,nfc,NA,NfC_2,weder noch,3
+pNrlxWnfjP,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+pNrlxWnfjP,FT,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+pNrlxWnfjP,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+pNrlxWnfjP,FT,nfc,NA,NfC_6,weder noch,3
+pNrlxWnfjP,FT,nfc,NA,NfC_7,überhaupt nicht zutreffend,5
+pNrlxWnfjP,FT,nfc,NA,NfC_8,eher nicht zutreffend,4
+pNrlxWnfjP,FT,nfc,NA,NfC_9,weder noch,3
+qCllfLWtqP,FA,mancheck,NA,MC_0_1,Sehr leicht,1
+qCllfLWtqP,FA,mancheck,NA,MC_0_2,Sehr schwierig,5
+qCllfLWtqP,FA,mancheck,NA,MC_1,Ja,1
+qCllfLWtqP,FA,memory,FB2,FB2_1,3 Meter,1
+qCllfLWtqP,FA,memory,FB2,FB2_2,NA,0
+qCllfLWtqP,FA,memory,FB2,FB2_3,NA,0
+qCllfLWtqP,FA,memory,FB2,FB2_4,Braun,0
+qCllfLWtqP,FA,memory,FB2,FB2_5,ein gelbes Horn,1
+qCllfLWtqP,FA,memory,FB2,FB2_6,NA,0
+qCllfLWtqP,FA,memory,FB2,FB2_7,NA,0
+qCllfLWtqP,FA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+qCllfLWtqP,FA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+qCllfLWtqP,FA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+qCllfLWtqP,FA,nfc,NA,NfC_1,eher zutreffend,4
+qCllfLWtqP,FA,nfc,NA,NfC_10,eher zutreffend,4
+qCllfLWtqP,FA,nfc,NA,NfC_11,weder noch,3
+qCllfLWtqP,FA,nfc,NA,NfC_12,eher nicht zutreffend,4
+qCllfLWtqP,FA,nfc,NA,NfC_13,weder noch,3
+qCllfLWtqP,FA,nfc,NA,NfC_14,sehr zutreffend,5
+qCllfLWtqP,FA,nfc,NA,NfC_15,sehr zutreffend,5
+qCllfLWtqP,FA,nfc,NA,NfC_16,weder noch,3
+qCllfLWtqP,FA,nfc,NA,NfC_17,weder noch,3
+qCllfLWtqP,FA,nfc,NA,NfC_2,eher zutreffend,4
+qCllfLWtqP,FA,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+qCllfLWtqP,FA,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+qCllfLWtqP,FA,nfc,NA,NfC_5,eher nicht zutreffend,4
+qCllfLWtqP,FA,nfc,NA,NfC_6,weder noch,3
+qCllfLWtqP,FA,nfc,NA,NfC_7,eher nicht zutreffend,4
+qCllfLWtqP,FA,nfc,NA,NfC_8,überhaupt nicht zutreffend,5
+qCllfLWtqP,FA,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+rJgy99Q0b6,DA,mancheck,NA,MC_0_1,Schwierig,4
+rJgy99Q0b6,DA,mancheck,NA,MC_0_2,Schwierig,4
+rJgy99Q0b6,DA,mancheck,NA,MC_1,Nein,0
+rJgy99Q0b6,DA,memory,FB2,FB2_1,3 Meter,1
+rJgy99Q0b6,DA,memory,FB2,FB2_2,Blütenblätter und Pollen,1
+rJgy99Q0b6,DA,memory,FB2,FB2_3,Raue Haut,1
+rJgy99Q0b6,DA,memory,FB2,FB2_4,Blau,1
+rJgy99Q0b6,DA,memory,FB2,FB2_5,Gelbes Horn,1
+rJgy99Q0b6,DA,memory,FB2,FB2_6,In Gruppen,1
+rJgy99Q0b6,DA,memory,FB2,FB2_7,Essen sammeln,1
+rJgy99Q0b6,DA,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+rJgy99Q0b6,DA,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+rJgy99Q0b6,DA,mindset,NA,GMS_3,Stimme zu,5
+rJgy99Q0b6,DA,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+rJgy99Q0b6,DA,nfc,NA,NfC_10,eher nicht zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_11,eher nicht zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_12,eher zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_13,weder noch,3
+rJgy99Q0b6,DA,nfc,NA,NfC_14,eher nicht zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_15,eher nicht zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_16,eher zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_17,weder noch,3
+rJgy99Q0b6,DA,nfc,NA,NfC_2,eher nicht zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_3,weder noch,3
+rJgy99Q0b6,DA,nfc,NA,NfC_4,eher zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_5,eher zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_6,eher nicht zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_7,eher zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_8,eher zutreffend,2
+rJgy99Q0b6,DA,nfc,NA,NfC_9,eher zutreffend,2
+rdzBRcS6RG,FT,mancheck,NA,MC_0_1,Leicht,2
+rdzBRcS6RG,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+rdzBRcS6RG,FT,mancheck,NA,MC_1,Ja,1
+rdzBRcS6RG,FT,memory,FB1,FB1_1,60cm,0
+rdzBRcS6RG,FT,memory,FB1,FB1_2,Blattgrün,1
+rdzBRcS6RG,FT,memory,FB1,FB1_3,Schuppig,1
+rdzBRcS6RG,FT,memory,FB1,FB1_4,Schwarz,1
+rdzBRcS6RG,FT,memory,FB1,FB1_5,Buschig und Lila,1
+rdzBRcS6RG,FT,memory,FB1,FB1_6,Zwitschern,1
+rdzBRcS6RG,FT,memory,FB1,FB1_7,"Wandern, laufen",1
+rdzBRcS6RG,FT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+rdzBRcS6RG,FT,mindset,NA,GMS_2,Stimme grösstenteils zu,4
+rdzBRcS6RG,FT,mindset,NA,GMS_3,Stimme zu,5
+rdzBRcS6RG,FT,nfc,NA,NfC_1,weder noch,3
+rdzBRcS6RG,FT,nfc,NA,NfC_10,eher zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_11,eher zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_12,eher zutreffend,2
+rdzBRcS6RG,FT,nfc,NA,NfC_13,weder noch,3
+rdzBRcS6RG,FT,nfc,NA,NfC_14,eher zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_15,eher zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_16,eher nicht zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_17,eher nicht zutreffend,2
+rdzBRcS6RG,FT,nfc,NA,NfC_2,eher zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_5,weder noch,3
+rdzBRcS6RG,FT,nfc,NA,NfC_6,weder noch,3
+rdzBRcS6RG,FT,nfc,NA,NfC_7,eher zutreffend,2
+rdzBRcS6RG,FT,nfc,NA,NfC_8,eher nicht zutreffend,4
+rdzBRcS6RG,FT,nfc,NA,NfC_9,eher nicht zutreffend,4
+tlHtulLq7U,FA,mancheck,NA,MC_0_1,Schwierig,4
+tlHtulLq7U,FA,mancheck,NA,MC_0_2,Schwierig,4
+tlHtulLq7U,FA,mancheck,NA,MC_1,Ja,1
+tlHtulLq7U,FA,memory,FB3,FB3_1,1 Meter,0
+tlHtulLq7U,FA,memory,FB3,FB3_2,Vegetarisch,0
+tlHtulLq7U,FA,memory,FB3,FB3_3,Rau,0
+tlHtulLq7U,FA,memory,FB3,FB3_4,Gelb,0
+tlHtulLq7U,FA,memory,FB3,FB3_6,Zacken,1
+tlHtulLq7U,FA,memory,FB3,FB3_7,Gras,0
+tlHtulLq7U,FA,memory,FB3,FB3_8,Durch Laute,1
+tlHtulLq7U,FA,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+tlHtulLq7U,FA,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+tlHtulLq7U,FA,mindset,NA,GMS_3,Stimme zu,5
+tlHtulLq7U,FA,nfc,NA,NfC_1,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_10,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_11,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_12,eher zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_13,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_14,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_15,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_16,eher zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_17,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_2,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_3,eher zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_4,eher zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_5,eher zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_6,eher nicht zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_7,weder noch,3
+tlHtulLq7U,FA,nfc,NA,NfC_8,eher zutreffend,2
+tlHtulLq7U,FA,nfc,NA,NfC_9,eher zutreffend,2
+uXIBcHoPuQ,DL,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+uXIBcHoPuQ,DL,mancheck,NA,MC_0_2,Schwierig,4
+uXIBcHoPuQ,DL,mancheck,NA,MC_1,Nein,0
+uXIBcHoPuQ,DL,memory,FB3,FB3_1,60 cm,1
+uXIBcHoPuQ,DL,memory,FB3,FB3_2,vegetarisch,0
+uXIBcHoPuQ,DL,memory,FB3,FB3_3,lila Haut,0
+uXIBcHoPuQ,DL,memory,FB3,FB3_4,gelb,0
+uXIBcHoPuQ,DL,memory,FB3,FB3_6,Stachel,1
+uXIBcHoPuQ,DL,memory,FB3,FB3_7,Erdhaufen,1
+uXIBcHoPuQ,DL,memory,FB3,FB3_8,Horn,0
+uXIBcHoPuQ,DL,mindset,NA,GMS_1,Stimme zu,5
+uXIBcHoPuQ,DL,mindset,NA,GMS_2,Stimme zu,5
+uXIBcHoPuQ,DL,mindset,NA,GMS_3,Stimme zu,5
+uXIBcHoPuQ,DL,nfc,NA,NfC_1,eher nicht zutreffend,2
+uXIBcHoPuQ,DL,nfc,NA,NfC_10,weder noch,3
+uXIBcHoPuQ,DL,nfc,NA,NfC_11,eher zutreffend,4
+uXIBcHoPuQ,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+uXIBcHoPuQ,DL,nfc,NA,NfC_13,weder noch,3
+uXIBcHoPuQ,DL,nfc,NA,NfC_14,eher nicht zutreffend,2
+uXIBcHoPuQ,DL,nfc,NA,NfC_15,sehr zutreffend,5
+uXIBcHoPuQ,DL,nfc,NA,NfC_16,eher zutreffend,2
+uXIBcHoPuQ,DL,nfc,NA,NfC_17,sehr zutreffend,5
+uXIBcHoPuQ,DL,nfc,NA,NfC_2,weder noch,3
+uXIBcHoPuQ,DL,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+uXIBcHoPuQ,DL,nfc,NA,NfC_4,eher nicht zutreffend,4
+uXIBcHoPuQ,DL,nfc,NA,NfC_5,eher zutreffend,2
+uXIBcHoPuQ,DL,nfc,NA,NfC_6,weder noch,3
+uXIBcHoPuQ,DL,nfc,NA,NfC_7,eher nicht zutreffend,4
+uXIBcHoPuQ,DL,nfc,NA,NfC_8,sehr zutreffend,1
+uXIBcHoPuQ,DL,nfc,NA,NfC_9,eher zutreffend,2
+vnNC4StLwc,DL,mancheck,NA,MC_0_1,Leicht,2
+vnNC4StLwc,DL,mancheck,NA,MC_0_2,Leicht,2
+vnNC4StLwc,DL,mancheck,NA,MC_1,Ja,1
+vnNC4StLwc,DL,memory,FB3,FB3_1,60 cm,1
+vnNC4StLwc,DL,memory,FB3,FB3_2,Ahornrinde,1
+vnNC4StLwc,DL,memory,FB3,FB3_3,Weiche Haut,1
+vnNC4StLwc,DL,memory,FB3,FB3_4,Braun,1
+vnNC4StLwc,DL,memory,FB3,FB3_6,eine Reihe orangener Stachel,1
+vnNC4StLwc,DL,memory,FB3,FB3_7,Auf einen Erdhaufen,1
+vnNC4StLwc,DL,memory,FB3,FB3_8,"durch tiefe, trompetenartige Geräusche",1
+vnNC4StLwc,DL,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+vnNC4StLwc,DL,mindset,NA,GMS_2,Stimme zu,5
+vnNC4StLwc,DL,mindset,NA,GMS_3,Stimme zu,5
+vnNC4StLwc,DL,nfc,NA,NfC_1,sehr zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_10,sehr zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_11,sehr zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_12,eher nicht zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_13,eher zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_14,eher zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_15,sehr zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_16,eher nicht zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_17,eher zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_2,sehr zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_3,überhaupt nicht zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_4,überhaupt nicht zutreffend,5
+vnNC4StLwc,DL,nfc,NA,NfC_5,eher nicht zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_6,eher zutreffend,4
+vnNC4StLwc,DL,nfc,NA,NfC_7,weder noch,3
+vnNC4StLwc,DL,nfc,NA,NfC_8,weder noch,3
+vnNC4StLwc,DL,nfc,NA,NfC_9,überhaupt nicht zutreffend,5
+xTQ4ySm8Pg,DT,mancheck,NA,MC_0_1,Leicht,2
+xTQ4ySm8Pg,DT,mancheck,NA,MC_0_2,Leicht,2
+xTQ4ySm8Pg,DT,mancheck,NA,MC_1,Ja,1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_1,1.5 m,1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_2,grünes Blattgemüse,1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_3,schuppig,1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_4,schwarz,1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_5,"buschig, violett",1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_6,angenehm zwitschernd,1
+xTQ4ySm8Pg,DT,memory,FB1,FB1_7,in der Natur umherlaufen,1
+xTQ4ySm8Pg,DT,mindset,NA,GMS_1,Stimme überhaupt nicht zu,1
+xTQ4ySm8Pg,DT,mindset,NA,GMS_2,Stimme überhaupt nicht zu,1
+xTQ4ySm8Pg,DT,mindset,NA,GMS_3,Stimme überhaupt nicht zu,1
+xTQ4ySm8Pg,DT,nfc,NA,NfC_1,überhaupt nicht zutreffend,1
+xTQ4ySm8Pg,DT,nfc,NA,NfC_10,eher nicht zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_11,eher nicht zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_12,eher nicht zutreffend,4
+xTQ4ySm8Pg,DT,nfc,NA,NfC_13,eher zutreffend,4
+xTQ4ySm8Pg,DT,nfc,NA,NfC_14,überhaupt nicht zutreffend,1
+xTQ4ySm8Pg,DT,nfc,NA,NfC_15,eher nicht zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_16,sehr zutreffend,1
+xTQ4ySm8Pg,DT,nfc,NA,NfC_17,eher nicht zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_2,eher nicht zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_3,weder noch,3
+xTQ4ySm8Pg,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+xTQ4ySm8Pg,DT,nfc,NA,NfC_5,weder noch,3
+xTQ4ySm8Pg,DT,nfc,NA,NfC_6,überhaupt nicht zutreffend,1
+xTQ4ySm8Pg,DT,nfc,NA,NfC_7,eher zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_8,eher zutreffend,2
+xTQ4ySm8Pg,DT,nfc,NA,NfC_9,eher zutreffend,2
+xyKxTKFpyX,FA,mancheck,NA,MC_0_1,Leicht,2
+xyKxTKFpyX,FA,mancheck,NA,MC_0_2,Schwierig,4
+xyKxTKFpyX,FA,mancheck,NA,MC_1,Ja,1
+xyKxTKFpyX,FA,memory,FB3,FB3_1,6 meter,0
+xyKxTKFpyX,FA,memory,FB3,FB3_2,1.5 meter,0
+xyKxTKFpyX,FA,memory,FB3,FB3_3,3 meter,0
+xyKxTKFpyX,FA,memory,FB3,FB3_4,grün,0
+xyKxTKFpyX,FA,memory,FB3,FB3_6,Zacken,1
+xyKxTKFpyX,FA,memory,FB3,FB3_7,Erdhaufen,1
+xyKxTKFpyX,FA,memory,FB3,FB3_8,Geräusche,1
+xyKxTKFpyX,FA,mindset,NA,GMS_1,Stimme nicht zu,2
+xyKxTKFpyX,FA,mindset,NA,GMS_2,Stimme nicht zu,2
+xyKxTKFpyX,FA,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+xyKxTKFpyX,FA,nfc,NA,NfC_1,weder noch,3
+xyKxTKFpyX,FA,nfc,NA,NfC_10,eher zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_11,eher zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_12,eher zutreffend,2
+xyKxTKFpyX,FA,nfc,NA,NfC_13,weder noch,3
+xyKxTKFpyX,FA,nfc,NA,NfC_14,sehr zutreffend,5
+xyKxTKFpyX,FA,nfc,NA,NfC_15,sehr zutreffend,5
+xyKxTKFpyX,FA,nfc,NA,NfC_16,eher nicht zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_17,sehr zutreffend,5
+xyKxTKFpyX,FA,nfc,NA,NfC_2,eher zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_3,eher nicht zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_4,eher nicht zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_5,weder noch,3
+xyKxTKFpyX,FA,nfc,NA,NfC_6,weder noch,3
+xyKxTKFpyX,FA,nfc,NA,NfC_7,eher zutreffend,2
+xyKxTKFpyX,FA,nfc,NA,NfC_8,eher nicht zutreffend,4
+xyKxTKFpyX,FA,nfc,NA,NfC_9,weder noch,3
+zGnbTXNgLh,DT,mancheck,NA,MC_0_1,Leicht,2
+zGnbTXNgLh,DT,mancheck,NA,MC_0_2,Leicht,2
+zGnbTXNgLh,DT,mancheck,NA,MC_1,Ja,1
+zGnbTXNgLh,DT,memory,FB2,FB2_1,60cm,0
+zGnbTXNgLh,DT,memory,FB2,FB2_2,Fleisch,0
+zGnbTXNgLh,DT,memory,FB2,FB2_3,Federn,0
+zGnbTXNgLh,DT,memory,FB2,FB2_4,Gelb,0
+zGnbTXNgLh,DT,memory,FB2,FB2_5,Kranz,0
+zGnbTXNgLh,DT,memory,FB2,FB2_6,Schleichen,0
+zGnbTXNgLh,DT,memory,FB2,FB2_7,Jagen,0
+zGnbTXNgLh,DT,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+zGnbTXNgLh,DT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+zGnbTXNgLh,DT,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+zGnbTXNgLh,DT,nfc,NA,NfC_1,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_10,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_11,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_12,sehr zutreffend,1
+zGnbTXNgLh,DT,nfc,NA,NfC_13,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_14,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_15,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_16,weder noch,3
+zGnbTXNgLh,DT,nfc,NA,NfC_17,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_2,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_3,eher nicht zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_4,eher nicht zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_5,eher nicht zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_6,eher zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_7,eher nicht zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_8,eher nicht zutreffend,4
+zGnbTXNgLh,DT,nfc,NA,NfC_9,eher nicht zutreffend,4
+zGvWg7CCWI,DZ,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+zGvWg7CCWI,DZ,mancheck,NA,MC_0_2,Leicht,2
+zGvWg7CCWI,DZ,mancheck,NA,MC_1,Nein,0
+zGvWg7CCWI,DZ,memory,FB1,FB1_1,60 cm,0
+zGvWg7CCWI,DZ,memory,FB1,FB1_2,Blätter,1
+zGvWg7CCWI,DZ,memory,FB1,FB1_3,Schuppen,1
+zGvWg7CCWI,DZ,memory,FB1,FB1_4,violett,0
+zGvWg7CCWI,DZ,memory,FB1,FB1_5,Lang,0
+zGvWg7CCWI,DZ,memory,FB1,FB1_6,NA,0
+zGvWg7CCWI,DZ,memory,FB1,FB1_7,kommunizieren,0
+zGvWg7CCWI,DZ,mindset,NA,GMS_1,Stimme grösstenteils zu,4
+zGvWg7CCWI,DZ,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+zGvWg7CCWI,DZ,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+zGvWg7CCWI,DZ,nfc,NA,NfC_1,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_10,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_11,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_12,eher nicht zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_13,weder noch,3
+zGvWg7CCWI,DZ,nfc,NA,NfC_14,weder noch,3
+zGvWg7CCWI,DZ,nfc,NA,NfC_15,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_16,eher zutreffend,2
+zGvWg7CCWI,DZ,nfc,NA,NfC_17,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_2,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_3,eher nicht zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_4,eher nicht zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_5,eher nicht zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_6,eher zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_7,eher zutreffend,2
+zGvWg7CCWI,DZ,nfc,NA,NfC_8,eher nicht zutreffend,4
+zGvWg7CCWI,DZ,nfc,NA,NfC_9,weder noch,3
+zP615FL2Fh,FT,mancheck,NA,MC_0_1,Mittel / Weder schwierig noch leicht,3
+zP615FL2Fh,FT,mancheck,NA,MC_0_2,Mittel / Weder schwierig noch leicht,3
+zP615FL2Fh,FT,mancheck,NA,MC_1,Ja,1
+zP615FL2Fh,FT,memory,FB1,FB1_1,60cm,0
+zP615FL2Fh,FT,memory,FB1,FB1_2,pflanzen,1
+zP615FL2Fh,FT,memory,FB1,FB1_3,schuppen,1
+zP615FL2Fh,FT,memory,FB1,FB1_4,grün,0
+zP615FL2Fh,FT,memory,FB1,FB1_5,violett,1
+zP615FL2Fh,FT,memory,FB1,FB1_6,angenehme Geräusche,1
+zP615FL2Fh,FT,memory,FB1,FB1_7,Jagen,0
+zP615FL2Fh,FT,mindset,NA,GMS_1,Stimme grösstenteils nicht zu,3
+zP615FL2Fh,FT,mindset,NA,GMS_2,Stimme grösstenteils nicht zu,3
+zP615FL2Fh,FT,mindset,NA,GMS_3,Stimme grösstenteils nicht zu,3
+zP615FL2Fh,FT,nfc,NA,NfC_1,eher zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_10,eher zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_11,sehr zutreffend,5
+zP615FL2Fh,FT,nfc,NA,NfC_12,überhaupt nicht zutreffend,5
+zP615FL2Fh,FT,nfc,NA,NfC_13,eher zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_14,sehr zutreffend,5
+zP615FL2Fh,FT,nfc,NA,NfC_15,sehr zutreffend,5
+zP615FL2Fh,FT,nfc,NA,NfC_16,eher nicht zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_17,sehr zutreffend,5
+zP615FL2Fh,FT,nfc,NA,NfC_2,eher zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_3,eher nicht zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_4,eher nicht zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_5,eher nicht zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_6,eher zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_7,eher nicht zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_8,eher nicht zutreffend,4
+zP615FL2Fh,FT,nfc,NA,NfC_9,eher nicht zutreffend,4

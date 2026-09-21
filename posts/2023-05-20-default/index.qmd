@@ -191,3 +191,10 @@ The obvious problem with this data set (and the replication) is the small <it>n<
 # References
 
 Johnson, E. J., Bellman, S., & Lohse, G. L. (2002). [Defaults, framing and privacy: Why opting in-opting out](https://link.springer.com/article/10.1023/A:1015044207315). *Marketing letters, 13*, 5-15.
+
+# Data
+
+The anonymised responses behind every figure and table on this page, each file keyed on the participant's random `ID`:
+
+- [`BAFS2023_exp1_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2023_exp1_pub.csv) and [`BAFS2023_exp2_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2023_exp2_pub.csv): one row per participant and task, with the `Default_condition`, the `Framing`, the `Answer_Option` shown and the `choice` made.
+- [`BAFS2023_demographie_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2023_demographie_pub.csv): `education`, `gender` and `agegroup` per participant. Exact age is held back; only the age group is published.

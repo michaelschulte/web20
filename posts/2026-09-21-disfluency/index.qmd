@@ -517,4 +517,4 @@ Caveats. Our sample is a convenience sample spread thin across six conditions, s
 
 # Data
 
-The anonymised responses behind every figure and table on this page are in [`BAFS2025_public.csv`](https://github.com/schulte-mecklenbeck/web20/blob/main/0_data/BAFS2025_public.csv). Gender, age and education are held back and are not published.
+The anonymised responses behind every figure and table on this page are in [`BAFS2025_public.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2025_public.csv). Gender, age and education are held back and are not published.

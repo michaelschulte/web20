@@ -164,3 +164,10 @@ Cokely, E. T., Galesic, M., Schulz, E., Ghazal, S., & Garcia-Retamero, R. (2012)
 
 Peters, E., Västfjäll, D., Slovic, P., Mertz, C. K., Mazzocco, K., & Dickert, S. (2006). Numeracy and decision making. *Psychological Science, 17*(5), 407-413. [DOI](https://doi.org/10.1111/j.1467-9280.2006.01720.x)
 
+# Data
+
+The anonymised responses behind every figure and table on this page, each file keyed on the participant's random `ID`:
+
+- [`BAFS2022_framing_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2022_framing_pub.csv): one row per participant and framing task, with the `condition`, the `frame` the task was shown in, the `rating` given, the response `duration` and the participant's numeracy `score` and `numeracy` group.
+- [`BAFS2022_numeracy_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2022_numeracy_pub.csv): one row per participant, with the numeracy `score` and the `numeracy` group derived from it.
+- [`BAFS2022_demographie_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAFS2022_demographie_pub.csv): gender and age per participant.

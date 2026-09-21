@@ -269,3 +269,11 @@ checked_df %>%
 > Mit einer Fläche von 41’285 [40’000] Quadratkilometern ist die Schweiz von allen Ländern Europas eines der flächenmäßig kleineren. Der Binnenstaat in Mitteleuropa grenzt an Deutschland, Österreich, Liechtenstein, Frankreich und Italien und hat Anteil an drei großen europäischen Sprachräumen (Deutsch, Italienisch, Französisch). Das Land ist aufgeteilt in 26 teilsouveräne Kantone. Graubünden ist mit einer Fläche von 7’105 [7’000] Quadratkilometern der größte, der Kanton Basel-Stadt mit rund 37 Quadratkilometern der kleinste.
 
 [**Source**](https://de.statista.com/themen/7969/geographie-in-der-schweiz/#topicOverview)
+
+# Data
+
+The anonymised responses behind every figure and table on this page, each file keyed on the participant's random `ID`:
+
+- [`BAHS2023_complete_df_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2023_complete_df_pub.csv): one row per participant, task and number, with the `task`, the `condition` (`Round` or `Precise`), whether the row comes from the recall or the estimation part (`test`), which of the two numbers it refers to (`number_id`), the `value` given and the `target` it should approximate.
+- [`BAHS2023_targets_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2023_targets_pub.csv): the stimulus values, one row per task and number -- the `target`, its `set` and `label` and the `range_min`/`range_max` of the answer scale.
+- [`BAHS2023_demographie_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2023_demographie_pub.csv): year of birth (`Jahrgang`), gender (`Geschlecht`) and age (`Alter`) per participant.

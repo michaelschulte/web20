@@ -450,3 +450,14 @@ I was quite suspicious about the described effects in the original work and my c
 # References
 
 Hagtvedt, H., & Brasel, S. A. (2017). [Color saturation increases perceived product size](https://doi.org/10.1093/jcr/ucx039). *Journal of Consumer Research, 44*(2), 396-413. 
+
+# Data
+
+The anonymised responses behind every figure and table on this page, each file keyed on the participant's random `ID`. The saturation manipulation travels through the `S`, `Color` and `Sat` columns:
+
+- [`MAFS2021_cube_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/MAFS2021_cube_pub.csv): Experiment 1, the cube -- the two pictures shown (`left_pic`, `right_pic`), the `response` and the `duration`.
+- [`MAFS2021_laptop_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/MAFS2021_laptop_pub.csv): Experiment 2, laptops -- the picture shown, the size estimate (`guess_size`), the two selections, `pref_size`, the mood and arousal ratings and the attention check.
+- [`MAFS2021_suitcase_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/MAFS2021_suitcase_pub.csv): Experiment 3, suitcases -- the picture shown, `goal_pursuit`, `prize`, the five selections and the two attention checks.
+- [`MAFS2021_couch_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/MAFS2021_couch_pub.csv): Experiment 4, couches -- the picture shown and the height estimate (`guess_height`).
+- [`MAFS2021_color_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/MAFS2021_color_pub.csv): each participant's rating of the five colours used.
+- [`MAFS2021_demographie_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/MAFS2021_demographie_pub.csv): gender, age and colour blindness per participant.

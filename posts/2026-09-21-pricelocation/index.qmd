@@ -517,4 +517,4 @@ Price location may still do something. On this evidence, whatever it does is sma
 
 # Data
 
-The anonymised responses behind every figure and table on this page are in [`BAHS2025_public.csv`](https://github.com/schulte-mecklenbeck/web20/blob/main/0_data/BAHS2025_public.csv): one row per answer, with the participant's random `ID`, the `study`, the price `position`, the product type (`price`: A for everyday, L for luxury), the item (`level`), the serial position of that study in the questionnaire (`order`) and the `answers` themselves. Gender and age are held back and are not published.
+The anonymised responses behind every figure and table on this page are in [`BAHS2025_public.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2025_public.csv): one row per answer, with the participant's random `ID`, the `study`, the price `position`, the product type (`price`: A for everyday, L for luxury), the item (`level`), the serial position of that study in the questionnaire (`order`) and the `answers` themselves. Gender and age are held back and are not published.

@@ -278,3 +278,11 @@ tab_model(lmer_WTP,
 
 Rottenstreich, Y., & Hsee, C. K. (2001). Money, kisses, and electric shocks: On the affective psychology of risk. *Psychological science, 12*(3), 185-190. [DOI](https://doi.org/10.1111/1467-9280.00334)
 
+# Data
+
+The anonymised responses behind every figure and table on this page, each file keyed on the participant's random `ID`:
+
+- [`BAHS2022_responses_numeric_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2022_responses_numeric_pub.csv): one row per numeric answer, with the `Experiment`, the question (`Frage`), the replication it maps onto (`Rep_Zu`), the confidence rating (`Sicherheit`) and the `value` given.
+- [`BAHS2022_responses_non_numeric_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2022_responses_non_numeric_pub.csv): the same for the categorical answers, with the chosen label in `response`.
+- [`BAHS2022_emo_skala_rohdaten_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2022_emo_skala_rohdaten_pub.csv): one row per emotion-scale item, with the `Item`, its `value` and `response`, and the confidence rating.
+- [`BAHS2022_demographie_pub.csv`](https://github.com/michaelschulte/web20/blob/main/0_data/BAHS2022_demographie_pub.csv): gender, age (`Alter`), highest degree (`Abschluss`) and questionnaire `Duration` per participant.
