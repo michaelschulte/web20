@@ -10,6 +10,8 @@ import yaml
 from IPython.display import display, Markdown, HTML
 
 def readable_list(_s):
+  if _s[-1] == "et al.":
+    return f"{', '.join(map(str, _s[:-1]))}, et al."
   if len(_s) < 3:
     return ' and '.join(map(str, _s))
   *a, b = _s
