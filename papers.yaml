@@ -1,3 +1,57 @@
+Wyss2026:
+  title: 'Political affiliation impacts climate attention and choice beyond extreme weather exposure'
+  authors:
+    - Wyss, A. M.
+    - Guizar Rosales, E. T.
+    - me
+    - Buchs, J.
+    - Hahnel, U. J. J.
+    - Knoch, D.
+  venue: Nature Climate Change (in press).
+  paper: _content/_pdf/Wyss2026.pdf
+  year: 2026
+  doi: 10.1038/s41558-026-02765-z
+
+Swami2026:
+  title: 'Positive body image is a pathway between nature contact and life satisfaction across 58 nations'
+  authors:
+    - Swami, V.
+    - et al.
+  venue: Environment International, 212, 110277.
+  paper: https://doi.org/10.1016/j.envint.2026.110277
+  year: 2026
+  doi: 10.1016/j.envint.2026.110277
+
+Cummins2026:
+  title: 'Looks good on paper: LLM-generated exams are face-valid but psychometrically weaker than human assessments'
+  authors:
+    - Cummins, J.
+    - Grinschgl, S.
+    - Elson, M.
+    - Borter, N.
+    - me
+  venue: PsyArXiv (preprint).
+  paper: https://osf.io/preprints/psyarxiv/vaf2y
+  year: 2026
+  doi: 10.31234/osf.io/vaf2y_v1
+
+Grinschgl2026:
+  title: 'Preparing the University for Generation Alpha: A Research Agenda for the Digital Transformation of Higher Education'
+  authors:
+    - Grinschgl, S.
+    - Elson, M.
+    - Hascher, T.
+    - Klostermann, A.
+    - Krakenberger, E.
+    - Ritz, A.
+    - Sauter, T.
+    - Zurkirchen, A.
+    - me
+  venue: PsyArXiv (preprint).
+  paper: https://osf.io/preprints/psyarxiv/w56pu
+  year: 2026
+  doi: 10.31234/osf.io/w56pu_v3
+
 Swami2025SWLS:
   title: 'Life satisfaction around the world: Measurement invariance of the Satisfaction With Life Scale (SWLS) across 65 nations, 40 languages, gender identities, and age groups'
   authors:
