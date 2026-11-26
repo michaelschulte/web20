@@ -10,7 +10,7 @@ keep-md: true
 ::: {#not-published-year .cell execution_count=2}
 ### 2026{#not-published-2026}
 ```{=html}
-<ul class='list-group list-group-flush'><li class='list-group-item'>Huber, J., et al. (2026). <strong>Fifty-five crowdsourced designs assessing carbon pricing support in the USA</strong>. <em>Nature Human Behaviour (in press).</em> <a href="https://doi.org/10.1038/s41562-026-02629-8" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41562-026-02629-8</a><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Huber2026.pdf" target="_blank" rel="noopener noreferrer">
+<ul class='list-group list-group-flush'><li class='list-group-item'>Holzknecht, A., et al. (2026). <strong>Fifty-five crowdsourced designs assessing carbon pricing support in the USA</strong>. <em>Nature Human Behaviour (in press).</em> <a href="https://doi.org/10.1038/s41562-026-02629-8" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41562-026-02629-8</a><br><a class="btn btn-outline-dark btn-sm", href="_content/_pdf/Holzknecht2026.pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-pdf" role='img' aria-label='Paper'></i>
         Paper
     </a> <a class="btn btn-outline-dark btn-sm", href="https://osf.io/ujvdn" target="_blank" rel="noopener noreferrer">
