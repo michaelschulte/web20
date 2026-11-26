@@ -1,0 +1,17 @@
+---
+title: "New paper: 55 teams, 20,000 people and a carbon price"
+author: "MSM"
+date: "2026-11-26"
+draft: false
+categories: [Science, Open Science, Climate]
+---
+
+Holzknecht, A., Schwaiger, R., Blanco, E., Huber, J., Kirchler, M., ..., Holenweger, G., ..., Schulte-Mecklenbeck, M., ... & Zhao, X. (in press). [Fifty-five crowdsourced designs assessing carbon pricing support in the USA](https://doi.org/10.1038/s41562-026-02629-8). *Nature Human Behaviour*. [PDF](/_content/_pdf/Huber2026.pdf) · [OSF](https://osf.io/ujvdn)
+
+A carbon price is one of the most effective and cost-efficient tools against emissions -- but it is unpopular. Can behavioural interventions make people support it, not just say they do?
+
+Instead of one team testing one idea, this "many-designs" project, led by the Innsbruck group around Jürgen Huber, Michael Kirchler and Esther Blanco, asked the research community. From 135 applicants, 55 research teams were drawn at random. Each designed its own randomised experiment with a treatment, a control and a real-world measure of support, such as donating to an NGO that lobbies for carbon pricing, signing a petition or writing to a representative. All 55 designs then ran at the same time, preregistered, on a shared sample of 19,558 US residents, and everything was analysed the same way. Geraldine Holenweger and I contributed one of the designs.
+
+The results are sobering. On average, the interventions moved real-world support only a little (Cohen's *d* = 0.06), and stated support by about 2 percentage points. And the teams expected considerably more: researchers were clearly overconfident about their own interventions and those of their peers. Had only the significant studies been published, the pooled effect would have looked about three and a half times larger. That is a strong argument for designs like this one, in which every result is reported, whatever it shows.
+
+Thanks to Geraldine for the collaboration, and to the Innsbruck team for running such a big project.
